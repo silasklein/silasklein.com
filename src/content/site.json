@@ -138,8 +138,8 @@
     "pt": "Seminários e cursos nas Universidades de Basel, Berna, Tel Aviv e Zurique, na Bergische Universität Wuppertal, na PUC-Rio e, desde 2024, na Faculdade Unida de Vitória, da Bíblia Hebraica e história do antigo Israel à iconografia e aos selos de estampar."
   },
   "designIntro": {
-    "en": "Before reading ancient images, I spent two decades making new ones as an art director for agencies and global brands. The same eye now works for research: identities, layouts and visual systems for scholarly projects.",
-    "pt": "Antes de ler imagens antigas, passei duas décadas fazendo imagens novas como diretor de arte para agências e marcas globais. O mesmo olhar agora trabalha para a pesquisa: identidades, diagramação e sistemas visuais para projetos acadêmicos."
+    "en": "Before reading ancient images, I made new ones as an art director for agencies and global brands. The same eye now works for research: identities, layouts and visual systems for scholarly projects.",
+    "pt": "Antes de ler imagens antigas, fiz imagens novas como diretor de arte para agências e marcas globais. O mesmo olhar agora trabalha para a pesquisa: identidades, diagramação e sistemas visuais para projetos acadêmicos."
   },
   "email": "silasklein@gmail.com",
   "location": "Vitória/ES, Brasil",
@@ -195,6 +195,13 @@
       "label": {
         "en": "Press & interviews",
         "pt": "Imprensa & entrevistas"
+      }
+    },
+    {
+      "icon": "books",
+      "label": {
+        "en": "Master’s & PhD",
+        "pt": "Mestrado & doutorado"
       }
     }
   ],
