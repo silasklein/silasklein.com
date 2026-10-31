@@ -51,4 +51,5 @@ npm run build    # gera dist/
    - `www` → **CNAME** → `<seu-usuario>.github.io`
    - `@` (domínio raiz) → quatro registros **A**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - Remova os registros antigos que apontam para o Squarespace.
-5. Só cancele o Squarespace depois de o novo site abrir em `https://www.silasklein.com`.
+5. Quando o domínio estiver apontado, apague as linhas `env:` / `SITE_BASE: /silasklein.com` em `.github/workflows/deploy.yml`. Até lá, o site de revisão fica em https://silasklein.github.io/silasklein.com/ (não aparece no Google).
+6. Só cancele o Squarespace depois de o novo site abrir em `https://www.silasklein.com`.
