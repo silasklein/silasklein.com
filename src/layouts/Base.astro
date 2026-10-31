@@ -12,11 +12,27 @@ import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
 interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean }
 const { lang, title, description, home = false, noindex = false } = Astro.props;
-const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${t(ui.descriptor, lang)}`;
+const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein Cardoso · ${t(ui.descriptor, lang)}`;
 const desc = description ?? t(ui.subtitle, lang);
 const other = switchPath(Astro.url.pathname, lang);
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
 const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
+// Language versions of this page: Portuguese is the default (x-default), English lives under /en/.
+const ptPath = lang === 'pt' ? sitePath(Astro.url.pathname) : sitePath(other);
+const enPath = lang === 'en' ? sitePath(Astro.url.pathname) : sitePath(other);
+const ogImage = new URL('/img/og-portrait.jpg', Astro.site);
+const person = {
+  '@context': 'https://schema.org', '@type': 'Person', '@id': 'https://www.silasklein.com/#person',
+  name: 'Silas Klein Cardoso', alternateName: 'Silas Klein', url: 'https://www.silasklein.com/', image: ogImage.href,
+  jobTitle: lang === 'pt' ? 'Professor de Antigo Testamento e Ciências das Religiões' : 'Professor of Old Testament and Religious Studies',
+  description: t(ui.subtitle, lang),
+  worksFor: { '@type': 'CollegeOrUniversity', name: 'Faculdade Unida de Vitória', url: 'https://fuv.edu.br/' },
+  affiliation: [{ '@type': 'CollegeOrUniversity', name: 'University of Bern', url: 'https://www.unibe.ch/' }],
+  alumniOf: [{ '@type': 'CollegeOrUniversity', name: 'Universidade Metodista de São Paulo' }],
+  award: ['Grande Prêmio CAPES de Tese Bertha Koiffmann Becker (2020)', 'Prêmio CAPES de Tese (2020)'],
+  knowsAbout: ['Iconography', 'Stamp seals', 'History of religion', 'Ancient southern Levant', 'Hebrew Bible', 'Visual culture', 'Digital humanities'],
+  sameAs: [...profiles.map((p) => p.href), 'https://universosbiblicos.org'],
+};
 ---
 <!doctype html>
 <html lang={lang === 'pt' ? 'pt-BR' : 'en'}>
@@ -29,21 +45,32 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
   <meta name="description" content={desc} />
   <link rel="canonical" href={canonical} />
   {(BASE || noindex) && <meta name="robots" content="noindex" />}
-  <link rel="alternate" hreflang={lang === 'pt' ? 'en' : 'pt-BR'} href={new URL(sitePath(other), Astro.site)} />
+  {!noindex && <>
+    <link rel="alternate" hreflang="pt-BR" href={new URL(ptPath, Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL(enPath, Astro.site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL(ptPath, Astro.site)} />
+  </>}
+  <link rel="sitemap" href={asset('/sitemap.xml')} />
   <link rel="icon" type="image/png" sizes="19x19" href={asset('/favicon-19.png')} />
   <link rel="icon" type="image/png" sizes="38x38" href={asset('/favicon-38.png')} />
   <link rel="icon" type="image/png" sizes="76x76" href={asset('/favicon-76.png')} />
   <link rel="apple-touch-icon" sizes="190x190" href={asset('/favicon-190.png')} />
+  <meta property="og:type" content={home ? 'profile' : 'article'} />
+  <meta property="og:site_name" content="Silas Klein Cardoso" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
+  <meta property="og:locale:alternate" content={lang === 'pt' ? 'en_US' : 'pt_BR'} />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={desc} />
-  <meta property="og:image" content={new URL('/img/portrait-scholar.webp', Astro.site)} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="Silas Klein Cardoso" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="author" content="Silas Klein Cardoso" />
   <meta name="theme-color" content="#F5F6F4" />
-  <script type="application/ld+json" set:html={JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'Person', name: 'Silas Klein Cardoso', url: 'https://www.silasklein.com',
-    jobTitle: 'Professor of Old Testament and Religious Studies',
-    affiliation: [{ '@type': 'CollegeOrUniversity', name: 'Faculdade Unida de Vitória' }, { '@type': 'CollegeOrUniversity', name: 'University of Bern' }],
-    sameAs: profiles.map((p) => p.href),
-  })} />
+  {home && <script type="application/ld+json" set:html={JSON.stringify(person)} />}
+  <slot name="head" />
   <script is:inline>document.documentElement.classList.add('js');</script>
 </head>
 <body>

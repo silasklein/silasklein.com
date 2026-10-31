@@ -272,7 +272,7 @@ const pt = lang === 'pt';
     <h2 class="contact__h" data-reveal>{t(S.contact.title, lang)}</h2>
     <ul class="topics">
       {contactTopics.map((c) => (
-        <li data-reveal><a href={`mailto:${email}?subject=${encodeURIComponent(t(c.label, lang) + ' · silasklein.com')}`}><Px name={c.icon} />{t(c.label, lang)} <Px name="arrowUpRight" class="topics__go" /></a></li>
+        <li data-reveal><a href={`mailto:${c.email || email}?subject=${encodeURIComponent(t(c.label, lang) + ' · silasklein.com')}`}><Px name={c.icon} />{t(c.label, lang)} <Px name="arrowUpRight" class="topics__go" /></a></li>
       ))}
     </ul>
     <p class="contact__mail"><a class="act" href={`mailto:${email}`}><Px name="mail" /><span>{email}</span></a><span class="act"><Px name="pin" /><span>Vitória/ES, Brasil</span></span></p>

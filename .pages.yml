@@ -4,7 +4,7 @@ media:
   output: /img
 content:
   - name: site
-    label: Site texts
+    label: Textos gerais (topo, sobre, contato)
     type: file
     path: src/content/site.json
     format: json
@@ -275,6 +275,10 @@ content:
               - name: pt
                 label: Português
                 type: string
+          - name: email
+            label: E-mail (optional)
+            type: string
+            description: Leave empty to use the main e-mail above.
       - name: sections
         label: Section titles
         type: object
@@ -496,7 +500,7 @@ content:
                     label: Português
                     type: string
   - name: currently
-    label: 02 Currently
+    label: 02 Hoje
     type: file
     path: src/content/currently.json
     format: json
@@ -582,306 +586,8 @@ content:
           - name: href
             label: Link
             type: string
-  - name: recognition
-    label: Awards & distinctions
-    type: file
-    path: src/content/recognition.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-  - name: publications
-    label: 04 Publications
-    type: file
-    path: src/content/publications.json
-    format: json
-    fields:
-      - name: books
-        label: Books
-        type: object
-        list: true
-        fields:
-          - name: cover
-            label: Cover
-            type: image
-            description: Cover only, no shadow or background (about 385 × 592 px).
-          - name: title
-            label: Title
-            type: string
-          - name: meta
-            label: Publisher · year
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-          - name: href
-            label: Publisher / DOI link
-            type: string
-          - name: pdf
-            label: PDF link
-            type: string
-      - name: selected
-        label: Selected articles
-        type: object
-        list: true
-        fields:
-          - name: title
-            label: Title
-            type: string
-          - name: venue
-            label: Venue
-            type: string
-          - name: href
-            label: DOI / link
-            type: string
-          - name: pdf
-            label: PDF link
-            type: string
-  - name: initiatives
-    label: 06 Initiatives
-    type: file
-    path: src/content/initiatives.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
-        fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
-          - name: title
-            label: Title
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-          - name: text
-            label: Short text (always visible)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-          - name: details
-            label: Description (shown when the row is opened)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-          - name: more
-            label: Internal page (optional)
-            type: string
-            description: e.g. /research/summer-school-iconography
-          - name: href
-            label: External link (optional)
-            type: string
-  - name: talks
-    label: 05 Interviews & talks
-    type: file
-    path: src/content/talks.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
-        fields:
-          - name: year
-            label: Year
-            type: string
-            required: true
-          - name: kind
-            label: Type (Interview, Talk…)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-          - name: title
-            label: Title
-            type: string
-            required: true
-          - name: channel
-            label: Channel / venue
-            type: string
-          - name: lang
-            label: Language
-            type: select
-            options:
-              values:
-                - pt
-                - en
-          - name: href
-            label: Video link
-            type: string
-            required: true
-  - name: outreach
-    label: '05 Teaching: in public'
-    type: file
-    path: src/content/outreach.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
-        fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
-          - name: title
-            label: Title
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-          - name: text
-            label: Text
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-          - name: href
-            label: Link
-            type: string
-            description: External address, or an internal page such as /talks
-  - name: clients
-    label: 07 Clients
-    type: file
-    path: src/content/clients.json
-    format: json
-    fields:
-      - name: items
-        label: Clients
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Name
-            type: string
-          - name: slug
-            label: Case slug (optional)
-            type: string
-            description: Fill in only if an art-direction case with this slug exists; the name then links to it.
   - name: projects
-    label: 03 Research projects
+    label: 03 Pesquisa · projetos
     type: collection
     path: src/content/projects
     format: yaml-frontmatter
@@ -1030,58 +736,288 @@ content:
           - name: pt
             label: Português
             type: string
-  - name: news
-    label: News
-    type: collection
-    path: src/content/news
-    format: yaml-frontmatter
-    filename: '{fields.slug}.md'
-    view:
-      fields:
-        - title
-        - date
-        - lang
-      primary: title
-      sort:
-        - date
-      default:
-        sort: date
-        order: desc
+  - name: recognition
+    label: 03 Pesquisa · prêmios
+    type: file
+    path: src/content/recognition.json
+    format: json
     fields:
-      - name: slug
-        label: Slug (URL)
-        type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'Part of the page address. Do not change it after publishing: old links would break.'
-      - name: date
-        required: true
-        label: Date
-        type: date
-      - name: lang
-        label: Language
-        type: select
-        options:
-          values:
-            - en
-            - pt
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: summary
-        label: Summary
-        type: text
-        required: true
-        description: Shown in the news list and at the top of the post.
-      - name: body
-        label: Post text
-        type: rich-text
-        description: Optional full text, shown below the summary.
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+  - name: publications
+    label: 04 Publicações · destaques
+    type: file
+    path: src/content/publications.json
+    format: json
+    fields:
+      - name: books
+        label: Books
+        type: object
+        list: true
+        fields:
+          - name: cover
+            label: Cover
+            type: image
+            description: Cover only, no shadow or background (about 385 × 592 px).
+          - name: title
+            label: Title
+            type: string
+          - name: meta
+            label: Publisher · year
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: href
+            label: Publisher / DOI link
+            type: string
+          - name: pdf
+            label: PDF link
+            type: string
+      - name: selected
+        label: Selected articles
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: venue
+            label: Venue
+            type: string
+          - name: href
+            label: DOI / link
+            type: string
+          - name: pdf
+            label: PDF link
+            type: string
+  - name: outreach
+    label: 05 Docência · divulgação
+    type: file
+    path: src/content/outreach.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+                - seals
+                - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: text
+            label: Text
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: href
+            label: Link
+            type: string
+            description: External address, or an internal page such as /talks
+  - name: talks
+    label: 05 Docência · entrevistas e palestras
+    type: file
+    path: src/content/talks.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: year
+            label: Year
+            type: string
+            required: true
+          - name: kind
+            label: Type (Interview, Talk…)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: channel
+            label: Channel / venue
+            type: string
+          - name: lang
+            label: Language
+            type: select
+            options:
+              values:
+                - pt
+                - en
+          - name: href
+            label: Video link
+            type: string
+            required: true
+  - name: initiatives
+    label: 06 Iniciativas
+    type: file
+    path: src/content/initiatives.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+                - seals
+                - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: text
+            label: Short text (always visible)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: details
+            label: Description (shown when the row is opened)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: more
+            label: Internal page (optional)
+            type: string
+            description: e.g. /research/summer-school-iconography
+          - name: href
+            label: External link (optional)
+            type: string
   - name: cases
-    label: 07 Art direction cases
+    label: 07 Design · cases de direção de arte
     type: collection
     path: src/content/cases
     format: yaml-frontmatter
@@ -1136,8 +1072,26 @@ content:
           - name: pt
             label: Português
             type: text
+  - name: clients
+    label: 07 Design · clientes
+    type: file
+    path: src/content/clients.json
+    format: json
+    fields:
+      - name: items
+        label: Clients
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: slug
+            label: Case slug (optional)
+            type: string
+            description: Fill in only if an art-direction case with this slug exists; the name then links to it.
   - name: design-research
-    label: 07 Design for research
+    label: 07 Design · design para a pesquisa
     type: collection
     path: src/content/design-research
     format: yaml-frontmatter
@@ -1257,3 +1211,53 @@ content:
       - name: href
         label: Link
         type: string
+  - name: news
+    label: Blog · notícias
+    type: collection
+    path: src/content/news
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view:
+      fields:
+        - title
+        - date
+        - lang
+      primary: title
+      sort:
+        - date
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: date
+        required: true
+        label: Date
+        type: date
+      - name: lang
+        label: Language
+        type: select
+        options:
+          values:
+            - en
+            - pt
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: summary
+        label: Summary
+        type: text
+        required: true
+        description: Shown in the news list and at the top of the post.
+      - name: body
+        label: Post text
+        type: rich-text
+        description: Optional full text, shown below the summary.

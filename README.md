@@ -42,14 +42,18 @@ npm run dev      # http://localhost:4321
 npm run build    # gera dist/
 ```
 
-## Publicar (primeira vez)
+## Trocar o domínio (Locaweb → GitHub Pages)
 
-1. Crie um repositório no GitHub (ex.: `silasklein-site`) e envie o conteúdo desta pasta `site/`.
-2. No repositório: **Settings → Pages → Source: GitHub Actions**. Cada `push` na branch `main` publica sozinho (`.github/workflows/deploy.yml`).
-3. **Settings → Pages → Custom domain:** `www.silasklein.com` (o arquivo `public/CNAME` já existe). Marque **Enforce HTTPS** depois que o certificado sair.
-4. **DNS na Locaweb** (painel do domínio → Zona DNS):
-   - `www` → **CNAME** → `<seu-usuario>.github.io`
-   - `@` (domínio raiz) → quatro registros **A**: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - Remova os registros antigos que apontam para o Squarespace.
-5. Quando o domínio estiver apontado, apague as linhas `env:` / `SITE_BASE: /silasklein.com` em `.github/workflows/deploy.yml`. Até lá, o site de revisão fica em https://silasklein.github.io/silasklein.com/ (não aparece no Google).
-6. Só cancele o Squarespace depois de o novo site abrir em `https://www.silasklein.com`.
+O site já está no GitHub (`silasklein/silasklein.com`) e a versão de revisão fica em https://silasklein.github.io/silasklein.com/ (fora do Google).
+
+1. **Um dia antes:** na Zona DNS da Locaweb, baixe o TTL dos registros de `silasklein.com` e `www` para 300 segundos (5 min).
+2. **Verificar o domínio no GitHub** (impede que outra conta use o seu domínio): GitHub → foto → *Settings* → *Pages* → *Add a domain* → `silasklein.com`. O GitHub mostra um registro **TXT** (`_github-pages-challenge-silasklein`); crie-o na Locaweb e clique em *Verify*.
+3. **Na Zona DNS da Locaweb**, apague os registros que apontam para o Squarespace (A `198.185.159.x` / `198.49.23.x` e o CNAME `www` → `ext-cust.squarespace.com`, além de CNAMEs de verificação do Squarespace). **Não apague MX, SPF/TXT de e-mail.**
+4. Crie:
+   - `@` → **A** → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `@` → **AAAA** (opcional, IPv6) → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+   - `www` → **CNAME** → `silasklein.github.io.`
+5. **No repositório:** apague as linhas `env:` / `SITE_BASE: /silasklein.com` em `.github/workflows/deploy.yml` e configure *Settings → Pages → Custom domain* = `www.silasklein.com`.
+6. Quando o certificado sair (minutos a 24 h), marque **Enforce HTTPS**.
+7. Envie `https://www.silasklein.com/sitemap.xml` no Google Search Console.
+8. Só cancele o Squarespace depois de o site novo abrir em https://www.silasklein.com e https://silasklein.com.

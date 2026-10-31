@@ -480,3 +480,8 @@ a.act:hover .flip { transform: scaleX(-1) translateX(1.5px); }
 .col__t a:hover { color: var(--accent); }
 .col:hover .col__t { color: inherit; }
 .meta .roleplace { font: inherit; color: inherit; }
+
+/* ───── Round 15 ───── */
+/* Role · institution: lighter than the title, a step above the description */
+.roleplace { font-weight: 500; color: color-mix(in srgb, var(--fg) 55%, var(--fg-2)); }
+.roleplace a { color: inherit; }

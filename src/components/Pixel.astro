@@ -3,7 +3,7 @@
 // on odd coordinates; the viewBox is shifted per axis so every icon pixel starts on the grid. Rendered at
 // 18 px (1.5 CSS px per icon pixel = 3 device pixels on Retina screens) by default.
 import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 import { MAP, CUSTOM } from '../lib/icons';
 
 
@@ -28,7 +28,8 @@ function parity(d: string): [number, number] {
   return [ox > 0 ? 1 : 0, oy > 0 ? 1 : 0];
 }
 
-const dir = fileURLToPath(new URL('../../node_modules/pixelarticons/svg/', import.meta.url));
+// Resolved from the project root: the bundled component no longer sits next to node_modules at build time.
+const dir = join(process.cwd(), 'node_modules/pixelarticons/svg/');
 interface Props { name: string; size?: number; class?: string; label?: string }
 const { name, size = 18, class: cls = '', label } = Astro.props;
 const file = MAP[name] ?? name;

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import Px from '../Pixel.astro';
 import { ui, sections, profiles, t, type Lang } from '../../data/content';
-import { href } from '../../lib/format';
+import { href, arrow } from '../../lib/format';
 import { fetchPublications } from '../../lib/zotero.mjs';
 import snapshot from '../../content/zotero.json';
 interface Props { lang: Lang }
@@ -21,7 +21,7 @@ const groups = [
 ].map((g) => ({ ...g, items: list.filter((p) => g.types.includes(p.type)) })).filter((g) => g.items.length);
 const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.name));
 ---
-<Base lang={lang} title={t(ui.fullList, lang)}>
+<Base lang={lang} title={t(ui.fullList, lang)} description={pt ? `Lista completa de publicações de Silas Klein Cardoso (${list.length} itens): livros, artigos e capítulos sobre iconografia, selos e história da religião no antigo Levante.` : `Full list of publications by Silas Klein Cardoso (${list.length} items): books, articles and chapters on iconography, stamp seals and the history of religion in the ancient Levant.`}>
   <div class="page">
     <a class="page__back" href={href('#publications', lang)}>← {t(ui.nav.publications, lang)}</a>
     <Label n={sections.publications.n} text={t(sections.publications.label, lang)} />
@@ -41,7 +41,7 @@ const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.na
               {(p.doi || p.url || p.pdf) && (
                 <span class="pubs__acts">
                   {p.doi && <a class="act" href={p.doi} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>DOI</span></a>}
-                  {p.url && <a class="act" href={p.url} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>Link</span></a>}
+                  {p.url && <a class="act" href={p.url} target="_blank" rel="noopener"><Px name={arrow(p.url)} /><span>{arrow(p.url) === 'download' ? 'PDF' : 'Link'}</span></a>}
                   {p.pdf && <a class="act" href={p.pdf} target="_blank" rel="noopener"><Px name="download" /><span>PDF</span></a>}
                 </span>
               )}

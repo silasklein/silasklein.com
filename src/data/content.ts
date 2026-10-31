@@ -57,7 +57,7 @@ export const teaching = site.teaching as L;
 export const designIntro = site.designIntro as L;
 export const email = site.email as string;
 export const profiles = site.profiles as { name: string; icon: string; href: string }[];
-export const contactTopics = site.contactTopics as { icon: string; label: L }[];
+export const contactTopics = site.contactTopics as { icon: string; label: L; email?: string }[];
 
 export const currently = currentlyFile.items as { kicker: L; title: L; text: L; href: string; icon: string }[];
 export const recognition = recognitionFile.items as L[];
