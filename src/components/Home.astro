@@ -20,10 +20,10 @@ const pt = lang === 'pt';
 <section class="hero" id="top">
   <div class="wrap">
     <p class="hero__hello" data-reveal>{t(ui.hello, lang)}</p>
-    <h1 class="hero__title" data-reveal>
+    <h1 class:list={['hero__title', { 'hero__title--pt': pt }]} data-reveal>
       {pt
-        ? <>Religião<span class="bs">\</span>ões <span class="hero__paren">(antigas)</span>,<br />Mídia <span class="amp">&amp;</span> Imagens</>
-        : <><span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,<br />Media <span class="amp">&amp;</span> Images</>}
+        ? <><span class="hero__line">Religião<span class="bs">\</span>ões <span class="hero__paren">(antigas)</span>,</span> <span class="hero__line">Mídia <span class="amp">&amp;</span> Imagens</span></>
+        : <><span class="hero__line"><span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,</span> <span class="hero__line">Media <span class="amp">&amp;</span> Images</span></>}
     </h1>
     <div class="hero__grid">
       <div data-reveal>
