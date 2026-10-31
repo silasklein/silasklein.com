@@ -7,8 +7,8 @@
         "pt": "International Summer School: Iconography of the Ancient World"
       },
       "text": {
-        "en": "Co-founded with Thomas Wagner (Wuppertal): an itinerant North–South school in visual methods for MA/PhD students and early-career researchers. Wuppertal 2024 and 2025, Vitória 2026, Prague 2027 (planned).",
-        "pt": "Criada com Thomas Wagner (Wuppertal): uma escola itinerante Norte–Sul de métodos visuais para mestrandos, doutorandos e pesquisadores em início de carreira. Wuppertal 2024 e 2025, Vitória 2026, Praga 2027 (prevista)."
+        "en": "Co-founded with Thomas Wagner (Wuppertal): an itinerant school under a structured North–South exchange in visual methods for MA/PhD students and early-career researchers. Wuppertal 2024 and 2025, Vitória 2026, Prague 2027 (planned).",
+        "pt": "Criada em parceria com Thomas Wagner (Wuppertal): uma escola itinerante na forma de intercâmbio estruturado Norte-Sul sobre métodos visuais, voltada para mestrandos(as), doutorando(as) e pesquisadores(as) em início de carreira. Wuppertal 2024 e 2025, Vitória 2026, Praga 2027 (previsto)."
       },
       "details": {
         "en": "An itinerant school that alternates every year between European and Latin American hosts, with an international Scientific Board and 2 ECTS (20 contact hours) per edition. Rooted in the visual studies tradition of the Fribourg School, it trains students to read ancient images alongside texts, inscriptions and archaeology, with hands-on work on artefacts.",
@@ -23,14 +23,14 @@
         "pt": "Observatório de Universos Bíblicos"
       },
       "text": {
-        "en": "Research group on inscriptions, images, objects, literatures and rites of the biblical worlds.",
-        "pt": "Grupo de pesquisa sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
+        "en": "O grupo de pesquisa Observatório de Universos Bíblicos (OUB) investiga fenômenos, práticas e produções religiosas dos contextos histórico-culturais nos quais textos bíblicos foram gestados, produzidos e primariamente recebidos a partir do prisma e instrumentais das ciências das religiões.",
+        "pt": "The research group Observatório de Universos Bíblicos (Observatory of Biblical Universes, OUB) investigates religious phenomena, practices and productions in the historical and cultural contexts in which biblical texts were conceived, produced and first received, through the lens and tools of religious studies."
       },
-      "href": "https://universosbiblicos.org",
       "details": {
         "en": "Since November 2024 I lead this research group at FUV. It studies religious phenomena, practices and productions from the contexts in which biblical texts were conceived, produced and first received, bringing the questions and tools of anthropology, archaeology, hermeneutics, philosophy, history and literature of religions to inscriptions, images, objects, literatures and rites.",
         "pt": "Desde novembro de 2024 lidero este grupo de pesquisa na FUV. Ele investiga fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram gestados, produzidos e primariamente recebidos, com questionamentos e instrumentais da antropologia, arqueologia, hermenêutica, filosofia, história e literatura das religiões aplicados a inscrições, imagens, objetos, literaturas e ritos."
-      }
+      },
+      "href": "https://universosbiblicos.org"
     },
     {
       "icon": "building",
@@ -40,7 +40,7 @@
       },
       "text": {
         "en": "Dean of the master’s and doctoral program at Faculdade Unida de Vitória, Brazil.",
-        "pt": "Coordenador do mestrado e doutorado da Faculdade Unida de Vitória."
+        "pt": "Coordenador do mestrado e doutorado profissional da Faculdade Unida de Vitória."
       },
       "details": {
         "en": "Since February 2025 I have been Dean of the professional master’s and doctoral program in Religious Studies at Faculdade Unida de Vitória, where I am permanent faculty and also teach in the undergraduate Theology course. The program also holds a faculty seminar each semester.",
@@ -69,12 +69,12 @@
         "pt": "Associações"
       },
       "text": {
-        "en": "Vice-President, Brazilian Association for Biblical Research (Abib) · Executive Committee, European Association of Biblical Studies (EABS) · editorial board, RIBLA",
-        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) · comitê diretivo da European Association of Biblical Studies (EABS) · corpo editorial da RIBLA"
+        "en": "Vice-President, Brazilian Association for Biblical Research (Abib) · Executive Committee, European Association of Biblical Studies (EABS)",
+        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) · comitê diretivo da European Association of Biblical Studies (EABS)"
       },
       "details": {
-        "en": "Vice-President of the Brazilian Association for Biblical Research (Abib) since January 2025; member of the Executive Committee of the European Association of Biblical Studies (EABS) since June 2025; member of the editorial board of RIBLA (Revista de Interpretação Bíblica Latino-Americana).",
-        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) desde janeiro de 2025; membro do comitê diretivo da European Association of Biblical Studies (EABS) desde junho de 2025; membro do corpo editorial da RIBLA (Revista de Interpretação Bíblica Latino-Americana)."
+        "en": "Vice-President of the Brazilian Association for Biblical Research (Abib) since January 2025; member of the Executive Committee of the European Association of Biblical Studies (EABS) since June 2025",
+        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) desde janeiro de 2025; membro do comitê diretivo da European Association of Biblical Studies (EABS) desde junho de 2025."
       }
     }
   ]
