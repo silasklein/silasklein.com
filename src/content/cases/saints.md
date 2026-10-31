@@ -3,8 +3,12 @@ order: 14
 slug: "saints"
 title: "Saints"
 image: "/img/cases/saints.webp"
-role: "Art Direction & UI/UX"
-team: "Kaio Freitas (Customer Relations)"
+role:
+  en: "Art direction & UI/UX"
+  pt: "Direção de arte & UI/UX"
+team:
+  en: "Kaio Freitas (customer relations)"
+  pt: "Kaio Freitas (atendimento)"
 commissioner: "Juicebox"
 year: "2012–2013"
 text:

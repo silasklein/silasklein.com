@@ -3,7 +3,9 @@ order: 11
 slug: "modalimpa"
 title: "Moda Limpa"
 image: "/img/cases/modalimpa.webp"
-role: "Brand Design"
+role:
+  en: "Brand design"
+  pt: "Design de marca"
 commissioner: "Moda Limpa"
 year: "2017"
 text:

@@ -1054,11 +1054,25 @@ content:
         required: true
         description: Square image, at least 1200 × 1200 px.
       - name: role
-        label: Role
-        type: string
+        label: Role (optional)
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
       - name: team
         label: Team (optional)
-        type: string
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
       - name: commissioner
         label: Commissioner
         type: string

@@ -3,7 +3,9 @@ order: 10
 slug: "ceapvagas"
 title: "CEAP Vagas"
 image: "/img/cases/ceapvagas.webp"
-role: "Art Direction & UI/UX"
+role:
+  en: "Art direction & UI/UX"
+  pt: "Direção de arte & UI/UX"
 commissioner: "CEAP"
 year: "2016"
 text:

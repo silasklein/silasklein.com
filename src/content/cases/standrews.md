@@ -3,8 +3,12 @@ order: 8
 slug: "standrews"
 title: "St. Andrews"
 image: "/img/cases/standrews.webp"
-role: "Art Direction"
-team: "Tatiana Kligerman (UI/UX), Ludmila Godoi (Customer Relations), Fernando Vassão (Management), Marcelo Delboux (Creative Direction)"
+role:
+  en: "Art direction"
+  pt: "Direção de arte"
+team:
+  en: "Tatiana Kligerman (UI/UX), Ludmila Godoi (customer relations), Fernando Vassão (management), Marcelo Delboux (creative direction)"
+  pt: "Tatiana Kligerman (UI/UX), Ludmila Godoi (atendimento), Fernando Vassão (gestão), Marcelo Delboux (direção de criação)"
 commissioner: "Publicis Red Lion"
 year: "2012–2013"
 text:

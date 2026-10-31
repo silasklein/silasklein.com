@@ -8,8 +8,8 @@ title:
   en: "Liminal Devices"
   pt: "Liminal Devices"
 role:
-  en: "Principal Investigator"
-  pt: "Investigador Principal"
+  en: "Principal investigator"
+  pt: "Investigador principal"
 places:
   - name:
       en: "UZH (Switzerland)"

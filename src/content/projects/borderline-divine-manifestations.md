@@ -9,8 +9,8 @@ title:
   en: "Borderline Divine Manifestations in the Biblical World"
   pt: "Manifestações limítrofes do divino no universo bíblico"
 role:
-  en: "Principal Investigator"
-  pt: "Investigador Principal"
+  en: "Principal investigator"
+  pt: "Investigador principal"
 places:
   - name:
       en: "FUV (Brazil)"

@@ -3,7 +3,9 @@ order: 12
 slug: "doubleleft"
 title: "Doubleleft"
 image: "/img/cases/doubleleft.webp"
-role: "Art Direction & UI/UX"
+role:
+  en: "Art direction & UI/UX"
+  pt: "Direção de arte & UI/UX"
 commissioner: "Doubleleft"
 year: "2013–2015"
 text:

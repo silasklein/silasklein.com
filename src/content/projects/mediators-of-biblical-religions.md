@@ -8,13 +8,13 @@ title:
   en: "Mediators of Biblical Religion\\s"
   pt: "Mediadores da religião bíblica"
 role:
-  en: "Principal Investigator"
-  pt: "Investigador Principal"
+  en: "Principal investigator"
+  pt: "Investigador principal"
 places:
   - name:
       en: "FUV (Brazil)"
       pt: "FUV (Brasil)"
 summary:
   en: "Material, literary and socio-epistemic mediators of religion in the biblical worlds."
-  pt: "Mediadores materiais, literários e sócio-epistêmicos da religião nos universos bíblicos."
+  pt: "Mediadores materiais, literários e socioepistêmicos da religião nos universos bíblicos."
 ---

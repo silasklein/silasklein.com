@@ -3,7 +3,9 @@ order: 9
 slug: "ice"
 title: "Instituto Carlyle Brasil"
 image: "/img/cases/ice.webp"
-role: "Art Direction & UI/UX"
+role:
+  en: "Art direction & UI/UX"
+  pt: "Direção de arte & UI/UX"
 commissioner: "Publicis Red Lion / Solidum"
 year: "2012–2016"
 text:

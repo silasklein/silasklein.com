@@ -18,8 +18,8 @@ const images = c.gallery?.length ? c.gallery : [c.image];
     <h1 class="h2">{c.title}</h1>
     <p class="lead">{t(c.text, lang)}</p>
     <dl class="meta">
-      <dt>{t(ui.role, lang)}</dt><dd>{c.role}</dd>
-      {c.team && <><dt>{pt ? 'Equipe' : 'Team'}</dt><dd>{c.team}</dd></>}
+      {c.role && <><dt>{t(ui.role, lang)}</dt><dd>{t(c.role, lang)}</dd></>}
+      {c.team && <><dt>{pt ? 'Equipe' : 'Team'}</dt><dd>{t(c.team, lang)}</dd></>}
       {c.commissioner && <><dt>{t(ui.commissioner, lang)}</dt><dd>{c.commissioner}</dd></>}
       {c.year && <><dt>{t(ui.year, lang)}</dt><dd>{c.year}</dd></>}
     </dl>

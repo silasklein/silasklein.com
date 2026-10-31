@@ -12,7 +12,7 @@ text:
 client: "Observatório de Universos Bíblicos · PPG em Ciências das Religiões, FUV"
 role:
   en: "Logo and art direction"
-  pt: "Logotipo e direção de arte"
+  pt: "Logo e direção de arte"
 body:
   en: "New logo for the research group based in the Graduate Program in Religious Studies at Faculdade Unida de Vitória, which studies inscriptions, images, objects, literatures and rites of the biblical worlds."
   pt: "Novo logo do grupo de pesquisa sediado no Programa de Pós-Graduação em Ciências das Religiões da Faculdade Unida de Vitória, que estuda inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."

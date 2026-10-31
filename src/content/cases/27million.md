@@ -3,7 +3,9 @@ order: 2
 slug: "27million"
 title: "27 Million"
 image: "/img/cases/27million.webp"
-role: "Art Direction & UI/UX & Concept"
+role:
+  en: "Art direction, UI/UX & concept"
+  pt: "Direção de arte, UI/UX & conceito"
 commissioner: "27 Million"
 year: "2014–2015"
 text:

@@ -3,7 +3,9 @@ order: 7
 slug: "2fit"
 title: "2Fit"
 image: "/img/cases/2fit.webp"
-role: "Brand & App Design"
+role:
+  en: "Brand & app design"
+  pt: "Design de marca & app"
 commissioner: "Doubleleft"
 year: "2012–2014"
 text:

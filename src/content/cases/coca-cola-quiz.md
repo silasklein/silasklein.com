@@ -3,7 +3,9 @@ order: 1
 slug: "coca-cola-quiz"
 title: "Coca-Cola Quiz"
 image: "/img/cases/coca-cola-quiz.webp"
-role: "Art Direction & UI/UX & Game Design & Illustration Composition"
+role:
+  en: "Art direction, UI/UX, game design & illustration composition"
+  pt: "Direção de arte, UI/UX, game design & composição de ilustrações"
 commissioner: "Doubleleft"
 year: "2013"
 text:

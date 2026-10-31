@@ -3,7 +3,6 @@ order: 15
 slug: "logofolio"
 title: "Logofolio"
 image: "/img/cases/logofolio.webp"
-role: "Brand design"
 year: "2013–2020"
 text:
   en: "One of my first and most cherished design activities is designing brands. Here you see some of the results of my long term fascination with this type of work."

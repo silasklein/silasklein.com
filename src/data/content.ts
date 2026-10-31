@@ -77,7 +77,7 @@ const newsMods = Object.values(import.meta.glob('../content/news/*.md', { eager:
 export const news: Post[] = newsMods.map((m) => ({ ...m.frontmatter, Content: m.rawContent().trim() ? m.Content : undefined }) as Post)
   .map((p) => ({ ...p, date: (p.date as unknown) instanceof Date ? (p.date as unknown as Date).toISOString().slice(0, 10) : String(p.date).slice(0, 10) })).sort((a, b) => b.date.localeCompare(a.date));
 
-export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: string; role: string; commissioner?: string; year?: string; text: L };
+export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L };
 export const cases: Case[] = fm<Case>(import.meta.glob('../content/cases/*.md', { eager: true }))
   .sort(byOrder);
 

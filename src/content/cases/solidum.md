@@ -3,7 +3,9 @@ order: 13
 slug: "solidum"
 title: "Solidum"
 image: "/img/cases/solidum.webp"
-role: "Brand & Web Design"
+role:
+  en: "Brand & web design"
+  pt: "Design de marca & web"
 year: "2015"
 text:
   en: "Solidum is a dream of a better world. In Ancient Rome, the word \"solidum\" meant the obligation of an individual with his community. They were supposed to be a totality, take the debts of others and support the recovery of the needy. English words such as “solidarity” originated from the Latin word. That word inspired me and my friend Kaio to create a collective of creative professionals that look up to world-changing, on a large or small scale. Our target is, through graphic design, web design, and advertising, to tell stories and connect people to change our society. This is the identity of the brand, bringing these concepts graphically."

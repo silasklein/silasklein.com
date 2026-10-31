@@ -3,7 +3,9 @@ order: 3
 slug: "natura"
 title: "Natura"
 image: "/img/cases/natura.webp"
-role: "Senior Art Director of Natura"
+role:
+  en: "Senior art director for Natura"
+  pt: "Diretor de arte sênior da Natura"
 commissioner: "AG2 Publicis Modem"
 year: "2011–2013"
 text:

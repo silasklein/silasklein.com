@@ -3,7 +3,9 @@ order: 4
 slug: "samsunglp"
 title: "Samsung Launching People"
 image: "/img/cases/samsunglp.webp"
-role: "Art Direction & UI/UX"
+role:
+  en: "Art direction & UI/UX"
+  pt: "Direção de arte & UI/UX"
 commissioner: "Doubleleft"
 year: "2013–2014"
 text:
