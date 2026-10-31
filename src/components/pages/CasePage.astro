@@ -1,28 +1,36 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
+import Px from '../Pixel.astro';
 import { ui, cases, sections, t, type Lang, type Case } from '../../data/content';
 import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: Case }
 const { lang, item: c } = Astro.props;
+const pt = lang === 'pt';
 const i = cases.findIndex((x) => x.slug === c.slug);
 const prev = cases[(i - 1 + cases.length) % cases.length], next = cases[(i + 1) % cases.length];
+const images = c.gallery?.length ? c.gallery : [c.image];
 ---
 <Base lang={lang} title={c.title} description={t(c.text, lang)}>
   <article class="page">
-    <a class="page__back" href={href('/design', lang)}>← Design</a>
+    <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{pt ? 'Direção de arte' : 'Art direction'}</span></a>
     <Label n={sections.design.n} text={t(sections.design.label, lang)} />
     <h1 class="h2">{c.title}</h1>
-    <img class="case-img" src={asset(c.image)} alt={c.title} width="760" height="1013" />
     <p class="lead">{t(c.text, lang)}</p>
     <dl class="meta">
       <dt>{t(ui.role, lang)}</dt><dd>{c.role}</dd>
+      {c.team && <><dt>{pt ? 'Equipe' : 'Team'}</dt><dd>{c.team}</dd></>}
       {c.commissioner && <><dt>{t(ui.commissioner, lang)}</dt><dd>{c.commissioner}</dd></>}
       {c.year && <><dt>{t(ui.year, lang)}</dt><dd>{c.year}</dd></>}
     </dl>
+    <div class="case-gallery">
+      {images.map((src, n) => (
+        <img src={asset(src)} alt={`${c.title} — ${n + 1}/${images.length}`} loading={n < 2 ? 'eager' : 'lazy'} decoding="async" />
+      ))}
+    </div>
     <nav class="pager">
-      <a href={href(`/design/${prev.slug}`, lang)}>← {prev.title}</a>
-      <a href={href(`/design/${next.slug}`, lang)}>{next.title} →</a>
+      <a class="act" href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span>{prev.title}</span></a>
+      <a class="act" href={href(`/design/${next.slug}`, lang)}><span>{next.title}</span><Px name="arrowRight" /></a>
     </nav>
   </article>
 </Base>

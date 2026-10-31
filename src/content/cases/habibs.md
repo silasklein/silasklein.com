@@ -3,10 +3,16 @@ order: 6
 slug: "habibs"
 title: "Habib’s"
 image: "/img/cases/capa.webp"
-role: "Art Direction · Design Concept"
+role: "Art Direction & Design Concept"
+team: "Cris Bartis (UI/UX), Oct Maron (CD)"
 commissioner: "AG2 Publicis Modem"
 year: "2012"
 text:
-  en: "A cleaner website and a new online delivery system for a major Brazilian fast-food chain."
-  pt: "Um site mais limpo e um novo sistema de delivery on-line para uma grande rede brasileira de fast-food."
+  en: "Habib's is a major fast-food franchise in Brazil. We created a cleaner and more intuitive website and a new delivery system, based on online information and intelligent search."
+  pt: "O Habib’s é uma grande rede de fast-food no Brasil. Criamos um site mais limpo e intuitivo e um novo sistema de delivery, baseado em informações online e busca inteligente."
+gallery:
+  - "/img/cases/habibs/01.webp"
+  - "/img/cases/habibs/02.webp"
+  - "/img/cases/habibs/03.webp"
+  - "/img/cases/habibs/04.webp"
 ---

@@ -3,10 +3,20 @@ order: 4
 slug: "samsunglp"
 title: "Samsung Launching People"
 image: "/img/cases/samsunglp.webp"
-role: "Art Direction · UI/UX"
+role: "Art Direction & UI/UX"
 commissioner: "Doubleleft"
 year: "2013–2014"
 text:
-  en: "Online hub of the Brazilian edition of Samsung’s global campaign."
-  pt: "Hub on-line da edição brasileira da campanha global da Samsung."
+  en: "Launching People is a global campaign created by Samsung to unleash people’s full potential. This website was created as an online hub of the Brazilian campaign."
+  pt: "Launching People é uma campanha global da Samsung para liberar todo o potencial das pessoas. Este site foi criado como central online da campanha no Brasil."
+gallery:
+  - "/img/cases/samsunglp/01.webp"
+  - "/img/cases/samsunglp/02.webp"
+  - "/img/cases/samsunglp/03.webp"
+  - "/img/cases/samsunglp/04.webp"
+  - "/img/cases/samsunglp/05.webp"
+  - "/img/cases/samsunglp/06.webp"
+  - "/img/cases/samsunglp/07.webp"
+  - "/img/cases/samsunglp/08.webp"
+  - "/img/cases/samsunglp/09.webp"
 ---

@@ -485,3 +485,8 @@ a.act:hover .flip { transform: scaleX(-1) translateX(1.5px); }
 /* Role · institution: lighter than the title, a step above the description */
 .roleplace { font-weight: 500; color: color-mix(in srgb, var(--fg) 55%, var(--fg-2)); }
 .roleplace a { color: inherit; }
+
+/* ───── Round 16 ───── */
+/* Art-direction case: images in a single column, full width of the text block */
+.case-gallery { display: grid; gap: 16px; margin: 8px 0 0; max-width: 1040px; }
+.case-gallery img { width: 100%; height: auto; display: block; background: var(--hair); }

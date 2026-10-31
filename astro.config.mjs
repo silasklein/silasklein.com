@@ -19,6 +19,9 @@ const redirects = {
   '/liminaldevices': '/en/research/liminal-devices',
   '/iconographicexegesis': '/en/research/iconographic-exegesis',
   '/cart': '/',
+  // The art-direction cases live on the home page; there is no separate index.
+  '/design': '/#design',
+  '/en/design': '/en/#design',
   ...Object.fromEntries(cases.map((c) => [`/${c}`, `/en/design/${c}`])),
 };
 
