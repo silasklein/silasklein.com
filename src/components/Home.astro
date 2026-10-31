@@ -258,7 +258,8 @@ const pt = lang === 'pt';
     <div class="dfr">
       <h2 class="display display--sm" data-reveal>{pt ? 'Design para a pesquisa' : 'Design for research'}</h2>
       <ul class="rows-k rows-k--top dfr__list">
-        {designForResearch.map((d) => (<li data-reveal><a class="rk rk--two" href={href(`/design-for-research/${d.slug}`, lang)}><Px name={d.icon} /><span class="rk__v"><span class="rk__t">{t(d.title, lang)} <Px name="arrowRight" /></span><span class="rk__p">{t(d.text, lang)}</span></span></a></li>))}
+        {/* No links for now: the design-for-research pages come back once their images are in. */}
+        {designForResearch.map((d) => (<li data-reveal><div class="rk rk--two"><Px name={d.icon} /><span class="rk__v"><span class="rk__t">{t(d.title, lang)}</span><span class="rk__p">{t(d.text, lang)}</span></span></div></li>))}
       </ul>
     </div>
   </div>

@@ -1,12 +1,11 @@
 // sitemap.xml with both language versions of every page (Portuguese at the root, English under /en/).
 import type { APIRoute } from 'astro';
-import { projects, cases, designForResearch, news } from '../data/content';
+import { projects, cases, news } from '../data/content';
 
 const paths = [
   '/', '/publications/', '/talks/', '/news/',
   ...projects.filter((p) => p.slug).map((p) => `/research/${p.slug}/`),
   ...cases.map((c) => `/design/${c.slug}/`),
-  ...designForResearch.map((d) => `/design-for-research/${d.slug}/`),
   ...news.map((p) => `/news/${p.slug}/`),
 ];
 const lastmod = new Map(news.map((p) => [`/news/${p.slug}/`, p.date]));
