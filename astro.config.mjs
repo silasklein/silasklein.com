@@ -21,13 +21,18 @@ const redirects = {
   ...Object.fromEntries(cases.map((c) => [`/${c}`, `/design/${c}`])),
 };
 
+// SITE_BASE=/silasklein.com serves the site from the GitHub preview address
+// (silasklein.github.io/silasklein.com/) until the domain points here; leave it unset for www.silasklein.com.
+const base = process.env.SITE_BASE || '/';
+
 export default defineConfig({
   site: 'https://www.silasklein.com',
+  base,
   trailingSlash: 'ignore',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt'],
     routing: { prefixDefaultLocale: false },
   },
-  redirects,
+  redirects: Object.fromEntries(Object.entries(redirects).map(([from, to]) => [from, base.replace(/\/$/, '') + to])),
 });

@@ -6,7 +6,7 @@ import {
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
   bio, contactTopics, facts, email, t, type Lang,
 } from '../data/content';
-import { sig, href } from '../lib/format';
+import { sig, href, asset } from '../lib/format';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -55,10 +55,10 @@ const pt = lang === 'pt';
         </p>
       </div>
       <figure class="ab__photo" data-reveal>
-        <img src="/img/portrait-scholar.webp" alt="Silas Klein" width="600" height="600" />
+        <img src={asset('/img/portrait-scholar.webp')} alt="Silas Klein" width="600" height="600" />
         <figcaption class="actions">
           <button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button>
-          <a class="act" href="/img/portrait-scholar.webp" download="silas-klein.webp"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
+          <a class="act" href={asset('/img/portrait-scholar.webp')} download="silas-klein.webp"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
         </figcaption>
       </figure>
     </div>
@@ -138,7 +138,7 @@ const pt = lang === 'pt';
     <ul class="books">
       {books.map((b) => (
         <li class="book" data-reveal>
-          <a href={b.href} target="_blank" rel="noopener" class="book__cover"><img src={b.cover} alt={b.title} width="385" height="592" /></a>
+          <a href={b.href} target="_blank" rel="noopener" class="book__cover"><img src={asset(b.cover)} alt={b.title} width="385" height="592" /></a>
           <div class="book__v">
             <a class="book__t" href={b.href} target="_blank" rel="noopener">{b.title}</a>
             <span class="book__m">{t(b.meta, lang)}</span>
@@ -233,7 +233,7 @@ const pt = lang === 'pt';
   <div class="mosaic">
     {cases.map((c) => (
       <a class="mosaic__i" href={href(`/design/${c.slug}`, lang)} aria-label={c.title}>
-        <img src={c.image} alt={c.title} width="600" height="600" />
+        <img src={asset(c.image)} alt={c.title} width="600" height="600" />
       </a>
     ))}
   </div>

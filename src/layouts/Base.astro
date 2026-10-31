@@ -7,7 +7,7 @@ import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import Px from '../components/Pixel.astro';
 import { ui, sections, profiles, email, t, type Lang } from '../data/content';
-import { href, switchPath, sig } from '../lib/format';
+import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
 interface Props { lang: Lang; title?: string; description?: string; home?: boolean }
 const { lang, title, description, home = false } = Astro.props;
@@ -15,7 +15,7 @@ const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${ui.descr
 const desc = description ?? t(ui.subtitle, lang);
 const other = switchPath(Astro.url.pathname, lang);
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
 ---
 <!doctype html>
 <html lang={lang === 'pt' ? 'pt-BR' : 'en'}>
@@ -27,11 +27,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   <title>{pageTitle}</title>
   <meta name="description" content={desc} />
   <link rel="canonical" href={canonical} />
-  <link rel="alternate" hreflang={lang === 'pt' ? 'en' : 'pt-BR'} href={new URL(other, Astro.site)} />
-  <link rel="icon" type="image/png" sizes="19x19" href="/favicon-19.png" />
-  <link rel="icon" type="image/png" sizes="38x38" href="/favicon-38.png" />
-  <link rel="icon" type="image/png" sizes="76x76" href="/favicon-76.png" />
-  <link rel="apple-touch-icon" sizes="190x190" href="/favicon-190.png" />
+  {BASE && <meta name="robots" content="noindex" />}
+  <link rel="alternate" hreflang={lang === 'pt' ? 'en' : 'pt-BR'} href={new URL(sitePath(other), Astro.site)} />
+  <link rel="icon" type="image/png" sizes="19x19" href={asset('/favicon-19.png')} />
+  <link rel="icon" type="image/png" sizes="38x38" href={asset('/favicon-38.png')} />
+  <link rel="icon" type="image/png" sizes="76x76" href={asset('/favicon-76.png')} />
+  <link rel="apple-touch-icon" sizes="190x190" href={asset('/favicon-190.png')} />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={desc} />
   <meta property="og:image" content={new URL('/img/portrait-scholar.webp', Astro.site)} />

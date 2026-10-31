@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import { ui, sections, designIntro, designForResearch, agencies, brands, cases, t, type Lang } from '../../data/content';
-import { sig, href } from '../../lib/format';
+import { sig, href, asset } from '../../lib/format';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 ---
@@ -20,7 +20,7 @@ const { lang } = Astro.props;
     <div class="grid-all">
       {cases.map((c) => (
         <a class="tile" href={href(`/design/${c.slug}`, lang)}>
-          <img src={c.image} alt="" width="600" height="800" loading="lazy" />
+          <img src={asset(c.image)} alt="" width="600" height="800" loading="lazy" />
           <span class="tile__t">{c.title}</span>
         </a>
       ))}

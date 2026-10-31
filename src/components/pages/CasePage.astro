@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import { ui, cases, t, type Lang, type Case } from '../../data/content';
-import { href } from '../../lib/format';
+import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: Case }
 const { lang, item: c } = Astro.props;
 const i = cases.findIndex((x) => x.slug === c.slug);
@@ -13,7 +13,7 @@ const prev = cases[(i - 1 + cases.length) % cases.length], next = cases[(i + 1) 
     <a class="page__back" href={href('/design', lang)}>← Design</a>
     <Label n="06" text={lang === 'pt' ? 'direção de arte' : 'art direction'} />
     <h1 class="h2">{c.title}</h1>
-    <img class="case-img" src={c.image} alt={c.title} width="760" height="1013" />
+    <img class="case-img" src={asset(c.image)} alt={c.title} width="760" height="1013" />
     <p class="lead">{t(c.text, lang)}</p>
     <dl class="meta">
       <dt>{t(ui.role, lang)}</dt><dd>{c.role}</dd>
