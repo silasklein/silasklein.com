@@ -1,0 +1,16 @@
+{
+  "name": "silasklein-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "zotero": "node src/lib/zotero.mjs"
+  },
+  "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.3.0",
+    "astro": "^5.18.2",
+    "pixelarticons": "^2.4.2"
+  }
+}

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import { type Lang, type Post } from '../../data/content';
+import { href } from '../../lib/format';
+interface Props { lang: Lang; post: Post }
+const { lang, post: p } = Astro.props;
+const Body = p.Content;
+const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base lang={lang} title={p.title} description={p.summary}>
+  <article class="page" lang={p.lang === 'pt' ? 'pt-BR' : 'en'}>
+    <a class="page__back" href={href('/news', lang)}>← {lang === 'pt' ? 'Notícias' : 'News'}</a>
+    <Label n="01" text={fmt} />
+    <h1 class="h2">{p.title}</h1>
+    <div class="prose lead"><p>{p.summary}</p></div>
+    {Body && <div class="prose post__body"><Body /></div>}
+  </article>
+</Base>

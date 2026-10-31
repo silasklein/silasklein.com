@@ -1,0 +1,262 @@
+---
+import Label from './Label.astro';
+import Px from './Pixel.astro';
+import {
+  ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
+  teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
+  bio, contactTopics, facts, email, t, type Lang,
+} from '../data/content';
+import { sig, href } from '../lib/format';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const S = sections;
+const current = projects.filter((p) => p.current);
+const past = projects.filter((p) => !p.current);
+const pt = lang === 'pt';
+---
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="hero__hello" data-reveal>{t(ui.hello, lang)}</p>
+    <h1 class="hero__title" data-reveal>
+      <span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,<br />
+      Media <span class="amp">&amp;</span> Images
+    </h1>
+    <div class="hero__grid">
+      <div data-reveal>
+        <p class="hero__sub">{t(ui.subtitle, lang)}</p>
+        <p class="hero__cta">
+          <a class="act" href="#research"><Px name="arrowDown" /><span>{t(ui.exploreResearch, lang)}</span></a>
+          <a class="act" href="#contact"><Px name="mail" /><span>{t(ui.getInTouch, lang)}</span></a>
+        </p>
+      </div>
+      <dl class="kv" data-reveal>
+        {facts.map((f) => (
+          <div class="kv__row">
+            <dt><Px name={f.icon} />{t(f.k, lang)}</dt>
+            <dd>{t(f.v, lang)}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 01 ABOUT -->
+<section class="sec sec--alt" id="about">
+  <div class="wrap">
+    <Label n={S.about.n} text={t(S.about.label, lang)} />
+    <div class="ab">
+      <div>
+        <p class="ab__bio" id="bio" data-reveal>{t(bio, lang)}</p>
+        <p class="links" data-reveal>
+          {profiles.map((p) => (<a href={p.href} target="_blank" rel="me noopener"><Px name={p.icon} />{p.name}</a>))}
+        </p>
+      </div>
+      <figure class="ab__photo" data-reveal>
+        <img src="/img/portrait-scholar.webp" alt="Silas Klein" width="600" height="600" />
+        <figcaption class="actions">
+          <button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button>
+          <a class="act" href="/img/portrait-scholar.webp" download="silas-klein.webp"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 02 CURRENTLY -->
+<section class="sec" id="currently">
+  <div class="wrap">
+    <Label n={S.currently.n} text={t(S.currently.label, lang)} />
+    <h2 class="display" data-reveal>{t(S.currently.title, lang)}</h2>
+    <ul class="rows-k rows-k--top">
+      {currently.map((c) => (
+        <li data-reveal>
+          <a class="rk" href={c.href.startsWith('#') ? c.href : href(c.href, lang)}>
+            <span class="rk__k"><Px name={c.icon} />{t(c.kicker, lang)}</span>
+            <span class="rk__v">
+              <span class="rk__t">{t(c.title, lang)} <Px name="arrowUpRight" /></span>
+              <span class="rk__p">{t(c.text, lang)}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="more-link"><a class="act" href={href('/news', lang)}><Px name="news" /><span>{pt ? 'Ler as notícias no blog' : 'Read the news on the blog'}</span></a></p>
+  </div>
+</section>
+
+<!-- 03 RESEARCH -->
+<section class="sec sec--dark" id="research">
+  <div class="wrap">
+    <Label n={S.research.n} text={t(S.research.label, lang)} />
+    <div class="intro">
+      <h2 class="display" data-reveal set:html={sig(t(S.research.title, lang))} />
+      <p class="lead" data-reveal>{t(researchApproach, lang)}</p>
+    </div>
+    <div class="cols">
+      {current.map((p) => (
+        <a class="col" href={href(`/research/${p.slug}`, lang)} data-reveal>
+          <span class="col__y">{p.years}</span>
+          <h3 class="col__t" set:html={sig(t(p.title, lang)) + ' '} />
+          <p class="col__r">{t(p.role, lang)}</p>
+          <p class="col__p">{t(p.summary, lang)}</p>
+          <span class="act"><Px name="arrowRight" /><span>{t(ui.readMore, lang)}</span></span>
+        </a>
+      ))}
+    </div>
+    <h3 class="h3"><Px name="star" />{pt ? 'Prêmios e títulos' : 'Awards & distinctions'}</h3>
+    <ul class="recog">{recognition.map((r) => (<li data-reveal>{t(r, lang)}</li>))}</ul>
+    <details class="more">
+      <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><span>{pt ? 'Projetos anteriores' : 'Earlier projects'} ({past.length})</span></summary>
+      <ul class="rows-k">
+        {past.map((p) => (
+          <li>
+            <div class="rk">
+              <span class="rk__k rk__k--year">{p.years}</span>
+              <span class="rk__v">
+                {p.slug
+                  ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowUpRight" /></a>
+                  : <span class="rk__t" set:html={sig(t(p.title, lang))} />}
+                <span class="rk__p">{t(p.summary, lang)}</span>
+              </span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </details>
+  </div>
+</section>
+
+<!-- 04 PUBLICATIONS -->
+<section class="sec" id="publications">
+  <div class="wrap">
+    <Label n={S.publications.n} text={t(S.publications.label, lang)} />
+    <h2 class="display" data-reveal set:html={sig(t(S.publications.title, lang))} />
+    <h3 class="h3"><Px name="books" />{pt ? 'Livros' : 'Books'}</h3>
+    <ul class="books">
+      {books.map((b) => (
+        <li class="book" data-reveal>
+          <a href={b.href} target="_blank" rel="noopener" class="book__cover"><img src={b.cover} alt={b.title} width="385" height="592" /></a>
+          <div class="book__v">
+            <a class="book__t" href={b.href} target="_blank" rel="noopener">{b.title}</a>
+            <span class="book__m">{t(b.meta, lang)}</span>
+            <span class="book__acts">
+              <a class="act" href={b.href} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>{pt ? 'Editora' : 'Publisher'}</span></a>
+              {b.pdf && <a class="act" href={b.pdf} target="_blank" rel="noopener"><Px name="download" /><span>PDF</span></a>}
+            </span>
+          </div>
+        </li>
+      ))}
+    </ul>
+    <h3 class="h3"><Px name="news" />{pt ? 'Artigos e capítulos selecionados' : 'Selected articles & chapters'}</h3>
+    <ul class="pubs">
+      {selected.map((p) => (
+        <li data-reveal>
+          <span class="pubs__v">{p.venue}</span>
+          <span class="pubs__t" set:html={sig(p.title)} />
+          <span class="pubs__acts">
+            {p.href && <a class="act" href={p.href} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>DOI</span></a>}
+            {p.pdf && <a class="act" href={p.pdf} target="_blank" rel="noopener"><Px name="download" /><span>PDF</span></a>}
+          </span>
+        </li>
+      ))}
+    </ul>
+    <p class="links links--full" data-reveal>
+      <a class="act" href={href('/publications', lang)}><Px name="library" /><span>{t(ui.fullList, lang)}</span></a>
+      {profiles.filter((p) => ['Zotero', 'ORCID', 'Lattes'].includes(p.name)).map((p) => (<a href={p.href} target="_blank" rel="noopener"><Px name={p.icon} />{p.name}</a>))}
+    </p>
+  </div>
+</section>
+
+<!-- 05 TEACHING -->
+<section class="sec sec--alt" id="teaching">
+  <div class="wrap">
+    <Label n={S.teaching.n} text={t(S.teaching.label, lang)} />
+    <div class="split">
+      <div>
+        <h2 class="display display--sm" data-reveal set:html={sig(t(S.teaching.title, lang))} />
+        <p class="lead" data-reveal>{t(teaching, lang)}</p>
+      </div>
+      <ul class="rows-k rows-k--flush">
+        {outreach.map((o) => (
+          <li data-reveal>
+            <a class="rk rk--two" href={o.href} target="_blank" rel="noopener">
+              <Px name={o.icon} />
+              <span class="rk__v"><span class="rk__t">{t(o.title, lang)} <Px name="arrowUpRight" /></span><span class="rk__p">{t(o.text, lang)}</span></span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 06 INITIATIVES -->
+<section class="sec" id="initiatives">
+  <div class="wrap">
+    <Label n={S.initiatives.n} text={t(S.initiatives.label, lang)} />
+    <h2 class="display" data-reveal set:html={sig(t(S.initiatives.title, lang))} />
+    <ul class="rows-k rows-k--top">
+      {initiatives.map((it) => (
+        <li data-reveal>
+          <div class="rk rk--two">
+            <Px name={it.icon} />
+            <span class="rk__v">
+              {it.href
+                ? <a class="rk__t" href={it.href} target="_blank" rel="noopener">{t(it.title, lang)} <Px name="arrowUpRight" /></a>
+                : <span class="rk__t">{t(it.title, lang)}</span>}
+              <span class="rk__p">{t(it.text, lang)}</span>
+            </span>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<!-- 07 ART DIRECTION, then DESIGN FOR RESEARCH -->
+<section class="sec sec--dark sec--design" id="design">
+  <div class="wrap">
+    <Label n={S.design.n} text={t(S.design.label, lang)} />
+    <div class="intro">
+      <h2 class="display" data-reveal set:html={sig(t(S.design.title, lang))} />
+      <p class="lead" data-reveal>{t(designIntro, lang)}</p>
+    </div>
+    <p class="clients" data-reveal>
+      {clients.map((c, i) => (
+        <>{c.slug ? <a href={href(`/design/${c.slug}`, lang)}>{c.name}</a> : <span>{c.name}</span>}{i < clients.length - 1 && <span class="clients__sep" aria-hidden="true"> · </span>}</>
+      ))}
+    </p>
+  </div>
+  <div class="mosaic">
+    {cases.map((c) => (
+      <a class="mosaic__i" href={href(`/design/${c.slug}`, lang)} aria-label={c.title}>
+        <img src={c.image} alt={c.title} width="600" height="600" />
+      </a>
+    ))}
+  </div>
+  <div class="wrap">
+    <div class="dfr">
+      <h2 class="display display--sm" data-reveal>{pt ? 'Design para a pesquisa' : 'Design for research'}</h2>
+      <ul class="rows-k rows-k--top dfr__list">
+        {designForResearch.map((d) => (<li data-reveal><a class="rk rk--two" href={href(`/design-for-research/${d.slug}`, lang)}><Px name={d.icon} /><span class="rk__v"><span class="rk__t">{t(d.title, lang)} <Px name="arrowRight" /></span><span class="rk__p">{t(d.text, lang)}</span></span></a></li>))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 08 CONTACT -->
+<section class="sec sec--dark sec--contact" id="contact">
+  <div class="wrap">
+    <Label n={S.contact.n} text={t(S.contact.label, lang)} />
+    <h2 class="contact__h" data-reveal>{t(S.contact.title, lang)}</h2>
+    <ul class="topics">
+      {contactTopics.map((c) => (
+        <li data-reveal><a href={`mailto:${email}?subject=${encodeURIComponent(t(c.label, lang) + ' · silasklein.com')}`}><Px name={c.icon} />{t(c.label, lang)} <Px name="arrowRight" class="topics__go" /></a></li>
+      ))}
+    </ul>
+    <p class="contact__mail"><a class="act" href={`mailto:${email}`}><Px name="mail" /><span>{email}</span></a><span class="act"><Px name="pin" /><span>Vitória/ES, Brasil</span></span></p>
+  </div>
+</section>

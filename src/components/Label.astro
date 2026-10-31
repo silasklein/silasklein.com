@@ -1,0 +1,6 @@
+---
+// Section marker: the number and the section name, on the section's top rule.
+interface Props { n: string; text: string }
+const { n, text } = Astro.props;
+---
+<p class="label"><span class="label__n">{n}</span><span class="label__t">{text}</span></p>

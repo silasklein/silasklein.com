@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "icon": "sun",
+      "title": {
+        "en": "International Summer School: Iconography of the Ancient World",
+        "pt": "International Summer School: Iconography of the Ancient World"
+      },
+      "text": {
+        "en": "Co-founded with Thomas Wagner (Wuppertal): an itinerant North–South school in visual methods for MA/PhD students and early-career researchers. Wuppertal 2024 and 2025, Vitória 2026, Prague 2027 (planned).",
+        "pt": "Criada com Thomas Wagner (Wuppertal): uma escola itinerante Norte–Sul de métodos visuais para mestrandos, doutorandos e pesquisadores em início de carreira. Wuppertal 2024 e 2025, Vitória 2026, Praga 2027 (prevista)."
+      }
+    },
+    {
+      "icon": "oub",
+      "title": {
+        "en": "Observatório de Universos Bíblicos",
+        "pt": "Observatório de Universos Bíblicos"
+      },
+      "text": {
+        "en": "Research group on inscriptions, images, objects, literatures and rites of the biblical worlds.",
+        "pt": "Grupo de pesquisa sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
+      },
+      "href": "https://universosbiblicos.org"
+    },
+    {
+      "icon": "building",
+      "title": {
+        "en": "Graduate Program in Religious Studies, FUV",
+        "pt": "PPG em Ciências das Religiões, FUV"
+      },
+      "text": {
+        "en": "Dean of the master’s and doctoral program at Faculdade Unida de Vitória, Brazil.",
+        "pt": "Coordenador do mestrado e doutorado da Faculdade Unida de Vitória."
+      }
+    },
+    {
+      "icon": "calendar",
+      "title": {
+        "en": "Events organized",
+        "pt": "Eventos organizados"
+      },
+      "text": {
+        "en": "XXXIII Colloquium Biblicum, Prague (2026) · EABS Annual Conference, Leuven (2026) · XI Abib International Congress (2026) · workshops at ICAANE, Copenhagen (2023)",
+        "pt": "XXXIII Colloquium Biblicum, Praga (2026) · EABS Annual Conference, Leuven (2026) · XI Congresso Internacional da Abib (2026) · workshops no ICAANE, Copenhague (2023)"
+      }
+    },
+    {
+      "icon": "community",
+      "title": {
+        "en": "Service",
+        "pt": "Associações"
+      },
+      "text": {
+        "en": "Vice-President, Brazilian Association for Biblical Research (Abib) · Executive Committee, European Association of Biblical Studies (EABS) · editorial board, RIBLA",
+        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) · comitê diretivo da European Association of Biblical Studies (EABS) · corpo editorial da RIBLA"
+      }
+    }
+  ]
+}

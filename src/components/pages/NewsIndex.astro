@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import { ui, news, type Lang, t } from '../../data/content';
+import { href } from '../../lib/format';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+<Base lang={lang} title={lang === 'pt' ? 'Notícias' : 'News'}>
+  <div class="page">
+    <a class="page__back" href={href('#currently', lang)}>← {t(ui.back, lang)}</a>
+    <Label n="01" text={lang === 'pt' ? 'notícias' : 'news'} />
+    <h1 class="h2">{lang === 'pt' ? 'Notícias' : 'News'}</h1>
+    <ul class="news-list">
+      {news.map((p) => (
+        <li>
+          <time datetime={p.date}>{fmt(p.date)}</time>
+          <div>
+            <h2><a href={href(`/news/${p.slug}`, lang)}>{p.title}</a>{p.lang !== lang && <span class="tag">{p.lang.toUpperCase()}</span>}</h2>
+            <p>{p.summary}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>

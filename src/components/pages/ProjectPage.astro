@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import { ui, projects, t, type Lang, type Project } from '../../data/content';
+import { sig, href } from '../../lib/format';
+interface Props { lang: Lang; project: Project }
+const { lang, project: p } = Astro.props;
+const withPages = projects.filter((x) => x.slug);
+const i = withPages.findIndex((x) => x.slug === p.slug);
+const prev = withPages[i - 1], next = withPages[i + 1];
+---
+<Base lang={lang} title={t(p.title, lang).replace(/\\/g, '')} description={t(p.summary, lang)}>
+  <article class="page">
+    <a class="page__back" href={href('#research', lang)}>← {t(ui.nav.research, lang)}</a>
+    <Label n={p.years} text={lang === 'pt' ? 'projeto de pesquisa' : 'research project'} />
+    <h1 class="h2" set:html={sig(t(p.title, lang))} />
+    <dl class="meta">
+      <dt>{t(ui.role, lang)}</dt><dd>{t(p.role, lang)}</dd>
+      {p.funding && <><dt>{t(ui.funding, lang)}</dt><dd>{p.funding}</dd></>}
+      {p.partners && <><dt>{t(ui.partners, lang)}</dt><dd>{p.partners}</dd></>}
+    </dl>
+    <div class="prose lead"><p>{t(p.summary, lang)}</p></div>
+    {p.outputs && <ul class="outputs">{p.outputs.map((o) => <li>{t(o, lang)}</li>)}</ul>}
+    <nav class="pager">
+      {prev ? <a href={href(`/research/${prev.slug}`, lang)} set:html={'← ' + sig(t(prev.title, lang))} /> : <span />}
+      {next ? <a href={href(`/research/${next.slug}`, lang)} set:html={sig(t(next.title, lang)) + ' →'} /> : <span />}
+    </nav>
+  </article>
+</Base>

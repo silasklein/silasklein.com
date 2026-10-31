@@ -1,0 +1,1098 @@
+# Pages CMS (app.pagescms.org): the fields the editor shows for each content file. Paths are relative to the repo root.
+media:
+  input: public/img
+  output: /img
+content:
+  - name: site
+    label: Site texts
+    type: file
+    path: src/content/site.json
+    format: json
+    fields:
+      - name: hello
+        label: Hero greeting
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+      - name: subtitle
+        label: Hero subtitle
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: descriptor
+        label: Descriptor (footer)
+        type: string
+      - name: facts
+        label: Hero facts (Now / Field)
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: k
+            label: Key
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: v
+            label: Value
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+      - name: bio
+        label: 'About: bio'
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: researchApproach
+        label: 'Research: intro'
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: teaching
+        label: 'Teaching: intro'
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: designIntro
+        label: 'Art direction: intro'
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: email
+        label: Email
+        type: string
+      - name: location
+        label: Location
+        type: string
+      - name: profiles
+        label: Profiles (footer and About)
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: href
+            label: Link
+            type: string
+      - name: contactTopics
+        label: Contact topics
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: label
+            label: Label
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+      - name: sections
+        label: Section titles
+        type: object
+        fields:
+          - name: about
+            label: About
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: currently
+            label: Currently
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: research
+            label: Research
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: publications
+            label: Publications
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: teaching
+            label: Teaching
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: initiatives
+            label: Initiatives
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: design
+            label: Design
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+          - name: contact
+            label: Contact
+            type: object
+            fields:
+              - name: 'n'
+                label: Number
+                type: string
+              - name: label
+                label: Label
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+              - name: title
+                label: Title
+                type: object
+                fields:
+                  - name: en
+                    label: English
+                    type: string
+                  - name: pt
+                    label: Português
+                    type: string
+  - name: currently
+    label: 02 Currently
+    type: file
+    path: src/content/currently.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: kicker
+            label: Kicker
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: text
+            label: Text
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: href
+            label: Link
+            type: string
+  - name: recognition
+    label: Awards & distinctions
+    type: file
+    path: src/content/recognition.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+  - name: publications
+    label: 04 Publications
+    type: file
+    path: src/content/publications.json
+    format: json
+    fields:
+      - name: books
+        label: Books
+        type: object
+        list: true
+        fields:
+          - name: cover
+            label: Cover
+            type: image
+            description: Cover only, no shadow or background (about 385 × 592 px).
+          - name: title
+            label: Title
+            type: string
+          - name: meta
+            label: Publisher · year
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: href
+            label: Publisher / DOI link
+            type: string
+          - name: pdf
+            label: PDF link
+            type: string
+      - name: selected
+        label: Selected articles
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: venue
+            label: Venue
+            type: string
+          - name: href
+            label: DOI / link
+            type: string
+          - name: pdf
+            label: PDF link
+            type: string
+  - name: initiatives
+    label: 06 Initiatives
+    type: file
+    path: src/content/initiatives.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: text
+            label: Text
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: href
+            label: Link
+            type: string
+  - name: outreach
+    label: '05 Teaching: in public'
+    type: file
+    path: src/content/outreach.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon
+            type: select
+            options:
+              values:
+                - arrowRight
+                - arrowUpRight
+                - arrowDown
+                - plus
+                - minus
+                - mail
+                - pin
+                - copy
+                - download
+                - library
+                - books
+                - star
+                - news
+                - now
+                - field
+                - group
+                - image
+                - sun
+                - eye
+                - building
+                - calendar
+                - community
+                - brush
+                - pencil
+                - layout
+                - mic
+                - globe
+                - presentation
+                - instagram
+                - linkedin
+                - orcid
+                - lattes
+                - zotero
+                - researchgate
+                - oub
+          - name: title
+            label: Title
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: text
+            label: Text
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: href
+            label: Link
+            type: string
+  - name: clients
+    label: 07 Clients
+    type: file
+    path: src/content/clients.json
+    format: json
+    fields:
+      - name: items
+        label: Clients
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: slug
+            label: Case slug (optional)
+            type: string
+            description: Fill in only if an art-direction case with this slug exists; the name then links to it.
+  - name: projects
+    label: 03 Research projects
+    type: collection
+    path: src/content/projects
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view:
+      fields:
+        - slug
+        - years
+      primary: slug
+      sort:
+        - order
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: Order
+        type: number
+        description: 'Position in the list: 1 comes first.'
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: page
+        label: Has its own page
+        type: boolean
+      - name: current
+        label: Current project
+        type: boolean
+      - name: years
+        label: Years
+        type: string
+      - name: title
+        label: Title
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+      - name: role
+        label: Role
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+      - name: funding
+        label: Funding
+        type: string
+      - name: partners
+        label: Partners
+        type: string
+      - name: summary
+        label: Summary
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: outputs
+        label: Outputs
+        type: object
+        list: true
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+  - name: news
+    label: News
+    type: collection
+    path: src/content/news
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view:
+      fields:
+        - title
+        - date
+        - lang
+      primary: title
+      sort:
+        - date
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: date
+        required: true
+        label: Date
+        type: date
+      - name: lang
+        label: Language
+        type: select
+        options:
+          values:
+            - en
+            - pt
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: summary
+        label: Summary
+        type: text
+        required: true
+        description: Shown in the news list and at the top of the post.
+      - name: body
+        label: Post text
+        type: rich-text
+        description: Optional full text, shown below the summary.
+  - name: cases
+    label: 07 Art direction cases
+    type: collection
+    path: src/content/cases
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view:
+      fields:
+        - title
+        - year
+      primary: title
+      sort:
+        - order
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: Order
+        type: number
+        description: 'Position in the list: 1 comes first.'
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Image (square)
+        type: image
+        required: true
+        description: Square image, at least 1200 × 1200 px.
+      - name: role
+        label: Role
+        type: string
+      - name: commissioner
+        label: Commissioner
+        type: string
+      - name: year
+        label: Year
+        type: string
+      - name: text
+        label: Text
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+  - name: design-research
+    label: 07 Design for research
+    type: collection
+    path: src/content/design-research
+    format: yaml-frontmatter
+    filename: '{fields.slug}.md'
+    view:
+      fields:
+        - slug
+        - year
+      primary: slug
+      sort:
+        - order
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: Order
+        type: number
+        description: 'Position in the list: 1 comes first.'
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: icon
+        label: Icon
+        type: select
+        options:
+          values:
+            - arrowRight
+            - arrowUpRight
+            - arrowDown
+            - plus
+            - minus
+            - mail
+            - pin
+            - copy
+            - download
+            - library
+            - books
+            - star
+            - news
+            - now
+            - field
+            - group
+            - image
+            - sun
+            - eye
+            - building
+            - calendar
+            - community
+            - brush
+            - pencil
+            - layout
+            - mic
+            - globe
+            - presentation
+            - instagram
+            - linkedin
+            - orcid
+            - lattes
+            - zotero
+            - researchgate
+            - oub
+      - name: year
+        label: Year
+        type: string
+      - name: title
+        label: Title
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+      - name: text
+        label: Short text (home)
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: client
+        label: Client
+        type: string
+      - name: role
+        label: Role
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
+      - name: body
+        label: Page text
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: href
+        label: Link
+        type: string

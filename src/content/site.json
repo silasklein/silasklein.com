@@ -1,0 +1,198 @@
+{
+  "hello": {
+    "en": "Hello, I am Silas Klein.",
+    "pt": "Olá, eu sou Silas Klein."
+  },
+  "subtitle": {
+    "en": "I study how images mediate religion: from the seals of the ancient Levant to the tools we use to read them. I read images with the eye of someone who spent two decades making them.",
+    "pt": "Estudo como imagens mediam a religião: dos selos do antigo Levante às ferramentas que usamos para lê-los. Leio imagens com o olho de quem passou duas décadas fazendo-as."
+  },
+  "descriptor": "(Ancient) Religion\\s, Media & Images",
+  "sections": {
+    "about": {
+      "n": "01",
+      "label": {
+        "en": "about",
+        "pt": "sobre"
+      },
+      "title": {
+        "en": "About",
+        "pt": "Sobre"
+      }
+    },
+    "currently": {
+      "n": "02",
+      "label": {
+        "en": "now",
+        "pt": "agora"
+      },
+      "title": {
+        "en": "Current projects",
+        "pt": "Projetos em andamento"
+      }
+    },
+    "research": {
+      "n": "03",
+      "label": {
+        "en": "research",
+        "pt": "pesquisa"
+      },
+      "title": {
+        "en": "How images mediate religion\\s",
+        "pt": "Como imagens mediam religião\\ões"
+      }
+    },
+    "publications": {
+      "n": "04",
+      "label": {
+        "en": "publications",
+        "pt": "publicações"
+      },
+      "title": {
+        "en": "Books & selected writing",
+        "pt": "Livros & textos selecionados"
+      }
+    },
+    "teaching": {
+      "n": "05",
+      "label": {
+        "en": "teaching",
+        "pt": "docência"
+      },
+      "title": {
+        "en": "In classrooms & in public",
+        "pt": "Em sala de aula & em público"
+      }
+    },
+    "initiatives": {
+      "n": "06",
+      "label": {
+        "en": "initiatives",
+        "pt": "iniciativas"
+      },
+      "title": {
+        "en": "Spaces built with others",
+        "pt": "Espaços construídos com outros"
+      }
+    },
+    "design": {
+      "n": "07",
+      "label": {
+        "en": "design",
+        "pt": "design"
+      },
+      "title": {
+        "en": "Art direction",
+        "pt": "Direção de arte"
+      }
+    },
+    "contact": {
+      "n": "08",
+      "label": {
+        "en": "contact",
+        "pt": "contato"
+      },
+      "title": {
+        "en": "Let’s talk.",
+        "pt": "Vamos conversar."
+      }
+    }
+  },
+  "facts": [
+    {
+      "icon": "now",
+      "k": {
+        "en": "Now",
+        "pt": "Hoje"
+      },
+      "v": {
+        "en": "Professor & Dean, Graduate Program in Religious Studies, Faculdade Unida de Vitória · Research Associate, University of Bern",
+        "pt": "Professor e coordenador do PPG em Ciências das Religiões, Faculdade Unida de Vitória · Pesquisador associado, Universidade de Berna"
+      }
+    },
+    {
+      "icon": "field",
+      "k": {
+        "en": "Field",
+        "pt": "Campo"
+      },
+      "v": {
+        "en": "Iconography, stamp seals and the history of religion in the ancient southern Levant",
+        "pt": "Iconografia, selos de estampar e história da religião no antigo Levante meridional"
+      }
+    }
+  ],
+  "bio": {
+    "en": "Silas Klein Cardoso is Professor of Old Testament and Religious Studies and Dean of the Graduate Program in Religious Studies at Faculdade Unida de Vitória, Brazil, and Research Associate at the University of Bern. He studies how images and artifacts mediated religion in the ancient southern Levant. His doctoral dissertation received Brazil’s Grand CAPES Thesis Award Bertha Koiffmann Becker. Before academia, he worked for two decades as an art director.",
+    "pt": "Silas Klein Cardoso é professor de Antigo Testamento e Ciências das Religiões e coordenador do Programa de Pós-Graduação em Ciências das Religiões da Faculdade Unida de Vitória, e pesquisador associado na Universidade de Berna. Estuda como imagens e artefatos mediaram a religião no antigo Levante meridional. Sua tese de doutorado recebeu o Grande Prêmio CAPES de Tese Bertha Koiffmann Becker. Antes da academia, trabalhou por duas décadas como diretor de arte."
+  },
+  "researchApproach": {
+    "en": "Religion is never only ideas. It is made present through things: seals, amulets, figurines, inscriptions, texts. My research asks how images and artifacts mediated religion in the ancient southern Levant, the world in which biblical texts were written, and how the tools of scholarship, from index cards to databases, mediate what we see in them.",
+    "pt": "Religião nunca é só ideia. Ela se torna presente por meio de coisas: selos, amuletos, estatuetas, inscrições, textos. Minha pesquisa pergunta como imagens e artefatos mediaram a religião no antigo Levante meridional, o mundo em que os textos bíblicos foram escritos, e como as ferramentas da pesquisa, das fichas de papel aos bancos de dados, mediam o que vemos neles."
+  },
+  "teaching": {
+    "en": "Seminars and courses at the Universities of Basel, Bern, Tel Aviv and Zurich, the Bergische Universität Wuppertal, PUC-Rio and, since 2024, Faculdade Unida de Vitória, from Hebrew Bible and the history of ancient Israel to iconography and stamp seals.",
+    "pt": "Seminários e cursos nas Universidades de Basel, Berna, Tel Aviv e Zurique, na Bergische Universität Wuppertal, na PUC-Rio e, desde 2024, na Faculdade Unida de Vitória, da Bíblia Hebraica e história do antigo Israel à iconografia e aos selos de estampar."
+  },
+  "designIntro": {
+    "en": "Before reading ancient images, I spent two decades making new ones as an art director for agencies and global brands. The same eye now works for research: identities, layouts and visual systems for scholarly projects.",
+    "pt": "Antes de ler imagens antigas, passei duas décadas fazendo imagens novas como diretor de arte para agências e marcas globais. O mesmo olhar agora trabalha para a pesquisa: identidades, diagramação e sistemas visuais para projetos acadêmicos."
+  },
+  "email": "silasklein@gmail.com",
+  "location": "Vitória/ES, Brasil",
+  "profiles": [
+    {
+      "name": "ORCID",
+      "icon": "orcid",
+      "href": "https://orcid.org/0000-0001-8266-8693"
+    },
+    {
+      "name": "Lattes",
+      "icon": "lattes",
+      "href": "http://lattes.cnpq.br/8778794532712424"
+    },
+    {
+      "name": "Zotero",
+      "icon": "zotero",
+      "href": "https://bibbase.org/zotero-mypublications/silasklein"
+    },
+    {
+      "name": "ResearchGate",
+      "icon": "researchgate",
+      "href": "https://www.researchgate.net/profile/Silas-Klein-Cardoso"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "linkedin",
+      "href": "https://www.linkedin.com/in/silasklein/"
+    },
+    {
+      "name": "Instagram",
+      "icon": "instagram",
+      "href": "https://instagram.com/silasklein"
+    }
+  ],
+  "contactTopics": [
+    {
+      "icon": "presentation",
+      "label": {
+        "en": "Lectures & invitations",
+        "pt": "Palestras & convites"
+      }
+    },
+    {
+      "icon": "group",
+      "label": {
+        "en": "Research cooperation",
+        "pt": "Cooperação em pesquisa"
+      }
+    },
+    {
+      "icon": "mic",
+      "label": {
+        "en": "Press & interviews",
+        "pt": "Imprensa & entrevistas"
+      }
+    }
+  ]
+}

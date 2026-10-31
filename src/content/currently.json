@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "kicker": {
+        "en": "Research unit · 2026–",
+        "pt": "Grupo de pesquisa · 2026–"
+      },
+      "title": {
+        "en": "Epistemology of the Divine (DFG-FOR 5949)",
+        "pt": "Epistemology of the Divine (DFG-FOR 5949)"
+      },
+      "text": {
+        "en": "Member of sub-project 3, “Visible Daily”, at the Bergische Universität Wuppertal: stamp and cylinder seals as the first mass media.",
+        "pt": "Membro do subprojeto 3, “Visible Daily”, na Bergische Universität Wuppertal: selos de estampar e cilíndricos como as primeiras mídias de massa."
+      },
+      "href": "/research/epistemology-of-the-divine",
+      "icon": "group"
+    },
+    {
+      "kicker": {
+        "en": "Research project · 2025–",
+        "pt": "Projeto de pesquisa · 2025–"
+      },
+      "title": {
+        "en": "Borderline Divine Manifestations",
+        "pt": "Manifestações limítrofes do divino"
+      },
+      "text": {
+        "en": "Where human, animal and divine blur: hybrid beings and image-text media in the southern Levant.",
+        "pt": "Onde humano, animal e divino se confundem: seres híbridos e mídias de imagem e texto no Levante meridional."
+      },
+      "href": "/research/borderline-divine-manifestations",
+      "icon": "image"
+    },
+    {
+      "kicker": {
+        "en": "Summer school · 2024–",
+        "pt": "Escola de verão · 2024–"
+      },
+      "title": {
+        "en": "Iconography of the Ancient World",
+        "pt": "Iconography of the Ancient World"
+      },
+      "text": {
+        "en": "After Wuppertal (2024, 2025) and Vitória (2026), the next edition is planned for Prague in 2027.",
+        "pt": "Depois de Wuppertal (2024, 2025) e Vitória (2026), a próxima edição está prevista para Praga em 2027."
+      },
+      "href": "#initiatives",
+      "icon": "sun"
+    }
+  ]
+}

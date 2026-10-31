@@ -1,0 +1,60 @@
+---
+// Pixel icons from pixelarticons (MIT). Their pixels are 2 units wide on a 24-unit viewBox, but many icons sit
+// on odd coordinates; the viewBox is shifted per axis so every icon pixel starts on the grid. Rendered at
+// 18 px (1.5 CSS px per icon pixel = 3 device pixels on Retina screens) by default.
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+// Site names → pixelarticons file names, chosen to be recognisable at a glance.
+const MAP: Record<string, string> = {
+  arrowRight: 'arrow-right', arrowDown: 'arrow-down',
+  plus: 'plus', minus: 'minus', mail: 'mail', pin: 'map-pin', copy: 'copy', download: 'download',
+  library: 'library', books: 'book-open', star: 'trophy', news: 'article',
+  now: 'briefcase', field: 'image', group: 'users', image: 'image', sun: 'sun', eye: 'eye',
+  building: 'building', calendar: 'calendar', community: 'building-community',
+  brush: 'brush', pencil: 'pencil', layout: 'layout', mic: 'mic', globe: 'globe',
+  presentation: 'presentation', instagram: 'instagram', linkedin: 'linkedin',
+  orcid: 'card-text', lattes: 'file-text', zotero: 'library', researchgate: 'article',
+};
+// Custom marks drawn on the same grid (2 units per pixel).
+const CUSTOM: Record<string, string> = {
+  // Diagonal arrow without the box, for links that leave the page.
+  arrowUpRight: 'M8 6h12v2H8zM18 8h2v10h-2zM16 8h2v2h-2zM14 10h2v2h-2zM12 12h2v2h-2zM10 14h2v2h-2zM8 16h2v2H8zM6 18h2v2H6z',
+  // Observatório de Universos Bíblicos: open book, celestial arc, star and two planets.
+  oub: 'M16 2h4v2h-4zM8 4h6v2h-6zM16 4h4v2h-4zM6 6h2v2h-2zM14 6h2v2h-2zM2 8h2v2h-2zM6 8h2v2h-2zM16 8h2v2h-2zM20 8h4v2h-4zM0 10h6v2h-6zM8 10h2v2h-2zM16 10h2v2h-2zM20 10h4v2h-4zM2 12h2v2h-2zM8 12h2v2h-2zM18 12h2v2h-2zM8 14h2v2h-2zM18 14h2v2h-2zM0 16h24v2h-24zM0 18h24v2h-24zM10 20h4v2h-4zM10 22h4v2h-4z',
+};
+
+// Whether the icon's x / y coordinates are odd (then the viewBox moves by one unit on that axis).
+function parity(d: string): [number, number] {
+  const tok = d.match(/[a-zA-Z]|-?\d*\.?\d+/g) ?? [];
+  let x = 0, y = 0, sx = 0, sy = 0, cmd = '', i = 0, ox = 0, oy = 0;
+  const num = () => parseFloat(tok[i++]);
+  while (i < tok.length) {
+    if (/[a-zA-Z]/.test(tok[i])) cmd = tok[i++];
+    const rel = cmd === cmd.toLowerCase();
+    switch (cmd.toUpperCase()) {
+      case 'M': case 'L': { const a = num(), b = num(); x = rel ? x + a : a; y = rel ? y + b : b; if (cmd.toUpperCase() === 'M') { sx = x; sy = y; cmd = rel ? 'l' : 'L'; } break; }
+      case 'H': { const a = num(); x = rel ? x + a : a; break; }
+      case 'V': { const b = num(); y = rel ? y + b : b; break; }
+      case 'Z': x = sx; y = sy; continue;
+      default: i++; continue;
+    }
+    if (Math.abs(x % 2) === 1) ox++; else ox--;
+    if (Math.abs(y % 2) === 1) oy++; else oy--;
+  }
+  return [ox > 0 ? 1 : 0, oy > 0 ? 1 : 0];
+}
+
+const dir = fileURLToPath(new URL('../../node_modules/pixelarticons/svg/', import.meta.url));
+interface Props { name: string; size?: number; class?: string; label?: string }
+const { name, size = 18, class: cls = '', label } = Astro.props;
+const file = MAP[name] ?? name;
+let inner = '';
+if (CUSTOM[name]) inner = `<path d="${CUSTOM[name]}"/>`;
+else try {
+  inner = readFileSync(`${dir}${file}.svg`, 'utf8').replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '').trim();
+} catch { inner = ''; }
+const d = [...inner.matchAll(/ d="([^"]+)"/g)].map((m) => m[1]).join(' ');
+const [ox, oy] = parity(d);
+---
+<svg class:list={['px', cls]} viewBox={`${ox} ${oy} 24 24`} width={size} height={size} fill="currentColor" shape-rendering="crispEdges" aria-hidden={label ? undefined : 'true'} role={label ? 'img' : undefined} aria-label={label} focusable="false" set:html={inner} />

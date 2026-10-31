@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import Px from '../Pixel.astro';
+import { ui, sections, profiles, t, type Lang } from '../../data/content';
+import { href } from '../../lib/format';
+import { fetchPublications } from '../../lib/zotero.mjs';
+import snapshot from '../../content/zotero.json';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const pt = lang === 'pt';
+
+let list = snapshot;
+try { list = await fetchPublications(); } catch { /* offline: keep the snapshot */ }
+
+const groups = [
+  { types: ['book'], label: { en: 'Books & edited volumes', pt: 'Livros e obras organizadas' }, icon: 'books' },
+  { types: ['journalArticle'], label: { en: 'Journal articles', pt: 'Artigos em periódicos' }, icon: 'news' },
+  { types: ['bookSection'], label: { en: 'Book chapters', pt: 'Capítulos de livros' }, icon: 'library' },
+  { types: ['thesis', 'manuscript'], label: { en: 'Theses & other texts', pt: 'Teses e outros textos' }, icon: 'pencil' },
+].map((g) => ({ ...g, items: list.filter((p) => g.types.includes(p.type)) })).filter((g) => g.items.length);
+const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.name));
+---
+<Base lang={lang} title={t(ui.fullList, lang)}>
+  <div class="page">
+    <a class="page__back" href={href('#publications', lang)}>← {t(ui.nav.publications, lang)}</a>
+    <Label n={sections.publications.n} text={t(sections.publications.label, lang)} />
+    <h1 class="h2">{t(ui.fullList, lang)}</h1>
+    <p class="links">
+      <span class="links__k">{list.length} {pt ? 'itens · também em' : 'items · also on'}</span>
+      {other.map((p) => (<a href={p.href} target="_blank" rel="noopener"><Px name={p.icon} />{p.name}</a>))}
+    </p>
+    {groups.map((g) => (
+      <section class="publist">
+        <h2 class="h3"><Px name={g.icon} />{t(g.label, lang)} <span class="publist__n">{g.items.length}</span></h2>
+        <ul class="pubs">
+          {g.items.map((p) => (
+            <li>
+              <span class="pubs__v pubs__y">{p.year}</span>
+              <span class="pubs__bib" set:html={p.bib} />
+              {(p.doi || p.url || p.pdf) && (
+                <span class="pubs__acts">
+                  {p.doi && <a class="act" href={p.doi} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>DOI</span></a>}
+                  {p.url && <a class="act" href={p.url} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>Link</span></a>}
+                  {p.pdf && <a class="act" href={p.pdf} target="_blank" rel="noopener"><Px name="download" /><span>PDF</span></a>}
+                </span>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>

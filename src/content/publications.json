@@ -1,0 +1,55 @@
+{
+  "books": [
+    {
+      "cover": "/img/books/codigo-devorado.webp",
+      "title": "O código devorado: os usos da iconografia antigo-oriental na exegese bíblica",
+      "meta": {
+        "en": "São Paulo: Recriar, 2025 · open access",
+        "pt": "São Paulo: Recriar, 2025 · acesso aberto"
+      },
+      "href": "https://doi.org/10.5281/zenodo.15133152",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/RHQUUVWZ/file/view"
+    },
+    {
+      "cover": "/img/books/challenging-dichotomies.webp",
+      "title": "Challenging Dichotomies and Biases in the Study of the Ancient Southern Levant",
+      "meta": {
+        "en": "Co-edited with B. Biermann, F. Porzia & C. Uehlinger · Göttingen: Vandenhoeck & Ruprecht, 2024 · open access",
+        "pt": "Organizado com B. Biermann, F. Porzia & C. Uehlinger · Göttingen: Vandenhoeck & Ruprecht, 2024 · acesso aberto"
+      },
+      "href": "https://www.vr-elibrary.de/doi/abs/10.13109/9783666560972",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/BP6XJ22V/file/view"
+    }
+  ],
+  "selected": [
+    {
+      "title": "The Genesis of Iconographic Exegesis",
+      "venue": "Currents in Biblical Research 21(2), 2023",
+      "href": "https://doi.org/10.1177/1476993X221147925",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/QILV6KF6/file/view"
+    },
+    {
+      "title": "Beyond the Image-Text Divide: In Search of a Multidimensional Approach to Compare Visual Artifacts and Biblical Texts",
+      "venue": "Die Welt des Orients, Supplementary Issue, 2024",
+      "href": "https://doi.org/10.13109/wdor.2024.ext.1.15"
+    },
+    {
+      "title": "Liminal Device\\s",
+      "venue": "Festschrift für Silvia Schroer, Orbis Biblicus et Orientalis (Peeters), 2023",
+      "href": "",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/IATTZGUY/file/view"
+    },
+    {
+      "title": "A Tale of Twelve Thousand Cards: Stamp Seals’ Scholarship History with Social-Material Lenses",
+      "venue": "Near Eastern Archaeology 86(4), 2023",
+      "href": "https://doi.org/10.1086/727581",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/5PFZKZLT/file/view"
+    },
+    {
+      "title": "(En)gendering Lines: Stamp Seals’ Intersemiotic Relations and Some Socio-Historical Implications",
+      "venue": "Gender and Iconography in Antiquity (Vandenhoeck & Ruprecht), 2026",
+      "href": "https://www.vr-elibrary.de/doi/10.13109/9783666573712.285",
+      "pdf": "https://api.zotero.org/users/8523169/publications/items/69GL7PRA/file/view"
+    }
+  ]
+}
