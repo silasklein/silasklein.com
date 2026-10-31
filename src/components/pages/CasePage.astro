@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
-import { ui, cases, t, type Lang, type Case } from '../../data/content';
+import { ui, cases, sections, t, type Lang, type Case } from '../../data/content';
 import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: Case }
 const { lang, item: c } = Astro.props;
@@ -11,7 +11,7 @@ const prev = cases[(i - 1 + cases.length) % cases.length], next = cases[(i + 1) 
 <Base lang={lang} title={c.title} description={t(c.text, lang)}>
   <article class="page">
     <a class="page__back" href={href('/design', lang)}>← Design</a>
-    <Label n="06" text={lang === 'pt' ? 'direção de arte' : 'art direction'} />
+    <Label n={sections.design.n} text={t(sections.design.label, lang)} />
     <h1 class="h2">{c.title}</h1>
     <img class="case-img" src={asset(c.image)} alt={c.title} width="760" height="1013" />
     <p class="lead">{t(c.text, lang)}</p>

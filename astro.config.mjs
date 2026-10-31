@@ -6,19 +6,20 @@ const cases = [
 ];
 
 // Old Squarespace URLs → new addresses (GitHub Pages serves these as instant-forward pages).
+// Old Squarespace pages were in English (the -ptbr ones in Portuguese); Portuguese is now the root.
 const redirects = {
   '/home': '/',
-  '/scholar': '/#research',
-  '/scholar-2': '/#research',
-  '/scholar-3': '/#research',
-  '/scholar-ptbr': '/pt/#research',
-  '/artdirector': '/#design',
-  '/artdirector-ptbr': '/pt/#design',
-  '/phd': '/research/magical-mythical-networks',
-  '/liminaldevices': '/research/liminal-devices',
-  '/iconographicexegesis': '/research/iconographic-exegesis',
+  '/scholar': '/en/#research',
+  '/scholar-2': '/en/#research',
+  '/scholar-3': '/en/#research',
+  '/scholar-ptbr': '/#research',
+  '/artdirector': '/en/#design',
+  '/artdirector-ptbr': '/#design',
+  '/phd': '/en/research/magical-mythical-networks',
+  '/liminaldevices': '/en/research/liminal-devices',
+  '/iconographicexegesis': '/en/research/iconographic-exegesis',
   '/cart': '/',
-  ...Object.fromEntries(cases.map((c) => [`/${c}`, `/design/${c}`])),
+  ...Object.fromEntries(cases.map((c) => [`/${c}`, `/en/design/${c}`])),
 };
 
 // SITE_BASE=/silasklein.com serves the site from the GitHub preview address
@@ -30,8 +31,8 @@ export default defineConfig({
   base,
   trailingSlash: 'ignore',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'pt'],
+    defaultLocale: 'pt',
+    locales: ['pt', 'en'],
     routing: { prefixDefaultLocale: false },
   },
   redirects: Object.fromEntries(Object.entries(redirects).map(([from, to]) => [from, base.replace(/\/$/, '') + to])),

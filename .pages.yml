@@ -30,8 +30,15 @@ content:
             label: Português
             type: text
       - name: descriptor
-        label: Descriptor (footer)
-        type: string
+        label: Slogan (page title and footer)
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
       - name: facts
         label: Hero facts (Now / Field)
         type: object
@@ -98,7 +105,17 @@ content:
                 label: Português
                 type: string
       - name: bio
-        label: 'About: bio'
+        label: 'About: bio, lead (large)'
+        type: object
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: pt
+            label: Português
+            type: text
+      - name: bio2
+        label: 'About: bio, details (smaller)'
         type: object
         fields:
           - name: en

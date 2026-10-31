@@ -4,9 +4,9 @@ import Px from './Pixel.astro';
 import {
   ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
-  bio, contactTopics, facts, email, t, type Lang,
+  bio, bio2, contactTopics, facts, email, t, type Lang,
 } from '../data/content';
-import { sig, href, asset } from '../lib/format';
+import { sig, href, asset, yrs } from '../lib/format';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -20,8 +20,9 @@ const pt = lang === 'pt';
   <div class="wrap">
     <p class="hero__hello" data-reveal>{t(ui.hello, lang)}</p>
     <h1 class="hero__title" data-reveal>
-      <span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,<br />
-      Media <span class="amp">&amp;</span> Images
+      {pt
+        ? <>Religião<span class="bs">\</span>ões <span class="hero__paren">(antigas)</span>,<br />Mídia <span class="amp">&amp;</span> Imagens</>
+        : <><span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,<br />Media <span class="amp">&amp;</span> Images</>}
     </h1>
     <div class="hero__grid">
       <div data-reveal>
@@ -49,7 +50,10 @@ const pt = lang === 'pt';
     <Label n={S.about.n} text={t(S.about.label, lang)} />
     <div class="ab">
       <div>
-        <p class="ab__bio" id="bio" data-reveal>{t(bio, lang)}</p>
+        <div id="bio" data-reveal>
+          <p class="ab__bio">{t(bio, lang)}</p>
+          <p class="ab__bio2">{t(bio2, lang)}</p>
+        </div>
         <p class="links" data-reveal>
           {profiles.map((p) => (<a href={p.href} target="_blank" rel="me noopener"><Px name={p.icon} />{p.name}</a>))}
         </p>
@@ -74,7 +78,7 @@ const pt = lang === 'pt';
       {currently.map((c) => (
         <li data-reveal>
           <a class="rk" href={c.href.startsWith('#') ? c.href : href(c.href, lang)}>
-            <span class="rk__k"><Px name={c.icon} />{t(c.kicker, lang)}</span>
+            <span class="rk__k"><Px name={c.icon} /><span class="rk__kt">{yrs(t(c.kicker, lang), lang).split(' · ').map((part) => <span>{part}</span>)}</span></span>
             <span class="rk__v">
               <span class="rk__t">{t(c.title, lang)} <Px name="arrowUpRight" /></span>
               <span class="rk__p">{t(c.text, lang)}</span>
@@ -98,7 +102,7 @@ const pt = lang === 'pt';
     <div class="cols">
       {current.map((p) => (
         <a class="col" href={href(`/research/${p.slug}`, lang)} data-reveal>
-          <span class="col__y">{p.years}</span>
+          <span class="col__y">{yrs(p.years, lang)}</span>
           <h3 class="col__t" set:html={sig(t(p.title, lang)) + ' '} />
           <p class="col__r">{t(p.role, lang)}</p>
           <p class="col__p">{t(p.summary, lang)}</p>
@@ -114,7 +118,7 @@ const pt = lang === 'pt';
         {past.map((p) => (
           <li>
             <div class="rk">
-              <span class="rk__k rk__k--year">{p.years}</span>
+              <span class="rk__k rk__k--year">{yrs(p.years, lang)}</span>
               <span class="rk__v">
                 {p.slug
                   ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowUpRight" /></a>
@@ -237,6 +241,7 @@ const pt = lang === 'pt';
       </a>
     ))}
   </div>
+  <div class="dfr-band">
   <div class="wrap">
     <div class="dfr">
       <h2 class="display display--sm" data-reveal>{pt ? 'Design para a pesquisa' : 'Design for research'}</h2>
@@ -244,6 +249,7 @@ const pt = lang === 'pt';
         {designForResearch.map((d) => (<li data-reveal><a class="rk rk--two" href={href(`/design-for-research/${d.slug}`, lang)}><Px name={d.icon} /><span class="rk__v"><span class="rk__t">{t(d.title, lang)} <Px name="arrowRight" /></span><span class="rk__p">{t(d.text, lang)}</span></span></a></li>))}
       </ul>
     </div>
+  </div>
   </div>
 </section>
 

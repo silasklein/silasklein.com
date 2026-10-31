@@ -3,4 +3,4 @@ import DfrPage from '../../../components/pages/DfrPage.astro';
 import { designForResearch } from '../../../data/content';
 export function getStaticPaths() { return designForResearch.map((d) => ({ params: { slug: d.slug }, props: { item: d } })); }
 ---
-<DfrPage lang="pt" item={Astro.props.item} />
+<DfrPage lang="en" item={Astro.props.item} />

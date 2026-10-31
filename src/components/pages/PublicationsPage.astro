@@ -31,8 +31,8 @@ const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.na
       {other.map((p) => (<a href={p.href} target="_blank" rel="noopener"><Px name={p.icon} />{p.name}</a>))}
     </p>
     {groups.map((g) => (
-      <section class="publist">
-        <h2 class="h3"><Px name={g.icon} />{t(g.label, lang)} <span class="publist__n">{g.items.length}</span></h2>
+      <details class="more publist" open>
+        <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><h2 class="publist__h">{t(g.label, lang)}</h2><span class="publist__n">{g.items.length}</span></summary>
         <ul class="pubs">
           {g.items.map((p) => (
             <li>
@@ -48,7 +48,7 @@ const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.na
             </li>
           ))}
         </ul>
-      </section>
+      </details>
     ))}
   </div>
 </Base>

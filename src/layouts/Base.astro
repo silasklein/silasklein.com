@@ -2,6 +2,7 @@
 import '@fontsource/plus-jakarta-sans/400.css';
 import '@fontsource/plus-jakarta-sans/500.css';
 import '@fontsource/plus-jakarta-sans/600.css';
+import '@fontsource/plus-jakarta-sans/700.css';
 import '@fontsource/plus-jakarta-sans/800.css';
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
@@ -11,7 +12,7 @@ import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
 interface Props { lang: Lang; title?: string; description?: string; home?: boolean }
 const { lang, title, description, home = false } = Astro.props;
-const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${ui.descriptor}`;
+const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${t(ui.descriptor, lang)}`;
 const desc = description ?? t(ui.subtitle, lang);
 const other = switchPath(Astro.url.pathname, lang);
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
@@ -49,7 +50,7 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
   <a class="skip" href="#main">{lang === 'pt' ? 'Pular para o conteúdo' : 'Skip to content'}</a>
   <header class="topbar">
     <a class="topbar__logo" href={href('/', lang)} aria-label={t(ui.back, lang)}>
-      <Logo scale={2} />
+      <Logo scale={1.5} />
     </a>
     <nav class="topbar__nav" aria-label="Main">
       <ul>
@@ -60,7 +61,7 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
     </nav>
     <div class="topbar__end">
       <a class="topbar__lang" href={other} hreflang={lang === 'pt' ? 'en' : 'pt-BR'} lang={lang === 'pt' ? 'en' : 'pt-BR'}>
-        {lang === 'pt' ? 'EN' : 'PT'}<span class="sr">{t(ui.langName, lang)}</span>
+        {lang === 'pt' ? 'EN' : 'BR'}<span class="sr">{t(ui.langName, lang)}</span>
       </a>
       <a class="topbar__contact" href={href('#contact', lang)} data-nav="contact"><Px name="mail" />{t(ui.nav.contact, lang)}</a>
       <button class="topbar__menu" aria-expanded="false" aria-controls="mobile-nav">
@@ -84,7 +85,7 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
     <div class="footer__inner">
       <div>
         <Logo scale={1} />
-        <p class="footer__descriptor" set:html={sig(ui.descriptor)} />
+        <p class="footer__descriptor" set:html={sig(t(ui.descriptor, lang))} />
       </div>
       <ul class="footer__profiles">
         <li><a class="fl" href={`mailto:${email}`}><Px name="mail" /><span class="fl__t">{email}</span></a></li>

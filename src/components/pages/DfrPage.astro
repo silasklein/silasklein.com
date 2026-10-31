@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import Px from '../Pixel.astro';
-import { designForResearch, ui, t, type Lang, type DesignItem } from '../../data/content';
+import { designForResearch, ui, sections, t, type Lang, type DesignItem } from '../../data/content';
 import { href } from '../../lib/format';
 interface Props { lang: Lang; item: DesignItem }
 const { lang, item: d } = Astro.props;
@@ -14,7 +14,7 @@ const next = designForResearch[(i + 1) % designForResearch.length];
 <Base lang={lang} title={t(d.title, lang)} description={t(d.text, lang)}>
   <article class="page">
     <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{pt ? 'Design para a pesquisa' : 'Design for research'}</span></a>
-    <Label n="07" text={pt ? 'design para a pesquisa' : 'design for research'} />
+    <Label n={sections.design.n} text={t(sections.design.label, lang)} />
     <h1 class="h2"><Px name={d.icon} size={36} /> {t(d.title, lang)}</h1>
     <dl class="meta">
       <dt>{t(ui.year, lang)}</dt><dd>{d.year}</dd>

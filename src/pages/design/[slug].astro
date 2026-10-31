@@ -3,4 +3,4 @@ import CasePage from '../../components/pages/CasePage.astro';
 import { cases } from '../../data/content';
 export function getStaticPaths() { return cases.map((c) => ({ params: { slug: c.slug }, props: { item: c } })); }
 ---
-<CasePage lang="en" item={Astro.props.item} />
+<CasePage lang="pt" item={Astro.props.item} />

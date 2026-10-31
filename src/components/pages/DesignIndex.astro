@@ -9,7 +9,7 @@ const { lang } = Astro.props;
 <Base lang={lang} title={t(sections.design.title, lang)} description={t(designIntro, lang)}>
   <div class="page">
     <a class="page__back" href={href('#design', lang)}>← {t(ui.back, lang)}</a>
-    <Label n="06" text={t(sections.design.label, lang)} />
+    <Label n={sections.design.n} text={t(sections.design.label, lang)} />
     <h1 class="h2" set:html={sig(t(sections.design.title, lang))} />
     <p class="lead">{t(designIntro, lang)}</p>
     <ul class="list list--3">

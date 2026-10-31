@@ -66,7 +66,7 @@ for (const b of document.querySelectorAll<HTMLButtonElement>('[data-copy]')) {
     const src = document.querySelector(b.dataset.copy!);
     if (!src) return;
     try {
-      await navigator.clipboard.writeText(src.textContent!.trim());
+      await navigator.clipboard.writeText((src as HTMLElement).innerText.trim());
       const label = b.lastChild as Text;
       const old = label.textContent;
       label.textContent = ' ' + (b.dataset.done || 'Copied');

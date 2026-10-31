@@ -44,12 +44,13 @@ export const ui = {
   copied: { en: 'Copied', pt: 'Copiado' },
   rights: { en: 'All rights reserved.', pt: 'Todos os direitos reservados.' },
   langName: { en: 'Português', pt: 'English' },
-  descriptor: site.descriptor as string,
+  descriptor: site.descriptor as L,
 };
 
 export const sections = site.sections as Record<'about' | 'currently' | 'research' | 'publications' | 'teaching' | 'initiatives' | 'design' | 'contact', { n: string; label: L; title: L }>;
 export const facts = site.facts as { icon: string; k: L; v: L }[];
 export const bio = site.bio as L;
+export const bio2 = site.bio2 as L;
 export const researchApproach = site.researchApproach as L;
 export const teaching = site.teaching as L;
 export const designIntro = site.designIntro as L;

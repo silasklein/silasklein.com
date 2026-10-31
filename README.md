@@ -1,6 +1,6 @@
 # silasklein.com
 
-Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Português e inglês, identidade visual do site anterior.
+Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Abre em português (raiz); a versão em inglês fica em `/en/`.
 
 ## Onde editar
 
@@ -16,7 +16,7 @@ Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Portu
 | Endereços antigos → novos | `astro.config.mjs` (`redirects`) |
 | Imagens | `public/img/` |
 
-**Regra do logo:** use sempre `scale` inteiro (`<Logo scale={2} />` = 38×22 px). Nunca redimensione o logo por CSS.
+**Regra do logo:** use `scale` em passos de meio (`<Logo scale={1.5} />` = 28,5×16,5 px no topo; `scale={1}` no rodapé). Nunca redimensione o logo por CSS.
 
 ## Editar pelo Pages CMS
 

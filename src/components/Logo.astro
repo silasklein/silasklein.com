@@ -1,8 +1,9 @@
 ---
-// The owner's monogram, untouched: a 19×11 module grid (from 313.eps), rendered only at whole-number scales.
+// The owner's monogram, untouched: a 19×11 module grid (from 313.eps). Scales come in half steps
+// (1, 1.5, 2…): at 1.5 each module is 3 device pixels on Retina screens, so edges stay exact.
 interface Props { scale?: number; class?: string }
 const { scale = 2, class: cls = '' } = Astro.props;
-const n = Math.max(1, Math.round(scale));
+const n = Math.max(1, Math.round(scale * 2) / 2);
 ---
 <svg class:list={['logo', cls]} viewBox="0 0 19 11" width={19 * n} height={11 * n} shape-rendering="crispEdges" role="img" aria-label="Silas Klein">
   <path fill="#C761AE" d="M0 0h7v3H0zM3 4h4v3H3zM0 8h7v3H0zM8 0h3v11H8zM12 0h7v3h-7zM12 4h4v3h-4zM12 8h7v3h-7z" />

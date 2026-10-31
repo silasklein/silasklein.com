@@ -18,16 +18,19 @@ export const asset = (path: string) => (path.startsWith('/') ? BASE + path : pat
 // Prefix an internal path for the current locale. Hash-only and external links pass through.
 export function href(path: string, lang: Lang): string {
   if (/^(https?:|mailto:)/.test(path)) return path;
-  if (path.startsWith('#')) return BASE + (lang === 'pt' ? '/pt/' : '/') + path;
-  return BASE + (lang === 'pt' ? `/pt${path === '/' ? '/' : path}` : path);
+  if (path.startsWith('#')) return BASE + (lang === 'en' ? '/en/' : '/') + path;
+  return BASE + (lang === 'en' ? `/en${path === '/' ? '/' : path}` : path);
 }
 
 // The page path without the preview prefix.
 export const sitePath = (pathname: string) => pathname.slice(BASE.length) || '/';
 
+// Open-ended ranges read in words: "2026–" → "2026–current" / "2026–atual".
+export const yrs = (text: string, lang: Lang) => text.replace(/(\d{4})\s?–(?!\s?\d)/g, `$1–${lang === 'pt' ? 'atual' : 'current'}`);
+
 // Same page in the other language.
 export function switchPath(pathname: string, lang: Lang): string {
   const p = sitePath(pathname);
-  if (lang === 'pt') return BASE + (p.replace(/^\/pt(\/|$)/, '/') || '/');
-  return BASE + (p === '/' ? '/pt/' : `/pt${p}`);
+  if (lang === 'en') return BASE + (p.replace(/^\/en(\/|$)/, '/') || '/');
+  return BASE + (p === '/' ? '/en/' : `/en${p}`);
 }
