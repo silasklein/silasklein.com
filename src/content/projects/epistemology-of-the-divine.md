@@ -12,6 +12,10 @@ title:
 role:
   en: "Associate researcher, sub-project 3 “Visible Daily” (lead: PD Dr Thomas Wagner)"
   pt: "Pesquisador associado, subprojeto 3 “Visible Daily” (coord.: PD Dr. Thomas Wagner)"
+places:
+  - name:
+      en: "BUW (Germany)"
+      pt: "BUW (Alemanha)"
 funding: "Deutsche Forschungsgemeinschaft (DFG-FOR 5949), D-A-CH with FWF"
 partners: "Bergische Universität Wuppertal"
 summary:

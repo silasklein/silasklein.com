@@ -10,6 +10,10 @@ title:
 role:
   en: "Research collaborator (with Eythan Levy, SNSF)"
   pt: "Colaborador científico (com Eythan Levy, SNSF)"
+places:
+  - name:
+      en: "UniBE (Switzerland)"
+      pt: "UniBE (Suíça)"
 summary:
   en: "Towards automated paleographic dating of Old Hebrew seals; open database on Zenodo."
   pt: "Rumo à datação paleográfica automatizada de selos em hebraico antigo; base de dados aberta no Zenodo."

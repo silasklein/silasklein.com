@@ -1,6 +1,7 @@
 ---
 import Label from './Label.astro';
 import Px from './Pixel.astro';
+import RolePlace from './RolePlace.astro';
 import {
   ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
@@ -102,13 +103,13 @@ const pt = lang === 'pt';
     </div>
     <div class="cols">
       {current.map((p) => (
-        <a class="col" href={href(`/research/${p.slug}`, lang)} data-reveal>
+        <div class="col" data-reveal>
           <span class="col__y">{yrs(p.years, lang)}</span>
-          <h3 class="col__t" set:html={sig(t(p.title, lang)) + ' '} />
-          <p class="col__r">{t(p.role, lang)}</p>
+          <h3 class="col__t"><a href={href(`/research/${p.slug}`, lang)} set:html={sig(t(p.title, lang))} /></h3>
+          <RolePlace project={p} lang={lang} class="col__r" />
           <p class="col__p">{t(p.summary, lang)}</p>
-          <span class="act"><Px name="arrowRight" /><span>{t(ui.readMore, lang)}</span></span>
-        </a>
+          <a class="act" href={href(`/research/${p.slug}`, lang)}><Px name="arrowRight" /><span>{t(ui.readMore, lang)}</span></a>
+        </div>
       ))}
     </div>
     <h3 class="h3"><Px name="star" />{pt ? 'Prêmios e títulos' : 'Awards & distinctions'}</h3>
@@ -124,6 +125,7 @@ const pt = lang === 'pt';
                 {p.slug
                   ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowRight" /></a>
                   : <span class="rk__t" set:html={sig(t(p.title, lang))} />}
+                <RolePlace project={p} lang={lang} class="rk__r" />
                 <span class="rk__p">{t(p.summary, lang)}</span>
               </span>
             </div>

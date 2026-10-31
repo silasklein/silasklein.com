@@ -8,8 +8,12 @@ title:
   en: "The Torah’s Materiality and the Invention of Post-Exilic Aniconism"
   pt: "A materialidade da Torá e a invenção do aniconismo pós-exílico"
 role:
-  en: "MA research, UMESP"
-  pt: "Pesquisa de mestrado, UMESP"
+  en: "MA research"
+  pt: "Pesquisa de mestrado"
+places:
+  - name:
+      en: "UMESP (Brazil)"
+      pt: "UMESP (Brasil)"
 summary:
   en: "The Torah as a cultic object in the Persian and Hellenistic periods."
   pt: "A Torá como objeto de culto nos períodos persa e helenístico."

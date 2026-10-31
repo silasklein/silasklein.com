@@ -9,8 +9,12 @@ title:
   en: "Borderline Divine Manifestations in the Biblical World"
   pt: "Manifestações limítrofes do divino no universo bíblico"
 role:
-  en: "Principal investigator"
-  pt: "Coordenador"
+  en: "Principal Investigator"
+  pt: "Investigador Principal"
+places:
+  - name:
+      en: "FUV (Brazil)"
+      pt: "FUV (Brasil)"
 funding: "Faculdade Unida de Vitória · Charles University, Prague"
 summary:
   en: "The project investigates ontologically and semiotically borderline forms of divine representation in the southern Levant between the 8th century BCE and the 4th century CE: hybrid beings where human, animal and divine intertwine, and hybrid media that combine inscription and image, such as stamp seals and graffiti."

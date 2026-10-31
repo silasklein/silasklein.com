@@ -1,0 +1,20 @@
+---
+// "Role · Institution (Country)" line for a project; institutions with a site get a link.
+import Px from './Pixel.astro';
+import { t, type Lang, type Project } from '../data/content';
+interface Props { project: Project; lang: Lang; class?: string }
+const { project: p, lang, class: cls } = Astro.props;
+const places = p.places ?? [];
+---
+<p class:list={['roleplace', cls]}>
+  <span>{t(p.role, lang)}</span>
+  {places.length > 0 && <span class="roleplace__sep" aria-hidden="true"> · </span>}
+  {places.map((pl, i) => (
+    <>
+      {pl.href
+        ? <a href={pl.href} target="_blank" rel="noopener">{t(pl.name, lang)} <Px name="arrowUpRight" /></a>
+        : <span>{t(pl.name, lang)}</span>}
+      {i < places.length - 1 && <span> &amp; </span>}
+    </>
+  ))}
+</p>

@@ -10,8 +10,17 @@ title:
   en: "International Summer School: Iconography of the Ancient World"
   pt: "Escola Internacional de Verão: Iconografia do Mundo Antigo"
 role:
-  en: "Co-founder and director, with Thomas Wagner (Bergische Universität Wuppertal)"
-  pt: "Cocriador e diretor, com Thomas Wagner (Bergische Universität Wuppertal)"
+  en: "Co-creator and director with Thomas Wagner"
+  pt: "Cocriador e diretor com Thomas Wagner"
+places:
+  - name:
+      en: "BUW"
+      pt: "BUW"
+    href: "https://ikonographie.uni-wuppertal.de/de/sommerschule/"
+  - name:
+      en: "FUV"
+      pt: "FUV"
+    href: "https://fuv.edu.br/escola-de-verao/"
 partners: "Bergische Universität Wuppertal · Faculdade Unida de Vitória"
 summary:
   en: "An advanced, itinerant school offering specialized methodological training to MA/PhD candidates and early-career researchers in Ancient Near Eastern Studies, Biblical Studies, Religious History and cognate fields. Rooted in the visual studies tradition of the Fribourg School, it treats visual culture as an independent source alongside ancient literature, epigraphy and archaeology, pairing historical epistemology and image analysis with hands-on work on artefacts. The school alternates every year between European and Latin American hosts (Wuppertal 2024 and 2025, Vitória 2026), with a Scientific Board and 2 ECTS (20 contact hours) per edition, fostering student mobility, cross-institutional mentoring and global research networks."

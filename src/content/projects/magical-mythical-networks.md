@@ -8,8 +8,15 @@ title:
   en: "Magical-Mythical Networks in the Dawn of Israel"
   pt: "Redes mágico-míticas no alvorecer de Israel"
 role:
-  en: "Doctoral research, UMESP and University of Zurich"
-  pt: "Pesquisa de doutorado, UMESP e Universidade de Zurique"
+  en: "Doctoral research"
+  pt: "Pesquisa de doutorado"
+places:
+  - name:
+      en: "UMESP (Brazil)"
+      pt: "UMESP (Brasil)"
+  - name:
+      en: "UZH (Switzerland)"
+      pt: "UZH (Suíça)"
 funding: "CAPES"
 summary:
   en: "A micro-religious history of the Benjamin plateau in the Iron Age I–IIA (c. 1125–875 BCE), the probable place of origin of “ancient Israel”, drawing on material, visual and textual evidence."

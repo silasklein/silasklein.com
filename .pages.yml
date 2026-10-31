@@ -985,6 +985,24 @@ content:
           - name: pt
             label: Português
             type: string
+      - name: places
+        label: Institutions (shown after the role)
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name, e.g. FUV (Brasil)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: href
+            label: Link (optional)
+            type: string
       - name: funding
         label: Funding
         type: string

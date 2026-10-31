@@ -468,3 +468,15 @@ a.act:hover .flip { transform: scaleX(-1) translateX(1.5px); }
 .hero__line { display: block; white-space: nowrap; }
 .hero__title { font-size: clamp(28px, 11cqi, 120px); }
 .hero__title--pt { font-size: clamp(26px, 10cqi, 120px); }
+
+/* ───── Round 14 ───── */
+/* Role · institution line on projects */
+.roleplace { font: 600 14px/1.4 var(--font); color: var(--fg); }
+.roleplace a { color: var(--fg); box-shadow: inset 0 -1px 0 var(--hair); transition: color .1s; }
+.roleplace a:hover { color: var(--accent); }
+.roleplace .px { vertical-align: -4px; }
+.rk__r { margin: 2px 0 2px; }
+.col__t a { color: inherit; }
+.col__t a:hover { color: var(--accent); }
+.col:hover .col__t { color: inherit; }
+.meta .roleplace { font: inherit; color: inherit; }

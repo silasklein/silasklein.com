@@ -10,6 +10,10 @@ title:
 role:
   en: "Postdoctoral researcher, module leader"
   pt: "Pesquisador de pós-doutorado, responsável pelo módulo"
+places:
+  - name:
+      en: "UZH (Switzerland)"
+      pt: "UZH (Suíça)"
 funding: "Swiss National Science Foundation (Sinergia)"
 partners: "Universities of Zurich, Bern and Tel Aviv"
 summary:

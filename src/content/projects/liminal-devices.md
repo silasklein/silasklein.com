@@ -8,8 +8,12 @@ title:
   en: "Liminal Devices"
   pt: "Liminal Devices"
 role:
-  en: "Principal investigator, University of Zurich"
-  pt: "Coordenador, Universidade de Zurique"
+  en: "Principal Investigator"
+  pt: "Investigador Principal"
+places:
+  - name:
+      en: "UZH (Switzerland)"
+      pt: "UZH (Suíça)"
 funding: "CAPES (Grand Thesis Award fellowship) · SNSF"
 summary:
   en: "Informed by media theory and media archaeology, the project addressed the artifacts through which religion was practiced and conceived in the Iron Age southern Levant: objects that enabled religion, embodied “religious power” and mediated communication with non-empirical beings and forces."

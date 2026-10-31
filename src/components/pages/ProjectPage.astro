@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
+import RolePlace from '../RolePlace.astro';
 import { ui, projects, sections, t, type Lang, type Project } from '../../data/content';
 import { sig, href, yrs } from '../../lib/format';
 interface Props { lang: Lang; project: Project }
@@ -16,7 +17,7 @@ const prev = withPages[i - 1], next = withPages[i + 1];
     <h1 class="h2" set:html={sig(t(p.title, lang))} />
     <dl class="meta">
       <dt>{lang === 'pt' ? 'Período' : 'Period'}</dt><dd>{yrs(p.years, lang)}</dd>
-      <dt>{t(ui.role, lang)}</dt><dd>{t(p.role, lang)}</dd>
+      <dt>{t(ui.role, lang)}</dt><dd><RolePlace project={p} lang={lang} /></dd>
       {p.funding && <><dt>{t(ui.funding, lang)}</dt><dd>{p.funding}</dd></>}
       {p.partners && <><dt>{t(ui.partners, lang)}</dt><dd>{p.partners}</dd></>}
     </dl>

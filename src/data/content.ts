@@ -68,7 +68,7 @@ export const outreach = outreachFile.items as { title: L; text: L; href: string;
 export const talks = talksFile.items as { year: string; kind: L; title: string; channel: string; lang: Lang; href: string }[];
 export const initiatives = initiativesFile.items as { icon: string; title: L; text: L; details?: L; more?: string; href?: string }[];
 
-export type Project = { order?: number; slug?: string; page?: boolean; featured?: boolean; icon?: string; years: string; title: L; role: L; funding?: string; partners?: string; summary: L; outputs?: L[]; current?: boolean };
+export type Project = { order?: number; slug?: string; page?: boolean; featured?: boolean; icon?: string; years: string; title: L; role: L; places?: { name: L; href?: string }[]; funding?: string; partners?: string; summary: L; outputs?: L[]; current?: boolean };
 export const projects: Project[] = fm<Project>(import.meta.glob('../content/projects/*.md', { eager: true }))
   .sort(byOrder).map((p) => ({ ...p, slug: p.page ? p.slug : undefined }));
 
