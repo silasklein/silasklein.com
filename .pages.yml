@@ -86,6 +86,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: k
             label: Key
             type: object
@@ -212,6 +213,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: href
             label: Link
             type: string
@@ -262,6 +264,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: label
             label: Label
             type: object
@@ -545,6 +548,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: kicker
             label: Kicker
             type: object
@@ -699,6 +703,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: title
             label: Title
             type: object
@@ -832,6 +837,7 @@ content:
                 - oub
                 - seals
                 - epod
+            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: title
             label: Title
             type: object
@@ -955,6 +961,7 @@ content:
             - oub
             - seals
             - epod
+        description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
       - name: years
         label: Years
         type: string
@@ -1182,6 +1189,7 @@ content:
             - oub
             - seals
             - epod
+        description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
       - name: year
         label: Year
         type: string

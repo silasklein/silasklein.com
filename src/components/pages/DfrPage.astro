@@ -15,7 +15,7 @@ const next = designForResearch[(i + 1) % designForResearch.length];
   <article class="page">
     <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{pt ? 'Design para a pesquisa' : 'Design for research'}</span></a>
     <Label n={sections.design.n} text={t(sections.design.label, lang)} />
-    <h1 class="h2"><Px name={d.icon} size={36} /> {t(d.title, lang)}</h1>
+    <h1 class="h2">{t(d.title, lang)}</h1>
     <dl class="meta">
       <dt>{t(ui.year, lang)}</dt><dd>{d.year}</dd>
       <dt>{t(ui.role, lang)}</dt><dd>{t(d.role, lang)}</dd>

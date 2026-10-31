@@ -6,7 +6,7 @@ import {
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
   bio, bio2, contactTopics, facts, email, t, type Lang,
 } from '../data/content';
-import { sig, href, asset, yrs } from '../lib/format';
+import { sig, href, asset, yrs, arrow } from '../lib/format';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -29,7 +29,7 @@ const pt = lang === 'pt';
       <div data-reveal>
         <p class="hero__sub">{t(ui.subtitle, lang)}</p>
         <p class="hero__cta">
-          <a class="act" href="#research"><Px name="arrowDown" /><span>{t(ui.exploreResearch, lang)}</span></a>
+          <a class="act" href="#research"><Px name={arrow('#research')} /><span>{t(ui.exploreResearch, lang)}</span></a>
           <a class="act" href="#contact"><Px name="mail" /><span>{t(ui.getInTouch, lang)}</span></a>
         </p>
       </div>
@@ -81,7 +81,7 @@ const pt = lang === 'pt';
           <a class="rk" href={c.href.startsWith('#') ? c.href : href(c.href, lang)}>
             <span class="rk__k"><Px name={c.icon} /><span class="rk__kt">{yrs(t(c.kicker, lang), lang).split(' · ').map((part) => <span>{part}</span>)}</span></span>
             <span class="rk__v">
-              <span class="rk__t">{t(c.title, lang)} <Px name="arrowUpRight" /></span>
+              <span class="rk__t">{t(c.title, lang)} <Px name={arrow(c.href)} /></span>
               <span class="rk__p">{t(c.text, lang)}</span>
             </span>
           </a>
@@ -122,7 +122,7 @@ const pt = lang === 'pt';
               <span class="rk__k rk__k--year">{yrs(p.years, lang)}</span>
               <span class="rk__v">
                 {p.slug
-                  ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}>{p.icon && <Px name={p.icon} class="rk__ico" />}<span set:html={sig(t(p.title, lang))} /> <Px name="arrowRight" /></a>
+                  ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowRight" /></a>
                   : <span class="rk__t" set:html={sig(t(p.title, lang))} />}
                 <span class="rk__p">{t(p.summary, lang)}</span>
               </span>
@@ -188,7 +188,7 @@ const pt = lang === 'pt';
           <li data-reveal>
             <a class="rk rk--two" href={o.href.startsWith('/') ? href(o.href, lang) : o.href} target={o.href.startsWith('/') ? undefined : '_blank'} rel={o.href.startsWith('/') ? undefined : 'noopener'}>
               <Px name={o.icon} />
-              <span class="rk__v"><span class="rk__t">{t(o.title, lang)} <Px name={o.href.startsWith('/') ? 'arrowRight' : 'arrowUpRight'} /></span><span class="rk__p">{t(o.text, lang)}</span></span>
+              <span class="rk__v"><span class="rk__t">{t(o.title, lang)} <Px name={arrow(o.href)} /></span><span class="rk__p">{t(o.text, lang)}</span></span>
             </a>
           </li>
         ))}
@@ -270,7 +270,7 @@ const pt = lang === 'pt';
     <h2 class="contact__h" data-reveal>{t(S.contact.title, lang)}</h2>
     <ul class="topics">
       {contactTopics.map((c) => (
-        <li data-reveal><a href={`mailto:${email}?subject=${encodeURIComponent(t(c.label, lang) + ' · silasklein.com')}`}><Px name={c.icon} />{t(c.label, lang)} <Px name="arrowRight" class="topics__go" /></a></li>
+        <li data-reveal><a href={`mailto:${email}?subject=${encodeURIComponent(t(c.label, lang) + ' · silasklein.com')}`}><Px name={c.icon} />{t(c.label, lang)} <Px name="arrowUpRight" class="topics__go" /></a></li>
       ))}
     </ul>
     <p class="contact__mail"><a class="act" href={`mailto:${email}`}><Px name="mail" /><span>{email}</span></a><span class="act"><Px name="pin" /><span>Vitória/ES, Brasil</span></span></p>

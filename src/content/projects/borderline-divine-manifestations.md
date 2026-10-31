@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 1
 slug: "borderline-divine-manifestations"
 page: true
 featured: true

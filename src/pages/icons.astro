@@ -1,0 +1,20 @@
+---
+// Reference sheet for the CMS: every icon name next to its drawing. Not linked from the site.
+import Base from '../layouts/Base.astro';
+import Px from '../components/Pixel.astro';
+import { ICON_NAMES } from '../lib/icons';
+---
+<Base lang="pt" title="Ícones" noindex>
+  <div class="page">
+    <h1 class="h2">Ícones</h1>
+    <p class="lead">Nome para escolher no campo “Icon” do Pages CMS.</p>
+    <ul class="icons">
+      {ICON_NAMES.map((n) => (<li><Px name={n} size={36} /><code>{n}</code></li>))}
+    </ul>
+  </div>
+</Base>
+<style>
+  .icons { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1px; margin-top: 40px; background: var(--hair); border: 1px solid var(--hair); }
+  .icons li { display: grid; gap: 12px; justify-items: start; padding: 20px; background: var(--bg); }
+  .icons code { font: 600 14px/1.2 var(--font); }
+</style>

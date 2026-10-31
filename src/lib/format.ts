@@ -28,6 +28,14 @@ export const sitePath = (pathname: string) => pathname.slice(BASE.length) || '/'
 // Open-ended ranges read in words: "2026–" → "2026–current" / "2026–atual".
 export const yrs = (text: string, lang: Lang) => text.replace(/(\d{4})\s?–(?!\s?\d)/g, `$1–${lang === 'pt' ? 'atual' : 'current'}`);
 
+// The arrow every link carries: down for files to download, diagonal for anything that leaves the site
+// (other sites, e-mail), straight right for pages and sections of this site.
+export function arrow(url: string): 'download' | 'arrowUpRight' | 'arrowRight' {
+  if (/\.(pdf|zip|webp|jpe?g|png)$|\/file\/view$/i.test(url)) return 'download';
+  if (/^(https?:|mailto:)/.test(url)) return 'arrowUpRight';
+  return 'arrowRight';
+}
+
 // Same page in the other language.
 export function switchPath(pathname: string, lang: Lang): string {
   const p = sitePath(pathname);

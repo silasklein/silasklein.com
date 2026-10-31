@@ -10,8 +10,8 @@ import Px from '../components/Pixel.astro';
 import { ui, sections, profiles, email, t, type Lang } from '../data/content';
 import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
-interface Props { lang: Lang; title?: string; description?: string; home?: boolean }
-const { lang, title, description, home = false } = Astro.props;
+interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean }
+const { lang, title, description, home = false, noindex = false } = Astro.props;
 const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${t(ui.descriptor, lang)}`;
 const desc = description ?? t(ui.subtitle, lang);
 const other = switchPath(Astro.url.pathname, lang);
@@ -28,7 +28,7 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
   <title>{pageTitle}</title>
   <meta name="description" content={desc} />
   <link rel="canonical" href={canonical} />
-  {BASE && <meta name="robots" content="noindex" />}
+  {(BASE || noindex) && <meta name="robots" content="noindex" />}
   <link rel="alternate" hreflang={lang === 'pt' ? 'en' : 'pt-BR'} href={new URL(sitePath(other), Astro.site)} />
   <link rel="icon" type="image/png" sizes="19x19" href={asset('/favicon-19.png')} />
   <link rel="icon" type="image/png" sizes="38x38" href={asset('/favicon-38.png')} />
@@ -90,6 +90,7 @@ const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
       <ul class="footer__profiles">
         <li><a class="fl" href={`mailto:${email}`}><Px name="mail" /><span class="fl__t">{email}</span></a></li>
         {profiles.map((p) => (<li><a class="fl" href={p.href} rel="me noopener" target="_blank"><Px name={p.icon} /><span class="fl__t">{p.name}</span></a></li>))}
+        <li><a class="fl" href="https://universosbiblicos.org" rel="noopener" target="_blank"><Px name="oub" /><span class="fl__t">Observatório</span></a></li>
       </ul>
       <p class="footer__legal">© {new Date().getFullYear()} Silas Klein Cardoso. {t(ui.rights, lang)}</p>
     </div>
