@@ -1,40 +1,40 @@
 {
   "items": [
     {
+      "icon": "mic",
       "title": {
         "en": "Interviews & talks",
         "pt": "Entrevistas & palestras"
       },
       "text": {
-        "en": "Interviews, round tables and talks online: images in ancient Israel, archaeology and the Bible, monotheism and more.",
-        "pt": "Entrevistas, mesas-redondas e palestras online: imagens no antigo Israel, arqueologia e Bíblia, monoteísmo e mais."
+        "en": "Interviews, round tables and talks online: images in ancient Israel, archaeology and the Bible, the history of monotheism and more.",
+        "pt": "Entrevistas, mesas-redondas e palestras online: imagens no antigo Israel, arqueologia e Bíblia, a história do monoteísmo e mais."
       },
-      "href": "/talks",
-      "icon": "mic"
+      "href": "/talks"
     },
     {
+      "icon": "instagram",
       "title": {
         "en": "universos.biblicos",
         "pt": "universos.biblicos"
       },
       "text": {
-        "en": "Short theological entries and research notes on Instagram.",
-        "pt": "Verbetes teológicos e notas de pesquisa no Instagram."
+        "en": "Theological entries, research notes, and more from our research group on Instagram.",
+        "pt": "Verbetes teológicos, notas de pesquisa e mais atividades de nosso grupo de pesquisa no Instagram."
       },
-      "href": "https://instagram.com/universos.biblicos",
-      "icon": "instagram"
+      "href": "https://instagram.com/universos.biblicos"
     },
     {
+      "icon": "seals",
       "title": {
         "en": "Levantine Seals",
         "pt": "Levantine Seals"
       },
       "text": {
-        "en": "Website and social media bringing ancient stamp seals to a wider public.",
-        "pt": "Site e redes sociais que levam os antigos selos de estampar a um público amplo."
+        "en": "Website and social media channels that bring the study of ancient stamps seals from the southern Levant to a wider audience.",
+        "pt": "Site e redes sociais que levam o estudo dos selos de estampar antigos do Levante meridional a um público mais amplo."
       },
-      "href": "https://levantineseals.org/",
-      "icon": "seals"
+      "href": "https://levantineseals.org/"
     }
   ]
 }
