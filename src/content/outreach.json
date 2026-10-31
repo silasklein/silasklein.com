@@ -2,26 +2,14 @@
   "items": [
     {
       "title": {
-        "en": "Levantine Seals",
-        "pt": "Levantine Seals"
-      },
-      "text": {
-        "en": "Website and social media bringing ancient stamp seals to a wider public.",
-        "pt": "Site e redes sociais que levam os antigos selos de estampar a um público amplo."
-      },
-      "href": "https://levantineseals.org/",
-      "icon": "globe"
-    },
-    {
-      "title": {
         "en": "Interviews & talks",
         "pt": "Entrevistas & palestras"
       },
       "text": {
-        "en": "On images in ancient Israel, archaeology and the Bible, monotheism and more.",
-        "pt": "Sobre imagens no antigo Israel, arqueologia e Bíblia, monoteísmo e mais."
+        "en": "Interviews, round tables and talks online: images in ancient Israel, archaeology and the Bible, monotheism and more.",
+        "pt": "Entrevistas, mesas-redondas e palestras online: imagens no antigo Israel, arqueologia e Bíblia, monoteísmo e mais."
       },
-      "href": "https://www.youtube.com/live/iW0PUcJwJqg",
+      "href": "/talks",
       "icon": "mic"
     },
     {
@@ -35,6 +23,18 @@
       },
       "href": "https://instagram.com/universos.biblicos",
       "icon": "instagram"
+    },
+    {
+      "title": {
+        "en": "Levantine Seals",
+        "pt": "Levantine Seals"
+      },
+      "text": {
+        "en": "Website and social media bringing ancient stamp seals to a wider public.",
+        "pt": "Site e redes sociais que levam os antigos selos de estampar a um público amplo."
+      },
+      "href": "https://levantineseals.org/",
+      "icon": "seals"
     }
   ]
 }

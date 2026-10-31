@@ -2,6 +2,7 @@
 order: 2
 slug: "borderline-divine-manifestations"
 page: true
+featured: true
 current: true
 years: "2025–"
 title:

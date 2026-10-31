@@ -435,3 +435,29 @@ a.act:hover .flip { transform: scaleX(-1) translateX(1.5px); }
 .rk__k > .px { margin-top: 0; }
 .rk__kt { display: grid; gap: 2px; }
 .rk__kt > span + span { color: var(--fg-2); font-weight: 500; }
+
+/* ───── Round 12 ───── */
+/* Icons don't travel: on hover they simply sit one icon pixel to the right (no blur in between) */
+.px, a .px, summary .px, .act .px, button.act .px, .rk__t .px, .topics__go { transition: color .1s; }
+.news-list__more { margin-top: 8px; }
+.rk__t .rk__ico { margin: 0 8px 0 0; }
+/* Interviews & talks list */
+.talks { margin-top: 40px; border-top: 1px solid var(--rule); }
+.talks__m { grid-column: 2; font-size: 15px; color: var(--fg-2); }
+/* Research columns: keep long summaries to a few lines */
+.col__p { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Initiatives: each row opens to a description */
+.ini summary { list-style: none; cursor: pointer; grid-template-columns: 18px 1fr 18px; }
+.ini summary::-webkit-details-marker { display: none; }
+.ini summary:hover .rk__t { color: var(--accent); }
+.ini__tog { align-self: start; padding-top: 2px; color: var(--accent); }
+.ini .more__close { display: none !important; }
+.ini[open] .more__open { display: none !important; }
+.ini[open] .more__close { display: inline-block !important; }
+.ini__body { padding: 0 30px 24px; margin-top: -4px; max-width: calc(65ch + 30px); }
+.ini__body p { font-size: 15px; line-height: 1.5; color: var(--fg); }
+.ini__links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 12px; }
+
+/* Design for research: 10% lighter than the dark sections */
+.dfr-band { --band: color-mix(in srgb, var(--dark) 90%, #fff); }

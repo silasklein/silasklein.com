@@ -2,19 +2,19 @@
   "items": [
     {
       "kicker": {
-        "en": "Research unit · 2026–",
-        "pt": "Grupo de pesquisa · 2026–"
+        "en": "Research group · 2024–",
+        "pt": "Grupo de pesquisa · 2024–"
       },
       "title": {
-        "en": "Epistemology of the Divine (DFG-FOR 5949)",
-        "pt": "Epistemology of the Divine (DFG-FOR 5949)"
+        "en": "Observatório de Universos Bíblicos",
+        "pt": "Observatório de Universos Bíblicos"
       },
       "text": {
-        "en": "Member of sub-project 3, “Visible Daily”, at the Bergische Universität Wuppertal: stamp and cylinder seals as the first mass media.",
-        "pt": "Membro do subprojeto 3, “Visible Daily”, na Bergische Universität Wuppertal: selos de estampar e cilíndricos como as primeiras mídias de massa."
+        "en": "The research group I lead at FUV’s Graduate Program in Religious Studies: inscriptions, images, objects, literatures and rites of the biblical worlds.",
+        "pt": "O grupo de pesquisa que lidero no PPG em Ciências das Religiões da FUV: inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
       },
-      "href": "/research/epistemology-of-the-divine",
-      "icon": "group"
+      "href": "https://universosbiblicos.org",
+      "icon": "oub"
     },
     {
       "kicker": {

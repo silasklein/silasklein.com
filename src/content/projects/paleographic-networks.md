@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 slug: "paleographic-networks"
 page: false
 current: false

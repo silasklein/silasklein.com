@@ -1,7 +1,7 @@
 ---
 order: 1
 slug: "stamp-seals-identity"
-icon: "brush"
+icon: "seals"
 year: "2020–2023"
 title:
   en: "Stamp Seals from the Southern Levant"

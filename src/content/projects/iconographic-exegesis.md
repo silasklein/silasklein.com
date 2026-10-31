@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 slug: "iconographic-exegesis"
 page: true
 current: false

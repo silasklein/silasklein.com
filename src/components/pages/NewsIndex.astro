@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import { ui, news, sections, type Lang, t } from '../../data/content';
+import Px from '../Pixel.astro';
 import { href } from '../../lib/format';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -19,6 +20,7 @@ const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang ===
           <div>
             <h2><a href={href(`/news/${p.slug}`, lang)}>{p.title}</a>{p.lang !== lang && <span class="tag">{p.lang.toUpperCase()}</span>}</h2>
             <p>{p.summary}</p>
+            <a class="act news-list__more" href={href(`/news/${p.slug}`, lang)}><Px name="arrowRight" /><span>{lang === 'pt' ? 'Ler a notícia completa' : 'Read the full story'}</span></a>
           </div>
         </li>
       ))}

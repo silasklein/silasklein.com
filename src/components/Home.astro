@@ -11,8 +11,9 @@ import { sig, href, asset, yrs } from '../lib/format';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const S = sections;
-const current = projects.filter((p) => p.current);
-const past = projects.filter((p) => !p.current);
+// The two projects he leads open the section; the rest (ongoing as associate, then past) sit in the accordion.
+const current = projects.filter((p) => p.featured);
+const past = projects.filter((p) => !p.featured);
 const pt = lang === 'pt';
 ---
 <!-- HERO -->
@@ -113,7 +114,7 @@ const pt = lang === 'pt';
     <h3 class="h3"><Px name="star" />{pt ? 'Prêmios e títulos' : 'Awards & distinctions'}</h3>
     <ul class="recog">{recognition.map((r) => (<li data-reveal>{t(r, lang)}</li>))}</ul>
     <details class="more">
-      <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><span>{pt ? 'Projetos anteriores' : 'Earlier projects'} ({past.length})</span></summary>
+      <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><span>{pt ? 'Outros projetos' : 'Other projects'} ({past.length})</span></summary>
       <ul class="rows-k">
         {past.map((p) => (
           <li>
@@ -121,7 +122,7 @@ const pt = lang === 'pt';
               <span class="rk__k rk__k--year">{yrs(p.years, lang)}</span>
               <span class="rk__v">
                 {p.slug
-                  ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowUpRight" /></a>
+                  ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}>{p.icon && <Px name={p.icon} class="rk__ico" />}<span set:html={sig(t(p.title, lang))} /> <Px name="arrowRight" /></a>
                   : <span class="rk__t" set:html={sig(t(p.title, lang))} />}
                 <span class="rk__p">{t(p.summary, lang)}</span>
               </span>
@@ -168,8 +169,7 @@ const pt = lang === 'pt';
       ))}
     </ul>
     <p class="links links--full" data-reveal>
-      <a class="act" href={href('/publications', lang)}><Px name="library" /><span>{t(ui.fullList, lang)}</span></a>
-      {profiles.filter((p) => ['Zotero', 'ORCID', 'Lattes'].includes(p.name)).map((p) => (<a href={p.href} target="_blank" rel="noopener"><Px name={p.icon} />{p.name}</a>))}
+      <a class="act" href={href('/publications', lang)}><Px name="arrowRight" /><span>{pt ? 'Ver a lista completa de publicações' : 'See the full list of publications'}</span></a>
     </p>
   </div>
 </section>
@@ -186,9 +186,9 @@ const pt = lang === 'pt';
       <ul class="rows-k rows-k--flush">
         {outreach.map((o) => (
           <li data-reveal>
-            <a class="rk rk--two" href={o.href} target="_blank" rel="noopener">
+            <a class="rk rk--two" href={o.href.startsWith('/') ? href(o.href, lang) : o.href} target={o.href.startsWith('/') ? undefined : '_blank'} rel={o.href.startsWith('/') ? undefined : 'noopener'}>
               <Px name={o.icon} />
-              <span class="rk__v"><span class="rk__t">{t(o.title, lang)} <Px name="arrowUpRight" /></span><span class="rk__p">{t(o.text, lang)}</span></span>
+              <span class="rk__v"><span class="rk__t">{t(o.title, lang)} <Px name={o.href.startsWith('/') ? 'arrowRight' : 'arrowUpRight'} /></span><span class="rk__p">{t(o.text, lang)}</span></span>
             </a>
           </li>
         ))}
@@ -205,15 +205,25 @@ const pt = lang === 'pt';
     <ul class="rows-k rows-k--top">
       {initiatives.map((it) => (
         <li data-reveal>
-          <div class="rk rk--two">
-            <Px name={it.icon} />
-            <span class="rk__v">
-              {it.href
-                ? <a class="rk__t" href={it.href} target="_blank" rel="noopener">{t(it.title, lang)} <Px name="arrowUpRight" /></a>
-                : <span class="rk__t">{t(it.title, lang)}</span>}
-              <span class="rk__p">{t(it.text, lang)}</span>
-            </span>
-          </div>
+          <details class="ini">
+            <summary class="rk rk--two">
+              <Px name={it.icon} />
+              <span class="rk__v">
+                <span class="rk__t">{t(it.title, lang)}</span>
+                <span class="rk__p">{t(it.text, lang)}</span>
+              </span>
+              <span class="ini__tog" aria-hidden="true"><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /></span>
+            </summary>
+            <div class="ini__body">
+              {it.details && <p>{t(it.details, lang)}</p>}
+              {(it.more || it.href) && (
+                <p class="ini__links">
+                  {it.more && <a class="act" href={href(it.more, lang)}><Px name="arrowRight" /><span>{t(ui.readMore, lang)}</span></a>}
+                  {it.href && <a class="act" href={it.href} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>{it.href.replace(/^https?:\/\//, '').replace(/\/$/, '')}</span></a>}
+                </p>
+              )}
+            </div>
+          </details>
         </li>
       ))}
     </ul>

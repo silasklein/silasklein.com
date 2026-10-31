@@ -1,7 +1,7 @@
 ---
 order: 3
 slug: "cssl-volume-vi"
-icon: "layout"
+icon: "seals"
 year: "2026"
 title:
   en: "Corpus of Stamp Seals, vol. VI"

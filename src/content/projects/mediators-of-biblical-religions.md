@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 slug: "mediators-of-biblical-religions"
 page: false
 current: false

@@ -9,7 +9,12 @@
       "text": {
         "en": "Co-founded with Thomas Wagner (Wuppertal): an itinerant North–South school in visual methods for MA/PhD students and early-career researchers. Wuppertal 2024 and 2025, Vitória 2026, Prague 2027 (planned).",
         "pt": "Criada com Thomas Wagner (Wuppertal): uma escola itinerante Norte–Sul de métodos visuais para mestrandos, doutorandos e pesquisadores em início de carreira. Wuppertal 2024 e 2025, Vitória 2026, Praga 2027 (prevista)."
-      }
+      },
+      "details": {
+        "en": "An itinerant school that alternates every year between European and Latin American hosts, with an international Scientific Board and 2 ECTS (20 contact hours) per edition. Rooted in the visual studies tradition of the Fribourg School, it trains students to read ancient images alongside texts, inscriptions and archaeology, with hands-on work on artefacts.",
+        "pt": "Uma escola itinerante que alterna a cada ano entre instituições europeias e latino-americanas, com conselho científico internacional e 2 ECTS (20 horas-aula) por edição. Enraizada na tradição de estudos visuais da Escola de Friburgo, forma estudantes para ler imagens antigas ao lado de textos, inscrições e arqueologia, com trabalho prático sobre artefatos."
+      },
+      "more": "/research/summer-school-iconography"
     },
     {
       "icon": "oub",
@@ -21,7 +26,11 @@
         "en": "Research group on inscriptions, images, objects, literatures and rites of the biblical worlds.",
         "pt": "Grupo de pesquisa sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
       },
-      "href": "https://universosbiblicos.org"
+      "href": "https://universosbiblicos.org",
+      "details": {
+        "en": "Since November 2024 I lead this research group at FUV. It studies religious phenomena, practices and productions from the contexts in which biblical texts were conceived, produced and first received, bringing the questions and tools of anthropology, archaeology, hermeneutics, philosophy, history and literature of religions to inscriptions, images, objects, literatures and rites.",
+        "pt": "Desde novembro de 2024 lidero este grupo de pesquisa na FUV. Ele investiga fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram gestados, produzidos e primariamente recebidos, com questionamentos e instrumentais da antropologia, arqueologia, hermenêutica, filosofia, história e literatura das religiões aplicados a inscrições, imagens, objetos, literaturas e ritos."
+      }
     },
     {
       "icon": "building",
@@ -32,6 +41,10 @@
       "text": {
         "en": "Dean of the master’s and doctoral program at Faculdade Unida de Vitória, Brazil.",
         "pt": "Coordenador do mestrado e doutorado da Faculdade Unida de Vitória."
+      },
+      "details": {
+        "en": "Since February 2025 I have been Dean of the professional master’s and doctoral program in Religious Studies at Faculdade Unida de Vitória, where I am permanent faculty and also teach in the undergraduate Theology course. The program hosts the research group Observatório de Universos Bíblicos and a faculty seminar each semester.",
+        "pt": "Desde fevereiro de 2025 coordeno o Programa de Pós-Graduação Profissional em Ciências das Religiões (mestrado e doutorado) da Faculdade Unida de Vitória, onde sou docente permanente e professor da graduação em Teologia. O programa abriga o grupo de pesquisa Observatório de Universos Bíblicos e um seminário docente semestral."
       }
     },
     {
@@ -43,6 +56,10 @@
       "text": {
         "en": "XXXIII Colloquium Biblicum, Prague (2026) · EABS Annual Conference, Leuven (2026) · XI Abib International Congress (2026) · workshops at ICAANE, Copenhagen (2023)",
         "pt": "XXXIII Colloquium Biblicum, Praga (2026) · EABS Annual Conference, Leuven (2026) · XI Congresso Internacional da Abib (2026) · workshops no ICAANE, Copenhague (2023)"
+      },
+      "details": {
+        "en": "Recent: International Symposium “The Zodiac and Religious Conceptions of Time” (Vitória, 2026) · International Summer School (Wuppertal 2024 and 2025, Vitória 2026) · workshop “Paleographic Networks” (Bern, 2024) · CSSL database training (Zurich, 2024) · international workshops of the Behemot network (online, 2023) · workshop “Beyond the Biblical World Paradigm” (Zurich, 2022).",
+        "pt": "Recentes: Simpósio Internacional “The Zodiac and Religious Conceptions of Time” (Vitória, 2026) · Escola Internacional de Verão (Wuppertal 2024 e 2025, Vitória 2026) · workshop “Paleographic Networks” (Berna, 2024) · treinamento na base de dados CSSL (Zurique, 2024) · workshops internacionais da rede Behemot (online, 2023) · workshop “Beyond the Biblical World Paradigm” (Zurique, 2022)."
       }
     },
     {
@@ -54,6 +71,10 @@
       "text": {
         "en": "Vice-President, Brazilian Association for Biblical Research (Abib) · Executive Committee, European Association of Biblical Studies (EABS) · editorial board, RIBLA",
         "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) · comitê diretivo da European Association of Biblical Studies (EABS) · corpo editorial da RIBLA"
+      },
+      "details": {
+        "en": "Vice-President of the Brazilian Association for Biblical Research (Abib) since January 2025; member of the Executive Committee of the European Association of Biblical Studies (EABS) since June 2025; member of the editorial board of RIBLA (Revista de Interpretação Bíblica Latino-Americana).",
+        "pt": "Vice-presidente da Associação Brasileira de Pesquisa Bíblica (Abib) desde janeiro de 2025; membro do comitê diretivo da European Association of Biblical Studies (EABS) desde junho de 2025; membro do corpo editorial da RIBLA (Revista de Interpretação Bíblica Latino-Americana)."
       }
     }
   ]

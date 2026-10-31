@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
+import Px from '../Pixel.astro';
 import { ui, projects, sections, t, type Lang, type Project } from '../../data/content';
 import { sig, href, yrs } from '../../lib/format';
 interface Props { lang: Lang; project: Project }
@@ -13,7 +14,7 @@ const prev = withPages[i - 1], next = withPages[i + 1];
   <article class="page">
     <a class="page__back" href={href('#research', lang)}>← {t(ui.nav.research, lang)}</a>
     <Label n={sections.research.n} text={t(sections.research.label, lang)} />
-    <h1 class="h2" set:html={sig(t(p.title, lang))} />
+    <h1 class="h2">{p.icon && <Px name={p.icon} size={36} />} <span set:html={sig(t(p.title, lang))} /></h1>
     <dl class="meta">
       <dt>{lang === 'pt' ? 'Período' : 'Period'}</dt><dd>{yrs(p.years, lang)}</dd>
       <dt>{t(ui.role, lang)}</dt><dd>{t(p.role, lang)}</dd>

@@ -1,15 +1,17 @@
 ---
-order: 1
+order: 3
+icon: "epod"
+featured: false
 slug: "epistemology-of-the-divine"
 page: true
 current: true
 years: "2026–"
 title:
-  en: "Epistemology of the Divine"
-  pt: "Epistemology of the Divine"
+  en: "EPOD: Epistemology of the Divine"
+  pt: "EPOD: Epistemology of the Divine"
 role:
-  en: "Member, sub-project 3 “Visible Daily” (lead: PD Dr Thomas Wagner)"
-  pt: "Membro, subprojeto 3 “Visible Daily” (coord.: PD Dr. Thomas Wagner)"
+  en: "Associate researcher, sub-project 3 “Visible Daily” (lead: PD Dr Thomas Wagner)"
+  pt: "Pesquisador associado, subprojeto 3 “Visible Daily” (coord.: PD Dr. Thomas Wagner)"
 funding: "Deutsche Forschungsgemeinschaft (DFG-FOR 5949), D-A-CH with FWF"
 partners: "Bergische Universität Wuppertal"
 summary:

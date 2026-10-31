@@ -84,6 +84,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: k
             label: Key
             type: object
@@ -208,6 +210,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: href
             label: Link
             type: string
@@ -256,6 +260,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: label
             label: Label
             type: object
@@ -537,6 +543,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: kicker
             label: Kicker
             type: object
@@ -689,6 +697,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: title
             label: Title
             type: object
@@ -700,7 +710,7 @@ content:
                 label: Português
                 type: string
           - name: text
-            label: Text
+            label: Short text (always visible)
             type: object
             fields:
               - name: en
@@ -709,9 +719,66 @@ content:
               - name: pt
                 label: Português
                 type: text
-          - name: href
-            label: Link
+          - name: details
+            label: Description (shown when the row is opened)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: text
+              - name: pt
+                label: Português
+                type: text
+          - name: more
+            label: Internal page (optional)
             type: string
+            description: e.g. /research/summer-school-iconography
+          - name: href
+            label: External link (optional)
+            type: string
+  - name: talks
+    label: 05 Interviews & talks
+    type: file
+    path: src/content/talks.json
+    format: json
+    fields:
+      - name: items
+        label: Items
+        type: object
+        list: true
+        fields:
+          - name: year
+            label: Year
+            type: string
+            required: true
+          - name: kind
+            label: Type (Interview, Talk…)
+            type: object
+            fields:
+              - name: en
+                label: English
+                type: string
+              - name: pt
+                label: Português
+                type: string
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: channel
+            label: Channel / venue
+            type: string
+          - name: lang
+            label: Language
+            type: select
+            options:
+              values:
+                - pt
+                - en
+          - name: href
+            label: Video link
+            type: string
+            required: true
   - name: outreach
     label: '05 Teaching: in public'
     type: file
@@ -763,6 +830,8 @@ content:
                 - zotero
                 - researchgate
                 - oub
+                - seals
+                - epod
           - name: title
             label: Title
             type: object
@@ -786,6 +855,7 @@ content:
           - name: href
             label: Link
             type: string
+            description: External address, or an internal page such as /talks
   - name: clients
     label: 07 Clients
     type: file
@@ -839,6 +909,52 @@ content:
       - name: current
         label: Current project
         type: boolean
+      - name: featured
+        label: Show in the two main columns
+        type: boolean
+        description: Projects you lead. The others go under “Other projects”.
+      - name: icon
+        label: Icon (optional)
+        type: select
+        options:
+          values:
+            - arrowRight
+            - arrowUpRight
+            - arrowDown
+            - plus
+            - minus
+            - mail
+            - pin
+            - copy
+            - download
+            - library
+            - books
+            - star
+            - news
+            - now
+            - field
+            - group
+            - image
+            - sun
+            - eye
+            - building
+            - calendar
+            - community
+            - brush
+            - pencil
+            - layout
+            - mic
+            - globe
+            - presentation
+            - instagram
+            - linkedin
+            - orcid
+            - lattes
+            - zotero
+            - researchgate
+            - oub
+            - seals
+            - epod
       - name: years
         label: Years
         type: string
@@ -1064,6 +1180,8 @@ content:
             - zotero
             - researchgate
             - oub
+            - seals
+            - epod
       - name: year
         label: Year
         type: string

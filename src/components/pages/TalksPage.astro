@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import Px from '../Pixel.astro';
+import { sections, talks, t, type Lang } from '../../data/content';
+import { href } from '../../lib/format';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const pt = lang === 'pt';
+const title = pt ? 'Entrevistas & palestras' : 'Interviews & talks';
+---
+<Base lang={lang} title={title}>
+  <div class="page">
+    <a class="page__back" href={href('#teaching', lang)}>← {t(sections.teaching.label, lang).replace(/^./, (c) => c.toUpperCase())}</a>
+    <Label n={sections.teaching.n} text={t(sections.teaching.label, lang)} />
+    <h1 class="h2">{title}</h1>
+    <p class="lead">{pt ? 'Entrevistas, mesas-redondas e palestras disponíveis online.' : 'Interviews, round tables and talks available online (in Portuguese).'}</p>
+    <ul class="pubs talks">
+      {talks.map((it) => (
+        <li>
+          <span class="pubs__v pubs__y">{it.year}</span>
+          <a class="rk__t" href={it.href} target="_blank" rel="noopener">{it.title} <Px name="arrowUpRight" /></a>
+          <span class="talks__m">{t(it.kind, lang)} · {it.channel}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Base>

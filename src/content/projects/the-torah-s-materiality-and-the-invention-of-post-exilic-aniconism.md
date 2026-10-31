@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 9
 slug: "the-torah-s-materiality-and-the-invention-of-post-exilic-aniconism"
 page: false
 current: false

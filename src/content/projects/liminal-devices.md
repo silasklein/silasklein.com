@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 7
 slug: "liminal-devices"
 page: true
 current: false
