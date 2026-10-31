@@ -72,9 +72,10 @@ export type Project = { order?: number; slug?: string; page?: boolean; featured?
 export const projects: Project[] = fm<Project>(import.meta.glob('../content/projects/*.md', { eager: true }))
   .sort(byOrder).map((p) => ({ ...p, slug: p.page ? p.slug : undefined }));
 
-export type Post = { slug: string; date: string; lang: Lang; title: string; summary: string; Content?: any };
+export type Post = { slug: string; date: string; lang: Lang; title: string; summary: string; html?: string };
 const newsMods = Object.values(import.meta.glob('../content/news/*.md', { eager: true })) as any[];
-export const news: Post[] = newsMods.map((m) => ({ ...m.frontmatter, Content: m.rawContent().trim() ? m.Content : undefined }) as Post)
+// The post text (Markdown below the frontmatter) is kept as HTML so the page can fix image paths for the preview address.
+export const news: Post[] = (await Promise.all(newsMods.map(async (m) => ({ ...m.frontmatter, html: m.rawContent().trim() ? await m.compiledContent() : undefined }) as Post)))
   .map((p) => ({ ...p, date: (p.date as unknown) instanceof Date ? (p.date as unknown as Date).toISOString().slice(0, 10) : String(p.date).slice(0, 10) })).sort((a, b) => b.date.localeCompare(a.date));
 
 export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L };

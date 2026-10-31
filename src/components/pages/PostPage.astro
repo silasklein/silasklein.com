@@ -2,10 +2,11 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import { sections, t, type Lang, type Post } from '../../data/content';
-import { href } from '../../lib/format';
+import { href, BASE } from '../../lib/format';
 interface Props { lang: Lang; post: Post }
 const { lang, post: p } = Astro.props;
-const Body = p.Content;
+// Root-relative images in the post point to /img/…; on the preview address they need the prefix.
+const body = p.html?.replace(/(src|href)="\/(?!\/)/g, `$1="${BASE}/`).replace(/<img /g, '<img loading="lazy" decoding="async" ');
 const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 <Base lang={lang} title={p.title} description={p.summary}>
@@ -19,7 +20,8 @@ const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'p
     <Label n={sections.currently.n} text={t(sections.currently.label, lang)} />
     <p class="post__date"><time datetime={p.date}>{fmt}</time></p>
     <h1 class="h2">{p.title}</h1>
-    <div class="prose lead"><p>{p.summary}</p></div>
-    {Body && <div class="prose post__body"><Body /></div>}
+    {body
+      ? <div class="prose post__body" set:html={body} />
+      : <div class="prose lead"><p>{p.summary}</p></div>}
   </article>
 </Base>
