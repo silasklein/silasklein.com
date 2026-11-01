@@ -1238,7 +1238,7 @@ content:
     type: collection
     path: src/content/news
     format: yaml-frontmatter
-    filename: '{fields.slug}.md'
+    filename: '{fields.slug}.{fields.lang}.md'
     view:
       fields:
         - title
@@ -1266,10 +1266,12 @@ content:
       - name: lang
         label: Language
         type: select
+        required: true
         options:
           values:
-            - en
             - pt
+            - en
+        description: pt appears only on the Portuguese site, en only on the English site. For a post in both languages, create two entries with the same slug, one in each language.
       - name: title
         label: Title
         type: string

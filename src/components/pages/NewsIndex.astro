@@ -14,11 +14,11 @@ const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang ===
     <Label n={sections.currently.n} text={t(sections.currently.label, lang)} />
     <h1 class="h2">{lang === 'pt' ? 'Notícias' : 'News'}</h1>
     <ul class="news-list">
-      {news.map((p) => (
+      {news.filter((p) => p.lang === lang).map((p) => (
         <li>
           <time datetime={p.date}>{fmt(p.date)}</time>
           <div>
-            <h2><a href={href(`/news/${p.slug}`, lang)}>{p.title}</a>{p.lang !== lang && <span class="tag">{p.lang.toUpperCase()}</span>}</h2>
+            <h2><a href={href(`/news/${p.slug}`, lang)}>{p.title}</a></h2>
             <p>{p.summary}</p>
             <a class="act news-list__more" href={href(`/news/${p.slug}`, lang)}><Px name="arrowRight" /><span>{lang === 'pt' ? 'Ler a notícia completa' : 'Read the full story'}</span></a>
           </div>

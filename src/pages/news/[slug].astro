@@ -1,6 +1,6 @@
 ---
 import PostPage from '../../components/pages/PostPage.astro';
 import { news } from '../../data/content';
-export function getStaticPaths() { return news.map((p) => ({ params: { slug: p.slug }, props: { post: p } })); }
+export function getStaticPaths() { return news.filter((p) => p.lang === 'pt').map((p) => ({ params: { slug: p.slug }, props: { post: p } })); }
 ---
 <PostPage lang="pt" post={Astro.props.post} />

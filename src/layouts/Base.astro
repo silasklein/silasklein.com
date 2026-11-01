@@ -10,11 +10,13 @@ import Px from '../components/Pixel.astro';
 import { ui, sections, profiles, email, t, type Lang } from '../data/content';
 import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
-interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean }
+interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean; other?: string; translated?: boolean }
 const { lang, title, description, home = false, noindex = false } = Astro.props;
 const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein Cardoso · ${t(ui.descriptor, lang)}`;
 const desc = description ?? t(ui.subtitle, lang);
-const other = switchPath(Astro.url.pathname, lang);
+// The language switch: same page in the other language, unless the page names another target (e.g. a post without translation).
+const other = Astro.props.other ?? switchPath(Astro.url.pathname, lang);
+const translated = Astro.props.translated ?? true;
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
 const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
 // Language versions of this page: Portuguese is the default (x-default), English lives under /en/.
@@ -45,7 +47,7 @@ const person = {
   <meta name="description" content={desc} />
   <link rel="canonical" href={canonical} />
   {(BASE || noindex) && <meta name="robots" content="noindex" />}
-  {!noindex && <>
+  {!noindex && translated && <>
     <link rel="alternate" hreflang="pt-BR" href={new URL(ptPath, Astro.site)} />
     <link rel="alternate" hreflang="en" href={new URL(enPath, Astro.site)} />
     <link rel="alternate" hreflang="x-default" href={new URL(ptPath, Astro.site)} />

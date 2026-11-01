@@ -74,3 +74,28 @@ for (const b of document.querySelectorAll<HTMLButtonElement>('[data-copy]')) {
     } catch { /* clipboard unavailable */ }
   });
 }
+
+// Post galleries: one image at a time; buttons, swipe or arrow keys move between them.
+for (const g of document.querySelectorAll<HTMLElement>('.gallery')) {
+  const track = g.querySelector<HTMLElement>('.gallery__track')!;
+  const count = g.querySelector('.gallery__count')!;
+  const prev = g.querySelector<HTMLButtonElement>('.gallery__prev')!;
+  const next = g.querySelector<HTMLButtonElement>('.gallery__next')!;
+  const total = track.children.length;
+  const current = () => Math.round(track.scrollLeft / track.clientWidth);
+  const go = (i: number) => track.scrollTo({ left: Math.max(0, Math.min(total - 1, i)) * track.clientWidth, behavior: 'smooth' });
+  const update = () => {
+    const i = current();
+    count.textContent = `${i + 1} / ${total}`;
+    prev.disabled = i === 0;
+    next.disabled = i === total - 1;
+  };
+  prev.addEventListener('click', () => go(current() - 1));
+  next.addEventListener('click', () => go(current() + 1));
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(current() + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(current() - 1); }
+  });
+  track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
+  update();
+}

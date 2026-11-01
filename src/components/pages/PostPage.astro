@@ -1,15 +1,27 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
-import { sections, t, type Lang, type Post } from '../../data/content';
+import { sections, news, t, type Lang, type Post } from '../../data/content';
 import { href, BASE } from '../../lib/format';
 interface Props { lang: Lang; post: Post }
 const { lang, post: p } = Astro.props;
+const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
+const translation = news.find((x) => x.slug === p.slug && x.lang === otherLang);
 // Root-relative images in the post point to /img/…; on the preview address they need the prefix.
-const body = p.html?.replace(/(src|href)="\/(?!\/)/g, `$1="${BASE}/`).replace(/<img /g, '<img loading="lazy" decoding="async" ');
+const body = p.html?.replace(/(src|href)="\/(?!\/)/g, `$1="${BASE}/`).replace(/<img /g, '<img loading="lazy" decoding="async" ')
+  // Two or more images in a row become one carousel instead of a long column.
+  .replace(/(?:<p>\s*(?:<img[^>]*>\s*)+<\/p>\s*){2,}/g, (run) => {
+    const imgs = run.match(/<img[^>]*>/g) ?? [];
+    const arrow = (cls: string) => `<svg class="px ${cls}" viewBox="0 1 24 24" width="18" height="18" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true"><path d="M4 11v2h16v-2zm12 2v2h2v-2zm-2 2v2h2v-2zm-2 2v2h2v-2zm4-6V9h2v2z"/><path d="M14 15V7h2v8zm-2 2V5h2v12z"/></svg>`;
+    return `<div class="gallery" role="region" aria-roledescription="carousel" aria-label="${lang === 'pt' ? 'Galeria de imagens' : 'Image gallery'}">`
+      + `<div class="gallery__track" tabindex="0">${imgs.map((i) => `<figure class="gallery__slide">${i}</figure>`).join('')}</div>`
+      + `<div class="gallery__nav"><button class="act gallery__prev" type="button" aria-label="${lang === 'pt' ? 'Imagem anterior' : 'Previous image'}">${arrow('flip')}</button>`
+      + `<span class="gallery__count" aria-live="polite">1 / ${imgs.length}</span>`
+      + `<button class="act gallery__next" type="button" aria-label="${lang === 'pt' ? 'Próxima imagem' : 'Next image'}">${arrow('')}</button></div></div>`;
+  });
 const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base lang={lang} title={p.title} description={p.summary}>
+<Base lang={lang} title={p.title} description={p.summary} other={href(translation ? `/news/${p.slug}` : '/news', otherLang)} translated={!!translation}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.summary,
     datePublished: p.date, inLanguage: p.lang === 'pt' ? 'pt-BR' : 'en',
