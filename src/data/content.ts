@@ -52,6 +52,7 @@ export const sections = site.sections as Record<'about' | 'currently' | 'researc
 export const facts = site.facts as { icon: string; k: L; v: L }[];
 export const bio = site.bio as L;
 export const bio2 = site.bio2 as L;
+export const photoCredit = (site as any).photoCredit as L | undefined;
 export const researchApproach = site.researchApproach as L;
 export const teaching = site.teaching as L;
 export const designIntro = site.designIntro as L;

@@ -5,7 +5,7 @@ import RolePlace from './RolePlace.astro';
 import {
   ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
-  bio, bio2, contactTopics, facts, email, t, type Lang,
+  bio, bio2, photoCredit, contactTopics, facts, email, t, type Lang,
 } from '../data/content';
 import { sig, href, asset, yrs, arrow } from '../lib/format';
 
@@ -61,8 +61,9 @@ const pt = lang === 'pt';
         </p>
       </div>
       <figure class="ab__photo" data-reveal>
-        <img src={asset('/img/portrait-scholar.webp')} alt="Silas Klein" width="600" height="600" />
+        <img src={asset('/img/portrait-scholar.webp')} alt={pt ? "Silas Klein Cardoso. Foto: Bruno Biermann" : "Silas Klein Cardoso. Photo: Bruno Biermann"} width="600" height="600" />
         <figcaption class="actions">
+          {photoCredit && <span class="ab__credit">{t(photoCredit, lang)}</span>}
           <button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button>
           <a class="act" href={asset('/img/portrait-scholar-full.jpg')} download="silas-klein-cardoso.jpg"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
         </figcaption>
