@@ -1,0 +1,47 @@
+---
+// End of every case page: the skill tags, then three cases that share at least one of them.
+// The three are drawn at random on each visit — from the other division first, then from the same one —
+// so the cases keep pointing across research and art direction. Without JavaScript, the first three by
+// tags in common show instead. The pager goes in the slot.
+import { cases, researchCases, tagLabel, type Lang } from '../data/content';
+import { href, asset } from '../lib/format';
+interface Props { lang: Lang; slug: string; tags: string[]; research: boolean }
+const { lang, slug, tags, research } = Astro.props;
+const pt = lang === 'pt';
+
+// Research case pages exist in Portuguese only for now, so the English pages link to art direction only.
+const pool = [
+  ...cases.map((a, n) => ({ research: false, n, slug: a.slug, tags: a.tags ?? [], img: a.image, title: a.title })),
+  ...(pt ? researchCases.map((r, n) => ({ research: true, n, slug: r.slug, tags: r.tags, img: `/img/cases/_mosaic/${r.slug}.webp`, title: r.title })) : []),
+];
+const related = pool
+  .filter((x) => x.slug !== slug)
+  .map((x) => ({ ...x, other: x.research !== research, shared: x.tags.filter((s) => tags.includes(s)).length }))
+  .filter((x) => x.shared > 0)
+  .sort((a, b) => Number(b.other) - Number(a.other) || b.shared - a.shared || a.n - b.n);
+---
+<section class="cs__end" aria-label={pt ? 'Habilidades e cases relacionados' : 'Skills and related cases'}>
+  {tags.length > 0 && <div class="cs__eg"><h2 class="cs__ek">{pt ? 'Habilidades' : 'Skills'}</h2><div class="cs__comp">{tags.map((s) => <span>{tagLabel(s, lang)}</span>)}</div></div>}
+  {related.length > 0 && (
+    <div class="cs__eg"><h2 class="cs__ek">{pt ? 'A mesma competência em outros cases' : 'The same skills in other cases'}</h2>
+      <div class="cs__rel" data-rel>
+        {related.map((r, i) => (
+          <a href={href(`/design/${r.slug}`, lang)} aria-label={r.title} data-other={r.other ? '1' : '0'} hidden={i >= 3}>
+            <div class="cs__rimg"><img src={asset(r.img)} alt="" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+  <slot />
+</section>
+
+<script>
+  const shuffle = <T,>(a: T[]) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  document.querySelectorAll<HTMLElement>('[data-rel]').forEach((box) => {
+    const cards = [...box.children] as HTMLElement[];
+    const pick = [...shuffle(cards.filter((c) => c.dataset.other === '1')), ...shuffle(cards.filter((c) => c.dataset.other !== '1'))].slice(0, 3);
+    cards.forEach((c) => { c.hidden = !pick.includes(c); });
+    pick.forEach((c) => box.append(c));
+  });
+</script>

@@ -4,7 +4,7 @@ import Px from './Pixel.astro';
 import RolePlace from './RolePlace.astro';
 import {
   ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
-  teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
+  teaching, outreach, initiatives, designIntro, designForResearch, clients, cases, researchCases,
   bio, bio2, contactTopics, facts, email, t, type Lang,
 } from '../data/content';
 import { sig, href, asset, yrs, arrow } from '../lib/format';
@@ -242,7 +242,7 @@ const pt = lang === 'pt';
     </div>
     <p class="clients" data-reveal>
       {clients.map((c, i) => (
-        <>{c.slug ? <a href={href(`/design/${c.slug}`, lang)}>{c.name}</a> : <span>{c.name}</span>}{i < clients.length - 1 && <span class="clients__sep" aria-hidden="true"> · </span>}</>
+        <>{c.slug && (pt || !researchCases.some((r) => r.slug === c.slug)) ? <a href={href(`/design/${c.slug}`, lang)}>{c.name}</a> : <span>{c.name}</span>}{i < clients.length - 1 && <span class="clients__sep" aria-hidden="true"> · </span>}</>
       ))}
     </p>
   </div>

@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import Px from '../Pixel.astro';
+import CaseEnd from '../CaseEnd.astro';
 import { ui, cases, sections, t, type Lang, type Case } from '../../data/content';
 import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: Case }
@@ -28,9 +29,11 @@ const images = c.gallery?.length ? c.gallery : [c.image];
         <img src={asset(src)} alt={`${c.title} — ${n + 1}/${images.length}`} loading={n < 2 ? 'eager' : 'lazy'} decoding="async" />
       ))}
     </div>
+    <CaseEnd lang={lang} slug={c.slug} tags={c.tags ?? []} research={false}>
     <nav class="pager">
       <a class="act" href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span>{prev.title}</span></a>
       <a class="act" href={href(`/design/${next.slug}`, lang)}><span>{next.title}</span><Px name="arrowRight" /></a>
     </nav>
+    </CaseEnd>
   </article>
 </Base>

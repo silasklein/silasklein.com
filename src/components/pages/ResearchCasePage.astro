@@ -1,12 +1,13 @@
 ---
 // Design-for-research case: thesis → evidence → skills. Each decision sits beside the images that prove it;
-// the page ends with its skill tags and up to three cases, from either division, that share one.
+// the page ends with its skill tags and three cases that share one (CaseEnd).
 import sharp from 'sharp';
 import { join } from 'node:path';
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import Px from '../Pixel.astro';
-import { cases, researchCases, sections, tagLabel, t, type Lang, type ResearchCase } from '../../data/content';
+import CaseEnd from '../CaseEnd.astro';
+import { researchCases, sections, type Lang, type ResearchCase } from '../../data/content';
 import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: ResearchCase }
 const { lang, item: c } = Astro.props;
@@ -22,19 +23,6 @@ for (const src of [c.hero, ...c.decisions.flatMap((d) => (d.images ?? []).map((i
 
 // Captions: the first sentence in bold.
 const cap = (s: string) => { const m = s.match(/^(.+?[.!?])(\s|$)(.*)$/s); return m ? { b: m[1], rest: m[3] } : { b: '', rest: s }; };
-
-// Related: cases sharing at least one tag (compared by slug) — the other division first, then the most tags
-// in common, then site order.
-const year = (r: ResearchCase) => r.meta.find((m) => m.k === 'Ano')?.v ?? '';
-const pool = [
-  ...cases.map((a, n) => ({ other: true, n, tags: a.tags ?? [], href: `/design/${a.slug}`, img: a.image, g: `${pt ? 'Direção de arte' : 'Art direction'}${a.year ? ` · ${a.year}` : ''}`, title: a.title, p: a.role ? t(a.role, lang) : '' })),
-  ...researchCases.filter((r) => r.slug !== c.slug).map((r, n) => ({ other: false, n, tags: r.tags, href: `/design/${r.slug}`, img: `/img/cases/_mosaic/${r.slug}.webp`, g: `${division} · ${year(r)}`, title: r.title, p: r.thesis })),
-];
-const related = pool
-  .map((x) => ({ ...x, shared: x.tags.filter((s) => c.tags.includes(s)).length }))
-  .filter((x) => x.shared > 0)
-  .sort((a, b) => Number(b.other) - Number(a.other) || b.shared - a.shared || a.n - b.n)
-  .slice(0, 3);
 
 const i = researchCases.findIndex((x) => x.slug === c.slug);
 const prev = researchCases[(i - 1 + researchCases.length) % researchCases.length];
@@ -97,25 +85,12 @@ const next = researchCases[(i + 1) % researchCases.length];
         })}
       </div>
 
-      <section class="cs__end" aria-label={pt ? 'Habilidades e cases relacionados' : 'Skills and related cases'}>
-        <div class="cs__eg"><h2 class="cs__ek">{pt ? 'Habilidades' : 'Skills'}</h2><div class="cs__comp">{c.tags.map((s) => <span>{tagLabel(s, lang)}</span>)}</div></div>
-        {related.length > 0 && (
-          <div class="cs__eg"><h2 class="cs__ek">{pt ? 'A mesma competência em outros cases' : 'The same skills in other cases'}</h2>
-            <div class="cs__rel">
-              {related.map((r) => (
-                <a href={href(r.href, lang)}>
-                  <div class="cs__rimg"><img src={asset(r.img)} alt="" width="1200" height="1200" loading="lazy" decoding="async" /></div>
-                  <span class="cs__rg">{r.g}</span><span class="cs__rt">{r.title}</span>{r.p && <span class="cs__rp">{r.p}</span>}
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
+      <CaseEnd lang={lang} slug={c.slug} tags={c.tags} research={true}>
         <nav class="cs__pager" aria-label={pt ? `Outros cases de ${division}` : `Other ${division} cases`}>
           <a href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span><small>{pt ? 'Anterior' : 'Previous'}</small>{prev.title}</span></a>
           <a href={href(`/design/${next.slug}`, lang)} class="cs__next"><span><small>{pt ? 'Próximo' : 'Next'}</small>{next.title}</span><Px name="arrowRight" /></a>
         </nav>
-      </section>
+      </CaseEnd>
     </div>
   </article>
 </Base>

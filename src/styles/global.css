@@ -324,20 +324,18 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
 .cs__figs b { font: 700 clamp(30px, 2.8vw, 40px)/1 var(--font); letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
 .cs__figs span { font-size: 14px; line-height: 1.35; color: var(--ink-2); }
 .cs__end { margin-top: 88px; border-top: 1px solid var(--ink); padding-top: 20px; padding-bottom: clamp(56px, 10vh, 104px); }
+.page .cs__end { padding-bottom: 0; }   /* art-direction case: the page already has its bottom space */
 .cs__eg { display: grid; grid-template-columns: 4fr 8fr; gap: 24px var(--gap); align-items: start; }
 .cs__eg + .cs__eg { margin-top: 40px; }
 .cs__ek { font: 700 15px/1.3 var(--font); }
 .cs__comp { display: flex; flex-wrap: wrap; gap: 8px; }
 .cs__comp span { font: 600 13px/1 var(--font); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); background: var(--bg-2); padding: 8px 12px; border-radius: 99px; }
 .cs__rel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 20px; }
-.cs__rel a { display: grid; gap: 8px; align-content: start; color: var(--ink); }
+.cs__rel a { display: block; }
+.cs__rel a[hidden] { display: none; }
 .cs__rimg { aspect-ratio: 1; overflow: hidden; background: var(--bg-2); }
 .cs__rimg img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s var(--ease); }
 .cs__rel a:hover img { transform: scale(1.04); }
-.cs__rg { font: 600 12px/1.3 var(--font); color: var(--magenta-text); margin-top: 4px; }
-.cs__rt { font: 700 18px/1.15 var(--font); letter-spacing: -.025em; }
-.cs__rp { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
-.cs__rel a:hover .cs__rt { color: var(--magenta-text); }
 .cs__pager { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); margin-top: 64px; padding-top: 16px; }
 .cs__pager a { font: 600 14px/1.3 var(--font); display: inline-flex; gap: 8px; align-items: center; color: var(--ink); }
 .cs__pager a:hover { color: var(--magenta-text); }
@@ -348,7 +346,7 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
   .cs__dtxt { position: static; }
   .cs__gal figure { grid-column: span 12; }
   .cs__gal figure[style*="--span:3"] { grid-column: span 6; }
-  .cs__rel { grid-template-columns: 1fr 1fr; }
+  .cs__rel { gap: 16px; }
 }
 @media (max-width: 560px) {
   .cs__gal { gap: 12px; }
