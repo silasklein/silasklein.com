@@ -349,7 +349,5 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
 .gallery__nav .act:disabled { opacity: .3; cursor: default; }
 .gallery__nav .act:disabled:hover .px { transform: none; }
 .gallery__count { font-variant-numeric: tabular-nums; min-width: 4em; text-align: center; }
-/* About actions: copy sits with the bio it copies; download sits with the photo and its credit */
-.ab__copy { margin-top: 2px; }
-.ab__caption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px; margin-top: 8px; }
-.ab__credit { font-size: 12px; line-height: 1.3; color: var(--fg-2); }
+/* About actions: copy bio and download photo on one line under the portrait */
+.ab__caption { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin-top: 8px; }

@@ -127,16 +127,6 @@ content:
           - name: pt
             label: Português
             type: text
-      - name: photoCredit
-        label: 'About: photo credit'
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
       - name: researchApproach
         label: 'Research: intro'
         type: object
