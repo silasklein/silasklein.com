@@ -3,16 +3,16 @@ slug: "xxxiii-colloquium-biblicum"
 date: "2026-03-25"
 lang: "pt"
 title: "XXXIII Colloquium Biblicum"
-summary: "Estou animado em anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (Charles University) e terá como tema central \"Image, Image-Making and the…"
+summary: "Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (Charles University) e terá como tema central \"Image, Image-Making and the…"
 ---
 
 ![XXXIII Colloquium Biblicum](/img/news/xxxiii-colloquium-biblicum/01.webp)
 
-**XXXIII Colloquium Biblicum** April 8-10, 2026, Faculty of Protestant Theology of Charles University
+**XXXIII Colloquium Biblicum** 8 a 10 de abril de 2026, Faculdade de Teologia Protestante da Universidade Carolina
 
-Estou animado em anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (*Charles University*) e terá como tema central *"Image, Image-Making and the Creation of (Un)Likeness"* (Imagem, Produção de Imagens e a Criação da Des/Semelhança):
+Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (*Charles University*) e terá como tema central *"Image, Image-Making and the Creation of (Un)Likeness"* (Imagem, Produção de Imagens e a Criação da (Des)semelhança):
 
-O colóquio aborda conceitos de imagem e produção de imagens no Mundo Bíblico e sua recepção. Apesar de serem o único meio de ver o que os outros veem, como verdadeiras materializações de propriedades ontológicas particulares, as imagens são tipicamente estudadas sob esquemas generalizantes. Tais abordagens presumem não apenas que os humanos compartilham as mesmas crenças semióticas, mas também uma mesma constituição ontológica. No entanto, enquanto estudos antropológicos têm desafiado a ideia de uma ontologia compartilhada entre todos os humanos, a erudição bíblica há muito tempo historiciza e matiza como os antigos povos levantinos entendiam seus artefatos visuais. Nesse sentido, a conferência convida acadêmicos a discutir como as antigas concepções de imagens, abordagens metodológicas e leituras hermenêuticas em diferentes contextos teológicos ajudaram a forjar a (des)semelhança.
+O colóquio aborda conceitos de imagem e produção de imagens no mundo bíblico e sua recepção. Apesar de serem o único meio de ver o que os outros veem, como verdadeiras materializações de propriedades ontológicas particulares, as imagens são tipicamente estudadas sob esquemas generalizantes. Tais abordagens presumem não apenas que os humanos compartilham as mesmas crenças semióticas, mas também uma mesma constituição ontológica. No entanto, enquanto estudos antropológicos têm desafiado a ideia de uma ontologia compartilhada entre todos os humanos, os estudos bíblicos há muito tempo historiciza e matiza como os antigos povos levantinos entendiam seus artefatos visuais. Nesse sentido, a conferência convida pesquisadoras e pesquisadores a discutir como as antigas concepções de imagens, abordagens metodológicas e leituras hermenêuticas em diferentes contextos teológicos ajudaram a forjar a (des)semelhança.
 
 É uma honra também fazer parte da organização do evento, ao lado dos meus estimados colegas Prof. Dr. Filip Čapek e PD Dr. Thomas Wagner.
 

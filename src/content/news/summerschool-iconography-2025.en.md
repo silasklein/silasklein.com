@@ -3,7 +3,7 @@ slug: "summerschool-iconography-2025"
 date: "2025-09-14"
 lang: "en"
 title: "Summer School ’25"
-summary: "Last week, from September 8–12, the \"International Summer School: Iconography of the Ancient World\" took place in Wuppertal, Germany. The course is the result of a partnership between Faculdade Unida de Vitória and Bergische Universität Wuppertal, and was organized by myself and PD Dr Thomas Wagner."
+summary: "Last week, from September 8–12, the \"International Summer School: Iconography of the Ancient World\" took place in Wuppertal, Germany. The course is the result of a partnership between Faculdade Unida de Vitória and Bergische Universität Wuppertal, and was organized by PD Dr Thomas Wagner and me."
 ---
 
 ![Summer School ’25](/img/news/summerschool-iconography-2025/01.webp)
@@ -22,9 +22,9 @@ summary: "Last week, from September 8–12, the \"International Summer School: I
 
 ![Summer School ’25](/img/news/summerschool-iconography-2025/08.webp)
 
-Last week, from September 8–12, the *"International Summer School: Iconography of the Ancient World"* took place in Wuppertal, Germany. The course is the result of a partnership between Faculdade Unida de Vitória and Bergische Universität Wuppertal, and was organized by myself and PD Dr Thomas Wagner.
+Last week, from September 8–12, the *"International Summer School: Iconography of the Ancient World"* took place in Wuppertal, Germany. The course is the result of a partnership between Faculdade Unida de Vitória and Bergische Universität Wuppertal, and was organized by PD Dr Thomas Wagner and me.
 
-In this second edition of the summer school, we welcomed thirteen participants from nine different countries (ranging from master’s students to postdoctoral researchers), as well as three distinguished guests who are leading figures in the field: Dr. Josephine Fechner (Göttingen/DE), Prof. Dr. Stephanie Langin-Hooper (SMU, Dallas/USA), and Prof. Dr. em. Silvia Schroer (Bern/CH).
+In this second edition of the summer school, we welcomed thirteen participants from nine different countries (ranging from master’s students to postdoctoral researchers), as well as three guest speakers: Dr. Josephine Fechner (Göttingen/DE), Prof. Dr. Stephanie Langin-Hooper (SMU, Dallas/USA), and Prof. Dr. em. Silvia Schroer (Bern/CH).
 
 During the week, we discussed theories and methods for approaching ancient iconography, explored specific themes in ancient Babylonian and South Levantine coroplastic and glyptic art, discussed ongoing research, and visited local museums.
 
