@@ -27,10 +27,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # Remove SITE_BASE once www.silasklein.com points to GitHub Pages.
       - run: npm run build
-        env:
-          SITE_BASE: /silasklein.com
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

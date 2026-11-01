@@ -44,7 +44,7 @@ npm run build    # gera dist/
 
 ## Trocar o domínio (Locaweb → GitHub Pages)
 
-O site já está no GitHub (`silasklein/silasklein.com`) e a versão de revisão fica em https://silasklein.github.io/silasklein.com/ (fora do Google).
+O site está no ar em https://www.silasklein.com, publicado a partir do repositório `silasklein/silasklein.com`.
 
 1. **Um dia antes:** na Zona DNS da Locaweb, baixe o TTL dos registros de `silasklein.com` e `www` para 300 segundos (5 min).
 2. **Verificar o domínio no GitHub** (impede que outra conta use o seu domínio): GitHub → foto → *Settings* → *Pages* → *Add a domain* → `silasklein.com`. O GitHub mostra um registro **TXT** (`_github-pages-challenge-silasklein`); crie-o na Locaweb e clique em *Verify*.
