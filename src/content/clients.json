@@ -15,9 +15,6 @@
       "name": "AG2 Publicis Modem"
     },
     {
-      "name": "Bergische Universität Wuppertal"
-    },
-    {
       "name": "BlackBerry",
       "slug": "blackberry"
     },
@@ -36,24 +33,11 @@
       "name": "D3! Estúdio"
     },
     {
-      "name": "DFG"
-    },
-    {
       "name": "Doubleleft",
       "slug": "doubleleft"
     },
     {
-      "name": "EPOD",
-      "slug": "epod"
-    },
-    {
-      "name": "Faculdade Unida de Vitória"
-    },
-    {
       "name": "Foco"
-    },
-    {
-      "name": "FWF"
     },
     {
       "name": "General Motors"
@@ -81,14 +65,6 @@
       "name": "Netflix"
     },
     {
-      "name": "Observatório de Universos Bíblicos",
-      "slug": "observatorio"
-    },
-    {
-      "name": "Paleographic Networks",
-      "slug": "paleonet"
-    },
-    {
       "name": "Publicis Red Lion"
     },
     {
@@ -103,37 +79,12 @@
       "slug": "samsunglp"
     },
     {
-      "name": "SNSF"
-    },
-    {
       "name": "Solidum",
       "slug": "solidum"
     },
     {
       "name": "St. Andrews",
       "slug": "standrews"
-    },
-    {
-      "name": "Stamp Seals from the Southern Levant",
-      "slug": "sssl"
-    },
-    {
-      "name": "Tel Aviv University"
-    },
-    {
-      "name": "Universität Bern"
-    },
-    {
-      "name": "Universität Bonn"
-    },
-    {
-      "name": "Universität Leipzig"
-    },
-    {
-      "name": "Universität Wien"
-    },
-    {
-      "name": "Universität Zürich"
     },
     {
       "name": "Warner Bros"

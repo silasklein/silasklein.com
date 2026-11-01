@@ -1145,7 +1145,7 @@ content:
           - name: slug
             label: Case slug (optional)
             type: string
-            description: Fill in only if a case page with this slug exists (art direction or research); the name then links to it. Research cases link in Portuguese only for now.
+            description: Fill in only if an art-direction case with this slug exists; the name then links to it.
   - name: design-research
     label: 07 Design · design para a pesquisa
     type: collection
