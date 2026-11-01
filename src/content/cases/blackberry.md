@@ -15,4 +15,8 @@ gallery:
   - "/img/cases/blackberry/01.webp"
   - "/img/cases/blackberry/02.webp"
   - "/img/cases/blackberry/03.webp"
+tags:
+  - "campanhas"
+  - "web-design"
+  - "jogos-e-gamificacao"
 ---

@@ -1,0 +1,104 @@
+{
+  "order": 4,
+  "slug": "epod",
+  "title": "Epistemology of the Divine",
+  "thesis": "Identidade de um grupo de pesquisa da DFG",
+  "lead": "Sou pesquisador associado do EPOD, grupo de pesquisa da DFG com sedes em Bonn, Leipzig, Wuppertal e Viena, e criei como freelancer a identidade visual do grupo: marca, versões de cor, padronagem e template de apresentação.",
+  "meta": [
+    {
+      "k": "Papel",
+      "v": "Pesquisador associado; identidade visual"
+    },
+    {
+      "k": "Cliente",
+      "v": "Forschungsgruppe 5494 “Epistemology of the Divine” (DFG e FWF)"
+    },
+    {
+      "k": "Via",
+      "v": "Freelance"
+    },
+    {
+      "k": "Ano",
+      "v": "2026"
+    }
+  ],
+  "hero": "/img/cases/epod/00-abertura-logo.webp",
+  "hero_alt": "",
+  "context": "Financiado pela DFG, em cooperação com o FWF austríaco, o grupo começou em julho de 2026, sob a coordenação de Jan Dietrich (Bonn), com subprojetos em Leipzig, Wuppertal e Viena. Estuda as estruturas de pensamento por trás das imagens do divino no Levante meridional do primeiro milênio a.C., a partir de textos, selos e templos.",
+  "problem": "",
+  "decisions": [
+    {
+      "title": "Uma sigla num traço",
+      "text": "Na sigla, o “o” e o “d” se ligam num laço contínuo, e a assinatura “Epistemology of the Divine” corre por baixo. A marca tem versão com os logos das instituições, uma monocromática e uma negativa.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/epod/01-marca.webp",
+          "span": 12,
+          "caption": "Marca.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/epod/04-instituicoes.webp",
+          "span": 4,
+          "caption": "Com as instituições.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/epod/05-monocromatica.webp",
+          "span": 4,
+          "caption": "Monocromática.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/epod/08-negativa.webp",
+          "span": 4,
+          "caption": "Negativa.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Duas cores e uma padronagem",
+      "text": "Amarelo e marrom, e uma padronagem pontilhada que serve de fundo para a marca, as capas e as divisórias.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/epod/02-sobre-amarelo.webp",
+          "span": 6,
+          "caption": "Sobre amarelo.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/epod/03-sobre-marrom.webp",
+          "span": 6,
+          "caption": "Sobre marrom.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Um template para quatro sedes",
+      "text": "Capa, divisória de capítulo, página de texto, citação e página de imagens, com os logos das quatro instituições no topo e o nome de quem apresenta no rodapé.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/epod/07-template-capa.webp",
+          "span": 12,
+          "caption": "Capa do template.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/epod/06-mockup-template.webp",
+          "span": 12,
+          "caption": "As cinco páginas-modelo do template.",
+          "plate": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "identidade-visual",
+    "design-de-apresentacoes"
+  ]
+}

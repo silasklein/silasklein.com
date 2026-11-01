@@ -1,0 +1,113 @@
+{
+  "order": 3,
+  "slug": "observatorio",
+  "title": "Observatório de Universos Bíblicos",
+  "thesis": "Identidade e peças de um grupo de pesquisa",
+  "lead": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: prospecto, template de palestras, posts e o material dos eventos internacionais.",
+  "meta": [
+    {
+      "k": "Papel",
+      "v": "Líder do grupo, com José Adriano Filho; identidade visual e design editorial"
+    },
+    {
+      "k": "Cliente",
+      "v": "Observatório de Universos Bíblicos, grupo de pesquisa da FUV"
+    },
+    {
+      "k": "Via",
+      "v": "Pesquisa, Faculdade Unida de Vitória"
+    },
+    {
+      "k": "Ano",
+      "v": "2025–2026"
+    }
+  ],
+  "hero": "/img/cases/observatorio/00-abertura-logo.webp",
+  "hero_alt": "",
+  "context": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e sócio-epistêmicas.",
+  "problem": "",
+  "decisions": [
+    {
+      "title": "Um livro aberto sob as órbitas",
+      "text": "O símbolo junta um livro aberto, uma estrela e órbitas: o nome do grupo em imagem. Laranja e preto, com a assinatura “Grupo de pesquisa • FUV”, e um prospecto quadrado com apresentação, focos de pesquisa e contato.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/observatorio/01-marca.webp",
+          "span": 12,
+          "caption": "Marca do grupo.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/observatorio/02-prospecto.webp",
+          "span": 12,
+          "caption": "Prospecto: marca, apresentação, focos de pesquisa e contato.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Um template para as palestras",
+      "text": "Capa de cor forte, divisórias numeradas por seção e páginas internas com espaço para imagens grandes e citações. Na palestra “As ferramentas e seus humanos”, sobre as iconografias da Escola de Friburgo, ele organiza 61 telas.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/observatorio/04-apresentacao-capa.webp",
+          "span": 12,
+          "caption": "Capa da palestra “As ferramentas e seus humanos”, 2026.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/observatorio/03-mockup-apresentacao.webp",
+          "span": 12,
+          "caption": "Telas internas da palestra.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Agenda e publicações",
+      "text": "Posts com a mesma diagonal e as cores da marca anunciam a agenda do semestre e as novas publicações dos membros do grupo.",
+      "wide": true,
+      "images": [
+        {
+          "src": "/img/cases/observatorio/05-posts.webp",
+          "span": 12,
+          "caption": "Agenda 2026/2 e três posts de nova publicação.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Eventos internacionais",
+      "text": "Para a III International Summer School “Iconography of the Ancient World”, em Vitória, fiz o carrossel de divulgação e o folder. Para o simpósio “The Zodiac and Religious Conceptions of Time”, o cartaz e o folder.",
+      "wide": true,
+      "images": [
+        {
+          "src": "/img/cases/observatorio/06-summer-school-carrossel.webp",
+          "span": 12,
+          "caption": "Carrossel da escola de verão: abertura, proposta, escopo, palestrantes, conselho científico e inscrições.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/observatorio/07-summer-school-folder.webp",
+          "span": 12,
+          "caption": "Folder da escola de verão: capa, programa, palestrantes e parceiros.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/observatorio/08-simposio-folder.webp",
+          "span": 12,
+          "caption": "Folder do simpósio sobre o zodíaco, junho de 2026: capa e programa.",
+          "plate": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "identidade-visual",
+    "design-de-apresentacoes",
+    "design-editorial",
+    "redes-sociais"
+  ]
+}

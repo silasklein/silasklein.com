@@ -16,4 +16,7 @@ gallery:
   - "/img/cases/ice/02.webp"
   - "/img/cases/ice/03.webp"
   - "/img/cases/ice/04.webp"
+tags:
+  - "web-design"
+  - "design-de-interface"
 ---

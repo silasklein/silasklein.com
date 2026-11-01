@@ -1,6 +1,6 @@
 ---
 import DfrPage from '../../../components/pages/DfrPage.astro';
 import { designForResearch } from '../../../data/content';
-export function getStaticPaths() { return designForResearch.map((d) => ({ params: { slug: d.slug }, props: { item: d } })); }
+export function getStaticPaths() { return designForResearch.filter((d) => d.body).map((d) => ({ params: { slug: d.slug }, props: { item: d } })); }
 ---
 <DfrPage lang="en" item={Astro.props.item} />

@@ -1,0 +1,138 @@
+{
+  "order": 1,
+  "slug": "sssl",
+  "title": "Stamp Seals from the Southern Levant",
+  "thesis": "Identidade de um projeto e o visual do seu corpus",
+  "lead": "Para o consórcio SSSL, de três universidades, criei a identidade visual do projeto e fiz a consultoria visual da base online, o Corpus of Stamp Seals from the Southern Levant.",
+  "meta": [
+    {
+      "k": "Papel",
+      "v": "Pesquisador de pós-doutorado; identidade visual e consultoria visual da base online"
+    },
+    {
+      "k": "Cliente",
+      "v": "SSSL, consórcio SNSF Sinergia (Universidades de Zurique, Berna e Tel Aviv)"
+    },
+    {
+      "k": "Via",
+      "v": "Pesquisa"
+    },
+    {
+      "k": "Ano",
+      "v": "2020–2024"
+    }
+  ],
+  "hero": "/img/cases/sssl/01-marca.webp",
+  "hero_alt": "",
+  "context": "Entre 1981 e 2013, os projetos de Othmar Keel em Friburgo catalogaram os selos do Levante meridional em mais de 12 mil fichas de papel. Desde 2020, o SSSL, dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, com equipes em Zurique, Berna e Tel Aviv, leva esse corpus à fase digital.",
+  "problem": "Três universidades, cada uma com sua marca, precisavam aparecer como um só projeto. E um corpus publicado em volumes impressos em alemão precisava existir ao mesmo tempo como base em inglês e como livro.",
+  "decisions": [
+    {
+      "title": "Um símbolo que convive",
+      "text": "Um símbolo próprio, em vermelho, que se sustenta sozinho e divide a mesma faixa com as marcas das três universidades e do SNSF.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/sssl/10-versao-1.webp",
+          "span": 6,
+          "caption": "Horizontal, sobre vermelho.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/10-versao-2.webp",
+          "span": 6,
+          "caption": "Vertical, sobre branco.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/10-versao-3.webp",
+          "span": 6,
+          "caption": "Símbolo em corte, sobre preto.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/10-versao-4.webp",
+          "span": 6,
+          "caption": "Símbolo em corte, com as instituições.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Papelaria e template",
+      "text": "Papel timbrado, cartões e modelos de carta e relatório para as três sedes, e um template de apresentação para todos os membros do projeto, usado em palestras, cursos e conferências.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/sssl/03-papelaria.webp",
+          "span": 12,
+          "caption": "Papelaria aplicada.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/14-mockup-papelaria.webp",
+          "span": 12,
+          "caption": "Carta, documento longo e cartões de visita, frente e verso.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/13-template-apresentacao.webp",
+          "span": 12,
+          "caption": "Template de apresentação em uso.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/sssl/04-template.webp",
+          "span": 12,
+          "caption": "Telas internas do template de apresentação.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Cartazes e posts com a mesma grade",
+      "text": "Fotografia dos selos e uma grade tipográfica comum, do workshop no IOSOT 2022 à conferência final de 2024.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/sssl/05-cartaz-final-conference.webp",
+          "span": 6,
+          "caption": "Cartaz A3 da conferência final. Zurique, 2024.",
+          "plate": true
+        },
+        {
+          "src": "/img/cases/sssl/06-story-iosot-2022.webp",
+          "span": 6,
+          "caption": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
+          "plate": true
+        }
+      ]
+    },
+    {
+      "title": "Do fichário à tela",
+      "text": "Todo o sistema da base online foi construído pelo Prof. Dr. Stefan Münger. Minha consultoria foi no aprimoramento visual da plataforma e em trazer para a tela o layout dos livros tradicionais do corpus: texto em blocos e imagem ao lado, como nas fichas e nos volumes impressos.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/sssl/15-mockup-corpus.webp",
+          "span": 12,
+          "caption": "A busca avançada no notebook e a ficha publicada no navegador.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/cssl/02-fichas-analogicas.webp",
+          "span": 12,
+          "caption": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
+          "plate": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "identidade-visual",
+    "design-de-interface",
+    "design-de-apresentacoes",
+    "design-editorial",
+    "design-de-informacao"
+  ]
+}

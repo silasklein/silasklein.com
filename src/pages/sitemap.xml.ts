@@ -1,6 +1,6 @@
 // sitemap.xml with both language versions of every page (Portuguese at the root, English under /en/).
 import type { APIRoute } from 'astro';
-import { projects, cases, news } from '../data/content';
+import { projects, cases, news, researchCases } from '../data/content';
 
 const paths = [
   '/', '/publications/', '/talks/', '/news/',
@@ -23,6 +23,8 @@ export const GET: APIRoute = ({ site }) => {
     const alt = pair ? `<xhtml:link rel="alternate" hreflang="pt-BR" href="${url(`/news/${p.slug}/`)}"/><xhtml:link rel="alternate" hreflang="en" href="${url(`/en/news/${p.slug}/`)}"/>` : '';
     return `<url><loc>${loc}</loc><lastmod>${p.date}</lastmod>${alt}</url>`;
   }).join('');
-  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${paths.map(entry).join('')}${posts}</urlset>\n`;
+  // Design-for-research cases: Portuguese only for now.
+  const ptOnly = researchCases.map((r) => `<url><loc>${url(`/design/${r.slug}/`)}</loc></url>`).join('');
+  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${paths.map(entry).join('')}${ptOnly}${posts}</urlset>\n`;
   return new Response(body, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
 };

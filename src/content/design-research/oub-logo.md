@@ -1,6 +1,7 @@
 ---
-order: 2
+order: 3
 slug: "oub-logo"
+case: "observatorio"
 icon: "oub"
 year: "2025"
 title:

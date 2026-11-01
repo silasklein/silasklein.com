@@ -21,4 +21,7 @@ gallery:
   - "/img/cases/samsunglp/07.webp"
   - "/img/cases/samsunglp/08.webp"
   - "/img/cases/samsunglp/09.webp"
+tags:
+  - "web-design"
+  - "campanhas"
 ---

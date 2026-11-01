@@ -86,6 +86,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: k
             label: Key
@@ -213,6 +216,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: href
             label: Link
@@ -264,6 +270,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: label
             label: Label
@@ -552,6 +561,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: kicker
             label: Kicker
@@ -667,6 +679,9 @@ content:
             - oub
             - seals
             - epod
+            - alef
+            - mem
+            - het
         description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
       - name: years
         label: Years
@@ -857,6 +872,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: title
             label: Title
@@ -978,6 +996,9 @@ content:
                 - oub
                 - seals
                 - epod
+                - alef
+                - mem
+                - het
             description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
           - name: title
             label: Title
@@ -1094,6 +1115,19 @@ content:
         type: image
         list: true
         description: Shown one below the other on the case page. The square image above is the thumbnail in the home mosaic.
+      - name: tags
+        label: Habilidades (tags)
+        type: reference
+        required: true
+        description: 'De 1 a 5, da mais central para a menos central no projeto. Escolha só da coleção Tags; não crie tag nova sem aprovação.'
+        options:
+          collection: tags
+          multiple: true
+          min: 1
+          max: 5
+          search: label_pt
+          value: '{fields.slug}'
+          label: '{fields.label_pt}'
   - name: clients
     label: 07 Design · clientes
     type: file
@@ -1141,6 +1175,10 @@ content:
           regex: ^[a-z0-9]+(-[a-z0-9]+)*$
           message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
         description: 'Part of the page address. Do not change it after publishing: old links would break.'
+      - name: case
+        label: Página de case (opcional)
+        type: string
+        description: 'Slug da página em /design/ (coleção "07 Design · cases de pesquisa"), por exemplo sssl. Em português, o item da home leva a essa página.'
       - name: icon
         label: Icon
         type: select
@@ -1183,6 +1221,9 @@ content:
             - oub
             - seals
             - epod
+            - alef
+            - mem
+            - het
         description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
       - name: year
         label: Year
@@ -1233,6 +1274,171 @@ content:
       - name: href
         label: Link
         type: string
+  - name: research-cases
+    label: 07 Design · cases de pesquisa
+    type: collection
+    path: src/content/research-cases
+    format: json
+    filename: '{fields.slug}.json'
+    view:
+      fields:
+        - title
+        - order
+      primary: title
+      sort:
+        - order
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: order
+        label: Ordem
+        type: number
+        description: 'Posição no anterior/próximo: 1 vem primeiro.'
+      - name: slug
+        label: Slug (URL)
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
+        description: 'A página fica em /design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: thesis
+        label: Tese (linha magenta abaixo do título)
+        type: string
+        description: Um sintagma nominal curto, sem verbo.
+      - name: lead
+        label: Lead
+        type: text
+      - name: meta
+        label: Ficha (Papel, Cliente, Via, Ano)
+        type: object
+        list: true
+        fields:
+          - name: k
+            label: Rótulo
+            type: string
+          - name: v
+            label: Texto
+            type: string
+      - name: hero
+        label: Imagem de abertura (sem legenda)
+        type: image
+        required: true
+      - name: hero_alt
+        label: Texto alternativo da abertura (opcional)
+        type: string
+      - name: context
+        label: Contexto (opcional)
+        type: text
+      - name: problem
+        label: Problema (opcional)
+        type: text
+      - name: decisions
+        label: O que fiz (decisões)
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Título
+            type: string
+          - name: text
+            label: Texto
+            type: text
+          - name: wide
+            label: Imagens na largura toda
+            type: boolean
+          - name: images
+            label: Imagens
+            type: object
+            list: true
+            fields:
+              - name: src
+                label: Imagem
+                type: image
+              - name: span
+                label: Colunas (de 12)
+                type: select
+                options:
+                  values:
+                    - 12
+                    - 7
+                    - 6
+                    - 5
+                    - 4
+                    - 3
+              - name: caption
+                label: Legenda (a primeira frase sai em negrito)
+                type: text
+              - name: plate
+                label: Sobre fundo claro, com respiro (peças impressas)
+                type: boolean
+          - name: figures_intro
+            label: Frase antes dos números (opcional)
+            type: string
+          - name: figures
+            label: Números (opcional)
+            type: object
+            list: true
+            fields:
+              - name: n
+                label: Número
+                type: string
+              - name: label
+                label: Descrição
+                type: string
+      - name: tags
+        label: Habilidades (tags)
+        type: reference
+        required: true
+        description: 'De 1 a 5, da mais central para a menos central no projeto. Escolha só da coleção Tags; não crie tag nova sem aprovação.'
+        options:
+          collection: tags
+          multiple: true
+          min: 1
+          max: 5
+          search: label_pt
+          value: '{fields.slug}'
+          label: '{fields.label_pt}'
+  - name: tags
+    label: Tags de habilidade
+    type: collection
+    path: src/content/tags
+    format: json
+    filename: '{fields.slug}.json'
+    view:
+      fields:
+        - label_pt
+        - slug
+      primary: label_pt
+      default:
+        sort: label_pt
+        order: asc
+    fields:
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+        pattern:
+          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+          message: Only lowercase letters, numbers and hyphens.
+        description: 'Os projetos guardam a tag por este slug. Não mude depois de publicar. Tag nova só com a aprovação de Silas.'
+      - name: label_pt
+        label: Rótulo em português
+        type: string
+        required: true
+        description: Mudar aqui muda o rótulo em todos os projetos.
+      - name: label_en
+        label: Rótulo em inglês
+        type: string
+        required: true
+      - name: descricao
+        label: Descrição (o que entra na tag)
+        type: text
   - name: news
     label: Blog · notícias
     type: collection

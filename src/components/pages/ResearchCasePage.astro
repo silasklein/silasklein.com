@@ -1,0 +1,121 @@
+---
+// Design-for-research case: thesis → evidence → skills. Each decision sits beside the images that prove it;
+// the page ends with its skill tags and up to three cases, from either division, that share one.
+import sharp from 'sharp';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import Label from '../Label.astro';
+import Px from '../Pixel.astro';
+import { cases, researchCases, sections, tagLabel, t, type Lang, type ResearchCase } from '../../data/content';
+import { href, asset } from '../../lib/format';
+interface Props { lang: Lang; item: ResearchCase }
+const { lang, item: c } = Astro.props;
+const pt = lang === 'pt';
+const division = pt ? 'Design para a pesquisa' : 'Design for research';
+
+// Width and height of every image, read from the file so the layout never jumps.
+const size = new Map<string, { width: number; height: number }>();
+for (const src of [c.hero, ...c.decisions.flatMap((d) => (d.images ?? []).map((i) => i.src))]) {
+  const m = await sharp(join(process.cwd(), 'public', src)).metadata();
+  size.set(src, { width: m.width!, height: m.height! });
+}
+
+// Captions: the first sentence in bold.
+const cap = (s: string) => { const m = s.match(/^(.+?[.!?])(\s|$)(.*)$/s); return m ? { b: m[1], rest: m[3] } : { b: '', rest: s }; };
+
+// Related: cases sharing at least one tag (compared by slug) — the other division first, then the most tags
+// in common, then site order.
+const year = (r: ResearchCase) => r.meta.find((m) => m.k === 'Ano')?.v ?? '';
+const pool = [
+  ...cases.map((a, n) => ({ other: true, n, tags: a.tags ?? [], href: `/design/${a.slug}`, img: a.image, g: `${pt ? 'Direção de arte' : 'Art direction'}${a.year ? ` · ${a.year}` : ''}`, title: a.title, p: a.role ? t(a.role, lang) : '' })),
+  ...researchCases.filter((r) => r.slug !== c.slug).map((r, n) => ({ other: false, n, tags: r.tags, href: `/design/${r.slug}`, img: `/img/cases/_mosaic/${r.slug}.webp`, g: `${division} · ${year(r)}`, title: r.title, p: r.thesis })),
+];
+const related = pool
+  .map((x) => ({ ...x, shared: x.tags.filter((s) => c.tags.includes(s)).length }))
+  .filter((x) => x.shared > 0)
+  .sort((a, b) => Number(b.other) - Number(a.other) || b.shared - a.shared || a.n - b.n)
+  .slice(0, 3);
+
+const i = researchCases.findIndex((x) => x.slug === c.slug);
+const prev = researchCases[(i - 1 + researchCases.length) % researchCases.length];
+const next = researchCases[(i + 1) % researchCases.length];
+---
+<Base lang={lang} title={c.title} description={c.lead} other={href('#design', pt ? 'en' : 'pt')} translated={false}>
+  <article class="cs">
+    <div class="wrap cs__top">
+      <a class="act cs__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>Design</span></a>
+      <Label n={sections.design.n} text={division} />
+      <h1>{c.title}</h1>
+      <p class="cs__thesis"><span class="bs" aria-hidden="true">\</span>{c.thesis}</p>
+      <div class="cs__head">
+        <p class="cs__lead">{c.lead}</p>
+        <dl class="cs__meta">{c.meta.map((m) => (<><dt>{m.k}</dt><dd>{m.v}</dd></>))}</dl>
+      </div>
+      <div class="cs__gal cs__hero">
+        <figure style="--span:12"><img src={asset(c.hero)} alt={c.hero_alt ?? ''} {...size.get(c.hero)} loading="eager" decoding="async" /></figure>
+      </div>
+      {(c.context || c.problem) && (
+        <div class="cs__cp">
+          {c.context && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Contexto' : 'Context'}</span><p>{c.context}</p></div>}
+          {c.problem && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Problema' : 'Problem'}</span><p>{c.problem}</p></div>}
+        </div>
+      )}
+      <h2 class="cs__h">{pt ? 'O que fiz' : 'What I did'}</h2>
+      <div class="cs__decs">
+        {c.decisions.map((d) => {
+          const imgs = d.images ?? [];
+          const kind = d.wide ? ' cs__dec--wide' : imgs.length ? '' : ' cs__dec--plain';
+          return (
+            <div class={`cs__dec${kind}`}>
+              <div class="cs__dtxt">
+                <h3 class="cs__dt"><span class="bs" aria-hidden="true">\</span>{d.title}</h3>
+                {d.wide || !imgs.length ? null : <p>{d.text}</p>}
+                {d.figures?.length ? (
+                  <div class="cs__dfigs">
+                    {d.figures_intro && <span>{d.figures_intro}</span>}
+                    <div class="cs__figs">{d.figures.map((f) => (<div><b>{f.n}</b><span>{f.label}</span></div>))}</div>
+                  </div>
+                ) : null}
+              </div>
+              {(d.wide || !imgs.length) && <p class="cs__dbody">{d.text}</p>}
+              {imgs.length > 0 && (
+                <div class="cs__gal">
+                  {imgs.map((im) => {
+                    const k = cap(im.caption ?? '');
+                    const img = <img src={asset(im.src)} alt={im.caption ?? ''} {...size.get(im.src)} loading="lazy" decoding="async" />;
+                    return (
+                      <figure style={`--span:${im.span ?? 12}`}>
+                        {im.plate ? <div class="cs__plate">{img}</div> : img}
+                        {im.caption && <figcaption>{k.b && <b>{k.b}</b>}{k.b && k.rest ? ' ' : ''}{k.rest}</figcaption>}
+                      </figure>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      <section class="cs__end" aria-label={pt ? 'Habilidades e cases relacionados' : 'Skills and related cases'}>
+        <div class="cs__eg"><h2 class="cs__ek">{pt ? 'Habilidades' : 'Skills'}</h2><div class="cs__comp">{c.tags.map((s) => <span>{tagLabel(s, lang)}</span>)}</div></div>
+        {related.length > 0 && (
+          <div class="cs__eg"><h2 class="cs__ek">{pt ? 'A mesma competência em outros cases' : 'The same skills in other cases'}</h2>
+            <div class="cs__rel">
+              {related.map((r) => (
+                <a href={href(r.href, lang)}>
+                  <div class="cs__rimg"><img src={asset(r.img)} alt="" width="1200" height="1200" loading="lazy" decoding="async" /></div>
+                  <span class="cs__rg">{r.g}</span><span class="cs__rt">{r.title}</span>{r.p && <span class="cs__rp">{r.p}</span>}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+        <nav class="cs__pager" aria-label={pt ? `Outros cases de ${division}` : `Other ${division} cases`}>
+          <a href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span><small>{pt ? 'Anterior' : 'Previous'}</small>{prev.title}</span></a>
+          <a href={href(`/design/${next.slug}`, lang)} class="cs__next"><span><small>{pt ? 'Próximo' : 'Next'}</small>{next.title}</span><Px name="arrowRight" /></a>
+        </nav>
+      </section>
+    </div>
+  </article>
+</Base>

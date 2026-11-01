@@ -285,6 +285,76 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
 .talks { margin-top: 40px; border-top: 1px solid var(--rule); }
 .talks__m { grid-column: 2; font-size: 15px; color: var(--fg-2); }
 
+/* Design-for-research case (/design/<slug>): thesis → evidence → skills */
+.cs__top { padding-block: clamp(40px, 8vh, 88px) 0; }
+.cs__back { margin-bottom: 28px; }
+.cs__back:hover { color: var(--magenta-text); }
+.cs .label + h1 { margin-top: 28px; }
+.cs h1 { font: 700 clamp(34px, 4.8vw, 64px)/1.02 var(--font); letter-spacing: -.045em; max-width: 14em; text-wrap: balance; }
+.cs__thesis { font: 600 clamp(17px, 1.5vw, 20px)/1.3 var(--font); color: var(--magenta-text); margin-top: 14px; letter-spacing: -.01em; }
+.cs__thesis .bs, .cs__dt .bs { font-weight: 800; margin-right: .2em; }
+.cs__head { display: grid; grid-template-columns: 7fr 5fr; gap: 24px var(--gap); align-items: start; margin-top: 32px; }
+.cs__lead { font: 500 clamp(18px, 1.6vw, 21px)/1.4 var(--font); color: var(--ink); letter-spacing: -.015em; max-width: 30em; text-wrap: pretty; }
+.cs__meta { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; font-size: 15px; border-top: 1px solid var(--ink); padding-top: 16px; }
+.cs__meta dt { font-weight: 700; } .cs__meta dd { color: var(--ink-2); }
+.cs__gal { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; align-items: start; }
+.cs__hero { margin-top: 48px; }
+.cs__gal figure { grid-column: span var(--span, 12); min-width: 0; display: grid; gap: 8px; }
+.cs__gal img { width: 100%; height: auto; display: block; }
+.cs__plate { background: var(--bg-2); padding: clamp(12px, 2.4vw, 32px); }
+.cs__plate img { max-height: min(78vh, 900px); width: auto; margin: 0 auto; }
+.cs__gal figcaption { font-size: 13px; line-height: 1.4; color: var(--ink-2); max-width: 60ch; }
+.cs__gal figcaption b { color: var(--ink); font-weight: 700; }
+.cs__cp { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--gap); border-top: 1px solid var(--ink); margin-top: 64px; }
+.cs__cpc { padding-top: 18px; display: grid; gap: 8px; align-content: start; }
+.cs__cpk { font: 700 15px/1.3 var(--font); color: var(--magenta-text); }
+.cs__cpc p { font-size: 17px; line-height: 1.55; max-width: 34em; }
+.cs__h { font: 700 15px/1.2 var(--font); border-bottom: 1px solid var(--ink); padding-bottom: 12px; margin-top: 80px; }
+.cs__dec { display: grid; grid-template-columns: 4fr 8fr; gap: 20px var(--gap); padding-block: 32px; border-bottom: 1px solid var(--line); align-items: start; }
+.cs__dtxt { display: grid; gap: 10px; align-content: start; position: sticky; top: calc(var(--topbar) + env(safe-area-inset-top, 0px) + 24px); }
+.cs__dt { font: 700 clamp(19px, 1.7vw, 23px)/1.2 var(--font); letter-spacing: -.025em; text-wrap: balance; }
+.cs__dtxt p { color: var(--ink-2); font-size: 16px; line-height: 1.55; max-width: 32em; }
+.cs__dec--plain .cs__dtxt, .cs__dec--wide .cs__dtxt { position: static; }
+.cs__dec--wide .cs__gal { grid-column: 1 / -1; margin-top: 8px; }
+.cs__dbody { font-size: 16px; line-height: 1.55; color: var(--ink-2); max-width: 42em; padding-top: 4px; }
+.cs__dfigs { display: grid; gap: 12px; margin-top: 14px; }
+.cs__dfigs > span { font: 600 13px/1.3 var(--font); color: var(--ink-2); }
+.cs__figs { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+.cs__figs div { border-top: 1px solid var(--line); padding-top: 12px; display: grid; gap: 6px; align-content: start; }
+.cs__figs b { font: 700 clamp(30px, 2.8vw, 40px)/1 var(--font); letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+.cs__figs span { font-size: 14px; line-height: 1.35; color: var(--ink-2); }
+.cs__end { margin-top: 88px; border-top: 1px solid var(--ink); padding-top: 20px; padding-bottom: clamp(56px, 10vh, 104px); }
+.cs__eg { display: grid; grid-template-columns: 4fr 8fr; gap: 24px var(--gap); align-items: start; }
+.cs__eg + .cs__eg { margin-top: 40px; }
+.cs__ek { font: 700 15px/1.3 var(--font); }
+.cs__comp { display: flex; flex-wrap: wrap; gap: 8px; }
+.cs__comp span { font: 600 13px/1 var(--font); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); background: var(--bg-2); padding: 8px 12px; border-radius: 99px; }
+.cs__rel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 20px; }
+.cs__rel a { display: grid; gap: 8px; align-content: start; color: var(--ink); }
+.cs__rimg { aspect-ratio: 1; overflow: hidden; background: var(--bg-2); }
+.cs__rimg img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s var(--ease); }
+.cs__rel a:hover img { transform: scale(1.04); }
+.cs__rg { font: 600 12px/1.3 var(--font); color: var(--magenta-text); margin-top: 4px; }
+.cs__rt { font: 700 18px/1.15 var(--font); letter-spacing: -.025em; }
+.cs__rp { font-size: 14px; line-height: 1.4; color: var(--ink-2); }
+.cs__rel a:hover .cs__rt { color: var(--magenta-text); }
+.cs__pager { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); margin-top: 64px; padding-top: 16px; }
+.cs__pager a { font: 600 14px/1.3 var(--font); display: inline-flex; gap: 8px; align-items: center; color: var(--ink); }
+.cs__pager a:hover { color: var(--magenta-text); }
+.cs__pager small { display: block; color: var(--ink-2); font-weight: 500; font-size: 12px; }
+.cs__next { text-align: right; }
+@media (max-width: 900px) {
+  .cs__head, .cs__cp, .cs__dec, .cs__eg { grid-template-columns: 1fr; }
+  .cs__dtxt { position: static; }
+  .cs__gal figure { grid-column: span 12; }
+  .cs__gal figure[style*="--span:3"] { grid-column: span 6; }
+  .cs__rel { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .cs__gal { gap: 12px; }
+  .cs__rel { gap: 20px 12px; }
+}
+
 /* Motion: text arrives, then stays fixed */
 @media (prefers-reduced-motion: no-preference) {
   .js [data-reveal].is-pending { opacity: 0; transform: translateY(28px); }

@@ -13,4 +13,6 @@ text:
   pt: "A Moda Limpa é um catálogo online de fornecedores de insumos que está mudando o cenário da moda no Brasil, com foco em responsabilidade social e sustentabilidade. Criamos uma marca que une os conceitos de sustentabilidade e conexão: padrões florais contínuos ao fundo e as letras “M” e “L” desenhadas juntas."
 gallery:
   - "/img/cases/modalimpa/01.webp"
+tags:
+  - "identidade-visual"
 ---

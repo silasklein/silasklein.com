@@ -1,6 +1,7 @@
 ---
 order: 1
 slug: "stamp-seals-identity"
+case: "sssl"
 icon: "seals"
 year: "2020–2023"
 title:

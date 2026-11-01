@@ -19,4 +19,7 @@ gallery:
   - "/img/cases/ceapvagas/05.webp"
   - "/img/cases/ceapvagas/06.webp"
   - "/img/cases/ceapvagas/07.webp"
+tags:
+  - "design-de-interface"
+  - "web-design"
 ---

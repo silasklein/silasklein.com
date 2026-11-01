@@ -1,0 +1,189 @@
+{
+  "order": 2,
+  "slug": "paleonet",
+  "title": "Paleographic Networks",
+  "thesis": "Fotografia, ilustração e design de informação",
+  "lead": "Fotografei as impressões dos selos e, a partir delas, desenhei as letras do hebraico antigo que servem de base a um novo método de datação paleográfica, com um sistema de fichas que descreve cada letra parte por parte.",
+  "meta": [
+    {
+      "k": "Papel",
+      "v": "Pesquisador do projeto; fotografia, ilustração e design de informação"
+    },
+    {
+      "k": "Cliente",
+      "v": "Projeto SNSF SPARK Paleographic Networks (221210)"
+    },
+    {
+      "k": "Via",
+      "v": "Pesquisa, Universidades de Zurique e Berna"
+    },
+    {
+      "k": "Ano",
+      "v": "2024"
+    }
+  ],
+  "hero": "/img/cases/paleonet/02-alfabeto.webp",
+  "hero_alt": "O alfabeto do corpus. Letras desenhadas a partir das impressões dos selos, uma por letra, de alef a tav, da direita para a esquerda, como se lê o paleo-hebraico.",
+  "context": "Projeto SPARK do Fundo Nacional Suíço (SNSF), coordenado por Eythan Levy e nascido do projeto SSSL, que testou uma abordagem em rede para datar a escrita paleo-hebraica dos selos dos séculos VIII a VI a.C.",
+  "problem": "A datação paleográfica depende do olho treinado de poucos especialistas. Para que um computador compare letras, cada traço precisa de nome, regra e lugar numa base de dados.",
+  "decisions": [
+    {
+      "title": "Fotografar o arquivo",
+      "text": "Fotografei as impressões de selos com procedência da coleção Avigad/Sass, doada por Benjamin Sass e hoje em Berna, num set montado para isso, com luz lateral que faz o relevo das letras aparecer. As fotos entraram na base do SSSL e viraram o material do Paleographic Networks.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/10-arquivo-de-impressoes.webp",
+          "span": 12,
+          "caption": "O arquivo. Impressões modernas da coleção Avigad/Sass, guardadas com suas fichas.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/11-set-de-fotografia.webp",
+          "span": 6,
+          "caption": "O set de fotografia. Câmera em coluna e duas luzes laterais.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/12-impressoes.webp",
+          "span": 6,
+          "caption": "Impressões separadas para fotografar.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/15-selo-inscricao-c.webp",
+          "span": 4,
+          "caption": "Impressão com inscrição em dois registros.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/13-selo-inscricao-a.webp",
+          "span": 4,
+          "caption": "Impressão com inscrição e figura.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/14-selo-inscricao-b.webp",
+          "span": 4,
+          "caption": "Impressão com inscrição e figura.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Desenhar para comparar",
+      "text": "Redesenhei cada letra a partir das fotografias, com um traço único e limpo. Sem o ruído da pedra, duas grafias da mesma letra podem ser postas lado a lado e comparadas.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/01-do-selo-a-letra.webp",
+          "span": 12,
+          "caption": "Do selo à letra. A impressão fotografada e, ao lado, letras redesenhadas para a tipologia, da direita para a esquerda.",
+          "plate": false
+        }
+      ],
+      "figures_intro": "Em junho de 2024, na metade do projeto:",
+      "figures": [
+        {
+          "n": "307",
+          "label": "traços paleográficos na tipologia"
+        },
+        {
+          "n": "319",
+          "label": "objetos com procedência"
+        },
+        {
+          "n": "2.184",
+          "label": "grafias analisadas"
+        },
+        {
+          "n": "186",
+          "label": "grafias desenhadas para a tipologia"
+        }
+      ]
+    },
+    {
+      "title": "Uma letra, cinco partes",
+      "text": "Com Eythan Levy, criei a tipologia e o método de divisão das letras: corpo, cabeça, haste, pé e cauda, cada parte com um vocabulário fixo, impresso na própria ficha. A descrição deixa de ser impressão e vira dado.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/04-tipologia.webp",
+          "span": 12,
+          "caption": "Modelo da tipologia. Cada parte da letra tem variantes nomeadas, desenhadas na mesma escala.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/03-ficha-shin.webp",
+          "span": 6,
+          "caption": "Ficha 1039 Shin-1. O desenho e, embaixo, cada parte no vocabulário da tipologia.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/08-ficha-beth.webp",
+          "span": 6,
+          "caption": "Ficha 1009 Beth-1. A mesma estrutura para cada grafia do corpus.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Da ficha ao grafo",
+      "text": "Levei o vocabulário ao modelo de dados no Nodegoat. Ficha, base e rede usam os mesmos termos, e os traços passam a ser comparados como grafos.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/05-modelo-de-dados.webp",
+          "span": 12,
+          "caption": "Do desenho ao dado. Inscrição, grafia, traço paleográfico, letra e parte ligados no modelo da base.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/07-rede.webp",
+          "span": 12,
+          "caption": "Rede paleográfica. Traços que aparecem juntos nas grafias de uma mesma letra.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "As letras viram a marca",
+      "text": "O logo do projeto é composto com as próprias letras da tipologia: a identidade sai do material de pesquisa.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/01-logo.webp",
+          "span": 12,
+          "caption": "Logo do Paleographic Networks.",
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": "Apresentar o projeto",
+      "text": "As apresentações do projeto usam o logo, o azul e as próprias letras da tipologia, das divisórias de seção às telas de análise. O mesmo sistema fez o flyer do encontro de meio de projeto, em Berna, em junho de 2024.",
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/paleonet/16-mockup-apresentacoes.webp",
+          "span": 12,
+          "caption": "Telas das apresentações do projeto.",
+          "plate": false
+        },
+        {
+          "src": "/img/cases/paleonet/17-flyer.webp",
+          "span": 12,
+          "caption": "Flyer do encontro de 12 de junho de 2024, ao lado de uma ficha de letra.",
+          "plate": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "ilustracao",
+    "fotografia",
+    "design-de-informacao",
+    "identidade-visual",
+    "design-de-apresentacoes"
+  ]
+}

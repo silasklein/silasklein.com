@@ -23,4 +23,8 @@ gallery:
   - "/img/cases/coca-cola-quiz/09.webp"
   - "/img/cases/coca-cola-quiz/10.webp"
   - "/img/cases/coca-cola-quiz/11.webp"
+tags:
+  - "jogos-e-gamificacao"
+  - "design-de-interface"
+  - "ilustracao"
 ---

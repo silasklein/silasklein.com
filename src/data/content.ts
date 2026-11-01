@@ -78,10 +78,21 @@ const newsMods = Object.values(import.meta.glob('../content/news/*.md', { eager:
 export const news: Post[] = (await Promise.all(newsMods.map(async (m) => ({ ...m.frontmatter, html: m.rawContent().trim() ? await m.compiledContent() : undefined }) as Post)))
   .map((p) => ({ ...p, date: (p.date as unknown) instanceof Date ? (p.date as unknown as Date).toISOString().slice(0, 10) : String(p.date).slice(0, 10) })).sort((a, b) => b.date.localeCompare(a.date));
 
-export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L };
+export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L; tags?: string[] };
 export const cases: Case[] = fm<Case>(import.meta.glob('../content/cases/*.md', { eager: true }))
   .sort(byOrder);
 
-export type DesignItem = { order?: number; slug: string; icon: string; title: L; text: L; year: string; client: string; role: L; body: L; href?: string };
+export type DesignItem = { order?: number; slug: string; case?: string; icon: string; title: L; text: L; year: string; client: string; role: L; body?: L; href?: string };
 export const designForResearch: DesignItem[] = fm<DesignItem>(import.meta.glob('../content/design-research/*.md', { eager: true })).sort(byOrder);
 
+
+// Skill tags: one closed vocabulary shared by both design divisions. Projects refer to tags by slug only.
+export type Tag = { slug: string; label_pt: string; label_en: string; descricao: string };
+export const tags: Tag[] = Object.values(import.meta.glob('../content/tags/*.json', { eager: true, import: 'default' })) as Tag[];
+export const tagLabel = (slug: string, lang: Lang) => { const g = tags.find((x) => x.slug === slug); return g ? (lang === 'pt' ? g.label_pt : g.label_en) : slug; };
+
+// Design-for-research case pages (/design/<slug>, Portuguese only for now).
+export type CaseImage = { src: string; span?: number; caption?: string; plate?: boolean };
+export type Decision = { title: string; text: string; wide?: boolean; images?: CaseImage[]; figures_intro?: string; figures?: { n: string; label: string }[] };
+export type ResearchCase = { order?: number; slug: string; title: string; thesis: string; lead: string; meta: { k: string; v: string }[]; hero: string; hero_alt?: string; context?: string; problem?: string; decisions: Decision[]; tags: string[] };
+export const researchCases: ResearchCase[] = (Object.values(import.meta.glob('../content/research-cases/*.json', { eager: true, import: 'default' })) as ResearchCase[]).sort(byOrder);

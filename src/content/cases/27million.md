@@ -25,4 +25,9 @@ gallery:
   - "/img/cases/27million/11.webp"
   - "/img/cases/27million/12.webp"
   - "/img/cases/27million/13.webp"
+tags:
+  - "web-design"
+  - "design-de-interface"
+  - "design-de-informacao"
+  - "campanhas"
 ---
