@@ -56,7 +56,6 @@ const pt = lang === 'pt';
           <p class="ab__bio">{t(bio, lang)}</p>
           <p class="ab__bio2">{t(bio2, lang)}</p>
         </div>
-        <p class="ab__copy" data-reveal><button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button></p>
         <p class="links" data-reveal>
           {profiles.map((p) => (<a href={p.href} target="_blank" rel="me noopener"><Px name={p.icon} />{p.name}</a>))}
         </p>
@@ -67,6 +66,7 @@ const pt = lang === 'pt';
           {photoCredit && <span class="ab__credit">{t(photoCredit, lang)}</span>}
           <a class="act" href={asset('/img/portrait-scholar-full.jpg')} download="silas-klein-cardoso.jpg" aria-label={pt ? 'Baixar foto em alta resolução' : 'Download high-resolution photo'}><Px name="download" /><span>{pt ? 'Baixar' : 'Download'}</span></a>
         </figcaption>
+        <p class="ab__copy"><button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button></p>
       </figure>
     </div>
   </div>
