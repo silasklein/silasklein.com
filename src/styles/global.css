@@ -350,4 +350,4 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
 .gallery__nav .act:disabled:hover .px { transform: none; }
 .gallery__count { font-variant-numeric: tabular-nums; min-width: 4em; text-align: center; }
 /* About actions: copy bio and download photo on one line under the portrait */
-.ab__caption { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin-top: 8px; }
+.ab__caption { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-top: 8px; }
