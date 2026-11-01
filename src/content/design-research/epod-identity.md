@@ -14,6 +14,6 @@ role:
   en: "Visual identity"
   pt: "Identidade visual"
 body:
-  en: "Visual identity for the research unit “Epistemology of the Divine: In Search of the Religious Thought Structures/Patterns of Ancient Palestine/Israel” (DFG-FOR 5949), funded by the Deutsche Forschungsgemeinschaft together with the Austrian Science Fund. The symbol, a single looped ring, gives the unit a compact mark for its publications, events and online presence."
-  pt: "Identidade visual do grupo de pesquisa “Epistemology of the Divine: In Search of the Religious Thought Structures/Patterns of Ancient Palestine/Israel” (DFG-FOR 5949), financiado pela Deutsche Forschungsgemeinschaft em conjunto com o Austrian Science Fund. O símbolo, um único anel em laço, dá ao grupo uma marca compacta para publicações, eventos e presença online."
+  en: "Visual identity for the research unit “Epistemology of the Divine: In Search of the Religious Thought Structures/Patterns of Ancient Palestine/Israel” (DFG-FOR 5949), funded by the Deutsche Forschungsgemeinschaft together with the Austrian Science Fund."
+  pt: "Identidade visual do grupo de pesquisa “Epistemology of the Divine: In Search of the Religious Thought Structures/Patterns of Ancient Palestine/Israel” (DFG-FOR 5949), financiado pela Deutsche Forschungsgemeinschaft em conjunto com o Austrian Science Fund."
 ---
