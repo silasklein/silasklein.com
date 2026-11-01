@@ -320,7 +320,7 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
   .pubs__v:not(.pubs__y) { padding-top: 0; }
   .more-link { padding-left: 0; }
   .ab { grid-template-columns: 1fr; }
-  .ab__photo { max-width: 200px; }
+  .ab__photo img { max-width: 200px; }
   .book { grid-template-columns: 80px 1fr; gap: 16px; }
   .book__cover img { width: 80px; }
   .mosaic { grid-template-columns: repeat(2, 1fr); }
