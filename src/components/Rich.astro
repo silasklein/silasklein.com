@@ -1,0 +1,13 @@
+---
+// Plain CMS text with two inline marks: *asterisks* for italics (titles, foreign terms)
+// and bare domains (levantineseals.org) as links.
+interface Props { text: string }
+const { text } = Astro.props;
+const domain = /\b((?:[a-z0-9-]+\.)+(?:org|com|net|br|ch|de)(?:\/[^\s,;:)]*)?)\b/i;
+const parts = text.split(/(\*[^*\n]+\*)/).flatMap((seg) =>
+  /^\*[^*]+\*$/.test(seg)
+    ? [{ em: seg.slice(1, -1) }]
+    : seg.split(domain).map((s, n) => (n % 2 ? { href: `https://${s}`, label: s } : s)),
+);
+---
+{parts.map((p) => (typeof p === 'string' ? p : 'em' in p ? <em>{p.em}</em> : <a href={p.href}>{p.label}</a>))}

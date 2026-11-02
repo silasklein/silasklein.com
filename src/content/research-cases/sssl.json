@@ -58,8 +58,8 @@
     "en": ""
   },
   "context": {
-    "pt": "O SSSL foi a continuação do famoso projeto de selos de Othmar Keel (1981–2013), que visava construir o Corpus der Stempelsiegel-Amulette aus Palästina/Israel. Dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, o projeto tinha equipes em Zurique, Berna e Tel Aviv.",
-    "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the Corpus der Stempelsiegel-Amulette aus Palästina/Israel. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv."
+    "pt": "O SSSL foi a continuação do famoso projeto de selos de Othmar Keel (1981–2013), que visava construir o *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, o projeto tinha equipes em Zurique, Berna e Tel Aviv.",
+    "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv."
   },
   "problem": {
     "pt": "A identidade visual do projeto estava fragmentada. As três universidades envolvidas, cada uma com sua marca, precisavam aparecer como um só projeto. E o corpus, antes impresso e somente em alemão, precisava migrar conceitual, metodológica e funcionalmente para uma plataforma digital.",
@@ -170,8 +170,8 @@
         "en": "Posters and posts on one grid"
       },
       "text": {
-        "pt": "Fotografia dos selos e uma grade tipográfica comum, do workshop no IOSOT 2022 à conferência final de 2024.",
-        "en": "Seal photography and a shared typographic grid, from the IOSOT 2022 workshop to the 2024 final conference."
+        "pt": "",
+        "en": ""
       },
       "wide": false,
       "images": [
@@ -201,8 +201,8 @@
         "en": "The project website"
       },
       "text": {
-        "pt": "Fiz o site do projeto, levantineseals.org: apresentação, publicações e equipe, com o símbolo e o vermelho da identidade e acesso direto ao CSSL.",
-        "en": "I made the project website, levantineseals.org: introduction, publications and team, with the symbol and red of the identity and direct access to CSSL."
+        "pt": "Fiz o site institucional do projeto, levantineseals.org. A partir de uma estrutura WordPress, ele apresenta o projeto, as publicações e a equipe. Na tela inicial, os links para as seções são ilustrações que fiz com ícones para contar a história do projeto, a partir de minha pesquisa.",
+        "en": "I made the project’s institutional website, levantineseals.org. Built on WordPress, it presents the project, its publications and its team. On the home page, the links to each section are illustrations I made from icons to tell the story of the project, drawing on my research."
       },
       "wide": false,
       "images": [
@@ -210,8 +210,8 @@
           "src": "/img/cases/sssl/17-site.webp",
           "span": 12,
           "caption": {
-            "pt": "levantineseals.org. A abertura do site.",
-            "en": "levantineseals.org. The opening of the site."
+            "pt": "levantineseals.org. A página inicial inteira.",
+            "en": "levantineseals.org. The full home page."
           },
           "plate": false
         }

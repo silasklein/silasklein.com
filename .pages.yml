@@ -1325,6 +1325,7 @@ content:
       - name: lead
         label: Lead
         type: object
+        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
         fields:
           - name: pt
             label: Português
@@ -1374,6 +1375,7 @@ content:
       - name: context
         label: Contexto (opcional)
         type: object
+        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
         fields:
           - name: pt
             label: Português
@@ -1384,6 +1386,7 @@ content:
       - name: problem
         label: Problema (opcional)
         type: object
+        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
         fields:
           - name: pt
             label: Português
@@ -1409,6 +1412,7 @@ content:
           - name: text
             label: Texto
             type: object
+            description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
             fields:
               - name: pt
                 label: Português
