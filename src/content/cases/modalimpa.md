@@ -1,6 +1,7 @@
 ---
 order: 11
 slug: "modalimpa"
+mosaic: false
 title: "Moda Limpa"
 image: "/img/cases/modalimpa.webp"
 role:

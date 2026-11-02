@@ -2,6 +2,7 @@
 import Label from './Label.astro';
 import Px from './Pixel.astro';
 import RolePlace from './RolePlace.astro';
+import Rich from './Rich.astro';
 import {
   ui, sections, currently, researchApproach, projects, recognition, books, selected, profiles,
   teaching, outreach, initiatives, designIntro, designForResearch, clients, cases,
@@ -64,7 +65,7 @@ const clientList = clients
         </p>
       </div>
       <figure class="ab__photo" data-reveal>
-        <img src={asset('/img/portrait-scholar.webp')} alt="Silas Klein" width="600" height="600" />
+        <img src={asset('/img/portrait-scholar.webp')} alt="Silas Klein" width="600" height="600" loading="lazy" decoding="async" />
         <figcaption class="ab__caption">
           <button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button>
           <a class="act" href={asset('/img/portrait-scholar-full.jpg')} download="silas-klein-cardoso.jpg"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
@@ -110,7 +111,7 @@ const clientList = clients
           <span class="col__y">{yrs(p.years, lang)}</span>
           <h3 class="col__t"><a href={href(`/research/${p.slug}`, lang)} set:html={sig(t(p.title, lang))} /></h3>
           <RolePlace project={p} lang={lang} class="col__r" />
-          <p class="col__p">{t(p.summary, lang)}</p>
+          <p class="col__p"><Rich text={t(p.summary, lang)} /></p>
           <a class="act" href={href(`/research/${p.slug}`, lang)}><Px name="arrowRight" /><span>{t(ui.readMore, lang)}</span></a>
         </div>
       ))}
@@ -129,7 +130,7 @@ const clientList = clients
                   ? <a class="rk__t" href={href(`/research/${p.slug}`, lang)}><span set:html={sig(t(p.title, lang))} /> <Px name="arrowRight" /></a>
                   : <span class="rk__t" set:html={sig(t(p.title, lang))} />}
                 <RolePlace project={p} lang={lang} class="rk__r" />
-                <span class="rk__p">{t(p.summary, lang)}</span>
+                <span class="rk__p"><Rich text={t(p.summary, lang)} /></span>
               </span>
             </div>
           </li>
@@ -148,7 +149,7 @@ const clientList = clients
     <ul class="books">
       {books.map((b) => (
         <li class="book" data-reveal>
-          <a href={b.href} target="_blank" rel="noopener" class="book__cover"><img src={asset(b.cover)} alt={b.title} width="385" height="592" /></a>
+          <a href={b.href} target="_blank" rel="noopener" class="book__cover"><img src={asset(b.cover)} alt={b.title} width="385" height="592" loading="lazy" decoding="async" /></a>
           <div class="book__v">
             <a class="book__t" href={b.href} target="_blank" rel="noopener">{b.title}</a>
             <span class="book__m">{t(b.meta, lang)}</span>
@@ -250,9 +251,9 @@ const clientList = clients
     </p>
   </div>
   <div class="mosaic">
-    {cases.map((c) => (
+    {cases.filter((c) => c.mosaic !== false).map((c) => (
       <a class="mosaic__i" href={href(`/design/${c.slug}`, lang)} aria-label={c.title}>
-        <img src={asset(c.image)} alt={c.title} width="600" height="600" />
+        <img src={asset(c.image)} alt={c.title} width="600" height="600" loading="lazy" decoding="async" />
       </a>
     ))}
   </div>

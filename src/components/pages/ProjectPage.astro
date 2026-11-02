@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import RolePlace from '../RolePlace.astro';
+import Rich from '../Rich.astro';
 import { ui, projects, sections, t, type Lang, type Project } from '../../data/content';
 import { sig, href, yrs } from '../../lib/format';
 interface Props { lang: Lang; project: Project }
@@ -19,9 +20,10 @@ const prev = withPages[i - 1], next = withPages[i + 1];
       <dt>{lang === 'pt' ? 'Período' : 'Period'}</dt><dd>{yrs(p.years, lang)}</dd>
       <dt>{t(ui.role, lang)}</dt><dd><RolePlace project={p} lang={lang} /></dd>
       {p.funding && <><dt>{t(ui.funding, lang)}</dt><dd>{p.funding}</dd></>}
+      {p.team && <><dt>{t(ui.team, lang)}</dt><dd>{t(p.team, lang)}</dd></>}
       {p.partners && <><dt>{t(ui.partners, lang)}</dt><dd>{p.partners}</dd></>}
     </dl>
-    <div class="prose lead"><p>{t(p.summary, lang)}</p></div>
+    <div class="prose lead"><p><Rich text={t(p.summary, lang)} /></p></div>
     {p.outputs && <ul class="outputs">{p.outputs.map((o) => <li>{t(o, lang)}</li>)}</ul>}
     <nav class="pager">
       {prev ? <a href={href(`/research/${prev.slug}`, lang)} set:html={'← ' + sig(t(prev.title, lang))} /> : <span />}

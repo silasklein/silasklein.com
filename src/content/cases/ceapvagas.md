@@ -1,6 +1,7 @@
 ---
 order: 10
 slug: "ceapvagas"
+mosaic: false
 title: "CEAP Vagas"
 image: "/img/cases/ceapvagas.webp"
 role:

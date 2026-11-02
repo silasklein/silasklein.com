@@ -1,6 +1,7 @@
 ---
 order: 13
 slug: "solidum"
+mosaic: false
 title: "Solidum"
 image: "/img/cases/solidum.webp"
 role:

@@ -730,9 +730,21 @@ content:
       - name: partners
         label: Partners
         type: string
+      - name: team
+        label: Team (optional)
+        type: object
+        description: 'Shown on the project page.'
+        fields:
+          - name: en
+            label: English
+            type: string
+          - name: pt
+            label: Português
+            type: string
       - name: summary
         label: Summary
         type: object
+        description: 'Italics: *like this* (titles and foreign terms).'
         fields:
           - name: en
             label: English
@@ -1074,6 +1086,11 @@ content:
         type: image
         required: true
         description: Square image, at least 1200 × 1200 px.
+      - name: mosaic
+        label: Show in the home mosaic
+        type: boolean
+        default: true
+        description: 'Off keeps the page and the link from the clients list, but takes the case out of the home mosaic.'
       - name: role
         label: Role (optional)
         type: object

@@ -28,12 +28,13 @@ Thesis: images mediate religion. He studies how seals, amulets and iconography o
 
 ## Capabilities and Constraints
 
-- Fully bilingual EN (root) / PT (/pt/).
+- Fully bilingual: Portuguese at the root, English under /en/. Portuguese opens first because Brazilian visitors find navigation harder than international ones. A third language may come later.
+- Name: "Silas Klein" everywhere on the site; "Klein Cardoso" only where he is cited (publications, programmes, figure credits).
 - Long one-page home with anchor navigation plus a few deep pages (current projects, design cases, news).
 - No supervision section. No full publication list (link out to Zotero, ORCID, Lattes).
-- Design is NOT offered as a service. The section is "Design for research".
+- Design is NOT offered as a service. Section 07 holds art direction (40 clients, a mosaic of 10 cases) and "Design for research" (four case pages at /design/<slug>: SSSL, Paleographic Networks, Observatório, EpOD).
 - English title "Dean"; in Portuguese "Coordenador do PPG", never "Pró-Reitor".
-- Hero subtitle is provisional and will be rewritten.
+- The hero (descriptor, subtitle, links) is settled: the owner chose on 2026-11-02 to keep it as it is.
 
 ## Brand Commitments
 
@@ -51,7 +52,8 @@ Thesis: images mediate religion. He studies how seals, amulets and iconography o
 - Book covers: public/img/books/
 - 15 art-direction case thumbnails: public/img/cases/
 - Facts: Lattes CV, LinkedIn PDF, old site. No testimonials; do not invent any.
-- Design-for-research items with images still to come from the owner.
+- Design-for-research: four bilingual case pages with the owner’s images, skill tags and related cases.
+- Site audit of 2026-11-02 and its decisions: ../05-auditoria-site.md.
 
 ## Product Principles
 

@@ -30,6 +30,8 @@ gallery:
   - "/img/cases/logofolio/20.webp"
   - "/img/cases/logofolio/21.webp"
   - "/img/cases/logofolio/22.webp"
+  - "/img/cases/solidum/02.webp"
+  - "/img/cases/solidum/03.webp"
 tags:
   - "identidade-visual"
 ---

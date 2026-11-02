@@ -1,6 +1,7 @@
 ---
 order: 8
 slug: "standrews"
+mosaic: false
 title: "St. Andrews"
 image: "/img/cases/standrews.webp"
 role:

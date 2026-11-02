@@ -39,6 +39,7 @@ export const ui = {
   role: { en: 'Role', pt: 'Papel' },
   funding: { en: 'Funding', pt: 'Financiamento' },
   partners: { en: 'Partners', pt: 'Parceiros' },
+  team: { en: 'Team', pt: 'Equipe' },
   commissioner: { en: 'Commissioner', pt: 'Contratante' },
   year: { en: 'Year', pt: 'Ano' },
   copy: { en: 'Copy', pt: 'Copiar' },
@@ -69,7 +70,7 @@ export const outreach = outreachFile.items as { title: L; text: L; href: string;
 export const talks = talksFile.items as { year: string; kind: L; title: string; channel: string; lang: Lang; href: string }[];
 export const initiatives = initiativesFile.items as { icon: string; title: L; text: L; details?: L; more?: string; href?: string }[];
 
-export type Project = { order?: number; slug?: string; page?: boolean; featured?: boolean; icon?: string; years: string; title: L; role: L; places?: { name: L; href?: string }[]; funding?: string; partners?: string; summary: L; outputs?: L[]; current?: boolean };
+export type Project = { order?: number; slug?: string; page?: boolean; featured?: boolean; icon?: string; years: string; title: L; role: L; places?: { name: L; href?: string }[]; funding?: string; partners?: string; team?: L; summary: L; outputs?: L[]; current?: boolean };
 export const projects: Project[] = fm<Project>(import.meta.glob('../content/projects/*.md', { eager: true }))
   .sort(byOrder).map((p) => ({ ...p, slug: p.page ? p.slug : undefined }));
 
@@ -79,7 +80,7 @@ const newsMods = Object.values(import.meta.glob('../content/news/*.md', { eager:
 export const news: Post[] = (await Promise.all(newsMods.map(async (m) => ({ ...m.frontmatter, html: m.rawContent().trim() ? await m.compiledContent() : undefined }) as Post)))
   .map((p) => ({ ...p, date: (p.date as unknown) instanceof Date ? (p.date as unknown as Date).toISOString().slice(0, 10) : String(p.date).slice(0, 10) })).sort((a, b) => b.date.localeCompare(a.date));
 
-export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L; tags?: string[] };
+export type Case = { order?: number; slug: string; title: string; image: string; gallery?: string[]; team?: L; role?: L; commissioner?: string; year?: string; text: L; tags?: string[]; mosaic?: boolean };
 export const cases: Case[] = fm<Case>(import.meta.glob('../content/cases/*.md', { eager: true }))
   .sort(byOrder);
 
