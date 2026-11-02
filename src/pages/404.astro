@@ -1,0 +1,24 @@
+---
+// GitHub Pages serves this for any address that does not exist. One page in both languages, never indexed.
+import Base from '../layouts/Base.astro';
+import Label from '../components/Label.astro';
+import Px from '../components/Pixel.astro';
+import { email } from '../data/content';
+import { href } from '../lib/format';
+---
+<Base lang="pt" title="Página não encontrada" description="Este endereço não existe mais no site de Silas Klein." noindex translated={false} other={href('/', 'en')}>
+  <div class="page">
+    <Label n="404" text="Página não encontrada" />
+    <h1 class="h2">Esta página não existe<span class="bs">\</span>mais.</h1>
+    <p class="lead">O endereço pode ter mudado. Comece pelo início ou escreva para mim.</p>
+    <p class="lead" lang="en">This page does not exist (any more). The address may have changed: start from the home page or write to me.</p>
+    <p class="nf__links">
+      <a class="act" href={href('/', 'pt')}><Px name="arrowRight" class="flip" /><span>Voltar ao início</span></a>
+      <a class="act" href={href('/', 'en')} lang="en"><Px name="arrowRight" class="flip" /><span>English home</span></a>
+      <a class="act" href={`mailto:${email}`}><Px name="mail" /><span>{email}</span></a>
+    </p>
+  </div>
+</Base>
+<style>
+  .nf__links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 40px; }
+</style>

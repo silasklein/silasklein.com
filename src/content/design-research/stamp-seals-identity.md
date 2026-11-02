@@ -8,8 +8,8 @@ title:
   en: "Stamp Seals from the Southern Levant"
   pt: "Stamp Seals from the Southern Levant"
 text:
-  en: "Visual identity for the SNSF research project (Zurich, Bern, Tel Aviv)."
-  pt: "Identidade visual do projeto de pesquisa SNSF (Zurique, Berna, Tel Aviv)."
+  en: "Visual identity and consulting for the digital corpus of the SNSF Sinergia project (Zurich, Bern, Tel Aviv), 2020–2024."
+  pt: "Identidade visual e consultoria no corpus digital do projeto SNSF Sinergia (Zurique, Berna, Tel Aviv), 2020–2024."
 client: "Universities of Zurich, Bern and Tel Aviv · Swiss National Science Foundation"
 role:
   en: "Visual identity; supervision of artifact illustrations"

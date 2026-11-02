@@ -42,3 +42,6 @@ export function switchPath(pathname: string, lang: Lang): string {
   if (lang === 'en') return BASE + (p.replace(/^\/en(\/|$)/, '/') || '/');
   return BASE + (p === '/' ? '/en/' : `/en${p}`);
 }
+
+// The first picture of a news post: what the post shows when shared.
+export const postCover = (html?: string) => html?.match(/<img[^>]*src="(\/[^"]+)"/)?.[1];

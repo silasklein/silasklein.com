@@ -32,7 +32,7 @@ const i = researchCases.findIndex((x) => x.slug === c.slug);
 const prev = researchCases[(i - 1 + researchCases.length) % researchCases.length];
 const next = researchCases[(i + 1) % researchCases.length];
 ---
-<Base lang={lang} title={c.title} description={t(c.lead, lang).replace(/\*/g, '')}>
+<Base lang={lang} title={c.title} description={t(c.lead, lang)} image={`/og/design/${c.slug}.jpg`} imageWide>
   <article class="cs">
     <div class="wrap cs__top">
       <a class="act cs__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>Design</span></a>

@@ -5,11 +5,11 @@ case: "epod"
 icon: "epod"
 year: "2026"
 title:
-  en: "EPOD: Epistemology of the Divine"
-  pt: "EPOD: Epistemology of the Divine"
+  en: "EpOD: Epistemology of the Divine"
+  pt: "EpOD: Epistemology of the Divine"
 text:
-  en: "Visual identity for the DFG research unit (2026)."
-  pt: "Identidade visual do grupo de pesquisa da DFG (2026)."
+  en: "Visual identity for the DFG and FWF research group (Bonn, Leipzig, Wuppertal, Vienna), 2026."
+  pt: "Identidade visual do grupo de pesquisa da DFG e do FWF (Bonn, Leipzig, Wuppertal, Viena), 2026."
 client: "DFG Research Unit FOR 5949 “Epistemology of the Divine”"
 role:
   en: "Visual identity"

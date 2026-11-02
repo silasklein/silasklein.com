@@ -1,4 +1,4 @@
-# Surface brief: home (/, /pt/)
+# Surface brief: home (/ in Portuguese, /en/ in English)
 
 Mode: experience
 
@@ -10,6 +10,8 @@ OWN-WORLD: Cool white #F5F6F4 and alt #EBEDEA. Near-black #15161D for text and t
 
 STORY: Descriptor and portrait, then what he does now, the research thesis and projects, books, teaching, initiatives, the design hand, a bio for organizers, and contact.
 
-FIRST VIEWPORT: Stacked "(Ancient) / Religion\s, / Media & / Images" on the left 7 columns. Parallelogram portrait on the right 5 columns, overlapped by a magenta square. Subtitle and two buttons below the title.
+FIRST VIEWPORT (as live, kept by the owner on 2026-11-02): type only. "Olá, eu sou Silas Klein." in magenta, the descriptor in two lines ("Religião\ões (antigas), / Mídia & Imagens"; EN "(Ancient) Religion\s, / Media & Images") with magenta "\" and "&", the subtitle, two text links (research, contact) and a two-row key list (Hoje / Campo). No photo: the portrait lives in About.
 
-FORM: Vertical editorial with scroll-linked parallax (display lines, photos and colour fields at their own depth). Chosen by the owner from the specimen: type A, palette 3.
+FORM: Vertical editorial. Text and images arrive on scroll and then stay fixed: continuous parallax gave the owner vertigo. Chosen by the owner from the specimen: type A, palette 3.
+
+DESIGN SECTION (2026-11-02): the art-direction mosaic shows 10 cases (two rows of five); Moda Limpa, Saints, St. Andrews, Solidum and CEAP Vagas keep their pages and client links but leave the mosaic (`mosaic: false`). Below it, the four design-for-research cases link to /design/<slug>.

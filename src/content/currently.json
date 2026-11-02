@@ -2,16 +2,16 @@
   "items": [
     {
       "kicker": {
-        "en": "Research group · 2024–",
-        "pt": "Grupo de pesquisa · 2024–"
+        "en": "Research platform · 2024–",
+        "pt": "Plataforma de pesquisa · 2024–"
       },
       "title": {
         "en": "Observatório de Universos Bíblicos",
         "pt": "Observatório de Universos Bíblicos"
       },
       "text": {
-        "en": "The research group I founded and co-lead at FUV’s Graduate Program in Religious Studies: inscriptions, images, objects, literatures and rites of the biblical worlds.",
-        "pt": "O grupo de pesquisa que fundei e colidero no PPG em Ciências das Religiões da FUV: inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
+        "en": "The group I founded and co-lead at FUV’s graduate program: it brings together research on the inscriptions, images, objects, literatures and rites of the biblical worlds.",
+        "pt": "O grupo que fundei e colidero no PPG da FUV: reúne pesquisas sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
       },
       "href": "https://universosbiblicos.org",
       "icon": "oub"
@@ -34,16 +34,16 @@
     },
     {
       "kicker": {
-        "en": "Summer school · 2024–",
-        "pt": "Escola de verão · 2024–"
+        "en": "Educational project · 2024–",
+        "pt": "Projeto educacional · 2024–"
       },
       "title": {
         "en": "International Summer School: Iconography of the Ancient World",
         "pt": "International Summer School: Iconography of the Ancient World"
       },
       "text": {
-        "en": "After Wuppertal (2024, 2025) and Vitória (2026), the next edition is planned for Prague in 2027.",
-        "pt": "Depois de Wuppertal (2024, 2025) e Vitória (2026), a próxima edição está prevista para Praga em 2027."
+        "en": "An itinerant school of visual methods for MA and PhD students and early-career researchers: Wuppertal, Vitória and, in 2027, Prague.",
+        "pt": "Uma escola itinerante de métodos visuais para mestrado, doutorado e início de carreira: Wuppertal, Vitória e, em 2027, Praga."
       },
       "href": "/research/summer-school-iconography",
       "icon": "sun"

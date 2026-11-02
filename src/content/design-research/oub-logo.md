@@ -8,8 +8,8 @@ title:
   en: "Observatório de Universos Bíblicos"
   pt: "Observatório de Universos Bíblicos"
 text:
-  en: "Logo for the research group (2025)."
-  pt: "Logo do grupo de pesquisa (2025)."
+  en: "Identity and the routine of FUV’s research group: brand, website, lectures, posts and events, since 2025."
+  pt: "Identidade e a rotina do grupo de pesquisa da FUV: marca, site, palestras, posts e eventos, desde 2025."
 client: "Observatório de Universos Bíblicos · PPG em Ciências das Religiões, FUV"
 role:
   en: "Logo and art direction"

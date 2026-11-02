@@ -1,6 +1,7 @@
 ---
 order: 14
 slug: "saints"
+mosaic: false
 title: "Saints"
 image: "/img/cases/saints.webp"
 role:

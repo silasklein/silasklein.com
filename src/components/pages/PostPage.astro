@@ -2,11 +2,12 @@
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import { sections, news, t, type Lang, type Post } from '../../data/content';
-import { href, BASE } from '../../lib/format';
+import { href, BASE, postCover } from '../../lib/format';
 interface Props { lang: Lang; post: Post }
 const { lang, post: p } = Astro.props;
 const otherLang: Lang = lang === 'pt' ? 'en' : 'pt';
 const translation = news.find((x) => x.slug === p.slug && x.lang === otherLang);
+const cover = postCover(p.html) ? `/og/news/${p.slug}.jpg` : undefined;
 // Root-relative images in the post point to /img/…; on the preview address they need the prefix.
 const body = p.html?.replace(/(src|href)="\/(?!\/)/g, `$1="${BASE}/`).replace(/<img /g, '<img loading="lazy" decoding="async" ')
   // Two or more images in a row become one carousel instead of a long column.
@@ -21,7 +22,7 @@ const body = p.html?.replace(/(src|href)="\/(?!\/)/g, `$1="${BASE}/`).replace(/<
   });
 const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base lang={lang} title={p.title} description={p.summary} other={href(translation ? `/news/${p.slug}` : '/news', otherLang)} translated={!!translation}>
+<Base lang={lang} title={p.title} description={p.summary} other={href(translation ? `/news/${p.slug}` : '/news', otherLang)} translated={!!translation} image={cover} imageWide={!!cover}>
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.summary,
     datePublished: p.date, inLanguage: p.lang === 'pt' ? 'pt-BR' : 'en',

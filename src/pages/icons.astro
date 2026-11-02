@@ -3,8 +3,9 @@
 import Base from '../layouts/Base.astro';
 import Px from '../components/Pixel.astro';
 import { ICON_NAMES } from '../lib/icons';
+import { href } from '../lib/format';
 ---
-<Base lang="pt" title="Ícones" noindex>
+<Base lang="pt" title="Ícones" noindex translated={false} other={href('/', 'en')}>
   <div class="page">
     <h1 class="h2">Ícones</h1>
     <p class="lead">Nome para escolher no campo “Icon” do Pages CMS.</p>

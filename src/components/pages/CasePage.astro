@@ -12,7 +12,7 @@ const i = cases.findIndex((x) => x.slug === c.slug);
 const prev = cases[(i - 1 + cases.length) % cases.length], next = cases[(i + 1) % cases.length];
 const images = c.gallery?.length ? c.gallery : [c.image];
 ---
-<Base lang={lang} title={c.title} description={t(c.text, lang)}>
+<Base lang={lang} title={c.title} description={t(c.text, lang)} image={`/og/design/${c.slug}.jpg`}>
   <article class="page">
     <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{pt ? 'Direção de arte' : 'Art direction'}</span></a>
     <Label n={sections.design.n} text={t(sections.design.label, lang)} />

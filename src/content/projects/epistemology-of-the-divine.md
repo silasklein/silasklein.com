@@ -7,8 +7,8 @@ page: true
 current: true
 years: "2026–"
 title:
-  en: "EPOD: Epistemology of the Divine"
-  pt: "EPOD: Epistemology of the Divine"
+  en: "EpOD: Epistemology of the Divine"
+  pt: "EpOD: Epistemology of the Divine"
 role:
   en: "Associate researcher, sub-project 3 “Daily Visible: Towards an Epistemology of the Divine Mediated through (the) Images” (lead: PD Dr Thomas Wagner)"
   pt: "Pesquisador associado, subprojeto 3 “Daily Visible: Towards an Epistemology of the Divine Mediated through (the) Images” (coord.: PD Dr. Thomas Wagner)"
