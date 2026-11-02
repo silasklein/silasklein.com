@@ -119,8 +119,11 @@ const person = {
     <ul>
       {navKeys.map((k) => (<li><a href={href(`#${k}`, lang)}>{t(ui.nav[k], lang)}</a></li>))}
       <li><a href={href('#contact', lang)}>{t(ui.nav.contact, lang)}</a></li>
-      {langs.filter((l) => l.code !== lang).map((l) => <li><a href={paths[l.code]} hreflang={l.hreflang} lang={l.hreflang}>{l.name}</a></li>)}
     </ul>
+    <div class="mlangs">
+      <p class="mlangs__k" id="mlangs-k"><Px name="translate" />{t(ui.language, lang)}</p>
+      <ul aria-labelledby="mlangs-k">{langs.map((l) => (<li><a href={paths[l.code]} hreflang={l.hreflang} lang={l.hreflang} aria-current={l.code === lang ? 'true' : undefined}>{l.name}</a></li>))}</ul>
+    </div>
   </nav>
 
   <main id="main">

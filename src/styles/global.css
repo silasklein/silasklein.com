@@ -93,6 +93,14 @@ a.act:hover, button.act:hover { color: var(--accent); }
 .topbar__menu[aria-expanded="true"] .bars::after { transform: translateY(-6px) rotate(-45deg); }
 .mobile-nav { position: fixed; inset: var(--topbar) 0 0; z-index: 49; background: var(--dark); padding: 24px var(--gutter); }
 .mobile-nav a { display: block; color: var(--on-dark); font: 700 26px/1.2 var(--font); letter-spacing: -.03em; padding: 10px 0; border-bottom: 1px solid var(--line-dark); }
+/* Languages sit below the sections, a step down: they switch the whole site, not the place on the page. */
+.mlangs { margin-top: 40px; display: grid; gap: 6px; }
+.mlangs__k { display: flex; align-items: center; gap: 7px; font: 600 13px/1 var(--font); letter-spacing: .02em; color: var(--on-dark-2); }
+.mlangs__k .px { color: var(--magenta-light); }
+.mlangs ul { display: flex; flex-wrap: wrap; }
+.mobile-nav .mlangs a { border: 0; font: 600 16px/1 var(--font); letter-spacing: 0; padding: 14px 20px 14px 0; color: var(--on-dark-2); }
+.mobile-nav .mlangs a:hover { color: var(--on-dark); }
+.mobile-nav .mlangs a[aria-current] { color: var(--on-dark); text-decoration: underline 2px var(--magenta-light); text-underline-offset: 6px; }
 
 /* Section scaffold: number and name on a full-width rule; content starts on that rule */
 .sec { position: relative; padding: clamp(72px, 10vh, 120px) 0; }
