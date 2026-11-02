@@ -10,6 +10,7 @@ title:
 text:
   en: "Visual identity for the DFG and FWF research group (Bonn, Leipzig, Wuppertal, Vienna), 2026."
   pt: "Identidade visual do grupo de pesquisa da DFG e do FWF (Bonn, Leipzig, Wuppertal, Viena), 2026."
+  es: Identidad visual del grupo de investigación de la DFG y el FWF (Bonn, Leipzig, Wuppertal, Viena), 2026.
 client: "DFG Research Unit FOR 5949 “Epistemology of the Divine”"
 role:
   en: "Visual identity"

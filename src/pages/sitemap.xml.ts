@@ -1,6 +1,6 @@
-// sitemap.xml with both language versions of every page (Portuguese at the root, English under /en/).
+// sitemap.xml with every language version of every page (Portuguese at the root, English under /en/, Spanish under /es/).
 import type { APIRoute } from 'astro';
-import { projects, cases, news, researchCases } from '../data/content';
+import { projects, cases, news, researchCases, langs, type Lang } from '../data/content';
 
 const paths = [
   '/', '/publications/', '/talks/', '/news/',
@@ -9,21 +9,21 @@ const paths = [
   ...researchCases.map((r) => `/design/${r.slug}/`),
 ];
 const lastmod = new Map(news.map((p) => [`/news/${p.slug}/`, p.date]));
+const prefix = (lang: Lang) => (lang === 'pt' ? '' : `/${lang}`);
 
 export const GET: APIRoute = ({ site }) => {
   const url = (p: string) => new URL(p, site).href;
-  const entry = (path: string) => {
-    const pt = url(path), en = url(`/en${path}`);
-    const alt = `<xhtml:link rel="alternate" hreflang="pt-BR" href="${pt}"/><xhtml:link rel="alternate" hreflang="en" href="${en}"/><xhtml:link rel="alternate" hreflang="x-default" href="${pt}"/>`;
-    const mod = lastmod.get(path) ? `<lastmod>${lastmod.get(path)}</lastmod>` : '';
-    return `<url><loc>${pt}</loc>${mod}${alt}</url><url><loc>${en}</loc>${mod}${alt}</url>`;
+  // One <url> per language, each listing all the versions that exist (and Portuguese as the default).
+  const group = (path: string, codes: Lang[], mod: string) => {
+    const alt = codes.map((c) => `<xhtml:link rel="alternate" hreflang="${langs.find((l) => l.code === c)!.hreflang}" href="${url(prefix(c) + path)}"/>`).join('')
+      + (codes.includes('pt') ? `<xhtml:link rel="alternate" hreflang="x-default" href="${url(path)}"/>` : '');
+    return codes.map((c) => `<url><loc>${url(prefix(c) + path)}</loc>${mod}${codes.length > 1 ? alt : ''}</url>`).join('');
   };
-  const posts = news.map((p) => {
-    const loc = url(p.lang === 'pt' ? `/news/${p.slug}/` : `/en/news/${p.slug}/`);
-    const pair = news.find((x) => x.slug === p.slug && x.lang !== p.lang);
-    const alt = pair ? `<xhtml:link rel="alternate" hreflang="pt-BR" href="${url(`/news/${p.slug}/`)}"/><xhtml:link rel="alternate" hreflang="en" href="${url(`/en/news/${p.slug}/`)}"/>` : '';
-    return `<url><loc>${loc}</loc><lastmod>${p.date}</lastmod>${alt}</url>`;
+  const pages = paths.map((p) => group(p, langs.map((l) => l.code), lastmod.get(p) ? `<lastmod>${lastmod.get(p)}</lastmod>` : '')).join('');
+  const posts = [...new Set(news.map((p) => p.slug))].map((slug) => {
+    const versions = news.filter((p) => p.slug === slug);
+    return group(`/news/${slug}/`, langs.map((l) => l.code).filter((c) => versions.some((v) => v.lang === c)), `<lastmod>${versions[0].date}</lastmod>`);
   }).join('');
-  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${paths.map(entry).join('')}${posts}</urlset>\n`;
+  const body = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${pages}${posts}</urlset>\n`;
   return new Response(body, { headers: { 'Content-Type': 'application/xml; charset=utf-8' } });
 };

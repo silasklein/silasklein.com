@@ -14,20 +14,20 @@ let list = snapshot;
 try { list = await fetchPublications(); } catch { /* offline: keep the snapshot */ }
 
 const groups = [
-  { types: ['book'], label: { en: 'Books & edited volumes', pt: 'Livros e obras organizadas' }, icon: 'books' },
-  { types: ['journalArticle'], label: { en: 'Journal articles', pt: 'Artigos em periódicos' }, icon: 'news' },
-  { types: ['bookSection'], label: { en: 'Book chapters', pt: 'Capítulos de livros' }, icon: 'library' },
-  { types: ['thesis', 'manuscript'], label: { en: 'Theses & other texts', pt: 'Teses e outros textos' }, icon: 'pencil' },
+  { types: ['book'], label: { en: 'Books & edited volumes', pt: 'Livros e obras organizadas', es: 'Libros y obras colectivas' }, icon: 'books' },
+  { types: ['journalArticle'], label: { en: 'Journal articles', pt: 'Artigos em periódicos', es: 'Artículos en revistas' }, icon: 'news' },
+  { types: ['bookSection'], label: { en: 'Book chapters', pt: 'Capítulos de livros', es: 'Capítulos de libros' }, icon: 'library' },
+  { types: ['thesis', 'manuscript'], label: { en: 'Theses & other texts', pt: 'Teses e outros textos', es: 'Tesis y otros textos' }, icon: 'pencil' },
 ].map((g) => ({ ...g, items: list.filter((p) => g.types.includes(p.type)) })).filter((g) => g.items.length);
 const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.name));
 ---
-<Base lang={lang} title={t(ui.fullList, lang)} description={pt ? `Lista completa de publicações de Silas Klein (${list.length} itens): livros, artigos e capítulos sobre iconografia, selos e história da religião no antigo Levante.` : `Full list of publications by Silas Klein (${list.length} items): books, articles and chapters on iconography, stamp seals and the history of religion in the ancient Levant.`}>
+<Base lang={lang} title={t(ui.fullList, lang)} description={t({ pt: `Lista completa de publicações de Silas Klein (${list.length} itens): livros, artigos e capítulos sobre iconografia, selos e história da religião no antigo Levante.`, en: `Full list of publications by Silas Klein (${list.length} items): books, articles and chapters on iconography, stamp seals and the history of religion in the ancient Levant.`, es: `Lista completa de publicaciones de Silas Klein (${list.length} títulos): libros, artículos y capítulos sobre iconografía, sellos de estampa e historia de la religión en el antiguo Levante.` }, lang)}>
   <div class="page">
     <a class="page__back" href={href('#publications', lang)}>← {t(ui.nav.publications, lang)}</a>
     <Label n={sections.publications.n} text={t(sections.publications.label, lang)} />
     <h1 class="h2">{t(ui.fullList, lang)}</h1>
     <p class="links">
-      <span class="links__k">{list.length} {pt ? 'itens · também em' : 'items · also on'}</span>
+      <span class="links__k">{list.length} {t({ pt: 'itens · também em', en: 'items · also on', es: 'publicaciones · también en' }, lang)}</span>
       {other.map((p) => (<a href={p.href} target="_blank" rel="noopener"><Px name={p.icon} />{p.name}</a>))}
     </p>
     {groups.map((g) => (

@@ -14,13 +14,13 @@ const images = c.gallery?.length ? c.gallery : [c.image];
 ---
 <Base lang={lang} title={c.title} description={t(c.text, lang)} image={`/og/design/${c.slug}.jpg`}>
   <article class="page">
-    <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{pt ? 'Direção de arte' : 'Art direction'}</span></a>
+    <a class="act page__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>{t({ pt: 'Direção de arte', en: 'Art direction', es: 'Dirección de arte' }, lang)}</span></a>
     <Label n={sections.design.n} text={t(sections.design.label, lang)} />
     <h1 class="h2">{c.title}</h1>
     <p class="lead">{t(c.text, lang)}</p>
     <dl class="meta">
       {c.role && <><dt>{t(ui.role, lang)}</dt><dd>{t(c.role, lang)}</dd></>}
-      {c.team && <><dt>{pt ? 'Equipe' : 'Team'}</dt><dd>{t(c.team, lang)}</dd></>}
+      {c.team && <><dt>{t({ pt: 'Equipe', en: 'Team', es: 'Equipo' }, lang)}</dt><dd>{t(c.team, lang)}</dd></>}
       {c.commissioner && <><dt>{t(ui.commissioner, lang)}</dt><dd>{c.commissioner}</dd></>}
       {c.year && <><dt>{t(ui.year, lang)}</dt><dd>{c.year}</dd></>}
     </dl>

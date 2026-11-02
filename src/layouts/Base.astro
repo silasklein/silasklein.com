@@ -7,10 +7,10 @@ import '@fontsource/plus-jakarta-sans/800.css';
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import Px from '../components/Pixel.astro';
-import { ui, sections, profiles, email, t, type Lang } from '../data/content';
-import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
+import { ui, sections, profiles, email, t, langs, langInfo, type Lang } from '../data/content';
+import { href, langPath, sig, asset, sitePath, BASE } from '../lib/format';
 
-interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean; other?: string; translated?: boolean; image?: string; imageWide?: boolean }
+interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean; alternates?: Partial<Record<Lang, string>>; translated?: boolean; image?: string; imageWide?: boolean }
 const { lang, title, description, home = false, noindex = false, image, imageWide = false } = Astro.props;
 // Search results show about 65 characters of a title: long page titles drop the name suffix.
 const pageTitle = title ? (title.length + 14 > 65 ? title : `${title} · Silas Klein`) : `Silas Klein · ${t(ui.descriptor, lang)}`;
@@ -26,21 +26,21 @@ const clip = (s: string, max = 155) => {
   return cut.slice(0, cut.lastIndexOf(' ')).replace(/[\s,;:–—-]+$/, '') + '…';
 };
 const desc = clip(description ?? t(ui.subtitle, lang));
-// The language switch: same page in the other language, unless the page names another target (e.g. a post without translation).
-const other = Astro.props.other ?? switchPath(Astro.url.pathname, lang);
+// The same page in each language, unless the page names other targets (e.g. a post without translation);
+// a language without this page leads to its home.
 const translated = Astro.props.translated ?? true;
+const paths = Object.fromEntries(langs.map((l) => [l.code, Astro.props.alternates?.[l.code] ?? (translated ? langPath(Astro.url.pathname, l.code) : href('/', l.code))])) as Record<Lang, string>;
+paths[lang] = BASE + sitePath(Astro.url.pathname);
+const here = langInfo(lang);
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
 const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
-// Language versions of this page: Portuguese is the default (x-default), English lives under /en/.
-const ptPath = lang === 'pt' ? sitePath(Astro.url.pathname) : sitePath(other);
-const enPath = lang === 'en' ? sitePath(Astro.url.pathname) : sitePath(other);
 const portrait = new URL('/img/og-portrait.jpg', Astro.site);
 // Pages with their own picture (cases, posts) share it; the rest share the portrait.
 const ogImage = image ? new URL(image, Astro.site) : portrait;
 const person = {
   '@context': 'https://schema.org', '@type': 'Person', '@id': 'https://www.silasklein.com/#person',
   name: 'Silas Klein', alternateName: 'Silas Klein Cardoso', url: 'https://www.silasklein.com/', image: portrait.href,
-  jobTitle: lang === 'pt' ? 'Professor de Antigo Testamento e Ciências das Religiões' : 'Professor of Old Testament and Religious Studies',
+  jobTitle: t({ pt: 'Professor de Antigo Testamento e Ciências das Religiões', en: 'Professor of Old Testament and Religious Studies', es: 'Profesor de Antiguo Testamento y Ciencias de las Religiones' }, lang),
   description: t(ui.subtitle, lang),
   worksFor: { '@type': 'CollegeOrUniversity', name: 'Faculdade Unida de Vitória', url: 'https://fuv.edu.br/' },
   affiliation: [{ '@type': 'CollegeOrUniversity', name: 'University of Bern', url: 'https://www.unibe.ch/' }],
@@ -51,7 +51,7 @@ const person = {
 };
 ---
 <!doctype html>
-<html lang={lang === 'pt' ? 'pt-BR' : 'en'}>
+<html lang={here.hreflang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,9 +62,8 @@ const person = {
   <link rel="canonical" href={canonical} />
   {(BASE || noindex) && <meta name="robots" content="noindex" />}
   {!noindex && translated && <>
-    <link rel="alternate" hreflang="pt-BR" href={new URL(ptPath, Astro.site)} />
-    <link rel="alternate" hreflang="en" href={new URL(enPath, Astro.site)} />
-    <link rel="alternate" hreflang="x-default" href={new URL(ptPath, Astro.site)} />
+    {langs.map((l) => <link rel="alternate" hreflang={l.hreflang} href={new URL(sitePath(paths[l.code]), Astro.site)} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(sitePath(paths.pt), Astro.site)} />
   </>}
   <link rel="sitemap" href={asset('/sitemap.xml')} />
   <link rel="icon" type="image/png" sizes="19x19" href={asset('/favicon-19.png')} />
@@ -74,8 +73,8 @@ const person = {
   <meta property="og:type" content={home ? 'profile' : 'article'} />
   <meta property="og:site_name" content="Silas Klein" />
   <meta property="og:url" content={canonical} />
-  <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
-  <meta property="og:locale:alternate" content={lang === 'pt' ? 'en_US' : 'pt_BR'} />
+  <meta property="og:locale" content={here.locale} />
+  {langs.filter((l) => l.code !== lang).map((l) => <meta property="og:locale:alternate" content={l.locale} />)}
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={desc} />
   <meta property="og:image" content={ogImage} />
@@ -89,7 +88,7 @@ const person = {
   <script is:inline>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <a class="skip" href="#main">{lang === 'pt' ? 'Pular para o conteúdo' : 'Skip to content'}</a>
+  <a class="skip" href="#main">{t({ pt: 'Pular para o conteúdo', en: 'Skip to content', es: 'Saltar al contenido' }, lang)}</a>
   <header class="topbar">
     <a class="topbar__logo" href={href('/', lang)} aria-label={t(ui.back, lang)}>
       <Logo scale={1.5} />
@@ -102,9 +101,14 @@ const person = {
       </ul>
     </nav>
     <div class="topbar__end">
-      <a class="topbar__lang" href={other} hreflang={lang === 'pt' ? 'en' : 'pt-BR'} lang={lang === 'pt' ? 'en' : 'pt-BR'}>
-        {lang === 'pt' ? 'EN' : 'BR'}<span class="sr">{t(ui.langName, lang)}</span>
-      </a>
+      <details class="langs">
+        <summary class="topbar__lang" aria-label={t(ui.language, lang)}><Px name="translate" /><span aria-hidden="true">{here.short}</span></summary>
+        <ul class="langs__list">
+          {langs.map((l) => (
+            <li><a href={paths[l.code]} hreflang={l.hreflang} lang={l.hreflang} aria-current={l.code === lang ? 'true' : undefined}><span>{l.name}</span><small>{l.short}</small></a></li>
+          ))}
+        </ul>
+      </details>
       <a class="topbar__contact" href={href('#contact', lang)} data-nav="contact"><Px name="mail" />{t(ui.nav.contact, lang)}</a>
       <button class="topbar__menu" aria-expanded="false" aria-controls="mobile-nav">
         <span class="sr">Menu</span><span class="bars" aria-hidden="true"></span>
@@ -115,7 +119,7 @@ const person = {
     <ul>
       {navKeys.map((k) => (<li><a href={href(`#${k}`, lang)}>{t(ui.nav[k], lang)}</a></li>))}
       <li><a href={href('#contact', lang)}>{t(ui.nav.contact, lang)}</a></li>
-      <li><a href={other}>{t(ui.langName, lang)}</a></li>
+      {langs.filter((l) => l.code !== lang).map((l) => <li><a href={paths[l.code]} hreflang={l.hreflang} lang={l.hreflang}>{l.name}</a></li>)}
     </ul>
   </nav>
 

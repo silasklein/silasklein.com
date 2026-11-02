@@ -4,47 +4,56 @@
   "title": "Stamp Seals from the Southern Levant",
   "thesis": {
     "pt": "Identidade visual e consultoria no corpus digital",
-    "en": "Visual identity and consulting for a digital corpus"
+    "en": "Visual identity and consulting for a digital corpus",
+    "es": "Identidad visual y consultoría para el corpus digital"
   },
   "lead": {
     "pt": "Para o consórcio SSSL, de três universidades, criei a identidade visual do projeto e fiz a consultoria visual da base online, o Corpus of Stamp Seals from the Southern Levant.",
-    "en": "For the SSSL consortium of three universities, I created the project’s visual identity and was the visual consultant for its online database, the Corpus of Stamp Seals from the Southern Levant."
+    "en": "For the SSSL consortium of three universities, I created the project’s visual identity and was the visual consultant for its online database, the Corpus of Stamp Seals from the Southern Levant.",
+    "es": "Para el consorcio SSSL, formado por tres universidades, creé la identidad visual del proyecto y fui consultor visual de la base de datos en línea, el Corpus of Stamp Seals from the Southern Levant."
   },
   "meta": [
     {
       "k": {
         "pt": "Papel",
-        "en": "Role"
+        "en": "Role",
+        "es": "Función"
       },
       "v": {
         "pt": "Pesquisador de pós-doutorado; identidade visual e consultoria visual da base online",
-        "en": "Postdoctoral researcher; visual identity and visual consulting for the online database"
+        "en": "Postdoctoral researcher; visual identity and visual consulting for the online database",
+        "es": "Investigador posdoctoral; identidad visual y consultoría visual de la base de datos en línea"
       }
     },
     {
       "k": {
         "pt": "Cliente",
-        "en": "Client"
+        "en": "Client",
+        "es": "Cliente"
       },
       "v": {
         "pt": "Stamp Seals from the Southern Levant (Universidades de Zurique, Berna e Tel Aviv)",
-        "en": "Stamp Seals from the Southern Levant (Universities of Zurich, Bern and Tel Aviv)"
+        "en": "Stamp Seals from the Southern Levant (Universities of Zurich, Bern and Tel Aviv)",
+        "es": "Stamp Seals from the Southern Levant (Universidades de Zúrich, Berna y Tel Aviv)"
       }
     },
     {
       "k": {
         "pt": "Via",
-        "en": "Via"
+        "en": "Via",
+        "es": "Vía"
       },
       "v": {
         "pt": "Contrato de pesquisador",
-        "en": "Researcher contract"
+        "en": "Researcher contract",
+        "es": "Contrato de investigador"
       }
     },
     {
       "k": {
         "pt": "Ano",
-        "en": "Year"
+        "en": "Year",
+        "es": "Año"
       },
       "v": {
         "pt": "2020–2024",
@@ -55,25 +64,30 @@
   "hero": "/img/cases/sssl/01-marca.webp",
   "hero_alt": {
     "pt": "Marca do Stamp Seals from the Southern Levant: o símbolo vermelho em forma de selo, ao lado do nome do projeto, sobre um fundo escuro de selos ovais.",
-    "en": "The Stamp Seals from the Southern Levant brand: the red seal-shaped symbol beside the project name, on a dark ground of oval seals."
+    "en": "The Stamp Seals from the Southern Levant brand: the red seal-shaped symbol beside the project name, on a dark ground of oval seals.",
+    "es": "Marca de Stamp Seals from the Southern Levant: el símbolo rojo en forma de sello, junto al nombre del proyecto, sobre un fondo oscuro de sellos ovalados."
   },
   "context": {
     "pt": "O SSSL foi a continuação do famoso projeto de selos de Othmar Keel (1981–2013), que visava construir o *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, o projeto tinha equipes em Zurique, Berna e Tel Aviv.",
-    "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv."
+    "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv.",
+    "es": "El SSSL fue la continuación del célebre proyecto de sellos de Othmar Keel (1981–2013), que buscaba construir el *Corpus der Stempelsiegel-Amulette aus Palästina/Israel*. Dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, el proyecto tenía equipos en Zúrich, Berna y Tel Aviv."
   },
   "problem": {
     "pt": "A identidade visual do projeto estava fragmentada. As três universidades envolvidas, cada uma com sua marca, precisavam aparecer como um só projeto. E o corpus, antes impresso e somente em alemão, precisava migrar conceitual, metodológica e funcionalmente para uma plataforma digital.",
-    "en": "The project’s visual identity was fragmented. The three universities involved, each with its own brand, had to appear as one project. And the corpus, previously printed and only in German, had to move conceptually, methodologically and functionally to a digital platform."
+    "en": "The project’s visual identity was fragmented. The three universities involved, each with its own brand, had to appear as one project. And the corpus, previously printed and only in German, had to move conceptually, methodologically and functionally to a digital platform.",
+    "es": "La identidad visual del proyecto estaba fragmentada. Las tres universidades participantes, cada una con su marca, debían aparecer como un solo proyecto. Y el corpus, antes impreso y solo en alemán, debía migrar conceptual, metodológica y funcionalmente a una plataforma digital."
   },
   "decisions": [
     {
       "title": {
         "pt": "Um símbolo que convive",
-        "en": "A symbol that coexists"
+        "en": "A symbol that coexists",
+        "es": "Un símbolo que convive"
       },
       "text": {
         "pt": "O símbolo parte da impressão de um selo de Tel el-Fārʿa South (CSSL n. 53): lembra a letra “S” e a serpente egípcia, e seu contorno retoma a forma oval dos selos de estampar. Com ele, as três universidades passaram a conviver sob um mesmo símbolo.",
-        "en": "The symbol starts from the impression of a seal from Tel el-Fārʿa South (CSSL no. 53): it recalls the letter “S” and the Egyptian serpent, and its outline takes up the oval shape of stamp seals. With it, the three universities could share one symbol."
+        "en": "The symbol starts from the impression of a seal from Tel el-Fārʿa South (CSSL no. 53): it recalls the letter “S” and the Egyptian serpent, and its outline takes up the oval shape of stamp seals. With it, the three universities could share one symbol.",
+        "es": "El símbolo parte de la impresión de un sello de Tel el-Fārʿa South (CSSL n.º 53): recuerda la letra “S” y la serpiente egipcia, y su contorno retoma la forma ovalada de los sellos de estampa. Con él, las tres universidades pasaron a convivir bajo un mismo símbolo."
       },
       "wide": false,
       "images": [
@@ -82,7 +96,8 @@
           "span": 6,
           "caption": {
             "pt": "Horizontal, sobre vermelho.",
-            "en": "Horizontal, on red."
+            "en": "Horizontal, on red.",
+            "es": "Horizontal, sobre rojo."
           },
           "plate": false
         },
@@ -91,7 +106,8 @@
           "span": 6,
           "caption": {
             "pt": "Vertical, sobre branco.",
-            "en": "Vertical, on white."
+            "en": "Vertical, on white.",
+            "es": "Vertical, sobre blanco."
           },
           "plate": false
         },
@@ -100,7 +116,8 @@
           "span": 6,
           "caption": {
             "pt": "Símbolo em corte, sobre preto.",
-            "en": "Cropped symbol, on black."
+            "en": "Cropped symbol, on black.",
+            "es": "Símbolo recortado, sobre negro."
           },
           "plate": false
         },
@@ -109,7 +126,8 @@
           "span": 6,
           "caption": {
             "pt": "Símbolo em corte, com as instituições.",
-            "en": "Cropped symbol, with the institutions."
+            "en": "Cropped symbol, with the institutions.",
+            "es": "Símbolo recortado, con las instituciones."
           },
           "plate": false
         }
@@ -118,11 +136,13 @@
     {
       "title": {
         "pt": "Papelaria e template",
-        "en": "Stationery and template"
+        "en": "Stationery and template",
+        "es": "Papelería y plantilla"
       },
       "text": {
         "pt": "Papel timbrado, cartões e modelos de carta e relatório para as três sedes, e um template de apresentação para todos os membros do projeto, usado em palestras, cursos e conferências.",
-        "en": "Letterhead, business cards and letter and report templates for the three sites, and a presentation template for every project member, used in lectures, courses and conferences."
+        "en": "Letterhead, business cards and letter and report templates for the three sites, and a presentation template for every project member, used in lectures, courses and conferences.",
+        "es": "Papel membretado, tarjetas y modelos de carta e informe para las tres sedes, y una plantilla de presentación para todos los miembros del proyecto, usada en conferencias, cursos y congresos."
       },
       "wide": false,
       "images": [
@@ -131,7 +151,8 @@
           "span": 12,
           "caption": {
             "pt": "Papelaria aplicada.",
-            "en": "Stationery in use."
+            "en": "Stationery in use.",
+            "es": "Papelería aplicada."
           },
           "plate": false
         },
@@ -140,7 +161,8 @@
           "span": 12,
           "caption": {
             "pt": "Carta, documento longo e cartões de visita, frente e verso.",
-            "en": "Letter, long document and business cards, front and back."
+            "en": "Letter, long document and business cards, front and back.",
+            "es": "Carta, documento extenso y tarjetas de presentación, anverso y reverso."
           },
           "plate": false
         },
@@ -149,7 +171,8 @@
           "span": 12,
           "caption": {
             "pt": "Template de apresentação em uso.",
-            "en": "Presentation template in use."
+            "en": "Presentation template in use.",
+            "es": "Plantilla de presentación en uso."
           },
           "plate": false
         },
@@ -158,7 +181,8 @@
           "span": 12,
           "caption": {
             "pt": "Telas internas do template de apresentação.",
-            "en": "Inner slides of the presentation template."
+            "en": "Inner slides of the presentation template.",
+            "es": "Pantallas internas de la plantilla de presentación."
           },
           "plate": false
         }
@@ -167,7 +191,8 @@
     {
       "title": {
         "pt": "Cartazes e posts",
-        "en": "Posters and posts"
+        "en": "Posters and posts",
+        "es": "Carteles y publicaciones en redes"
       },
       "text": {
         "pt": "",
@@ -180,7 +205,8 @@
           "span": 6,
           "caption": {
             "pt": "Cartaz A3 da conferência final. Zurique, 2024.",
-            "en": "A3 poster for the final conference. Zurich, 2024."
+            "en": "A3 poster for the final conference. Zurich, 2024.",
+            "es": "Cartel A3 de la conferencia final. Zúrich, 2024."
           },
           "plate": true
         },
@@ -189,7 +215,8 @@
           "span": 6,
           "caption": {
             "pt": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
-            "en": "Story for the workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022."
+            "en": "Story for the workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
+            "es": "Historia de Instagram del taller “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022."
           },
           "plate": true
         }
@@ -198,11 +225,13 @@
     {
       "title": {
         "pt": "O site do projeto",
-        "en": "The project website"
+        "en": "The project website",
+        "es": "El sitio web del proyecto"
       },
       "text": {
         "pt": "Fiz o site institucional do projeto, levantineseals.org. A partir de uma estrutura WordPress, ele apresenta o projeto, as publicações e a equipe. Na tela inicial, os links para as seções são ilustrações que fiz com ícones para contar a história do projeto, a partir de minha pesquisa.",
-        "en": "I made the project’s institutional website, levantineseals.org. Built on WordPress, it presents the project, its publications and its team. On the home page, the links to each section are illustrations I made from icons to tell the story of the project, drawing on my research."
+        "en": "I made the project’s institutional website, levantineseals.org. Built on WordPress, it presents the project, its publications and its team. On the home page, the links to each section are illustrations I made from icons to tell the story of the project, drawing on my research.",
+        "es": "Hice el sitio web institucional del proyecto, levantineseals.org. Construido sobre WordPress, presenta el proyecto, las publicaciones y el equipo. En la página de inicio, los enlaces a las secciones son ilustraciones que hice con íconos para contar la historia del proyecto, a partir de mi investigación."
       },
       "wide": false,
       "images": [
@@ -211,7 +240,8 @@
           "span": 12,
           "caption": {
             "pt": "levantineseals.org. A página inicial inteira.",
-            "en": "levantineseals.org. The full home page."
+            "en": "levantineseals.org. The full home page.",
+            "es": "levantineseals.org. La página de inicio completa."
           },
           "plate": false
         }
@@ -220,11 +250,13 @@
     {
       "title": {
         "pt": "Do fichário à tela",
-        "en": "From card file to screen"
+        "en": "From card file to screen",
+        "es": "Del fichero a la pantalla"
       },
       "text": {
         "pt": "O sistema da base de dados foi construído pelo Prof. Dr. Stefan Münger, que me pediu que trabalhasse no aprimoramento visual da plataforma. A partir do estudo das fichas de catalogação do projeto anterior, e remetendo ao layout da obra impressa, fiz uma nova tela que fizesse os dois mundos convergirem.",
-        "en": "The database system was built by Prof. Dr. Stefan Münger, who asked me to work on the visual refinement of the platform. Starting from the catalogue cards of the earlier project, and echoing the layout of the printed volumes, I designed a new screen that brings the two worlds together."
+        "en": "The database system was built by Prof. Dr. Stefan Münger, who asked me to work on the visual refinement of the platform. Starting from the catalogue cards of the earlier project, and echoing the layout of the printed volumes, I designed a new screen that brings the two worlds together.",
+        "es": "El sistema de la base de datos fue construido por el Prof. Dr. Stefan Münger, quien me pidió trabajar en la mejora visual de la plataforma. A partir del estudio de las fichas de catalogación del proyecto anterior, y remitiendo al diseño de la obra impresa, diseñé una nueva pantalla en la que ambos mundos convergen."
       },
       "wide": false,
       "images": [
@@ -233,7 +265,8 @@
           "span": 12,
           "caption": {
             "pt": "A ficha online. Lachish 1 no CSSL: texto em blocos à esquerda, fotografias e desenhos à direita, como nas fichas e nos volumes impressos.",
-            "en": "The online record. Lachish 1 in CSSL: text in blocks on the left, photographs and drawings on the right, as on the cards and in the printed volumes."
+            "en": "The online record. Lachish 1 in CSSL: text in blocks on the left, photographs and drawings on the right, as on the cards and in the printed volumes.",
+            "es": "La ficha en línea. Lachish 1 en el CSSL: texto en bloques a la izquierda, fotografías y dibujos a la derecha, como en las fichas y en los volúmenes impresos."
           },
           "plate": false
         },
@@ -242,7 +275,8 @@
           "span": 12,
           "caption": {
             "pt": "A busca avançada no notebook e a ficha publicada no navegador.",
-            "en": "Advanced search on a laptop and the published record in the browser."
+            "en": "Advanced search on a laptop and the published record in the browser.",
+            "es": "La búsqueda avanzada en la computadora portátil y la ficha publicada en el navegador."
           },
           "plate": false
         },
@@ -251,7 +285,8 @@
           "span": 12,
           "caption": {
             "pt": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
-            "en": "Cards from the Fribourg archive. Sheets of 14 × 21 cm: on the older models the photo went on the back; on the newer ones, beside the text, the layout the digital record inherited. Figure from Klein Cardoso, 2023."
+            "en": "Cards from the Fribourg archive. Sheets of 14 × 21 cm: on the older models the photo went on the back; on the newer ones, beside the text, the layout the digital record inherited. Figure from Klein Cardoso, 2023.",
+            "es": "Fichas del archivo de Friburgo. Hojas de 14 × 21 cm: en los modelos antiguos la foto iba en el reverso; en los más recientes, junto al texto, la disposición que heredó la ficha digital. Figura de Klein Cardoso, 2023."
           },
           "plate": false
         }

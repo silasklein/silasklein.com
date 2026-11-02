@@ -4,11 +4,13 @@
       "icon": "mic",
       "title": {
         "en": "Interviews & talks",
-        "pt": "Entrevistas & palestras"
+        "pt": "Entrevistas & palestras",
+        "es": "Entrevistas & conferencias"
       },
       "text": {
         "pt": "Entrevistas, mesas-redondas e palestras online sobre imagens no antigo Israel, arqueologia e Bíblia e a história do monoteísmo.",
-        "en": "Interviews, round tables and talks online on images in ancient Israel, archaeology and the Bible, and the history of monotheism."
+        "en": "Interviews, round tables and talks online on images in ancient Israel, archaeology and the Bible, and the history of monotheism.",
+        "es": "Entrevistas, mesas redondas y conferencias en línea sobre imágenes en el antiguo Israel, arqueología y Biblia, y la historia del monoteísmo."
       },
       "href": "/talks"
     },
@@ -20,7 +22,8 @@
       },
       "text": {
         "pt": "Verbetes teológicos e notas de pesquisa do Observatório de Universos Bíblicos no Instagram.",
-        "en": "Theological entries and research notes from the Observatório de Universos Bíblicos on Instagram."
+        "en": "Theological entries and research notes from the Observatório de Universos Bíblicos on Instagram.",
+        "es": "Entradas teológicas y notas de investigación del Observatório de Universos Bíblicos en Instagram."
       },
       "href": "https://instagram.com/universos.biblicos"
     },
@@ -32,7 +35,8 @@
       },
       "text": {
         "en": "Website and social media channels that bring the study of stamp seals to a wider audience.",
-        "pt": "Site e redes sociais que levam o estudo dos selos de estampar antigos a um público mais amplo."
+        "pt": "Site e redes sociais que levam o estudo dos selos de estampar antigos a um público mais amplo.",
+        "es": "Sitio web y redes sociales que acercan el estudio de los sellos de estampa antiguos a un público más amplio."
       },
       "href": "https://levantineseals.org/"
     }

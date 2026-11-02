@@ -10,6 +10,7 @@ title:
 text:
   en: "Visual identity and consulting for the digital corpus of the SNSF Sinergia project (Zurich, Bern, Tel Aviv), 2020–2024."
   pt: "Identidade visual e consultoria no corpus digital do projeto SNSF Sinergia (Zurique, Berna, Tel Aviv), 2020–2024."
+  es: Identidad visual y consultoría para el corpus digital del proyecto SNSF Sinergia (Zúrich, Berna, Tel Aviv), 2020–2024.
 client: "Universities of Zurich, Bern and Tel Aviv · Swiss National Science Foundation"
 role:
   en: "Visual identity; supervision of artifact illustrations"

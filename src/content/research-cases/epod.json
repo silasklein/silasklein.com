@@ -4,27 +4,32 @@
   "title": "Epistemology of the Divine",
   "thesis": {
     "pt": "Identidade de um grupo de pesquisa da DFG",
-    "en": "Identity for a DFG research group"
+    "en": "Identity for a DFG research group",
+    "es": "Identidad de un grupo de investigación de la DFG"
   },
   "lead": {
     "pt": "Como pesquisador associado do EpOD, grupo de pesquisa da Deutsche Forschungsgemeinschaft (DFG), Alemanha, e do FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Áustria, com sedes em Bonn, Leipzig, Wuppertal e Viena, fui convidado a criar a identidade visual do grupo.",
-    "en": "As an associate researcher of EpOD, a research group of the Deutsche Forschungsgemeinschaft (DFG), Germany, and the FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Austria, based in Bonn, Leipzig, Wuppertal and Vienna, I was invited to create the group’s visual identity."
+    "en": "As an associate researcher of EpOD, a research group of the Deutsche Forschungsgemeinschaft (DFG), Germany, and the FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Austria, based in Bonn, Leipzig, Wuppertal and Vienna, I was invited to create the group’s visual identity.",
+    "es": "Como investigador asociado del EpOD, grupo de investigación de la Deutsche Forschungsgemeinschaft (DFG), Alemania, y del FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Austria, con sedes en Bonn, Leipzig, Wuppertal y Viena, me invitaron a crear la identidad visual del grupo."
   },
   "meta": [
     {
       "k": {
         "pt": "Papel",
-        "en": "Role"
+        "en": "Role",
+        "es": "Función"
       },
       "v": {
         "pt": "Pesquisador associado; identidade visual",
-        "en": "Associate researcher; visual identity"
+        "en": "Associate researcher; visual identity",
+        "es": "Investigador asociado; identidad visual"
       }
     },
     {
       "k": {
         "pt": "Cliente",
-        "en": "Client"
+        "en": "Client",
+        "es": "Cliente"
       },
       "v": {
         "pt": "Epistemology of the Divine (DFG; FWF)",
@@ -34,50 +39,60 @@
     {
       "k": {
         "pt": "Via",
-        "en": "Via"
+        "en": "Via",
+        "es": "Vía"
       },
       "v": {
         "pt": "Pesquisador associado",
-        "en": "Associate researcher"
+        "en": "Associate researcher",
+        "es": "Investigador asociado"
       }
     },
     {
       "k": {
         "pt": "Ano",
-        "en": "Year"
+        "en": "Year",
+        "es": "Año"
       },
       "v": {
         "pt": "2026–atual",
-        "en": "2026–present"
+        "en": "2026–present",
+        "es": "2026–actualidad"
       }
     }
   ],
   "hero": "/img/cases/epod/00-abertura-logo.webp",
   "hero_alt": {
     "pt": "Marca do EpOD: a sigla em amarelo e branco, com o “o” e o “d” fundidos num laço, sobre a pintura pontilhada em marrom e amarelo.",
-    "en": "The EpOD logo: the acronym in yellow and white, its “o” and “d” merged in a loop, over the dotted brown and yellow painting."
+    "en": "The EpOD logo: the acronym in yellow and white, its “o” and “d” merged in a loop, over the dotted brown and yellow painting.",
+    "es": "Marca del EpOD: la sigla en amarillo y blanco, con la “o” y la “d” fundidas en un lazo, sobre la pintura punteada en marrón y amarillo."
   },
   "context": {
     "pt": "O grupo investiga a história das ideias no antigo Israel: como o divino foi concebido, lembrado, documentado e difundido. Textos bíblicos e extrabíblicos e a cultura material do Levante meridional no primeiro milênio a.C. são lidos à procura das estruturas de pensamento (*Denkstrukturen*) por trás do conhecimento sobre o divino.",
-    "en": "The group studies the history of ideas in ancient Israel: how the divine was conceived, remembered, documented and disseminated. Biblical and extra-biblical texts and the material culture of the southern Levant in the first millennium BCE are read for the thought structures (*Denkstrukturen*) behind knowledge of the divine."
+    "en": "The group studies the history of ideas in ancient Israel: how the divine was conceived, remembered, documented and disseminated. Biblical and extra-biblical texts and the material culture of the southern Levant in the first millennium BCE are read for the thought structures (*Denkstrukturen*) behind knowledge of the divine.",
+    "es": "El grupo investiga la historia de las ideas en el antiguo Israel: cómo se concibió, recordó, documentó y difundió lo divino. Se leen textos bíblicos y extrabíblicos y la cultura material del Levante meridional en el primer milenio a. C. en busca de las estructuras de pensamiento (*Denkstrukturen*) detrás del conocimiento sobre lo divino."
   },
   "problem_label": {
     "pt": "Subprojetos",
-    "en": "Subprojects"
+    "en": "Subprojects",
+    "es": "Subproyectos"
   },
   "problem": {
     "pt": "O projeto conta com quatro subprojetos, que versam sobre o monoteísmo emergente (Jan Dietrich, Bonn), a cognoscibilidade de Deus (Annette Schellenberg-Lagler, Viena), os selos como mídia de massa (Thomas Wagner, Wuppertal) e os santuários e suas redes (Angelika Berlejung, Leipzig).",
-    "en": "The project has four subprojects, on emerging monotheism (Jan Dietrich, Bonn), God’s knowability (Annette Schellenberg-Lagler, Vienna), seals as mass media (Thomas Wagner, Wuppertal), and sanctuaries and their networks (Angelika Berlejung, Leipzig)."
+    "en": "The project has four subprojects, on emerging monotheism (Jan Dietrich, Bonn), God’s knowability (Annette Schellenberg-Lagler, Vienna), seals as mass media (Thomas Wagner, Wuppertal), and sanctuaries and their networks (Angelika Berlejung, Leipzig).",
+    "es": "El proyecto cuenta con cuatro subproyectos, que tratan sobre el monoteísmo emergente (Jan Dietrich, Bonn), la cognoscibilidad de Dios (Annette Schellenberg-Lagler, Viena), los sellos como medios de comunicación de masas (Thomas Wagner, Wuppertal) y los santuarios y sus redes (Angelika Berlejung, Leipzig)."
   },
   "decisions": [
     {
       "title": {
         "pt": "Uma sigla num traço",
-        "en": "An acronym in one line"
+        "en": "An acronym in one line",
+        "es": "Una sigla en un trazo"
       },
       "text": {
         "pt": "A marca foi feita só com o desenho das letras (lettering). O “o” e o “d” se fundem num laço quase infinito, que lembra o grafismo da pintura de fundo, obra de artista do grupo, e aponta, no conceito, para a longa duração esperada das concepções do divino. Cor e aplicação acompanham a pintura. O quase infinito vira um elemento gráfico para outros contextos, como o template.",
-        "en": "The logo was crafted from the shape of the letters alone (lettering). The “o” and the “d” merge in a quasi-infinite loop, which echoes the graphism of the background painting, the work of an artist in the group, and points, conceptually, to the long duration expected of concepts of the divine. Colour and application follow the painting. The quasi-infinite becomes a graphic element for other contexts, such as the template."
+        "en": "The logo was crafted from the shape of the letters alone (lettering). The “o” and the “d” merge in a quasi-infinite loop, which echoes the graphism of the background painting, the work of an artist in the group, and points, conceptually, to the long duration expected of concepts of the divine. Colour and application follow the painting. The quasi-infinite becomes a graphic element for other contexts, such as the template.",
+        "es": "La marca se hizo solo con el dibujo de las letras (lettering). La “o” y la “d” se funden en un lazo casi infinito, que recuerda el grafismo de la pintura de fondo, obra de artista del grupo, y apunta, en el concepto, a la larga duración esperada de las concepciones de lo divino. El color y la aplicación acompañan la pintura. Lo casi infinito se vuelve un elemento gráfico para otros contextos, como la plantilla."
       },
       "wide": false,
       "images": [
@@ -86,7 +101,8 @@
           "span": 12,
           "caption": {
             "pt": "Marca.",
-            "en": "Logo."
+            "en": "Logo.",
+            "es": "Marca."
           },
           "plate": false
         },
@@ -95,7 +111,8 @@
           "span": 4,
           "caption": {
             "pt": "Com as instituições.",
-            "en": "With the institutions."
+            "en": "With the institutions.",
+            "es": "Con las instituciones."
           },
           "plate": false
         },
@@ -104,7 +121,8 @@
           "span": 4,
           "caption": {
             "pt": "Monocromática.",
-            "en": "Monochrome."
+            "en": "Monochrome.",
+            "es": "Monocromática."
           },
           "plate": false
         },
@@ -113,7 +131,8 @@
           "span": 4,
           "caption": {
             "pt": "Negativa.",
-            "en": "Negative."
+            "en": "Negative.",
+            "es": "Negativa."
           },
           "plate": false
         }
@@ -122,11 +141,13 @@
     {
       "title": {
         "pt": "Duas cores e uma padronagem",
-        "en": "Two colours and a pattern"
+        "en": "Two colours and a pattern",
+        "es": "Dos colores y un patrón"
       },
       "text": {
         "pt": "Amarelo e marrom, afinados com a pintura, que vira padronagem pontilhada de fundo para a marca, as capas e as divisórias.",
-        "en": "Yellow and brown, matched to the painting, which becomes a dotted background pattern for the logo, covers and dividers."
+        "en": "Yellow and brown, matched to the painting, which becomes a dotted background pattern for the logo, covers and dividers.",
+        "es": "Amarillo y marrón, en sintonía con la pintura, que se convierte en patrón punteado de fondo para la marca, las portadas y los separadores."
       },
       "wide": false,
       "images": [
@@ -135,7 +156,8 @@
           "span": 6,
           "caption": {
             "pt": "Sobre amarelo.",
-            "en": "On yellow."
+            "en": "On yellow.",
+            "es": "Sobre amarillo."
           },
           "plate": false
         },
@@ -144,7 +166,8 @@
           "span": 6,
           "caption": {
             "pt": "Sobre marrom.",
-            "en": "On brown."
+            "en": "On brown.",
+            "es": "Sobre marrón."
           },
           "plate": false
         }
@@ -153,11 +176,13 @@
     {
       "title": {
         "pt": "Um template para quatro sedes",
-        "en": "One template for four sites"
+        "en": "One template for four sites",
+        "es": "Una plantilla para cuatro sedes"
       },
       "text": {
         "pt": "Capa, divisória de capítulo, página de texto, citação e página de imagens, com os logos das quatro instituições no topo e o nome de quem apresenta no rodapé.",
-        "en": "Cover, chapter divider, text page, quotation and image page, with the logos of the four institutions at the top and the presenter’s name in the footer."
+        "en": "Cover, chapter divider, text page, quotation and image page, with the logos of the four institutions at the top and the presenter’s name in the footer.",
+        "es": "Portada, separador de capítulo, página de texto, cita y página de imágenes, con los logos de las cuatro instituciones en la parte superior y el nombre de quien presenta en el pie de página."
       },
       "wide": false,
       "images": [
@@ -166,7 +191,8 @@
           "span": 12,
           "caption": {
             "pt": "Capa do template.",
-            "en": "Template cover."
+            "en": "Template cover.",
+            "es": "Portada de la plantilla."
           },
           "plate": false
         },
@@ -175,7 +201,8 @@
           "span": 12,
           "caption": {
             "pt": "As cinco páginas-modelo do template.",
-            "en": "The template’s five model pages."
+            "en": "The template’s five model pages.",
+            "es": "Las cinco páginas modelo de la plantilla."
           },
           "plate": false
         }

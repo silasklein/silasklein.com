@@ -14,6 +14,8 @@ export const MAP: Record<string, string> = {
 
 // Custom marks drawn on the same grid (2 units per pixel).
 export const CUSTOM: Record<string, string> = {
+  // Language menu: 文 over A, the familiar translate glyph pair, on the 12×12 grid (variant A, approved 2026-11-02).
+  translate: 'M4 0h2v2h-2zM0 2h12v2h-12zM2 4h2v2h-2zM8 4h2v2h-2zM4 6h4v2h-4zM2 8h2v2h-2zM8 8h2v2h-2zM0 10h2v2h-2zM10 10h2v2h-2zM18 12h2v2h-2zM16 14h2v2h-2zM20 14h2v2h-2zM14 16h2v2h-2zM22 16h2v2h-2zM14 18h10v2h-10zM14 20h2v2h-2zM22 20h2v2h-2zM14 22h2v2h-2zM22 22h2v2h-2z',
   // Diagonal arrow without the box, for links that leave the page.
   arrowUpRight: 'M8 6h12v2H8zM18 8h2v10h-2zM16 8h2v2h-2zM14 10h2v2h-2zM12 12h2v2h-2zM10 14h2v2h-2zM8 16h2v2H8zM6 18h2v2H6z',
   // Observatório de Universos Bíblicos: open book (page line, fold, stem), star and two planets — drawn by Silas.

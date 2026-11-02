@@ -7,14 +7,14 @@ import { href } from '../../lib/format';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const pt = lang === 'pt';
-const title = pt ? 'Entrevistas & palestras' : 'Interviews & talks';
+const title = t({ pt: 'Entrevistas & palestras', en: 'Interviews & talks', es: 'Entrevistas & conferencias' }, lang);
 ---
-<Base lang={lang} title={title} description={pt ? 'Entrevistas, mesas-redondas e palestras online de Silas Klein sobre imagens no antigo Israel, arqueologia e Bíblia.' : 'Online interviews, round tables and talks by Silas Klein on images in ancient Israel, archaeology and the Bible.'}>
+<Base lang={lang} title={title} description={t({ pt: 'Entrevistas, mesas-redondas e palestras online de Silas Klein sobre imagens no antigo Israel, arqueologia e Bíblia.', en: 'Online interviews, round tables and talks by Silas Klein on images in ancient Israel, archaeology and the Bible.', es: 'Entrevistas, mesas redondas y conferencias en línea de Silas Klein sobre imágenes en el antiguo Israel, arqueología y Biblia.' }, lang)}>
   <div class="page">
     <a class="page__back" href={href('#teaching', lang)}>← {t(sections.teaching.label, lang).replace(/^./, (c) => c.toUpperCase())}</a>
     <Label n={sections.teaching.n} text={t(sections.teaching.label, lang)} />
     <h1 class="h2">{title}</h1>
-    <p class="lead">{pt ? 'Entrevistas, mesas-redondas e palestras disponíveis online.' : 'Interviews, round tables and talks available online (in Portuguese).'}</p>
+    <p class="lead">{t({ pt: 'Entrevistas, mesas-redondas e palestras disponíveis online.', en: 'Interviews, round tables and talks available online (in Portuguese).', es: 'Entrevistas, mesas redondas y conferencias disponibles en línea (en portugués).' }, lang)}</p>
     <ul class="pubs talks">
       {talks.map((it) => (
         <li>

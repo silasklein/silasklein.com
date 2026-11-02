@@ -99,3 +99,10 @@ for (const g of document.querySelectorAll<HTMLElement>('.gallery')) {
   track.addEventListener('scroll', () => requestAnimationFrame(update), { passive: true });
   update();
 }
+
+// Language menu: a <details> that also closes on Escape and on a click outside it.
+const langs = document.querySelector<HTMLDetailsElement>('.langs');
+addEventListener('click', (e) => { if (langs?.open && !langs.contains(e.target as Node)) langs.open = false; });
+addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && langs?.open) { langs.open = false; langs.querySelector('summary')?.focus(); }
+});

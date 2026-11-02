@@ -44,7 +44,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   i18n: {
     defaultLocale: 'pt',
-    locales: ['pt', 'en'],
+    locales: ['pt', 'en', 'es'],
     routing: { prefixDefaultLocale: false },
   },
   redirects: Object.fromEntries(Object.entries(redirects).map(([from, to]) => [from, base.replace(/\/$/, '') + to])),
