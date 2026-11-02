@@ -1,1083 +1,452 @@
 # Pages CMS (app.pagescms.org): the fields the editor shows for each content file. Paths are relative to the repo root.
+# The menu mirrors the site's sections. site.json is split across several short screens; `merge` makes each screen
+# save only its own fields and keep the rest of the file (and any key the CMS has no field for).
+settings:
+  content:
+    merge: true
 media:
   input: public/img
   output: /img
+
+# Reusable fields. A field that uses one can still set its own label and description.
+components:
+  linha:
+    label: Texto curto
+    type: object
+    fields:
+      - name: pt
+        label: Português
+        type: string
+      - name: en
+        label: English
+        type: string
+      - name: es
+        label: Español
+        type: string
+  texto:
+    label: Texto
+    type: object
+    fields:
+      - name: pt
+        label: Português
+        type: text
+      - name: en
+        label: English
+        type: text
+      - name: es
+        label: Español
+        type: text
+  slug:
+    label: Endereço na web (slug)
+    type: string
+    required: true
+    pattern:
+      regex: ^[a-z0-9]+(-[a-z0-9]+)*$
+      message: 'Só letras minúsculas, números e hífens (ex.: meu-novo-projeto).'
+    description: 'Parte do endereço da página. Não mude depois de publicar: os links antigos quebrariam.'
+  ordem:
+    label: Posição na lista
+    type: number
+    description: '1 vem primeiro.'
+  icone:
+    label: Ícone
+    type: select
+    description: 'Veja cada ícone ao lado do nome em www.silasklein.com/icons/.'
+    options:
+      values:
+        - arrowRight
+        - arrowUpRight
+        - arrowDown
+        - plus
+        - minus
+        - mail
+        - pin
+        - copy
+        - download
+        - library
+        - books
+        - star
+        - news
+        - now
+        - field
+        - group
+        - image
+        - sun
+        - eye
+        - building
+        - calendar
+        - community
+        - brush
+        - pencil
+        - layout
+        - mic
+        - globe
+        - presentation
+        - instagram
+        - linkedin
+        - orcid
+        - lattes
+        - zotero
+        - researchgate
+        - oub
+        - seals
+        - epod
+        - alef
+        - mem
+        - het
+  tags:
+    label: Habilidades (tags)
+    type: reference
+    required: true
+    description: 'De 1 a 5, da mais central para a menos central no projeto. Escolha só da lista; tag nova só com aprovação.'
+    options:
+      collection: tags
+      multiple: true
+      min: 1
+      max: 5
+      search: label_pt
+      value: '{fields.slug}'
+      label: '{fields.label_pt}'
+
 content:
-  - name: site
-    label: Textos gerais (topo, sobre, contato)
-    type: file
-    path: src/content/site.json
-    format: json
-    fields:
-      - name: hello
-        label: Hero greeting
-        type: object
+  # ── Home ─────────────────────────────────────────────
+  - name: home
+    label: Home
+    type: group
+    items:
+      - name: abertura
+        label: Abertura
+        type: file
+        path: src/content/site.json
+        format: json
         fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: subtitle
-        label: Hero subtitle
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: descriptor
-        label: Slogan (page title and footer)
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: facts
-        label: Hero facts (Now / Field)
-        type: object
-        list: true
-        fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: k
-            label: Key
+          - name: hello
+            label: Saudação
+            component: linha
+            description: 'Linha magenta acima do título. Ex.: Olá, eu sou Silas Klein.'
+          - name: subtitle
+            label: Apresentação
+            component: texto
+            description: Parágrafo abaixo do título, à esquerda.
+          - name: facts
+            label: Hoje e Campo
             type: object
+            description: Os dois itens à direita da apresentação.
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{k.pt}'
             fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: v
-            label: Value
+              - name: k
+                label: Rótulo
+                component: linha
+              - name: v
+                label: Texto
+                component: linha
+              - name: icon
+                component: icone
+          - name: descriptor
+            label: Slogan
+            component: linha
+            description: Aparece no título da aba do navegador e no rodapé.
+      - name: sobre
+        label: 01 Sobre
+        type: file
+        path: src/content/site.json
+        format: json
+        fields:
+          - name: bio
+            label: Bio · abertura (letra maior)
+            component: texto
+          - name: bio2
+            label: Bio · continuação (letra menor)
+            component: texto
+          - name: profiles
+            label: Perfis (em Sobre e no rodapé)
             type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{name}'
             fields:
-              - name: en
-                label: English
+              - name: name
+                label: Nome
                 type: string
-              - name: pt
-                label: Português
+              - name: href
+                label: Link
                 type: string
-              - name: es
-                label: Español
-                type: string
-      - name: bio
-        label: 'About: bio, lead (large)'
-        type: object
+              - name: icon
+                component: icone
+      - name: currently
+        label: 02 Hoje
+        type: file
+        path: src/content/currently.json
+        format: json
         fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: bio2
-        label: 'About: bio, details (smaller)'
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: researchApproach
-        label: 'Research: intro'
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: teaching
-        label: 'Teaching: intro'
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: designIntro
-        label: 'Art direction: intro'
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: email
-        label: Email
-        type: string
-      - name: location
-        label: Location
-        type: string
-      - name: profiles
-        label: Profiles (footer and About)
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Name
-            type: string
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: href
-            label: Link
-            type: string
-      - name: contactTopics
-        label: Contact topics
-        type: object
-        list: true
-        fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: label
-            label: Label
+          - name: items
+            label: Itens
             type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{title.pt}'
             fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: email
-            label: E-mail (optional)
-            type: string
-            description: Leave empty to use the main e-mail above.
-      - name: sections
-        label: Section titles
-        type: object
-        fields:
-          - name: about
-            label: About
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
               - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: currently
-            label: Currently
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
+                label: Título
+                component: linha
+              - name: kicker
+                label: Linha acima do título
+                component: linha
+                description: 'Ex.: Plataforma de pesquisa · 2024–'
+              - name: text
+                label: Texto
+                component: texto
+              - name: href
+                label: Link
                 type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: research
-            label: Research
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: publications
-            label: Publications
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: teaching
-            label: Teaching
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: initiatives
-            label: Initiatives
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: design
-            label: Design
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-          - name: contact
-            label: Contact
-            type: object
-            fields:
-              - name: 'n'
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-              - name: title
-                label: Title
-                type: object
-                fields:
-                  - name: en
-                    label: English
-                    type: string
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-  - name: currently
-    label: 02 Hoje
-    type: file
-    path: src/content/currently.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
+              - name: icon
+                component: icone
+
+  # ── 03 Pesquisa ──────────────────────────────────────
+  - name: pesquisa
+    label: 03 Pesquisa
+    type: group
+    items:
+      - name: pesquisa-intro
+        label: Introdução
+        type: file
+        path: src/content/site.json
+        format: json
         fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: kicker
-            label: Kicker
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
+          - name: researchApproach
+            label: Texto de abertura da seção
+            component: texto
+      - name: projects
+        label: Projetos
+        type: collection
+        path: src/content/projects
+        format: yaml-frontmatter
+        filename: '{fields.slug}.md'
+        view:
+          fields:
+            - slug
+            - years
+          primary: slug
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
           - name: title
-            label: Title
+            label: Título
+            component: linha
+          - name: role
+            label: Função
+            component: linha
+          - name: places
+            label: Instituições (depois da função)
             type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{name.pt}'
             fields:
-              - name: en
-                label: English
+              - name: name
+                label: 'Nome, ex.: FUV (Brasil)'
+                component: linha
+              - name: href
+                label: Link (opcional)
                 type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: text
-            label: Text
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-              - name: es
-                label: Español
-                type: text
-          - name: href
-            label: Link
+          - name: years
+            label: Anos
             type: string
-  - name: projects
-    label: 03 Pesquisa · projetos
-    type: collection
-    path: src/content/projects
-    format: yaml-frontmatter
-    filename: '{fields.slug}.md'
-    view:
-      fields:
-        - slug
-        - years
-      primary: slug
-      sort:
-        - order
-      default:
-        sort: order
-        order: asc
-    fields:
-      - name: order
-        label: Order
-        type: number
-        description: 'Position in the list: 1 comes first.'
-      - name: slug
-        label: Slug (URL)
-        type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'Part of the page address. Do not change it after publishing: old links would break.'
-      - name: page
-        label: Has its own page
-        type: boolean
-      - name: current
-        label: Current project
-        type: boolean
-      - name: featured
-        label: Show in the two main columns
-        type: boolean
-        description: Projects you lead. The others go under “Other projects”.
-      - name: icon
-        label: Icon (optional)
-        type: select
-        options:
-          values:
-            - arrowRight
-            - arrowUpRight
-            - arrowDown
-            - plus
-            - minus
-            - mail
-            - pin
-            - copy
-            - download
-            - library
-            - books
-            - star
-            - news
-            - now
-            - field
-            - group
-            - image
-            - sun
-            - eye
-            - building
-            - calendar
-            - community
-            - brush
-            - pencil
-            - layout
-            - mic
-            - globe
-            - presentation
-            - instagram
-            - linkedin
-            - orcid
-            - lattes
-            - zotero
-            - researchgate
-            - oub
-            - seals
-            - epod
-            - alef
-            - mem
-            - het
-        description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-      - name: years
-        label: Years
-        type: string
-      - name: title
-        label: Title
-        type: object
+            description: 'Ex.: 2021–2022. Para um projeto em andamento, 2024– (o site completa com “atual”).'
+          - name: summary
+            label: Resumo
+            component: texto
+            description: 'Itálico: *assim* (títulos e termos estrangeiros).'
+          - name: team
+            label: Equipe (opcional)
+            component: linha
+            description: Aparece na página do projeto.
+          - name: outputs
+            label: Resultados
+            component: linha
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{pt}'
+          - name: funding
+            label: Financiamento
+            type: string
+          - name: partners
+            label: Parceiros
+            type: string
+          - name: current
+            label: Projeto em andamento
+            type: boolean
+          - name: featured
+            label: Nas duas colunas principais
+            type: boolean
+            description: Projetos que você coordena. Os outros vão para “Outros projetos”.
+          - name: page
+            label: Tem página própria
+            type: boolean
+          - name: icon
+            label: Ícone (opcional)
+            component: icone
+          - name: order
+            component: ordem
+          - name: slug
+            component: slug
+      - name: recognition
+        label: Prêmios
+        type: file
+        path: src/content/recognition.json
+        format: json
         fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: role
-        label: Role
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: places
-        label: Institutions (shown after the role)
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Name, e.g. FUV (Brasil)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: href
-            label: Link (optional)
-            type: string
-      - name: funding
-        label: Funding
-        type: string
-      - name: partners
-        label: Partners
-        type: string
-      - name: team
-        label: Team (optional)
-        type: object
-        description: 'Shown on the project page.'
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: summary
-        label: Summary
-        type: object
-        description: 'Italics: *like this* (titles and foreign terms).'
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: outputs
-        label: Outputs
-        type: object
-        list: true
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-  - name: recognition
-    label: 03 Pesquisa · prêmios
-    type: file
-    path: src/content/recognition.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
+          - name: items
+            label: Prêmios
+            component: linha
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{pt}'
+
+  # ── 04 Publicações ───────────────────────────────────
   - name: publications
-    label: 04 Publicações · destaques
+    label: 04 Publicações
     type: file
     path: src/content/publications.json
     format: json
     fields:
       - name: books
-        label: Books
+        label: Livros
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{title}'
         fields:
-          - name: cover
-            label: Cover
-            type: image
-            description: Cover only, no shadow or background (about 385 × 592 px).
           - name: title
-            label: Title
+            label: Título
             type: string
           - name: meta
-            label: Publisher · year
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
+            label: Editora · ano
+            component: linha
+          - name: cover
+            label: Capa
+            type: image
+            description: Só a capa, sem sombra nem fundo (cerca de 385 × 592 px).
           - name: href
-            label: Publisher / DOI link
+            label: Link da editora / DOI
             type: string
           - name: pdf
-            label: PDF link
+            label: Link do PDF
             type: string
       - name: selected
-        label: Selected articles
+        label: Artigos em destaque
         type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{title}'
         fields:
           - name: title
-            label: Title
+            label: Título
             type: string
           - name: venue
-            label: Venue
+            label: Revista / livro
             type: string
           - name: href
             label: DOI / link
             type: string
           - name: pdf
-            label: PDF link
+            label: Link do PDF
             type: string
-  - name: outreach
-    label: 05 Docência · divulgação
-    type: file
-    path: src/content/outreach.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
+
+  # ── 05 Docência ──────────────────────────────────────
+  - name: docencia
+    label: 05 Docência
+    type: group
+    items:
+      - name: docencia-intro
+        label: Introdução
+        type: file
+        path: src/content/site.json
+        format: json
         fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: title
-            label: Title
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: text
-            label: Text
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-              - name: es
-                label: Español
-                type: text
-          - name: href
-            label: Link
-            type: string
-            description: External address, or an internal page such as /talks
-  - name: talks
-    label: 05 Docência · entrevistas e palestras
-    type: file
-    path: src/content/talks.json
-    format: json
-    fields:
-      - name: items
-        label: Items
-        type: object
-        list: true
+          - name: teaching
+            label: Texto de abertura da seção
+            component: texto
+      - name: outreach
+        label: Divulgação
+        type: file
+        path: src/content/outreach.json
+        format: json
         fields:
-          - name: year
-            label: Year
-            type: string
-            required: true
-          - name: kind
-            label: Type (Interview, Talk…)
+          - name: items
+            label: Itens
             type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{title.pt}'
             fields:
-              - name: en
-                label: English
+              - name: title
+                label: Título
+                component: linha
+              - name: text
+                label: Texto
+                component: texto
+              - name: href
+                label: Link
                 type: string
-              - name: pt
-                label: Português
+                description: Endereço externo, ou uma página do site como /talks
+              - name: icon
+                component: icone
+      - name: talks
+        label: Entrevistas e palestras
+        type: file
+        path: src/content/talks.json
+        format: json
+        fields:
+          - name: items
+            label: Vídeos
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{year} · {title}'
+            fields:
+              - name: title
+                label: Título
                 type: string
-              - name: es
-                label: Español
+                required: true
+              - name: year
+                label: Ano
                 type: string
-          - name: title
-            label: Title
-            type: string
-            required: true
-          - name: channel
-            label: Channel / venue
-            type: string
-          - name: lang
-            label: Language
-            type: select
-            options:
-              values:
-                - pt
-                - en
-          - name: href
-            label: Video link
-            type: string
-            required: true
+                required: true
+              - name: kind
+                label: Tipo (Entrevista, Palestra…)
+                component: linha
+              - name: channel
+                label: Canal / evento
+                type: string
+              - name: lang
+                label: Língua do vídeo
+                type: select
+                options:
+                  values:
+                    - pt
+                    - en
+              - name: href
+                label: Link do vídeo
+                type: string
+                required: true
+
+  # ── 06 Iniciativas ───────────────────────────────────
   - name: initiatives
     label: 06 Iniciativas
     type: file
@@ -1085,646 +454,344 @@ content:
     format: json
     fields:
       - name: items
-        label: Items
+        label: Iniciativas
         type: object
-        list: true
-        fields:
-          - name: icon
-            label: Icon
-            type: select
-            options:
-              values:
-                - arrowRight
-                - arrowUpRight
-                - arrowDown
-                - plus
-                - minus
-                - mail
-                - pin
-                - copy
-                - download
-                - library
-                - books
-                - star
-                - news
-                - now
-                - field
-                - group
-                - image
-                - sun
-                - eye
-                - building
-                - calendar
-                - community
-                - brush
-                - pencil
-                - layout
-                - mic
-                - globe
-                - presentation
-                - instagram
-                - linkedin
-                - orcid
-                - lattes
-                - zotero
-                - researchgate
-                - oub
-                - seals
-                - epod
-                - alef
-                - mem
-                - het
-            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-          - name: title
-            label: Title
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: string
-              - name: pt
-                label: Português
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: text
-            label: Short text (always visible)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-              - name: es
-                label: Español
-                type: text
-          - name: details
-            label: Description (shown when the row is opened)
-            type: object
-            fields:
-              - name: en
-                label: English
-                type: text
-              - name: pt
-                label: Português
-                type: text
-              - name: es
-                label: Español
-                type: text
-          - name: more
-            label: Internal page (optional)
-            type: string
-            description: e.g. /research/summer-school-iconography
-          - name: href
-            label: External link (optional)
-            type: string
-  - name: cases
-    label: 07 Design · cases de direção de arte
-    type: collection
-    path: src/content/cases
-    format: yaml-frontmatter
-    filename: '{fields.slug}.md'
-    view:
-      fields:
-        - title
-        - year
-      primary: title
-      sort:
-        - order
-      default:
-        sort: order
-        order: asc
-    fields:
-      - name: order
-        label: Order
-        type: number
-        description: 'Position in the list: 1 comes first.'
-      - name: slug
-        label: Slug (URL)
-        type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'Part of the page address. Do not change it after publishing: old links would break.'
-      - name: title
-        label: Title
-        type: string
-      - name: image
-        label: Image (square)
-        type: image
-        required: true
-        description: Square image, at least 1200 × 1200 px.
-      - name: mosaic
-        label: Show in the home mosaic
-        type: boolean
-        default: true
-        description: 'Off keeps the page and the link from the clients list, but takes the case out of the home mosaic.'
-      - name: role
-        label: Role (optional)
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: team
-        label: Team (optional)
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: commissioner
-        label: Commissioner
-        type: string
-      - name: year
-        label: Year
-        type: string
-      - name: text
-        label: Text
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: gallery
-        label: Project images (in order)
-        type: image
-        list: true
-        description: Shown one below the other on the case page. The square image above is the thumbnail in the home mosaic.
-      - name: tags
-        label: Habilidades (tags)
-        type: reference
-        required: true
-        description: 'De 1 a 5, da mais central para a menos central no projeto. Escolha só da coleção Tags; não crie tag nova sem aprovação.'
-        options:
-          collection: tags
-          multiple: true
-          min: 1
-          max: 5
-          search: label_pt
-          value: '{fields.slug}'
-          label: '{fields.label_pt}'
-  - name: clients
-    label: 07 Design · clientes
-    type: file
-    path: src/content/clients.json
-    format: json
-    fields:
-      - name: items
-        label: Clients
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Name
-            type: string
-          - name: name_en
-            label: Name in English (optional)
-            type: string
-            description: Fill in only if the English name differs (e.g. Groupe SEB). The list is sorted alphabetically in each language.
-          - name: name_es
-            label: Name in Spanish (optional)
-            type: string
-            description: Fill in only if the Spanish name differs from the English one. Empty uses the English name.
-          - name: slug
-            label: Case slug (optional)
-            type: string
-            description: Fill in only if an art-direction case with this slug exists; the name then links to it.
-  - name: design-research
-    label: 07 Design · design para a pesquisa
-    type: collection
-    path: src/content/design-research
-    format: yaml-frontmatter
-    filename: '{fields.slug}.md'
-    view:
-      fields:
-        - slug
-        - case
-      primary: slug
-      sort:
-        - order
-      default:
-        sort: order
-        order: asc
-    fields:
-      - name: order
-        label: Order
-        type: number
-        description: 'Position in the list: 1 comes first.'
-      - name: slug
-        label: Slug
-        type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'The file name of the item. The page it opens is set in “Página de case”.'
-      - name: case
-        label: Página de case (opcional)
-        type: string
-        description: 'Slug da página em /design/ (coleção "07 Design · cases de pesquisa"), por exemplo sssl. Nas duas línguas, o item da home leva a essa página.'
-      - name: icon
-        label: Icon
-        type: select
-        options:
-          values:
-            - arrowRight
-            - arrowUpRight
-            - arrowDown
-            - plus
-            - minus
-            - mail
-            - pin
-            - copy
-            - download
-            - library
-            - books
-            - star
-            - news
-            - now
-            - field
-            - group
-            - image
-            - sun
-            - eye
-            - building
-            - calendar
-            - community
-            - brush
-            - pencil
-            - layout
-            - mic
-            - globe
-            - presentation
-            - instagram
-            - linkedin
-            - orcid
-            - lattes
-            - zotero
-            - researchgate
-            - oub
-            - seals
-            - epod
-            - alef
-            - mem
-            - het
-        description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
-      - name: title
-        label: Title
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: text
-        label: Short text (home)
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-          - name: es
-            label: Español
-            type: text
-  - name: research-cases
-    label: 07 Design · cases de pesquisa
-    type: collection
-    path: src/content/research-cases
-    format: json
-    filename: '{fields.slug}.json'
-    view:
-      fields:
-        - title
-        - order
-      primary: title
-      sort:
-        - order
-      default:
-        sort: order
-        order: asc
-    fields:
-      - name: order
-        label: Ordem
-        type: number
-        description: 'Posição no anterior/próximo: 1 vem primeiro.'
-      - name: slug
-        label: Slug (URL)
-        type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'A página fica em /design/<slug>, /en/design/<slug> e /es/design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
-      - name: title
-        label: Título
-        type: string
-        required: true
-      - name: thesis
-        label: Tese (linha magenta abaixo do título)
-        type: object
-        description: Um sintagma nominal curto, sem verbo.
-        fields:
-          - name: pt
-            label: Português
-            type: string
-          - name: en
-            label: English
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: lead
-        label: Lead
-        type: object
-        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
-        fields:
-          - name: pt
-            label: Português
-            type: text
-          - name: en
-            label: English
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: meta
-        label: Ficha (Papel, Cliente, Via, Ano)
-        type: object
-        list: true
-        fields:
-          - name: k
-            label: Rótulo
-            type: object
-            fields:
-              - name: pt
-                label: Português
-                type: string
-              - name: en
-                label: English
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: v
-            label: Texto
-            type: object
-            fields:
-              - name: pt
-                label: Português
-                type: string
-              - name: en
-                label: English
-                type: string
-              - name: es
-                label: Español
-                type: string
-      - name: hero
-        label: Imagem de abertura (sem legenda)
-        type: image
-        required: true
-      - name: hero_alt
-        label: Texto alternativo da abertura (opcional)
-        type: object
-        fields:
-          - name: pt
-            label: Português
-            type: string
-          - name: en
-            label: English
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: context
-        label: Contexto (opcional)
-        type: object
-        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
-        fields:
-          - name: pt
-            label: Português
-            type: text
-          - name: en
-            label: English
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: problem_label
-        label: Rótulo do segundo bloco (opcional)
-        type: object
-        description: 'Em branco, o bloco se chama Problema. Ex.: Subprojetos.'
-        fields:
-          - name: pt
-            label: Português
-            type: string
-          - name: en
-            label: English
-            type: string
-          - name: es
-            label: Español
-            type: string
-      - name: problem
-        label: Problema (opcional)
-        type: object
-        description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
-        fields:
-          - name: pt
-            label: Português
-            type: text
-          - name: en
-            label: English
-            type: text
-          - name: es
-            label: Español
-            type: text
-      - name: decisions
-        label: O que fiz (decisões)
-        type: object
-        list: true
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{title.pt}'
         fields:
           - name: title
             label: Título
+            component: linha
+          - name: text
+            label: Texto curto (sempre visível)
+            component: texto
+          - name: details
+            label: Descrição (aparece quando a linha é aberta)
+            component: texto
+          - name: more
+            label: Página do site (opcional)
+            type: string
+            description: 'Ex.: /research/summer-school-iconography'
+          - name: href
+            label: Link externo (opcional)
+            type: string
+          - name: icon
+            component: icone
+
+  # ── 07 Design ────────────────────────────────────────
+  - name: design
+    label: 07 Design
+    type: group
+    items:
+      - name: design-intro
+        label: Introdução
+        type: file
+        path: src/content/site.json
+        format: json
+        fields:
+          - name: designIntro
+            label: Texto de abertura da seção
+            component: texto
+      - name: design-research
+        label: Itens da home (design para a pesquisa)
+        type: collection
+        path: src/content/design-research
+        format: yaml-frontmatter
+        filename: '{fields.slug}.md'
+        view:
+          fields:
+            - slug
+            - case
+          primary: slug
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            label: Título
+            component: linha
+          - name: text
+            label: Texto curto
+            component: texto
+          - name: case
+            label: Página que o item abre
+            type: reference
+            description: Um dos cases de pesquisa. Nas três línguas, o item da home leva a essa página.
+            options:
+              collection: research-cases
+              search: title
+              value: '{fields.slug}'
+              label: '{fields.title}'
+          - name: icon
+            component: icone
+          - name: order
+            component: ordem
+          - name: slug
+            component: slug
+            description: Nome do arquivo do item. A página que ele abre é a escolhida acima.
+      - name: research-cases
+        label: Cases de pesquisa
+        type: collection
+        path: src/content/research-cases
+        format: json
+        filename: '{fields.slug}.json'
+        view:
+          fields:
+            - title
+            - order
+          primary: title
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            label: Título
+            type: string
+            required: true
+          - name: thesis
+            label: Tese (linha magenta abaixo do título)
+            component: linha
+            description: Um sintagma nominal curto, sem verbo.
+          - name: lead
+            label: Abertura
+            component: texto
+            description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
+          - name: meta
+            label: Ficha (Papel, Cliente, Via, Ano)
             type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{k.pt}'
             fields:
-              - name: pt
-                label: Português
-                type: string
-              - name: en
-                label: English
-                type: string
-              - name: es
-                label: Español
-                type: string
+              - name: k
+                label: Rótulo
+                component: linha
+              - name: v
+                label: Texto
+                component: linha
+          - name: hero
+            label: Imagem de abertura (sem legenda)
+            type: image
+            required: true
+          - name: hero_alt
+            label: Descrição da imagem de abertura, para leitores de tela (opcional)
+            component: linha
+          - name: context
+            label: Contexto (opcional)
+            component: texto
+            description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
+          - name: problem_label
+            label: Rótulo do segundo bloco (opcional)
+            component: linha
+            description: 'Em branco, o bloco se chama Problema. Ex.: Subprojetos.'
+          - name: problem
+            label: Problema (opcional)
+            component: texto
+            description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
+          - name: decisions
+            label: O que fiz (blocos)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{title.pt}'
+            fields:
+              - name: title
+                label: Título
+                component: linha
+              - name: text
+                label: Texto
+                component: texto
+                description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
+              - name: images
+                label: Imagens
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: '{index}. {caption.pt}'
+                fields:
+                  - name: src
+                    label: Imagem
+                    type: image
+                  - name: caption
+                    label: Legenda (a primeira frase sai em negrito)
+                    component: texto
+                  - name: span
+                    label: Largura (colunas, de 12)
+                    type: select
+                    options:
+                      values:
+                        - 12
+                        - 7
+                        - 6
+                        - 5
+                        - 4
+                        - 3
+                  - name: plate
+                    label: Sobre fundo claro, com respiro (peças impressas)
+                    type: boolean
+              - name: wide
+                label: Imagens na largura toda
+                type: boolean
+              - name: figures_intro
+                label: Frase antes dos números (opcional)
+                component: linha
+              - name: figures
+                label: Números (opcional)
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: '{n} {label.pt}'
+                fields:
+                  - name: 'n'
+                    label: Número
+                    type: string
+                  - name: label
+                    label: Descrição
+                    component: linha
+          - name: tags
+            component: tags
+          - name: order
+            component: ordem
+            description: 'Posição no anterior/próximo: 1 vem primeiro.'
+          - name: slug
+            component: slug
+            description: 'A página fica em /design/<slug>, /en/design/<slug> e /es/design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
+      - name: cases
+        label: Cases de direção de arte
+        type: collection
+        path: src/content/cases
+        format: yaml-frontmatter
+        filename: '{fields.slug}.md'
+        view:
+          fields:
+            - title
+            - year
+          primary: title
+          sort:
+            - order
+          default:
+            sort: order
+            order: asc
+        fields:
+          - name: title
+            label: Título
+            type: string
           - name: text
             label: Texto
-            type: object
-            description: 'Itálico: *assim* (títulos e termos estrangeiros). Um endereço como site.org vira link.'
-            fields:
-              - name: pt
-                label: Português
-                type: text
-              - name: en
-                label: English
-                type: text
-              - name: es
-                label: Español
-                type: text
-          - name: wide
-            label: Imagens na largura toda
+            component: texto
+          - name: role
+            label: Função (opcional)
+            component: linha
+          - name: team
+            label: Equipe (opcional)
+            component: linha
+          - name: commissioner
+            label: Cliente / agência
+            type: string
+          - name: year
+            label: Ano
+            type: string
+          - name: image
+            label: Imagem quadrada (miniatura)
+            type: image
+            required: true
+            description: Pelo menos 1200 × 1200 px. É a miniatura do mosaico da home.
+          - name: gallery
+            label: Imagens do projeto (em ordem)
+            type: image
+            list: true
+            description: Aparecem uma abaixo da outra na página do case.
+          - name: tags
+            component: tags
+          - name: mosaic
+            label: Mostrar no mosaico da home
             type: boolean
-          - name: images
-            label: Imagens
+            default: true
+            description: 'Desligado, a página e o link na lista de clientes continuam, mas o case sai do mosaico da home.'
+          - name: order
+            component: ordem
+          - name: slug
+            component: slug
+      - name: clients
+        label: Clientes
+        type: file
+        path: src/content/clients.json
+        format: json
+        fields:
+          - name: items
+            label: Clientes
             type: object
-            list: true
+            description: A lista do site sai em ordem alfabética em cada língua.
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{name}'
             fields:
-              - name: src
-                label: Imagem
-                type: image
-              - name: span
-                label: Colunas (de 12)
-                type: select
+              - name: name
+                label: Nome
+                type: string
+              - name: name_en
+                label: Nome em inglês (opcional)
+                type: string
+                description: 'Só se o nome em inglês for diferente (ex.: Groupe SEB).'
+              - name: name_es
+                label: Nome em espanhol (opcional)
+                type: string
+                description: Só se o nome em espanhol for diferente do inglês. Em branco, usa o nome em inglês.
+              - name: slug
+                label: Case de direção de arte (opcional)
+                type: reference
+                description: Se existir um case deste cliente, o nome vira link para ele.
                 options:
-                  values:
-                    - 12
-                    - 7
-                    - 6
-                    - 5
-                    - 4
-                    - 3
-              - name: caption
-                label: Legenda (a primeira frase sai em negrito)
-                type: object
-                fields:
-                  - name: pt
-                    label: Português
-                    type: text
-                  - name: en
-                    label: English
-                    type: text
-                  - name: es
-                    label: Español
-                    type: text
-              - name: plate
-                label: Sobre fundo claro, com respiro (peças impressas)
-                type: boolean
-          - name: figures_intro
-            label: Frase antes dos números (opcional)
-            type: object
-            fields:
-              - name: pt
-                label: Português
-                type: string
-              - name: en
-                label: English
-                type: string
-              - name: es
-                label: Español
-                type: string
-          - name: figures
-            label: Números (opcional)
-            type: object
-            list: true
-            fields:
-              - name: n
-                label: Número
-                type: string
-              - name: label
-                label: Descrição
-                type: object
-                fields:
-                  - name: pt
-                    label: Português
-                    type: string
-                  - name: en
-                    label: English
-                    type: string
-                  - name: es
-                    label: Español
-                    type: string
-      - name: tags
-        label: Habilidades (tags)
-        type: reference
-        required: true
-        description: 'De 1 a 5, da mais central para a menos central no projeto. Escolha só da coleção Tags; não crie tag nova sem aprovação.'
-        options:
-          collection: tags
-          multiple: true
-          min: 1
-          max: 5
-          search: label_pt
-          value: '{fields.slug}'
-          label: '{fields.label_pt}'
-  - name: tags
-    label: Tags de habilidade
-    type: collection
-    path: src/content/tags
+                  collection: cases
+                  search: title
+                  value: '{fields.slug}'
+                  label: '{fields.title}'
+
+  # ── 08 Contato ───────────────────────────────────────
+  - name: contato
+    label: 08 Contato
+    type: file
+    path: src/content/site.json
     format: json
-    filename: '{fields.slug}.json'
-    view:
-      fields:
-        - label_pt
-        - slug
-      primary: label_pt
-      default:
-        sort: label_pt
-        order: asc
     fields:
-      - name: slug
-        label: Slug
+      - name: email
+        label: E-mail
         type: string
-        required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens.
-        description: 'Os projetos guardam a tag por este slug. Não mude depois de publicar. Tag nova só com a aprovação de Silas.'
-      - name: label_pt
-        label: Rótulo em português
+      - name: location
+        label: Local
         type: string
-        required: true
-        description: Mudar aqui muda o rótulo em todos os projetos.
-      - name: label_en
-        label: Rótulo em inglês
-        type: string
-        required: true
-      - name: label_es
-        label: Rótulo em espanhol
-        type: string
-      - name: descricao
-        label: Descrição (o que entra na tag)
-        type: text
+      - name: contactTopics
+        label: Assuntos de contato
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{label.pt}'
+        fields:
+          - name: label
+            label: Assunto
+            component: linha
+          - name: email
+            label: E-mail (opcional)
+            type: string
+            description: Em branco, usa o e-mail principal acima.
+          - name: icon
+            component: icone
+
+  # ── Notícias ─────────────────────────────────────────
   - name: news
-    label: Blog · notícias
+    label: Notícias
     type: collection
     path: src/content/news
     format: yaml-frontmatter
@@ -1741,20 +808,25 @@ content:
         sort: date
         order: desc
     fields:
-      - name: slug
-        label: Slug (URL)
+      - name: title
+        label: Título
         type: string
         required: true
-        pattern:
-          regex: ^[a-z0-9]+(-[a-z0-9]+)*$
-          message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'Part of the page address. Do not change it after publishing: old links would break.'
-      - name: date
+      - name: summary
+        label: Resumo
+        type: text
         required: true
-        label: Date
+        description: Aparece na lista de notícias e no topo do post.
+      - name: body
+        label: Texto do post (opcional)
+        type: rich-text
+        description: Aparece abaixo do resumo.
+      - name: date
+        label: Data
         type: date
+        required: true
       - name: lang
-        label: Language
+        label: Língua
         type: select
         required: true
         options:
@@ -1762,17 +834,96 @@ content:
             - pt
             - en
             - es
-        description: pt appears only on the Portuguese site, en only on the English site, es only on the Spanish site. For a post in several languages, create one entry per language with the same slug.
-      - name: title
-        label: Title
-        type: string
-        required: true
-      - name: summary
-        label: Summary
-        type: text
-        required: true
-        description: Shown in the news list and at the top of the post.
-      - name: body
-        label: Post text
-        type: rich-text
-        description: Optional full text, shown below the summary.
+        description: 'Cada post aparece só no site da sua língua. Para o mesmo post em várias línguas, crie um por língua, com o mesmo endereço (slug).'
+      - name: slug
+        component: slug
+
+  # ── Ajustes ──────────────────────────────────────────
+  - name: ajustes
+    label: Ajustes
+    type: group
+    items:
+      - name: sections
+        label: Títulos das seções
+        type: file
+        path: src/content/site.json
+        format: json
+        fields:
+          - name: sections
+            label: Seções da home
+            type: object
+            fields:
+              - name: about
+                label: 01 Sobre
+                type: object
+                fields: &section
+                  - name: 'n'
+                    label: Número
+                    type: string
+                  - name: label
+                    label: Rótulo (minúsculas, ao lado do número)
+                    component: linha
+                  - name: title
+                    label: Título
+                    component: linha
+              - name: currently
+                label: 02 Hoje
+                type: object
+                fields: *section
+              - name: research
+                label: 03 Pesquisa
+                type: object
+                fields: *section
+              - name: publications
+                label: 04 Publicações
+                type: object
+                fields: *section
+              - name: teaching
+                label: 05 Docência
+                type: object
+                fields: *section
+              - name: initiatives
+                label: 06 Iniciativas
+                type: object
+                fields: *section
+              - name: design
+                label: 07 Design
+                type: object
+                fields: *section
+              - name: contact
+                label: 08 Contato
+                type: object
+                fields: *section
+      - name: tags
+        label: Tags de habilidade
+        type: collection
+        path: src/content/tags
+        format: json
+        filename: '{fields.slug}.json'
+        view:
+          fields:
+            - label_pt
+            - slug
+          primary: label_pt
+          default:
+            sort: label_pt
+            order: asc
+        fields:
+          - name: label_pt
+            label: Rótulo em português
+            type: string
+            required: true
+            description: Mudar aqui muda o rótulo em todos os projetos.
+          - name: label_en
+            label: Rótulo em inglês
+            type: string
+            required: true
+          - name: label_es
+            label: Rótulo em espanhol
+            type: string
+          - name: descricao
+            label: Descrição (o que entra na tag)
+            type: text
+          - name: slug
+            component: slug
+            description: 'Os projetos guardam a tag por este endereço. Não mude depois de publicar. Tag nova só com a aprovação de Silas.'

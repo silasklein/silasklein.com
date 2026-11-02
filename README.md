@@ -1,12 +1,12 @@
 # silasklein.com
 
-Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Abre em português (raiz); a versão em inglês fica em `/en/`.
+Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Abre em português (raiz); a versão em inglês fica em `/en/` e a versão em espanhol em `/es/`.
 
 ## Onde editar
 
 | O quê | Arquivo |
 |---|---|
-| Todos os textos (EN/PT), projetos, publicações, cases, notícias | `src/content/` (pelo Pages CMS, ver abaixo) |
+| Todos os textos (PT/EN/ES), projetos, publicações, cases, notícias | `src/content/` (pelo Pages CMS, ver abaixo) |
 | Lista completa de publicações (`/publications`) | Vem do Zotero (My Publications) a cada publicação do site e toda segunda-feira; `npm run zotero` atualiza a cópia de segurança `src/content/zotero.json` |
 | Textos fixos da interface (menu, botões) | `src/data/content.ts` (`ui`) |
 | Cores, tipografia, layout | `src/styles/global.css` |
@@ -20,19 +20,21 @@ Site estático em [Astro](https://astro.build), publicado no GitHub Pages. Abre 
 
 ## Editar pelo Pages CMS
 
-O conteúdo fica em arquivos dentro de `src/content/`; o [Pages CMS](https://pagescms.org) mostra esses arquivos como formulários, com campos lado a lado em inglês e português. O arquivo `.pages.yml` define quais campos aparecem.
+O conteúdo fica em arquivos dentro de `src/content/`; o [Pages CMS](https://pagescms.org) mostra esses arquivos como formulários. Cada texto tem os três campos juntos, sempre na ordem Português · English · Español. O arquivo `.pages.yml` define quais campos aparecem.
 
 1. Entre em **app.pagescms.org** com a sua conta do GitHub e autorize o acesso ao repositório do site.
 2. Escolha o repositório e a branch `main`.
-3. Edite pelo menu lateral: **Site texts** (hero, bio, contato), **02 Currently**, **03 Research projects**, **04 Publications**, **Awards & distinctions**, **05 Teaching: in public**, **06 Initiatives**, **07 Art direction cases**, **07 Design for research**, **07 Clients**, **News**.
+3. Edite pelo menu lateral, que segue as seções do site: **Home** (Abertura, 01 Sobre, 02 Hoje), **03 Pesquisa**, **04 Publicações**, **05 Docência**, **06 Iniciativas**, **07 Design**, **08 Contato**, **Notícias** e **Ajustes** (títulos das seções e tags). Cada seção traz a sua própria introdução.
 4. **Save** grava a alteração no GitHub; o site se republica sozinho em 1–2 minutos.
 
 Dicas:
-- **Order** define a posição na lista (1 aparece primeiro).
-- **Slug** é o endereço da página (`/design/<slug>`). Não mude o slug de algo já publicado, senão o link antigo quebra.
-- Imagens novas vão para `public/img/` pelo botão de mídia. Capas de livro e cases: use imagens quadradas (cases) ou só a capa, sem sombra (livros).
-- Em **07 Clients**, preencha *Case slug* só quando existir um case com esse slug; aí o nome vira link.
-- Em **News**, *Language* indica em que língua o post foi escrito.
+- As listas abrem recolhidas, com o nome de cada item; clique no item para editá-lo.
+- O conteúdo vem primeiro em cada tela; **Posição na lista** e **Endereço na web (slug)** ficam no fim. Não mude o endereço de algo já publicado, senão o link antigo quebra.
+- Um campo em espanhol em branco mostra o texto em inglês no site em espanhol.
+- Imagens novas vão para `public/img/` pelo botão de mídia. Cases: imagem quadrada; livros: só a capa, sem sombra.
+- Em **07 Design › Clientes**, escolha o case só quando ele existir; aí o nome vira link.
+- Em **Notícias**, *Língua* indica em qual site o post aparece; para o mesmo post em várias línguas, crie um por língua, com o mesmo endereço.
+- Várias telas (Abertura, Sobre, as Introduções, Contato, Títulos das seções) editam partes do mesmo arquivo, `site.json`. Cada uma grava só os seus campos (opção `merge` do `.pages.yml`).
 
 ## Rodar no computador
 
