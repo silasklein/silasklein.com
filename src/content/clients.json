@@ -12,14 +12,26 @@
       "name": "A1.Brasil"
     },
     {
+      "name": "Abib"
+    },
+    {
       "name": "AG2 Publicis Modem"
+    },
+    {
+      "name": "Agência Vitt"
     },
     {
       "name": "BlackBerry",
       "slug": "blackberry"
     },
     {
+      "name": "BMW"
+    },
+    {
       "name": "Bradesco"
+    },
+    {
+      "name": "Caixa"
     },
     {
       "name": "CEAP",
@@ -30,11 +42,17 @@
       "slug": "coca-cola-quiz"
     },
     {
+      "name": "ConnectCom"
+    },
+    {
       "name": "D3! Estúdio"
     },
     {
       "name": "Doubleleft",
       "slug": "doubleleft"
+    },
+    {
+      "name": "Editora Abril"
     },
     {
       "name": "Foco"
@@ -43,12 +61,20 @@
       "name": "General Motors"
     },
     {
+      "name": "Gol"
+    },
+    {
+      "name": "Grupo SEB",
+      "name_en": "Groupe SEB"
+    },
+    {
       "name": "Habib’s",
       "slug": "habibs"
     },
     {
       "name": "Instituto Carlyle Brasil",
-      "slug": "ice"
+      "slug": "ice",
+      "name_en": "Instituto Carlyle Brazil"
     },
     {
       "name": "Moda Limpa",
@@ -65,6 +91,12 @@
       "name": "Netflix"
     },
     {
+      "name": "Oral-B"
+    },
+    {
+      "name": "Pirelli"
+    },
+    {
       "name": "Publicis Red Lion"
     },
     {
@@ -79,15 +111,30 @@
       "slug": "samsunglp"
     },
     {
+      "name": "Shimano"
+    },
+    {
       "name": "Solidum",
       "slug": "solidum"
+    },
+    {
+      "name": "Sony Entertainment Television"
     },
     {
       "name": "St. Andrews",
       "slug": "standrews"
     },
     {
-      "name": "Warner Bros"
+      "name": "Vivo"
+    },
+    {
+      "name": "Warner Bros."
+    },
+    {
+      "name": "Warner Channel"
+    },
+    {
+      "name": "Webjet"
     }
   ]
 }

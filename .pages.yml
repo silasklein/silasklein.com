@@ -1142,6 +1142,10 @@ content:
           - name: name
             label: Name
             type: string
+          - name: name_en
+            label: Name in English (optional)
+            type: string
+            description: Fill in only if the English name differs (e.g. Groupe SEB). The list is sorted alphabetically in each language.
           - name: slug
             label: Case slug (optional)
             type: string

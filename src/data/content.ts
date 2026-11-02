@@ -63,7 +63,8 @@ export const currently = currentlyFile.items as { kicker: L; title: L; text: L; 
 export const recognition = recognitionFile.items as L[];
 export const books = publicationsFile.books as { cover: string; title: string; meta: L; href: string; pdf?: string }[];
 export const selected = publicationsFile.selected.map((s: any) => ({ ...s, href: s.href || null })) as { title: string; venue: string; href: string | null; pdf?: string }[];
-export const clients = clientsFile.items as { name: string; slug?: string }[];
+// name_en only where the English name differs (e.g. Groupe SEB); the home sorts by the shown name.
+export const clients = clientsFile.items as { name: string; name_en?: string; slug?: string }[];
 export const outreach = outreachFile.items as { title: L; text: L; href: string; icon: string }[];
 export const talks = talksFile.items as { year: string; kind: L; title: string; channel: string; lang: Lang; href: string }[];
 export const initiatives = initiativesFile.items as { icon: string; title: L; text: L; details?: L; more?: string; href?: string }[];
