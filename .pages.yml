@@ -19,6 +19,9 @@ content:
           - name: pt
             label: Português
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: subtitle
         label: Hero subtitle
         type: object
@@ -29,6 +32,9 @@ content:
           - name: pt
             label: Português
             type: text
+          - name: es
+            label: Español
+            type: text
       - name: descriptor
         label: Slogan (page title and footer)
         type: object
@@ -38,6 +44,9 @@ content:
             type: string
           - name: pt
             label: Português
+            type: string
+          - name: es
+            label: Español
             type: string
       - name: facts
         label: Hero facts (Now / Field)
@@ -100,6 +109,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: v
             label: Value
             type: object
@@ -109,6 +121,9 @@ content:
                 type: string
               - name: pt
                 label: Português
+                type: string
+              - name: es
+                label: Español
                 type: string
       - name: bio
         label: 'About: bio, lead (large)'
@@ -120,6 +135,9 @@ content:
           - name: pt
             label: Português
             type: text
+          - name: es
+            label: Español
+            type: text
       - name: bio2
         label: 'About: bio, details (smaller)'
         type: object
@@ -129,6 +147,9 @@ content:
             type: text
           - name: pt
             label: Português
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: researchApproach
         label: 'Research: intro'
@@ -140,6 +161,9 @@ content:
           - name: pt
             label: Português
             type: text
+          - name: es
+            label: Español
+            type: text
       - name: teaching
         label: 'Teaching: intro'
         type: object
@@ -150,6 +174,9 @@ content:
           - name: pt
             label: Português
             type: text
+          - name: es
+            label: Español
+            type: text
       - name: designIntro
         label: 'Art direction: intro'
         type: object
@@ -159,6 +186,9 @@ content:
             type: text
           - name: pt
             label: Português
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: email
         label: Email
@@ -284,6 +314,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: email
             label: E-mail (optional)
             type: string
@@ -309,6 +342,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -318,6 +354,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: currently
             label: Currently
@@ -336,6 +375,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -345,6 +387,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: research
             label: Research
@@ -363,6 +408,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -372,6 +420,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: publications
             label: Publications
@@ -390,6 +441,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -399,6 +453,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: teaching
             label: Teaching
@@ -417,6 +474,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -426,6 +486,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: initiatives
             label: Initiatives
@@ -444,6 +507,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -453,6 +519,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: design
             label: Design
@@ -471,6 +540,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -480,6 +552,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
           - name: contact
             label: Contact
@@ -498,6 +573,9 @@ content:
                   - name: pt
                     label: Português
                     type: string
+                  - name: es
+                    label: Español
+                    type: string
               - name: title
                 label: Title
                 type: object
@@ -507,6 +585,9 @@ content:
                     type: string
                   - name: pt
                     label: Português
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
   - name: currently
     label: 02 Hoje
@@ -575,6 +656,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: title
             label: Title
             type: object
@@ -585,6 +669,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: text
             label: Text
             type: object
@@ -594,6 +681,9 @@ content:
                 type: text
               - name: pt
                 label: Português
+                type: text
+              - name: es
+                label: Español
                 type: text
           - name: href
             label: Link
@@ -696,6 +786,9 @@ content:
           - name: pt
             label: Português
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: role
         label: Role
         type: object
@@ -705,6 +798,9 @@ content:
             type: string
           - name: pt
             label: Português
+            type: string
+          - name: es
+            label: Español
             type: string
       - name: places
         label: Institutions (shown after the role)
@@ -720,6 +816,9 @@ content:
                 type: string
               - name: pt
                 label: Português
+                type: string
+              - name: es
+                label: Español
                 type: string
           - name: href
             label: Link (optional)
@@ -741,6 +840,9 @@ content:
           - name: pt
             label: Português
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: summary
         label: Summary
         type: object
@@ -752,6 +854,9 @@ content:
           - name: pt
             label: Português
             type: text
+          - name: es
+            label: Español
+            type: text
       - name: outputs
         label: Outputs
         type: object
@@ -762,6 +867,9 @@ content:
             type: string
           - name: pt
             label: Português
+            type: string
+          - name: es
+            label: Español
             type: string
   - name: recognition
     label: 03 Pesquisa · prêmios
@@ -779,6 +887,9 @@ content:
             type: string
           - name: pt
             label: Português
+            type: string
+          - name: es
+            label: Español
             type: string
   - name: publications
     label: 04 Publicações · destaques
@@ -807,6 +918,9 @@ content:
                 type: string
               - name: pt
                 label: Português
+                type: string
+              - name: es
+                label: Español
                 type: string
           - name: href
             label: Publisher / DOI link
@@ -898,6 +1012,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: text
             label: Text
             type: object
@@ -907,6 +1024,9 @@ content:
                 type: text
               - name: pt
                 label: Português
+                type: text
+              - name: es
+                label: Español
                 type: text
           - name: href
             label: Link
@@ -936,6 +1056,9 @@ content:
                 type: string
               - name: pt
                 label: Português
+                type: string
+              - name: es
+                label: Español
                 type: string
           - name: title
             label: Title
@@ -1022,6 +1145,9 @@ content:
               - name: pt
                 label: Português
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: text
             label: Short text (always visible)
             type: object
@@ -1032,6 +1158,9 @@ content:
               - name: pt
                 label: Português
                 type: text
+              - name: es
+                label: Español
+                type: text
           - name: details
             label: Description (shown when the row is opened)
             type: object
@@ -1041,6 +1170,9 @@ content:
                 type: text
               - name: pt
                 label: Português
+                type: text
+              - name: es
+                label: Español
                 type: text
           - name: more
             label: Internal page (optional)
@@ -1101,6 +1233,9 @@ content:
           - name: pt
             label: Português
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: team
         label: Team (optional)
         type: object
@@ -1110,6 +1245,9 @@ content:
             type: string
           - name: pt
             label: Português
+            type: string
+          - name: es
+            label: Español
             type: string
       - name: commissioner
         label: Commissioner
@@ -1126,6 +1264,9 @@ content:
             type: text
           - name: pt
             label: Português
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: gallery
         label: Project images (in order)
@@ -1163,6 +1304,10 @@ content:
             label: Name in English (optional)
             type: string
             description: Fill in only if the English name differs (e.g. Groupe SEB). The list is sorted alphabetically in each language.
+          - name: name_es
+            label: Name in Spanish (optional)
+            type: string
+            description: Fill in only if the Spanish name differs from the English one. Empty uses the English name.
           - name: slug
             label: Case slug (optional)
             type: string
@@ -1256,6 +1401,9 @@ content:
           - name: pt
             label: Português
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: text
         label: Short text (home)
         type: object
@@ -1265,6 +1413,9 @@ content:
             type: text
           - name: pt
             label: Português
+            type: text
+          - name: es
+            label: Español
             type: text
   - name: research-cases
     label: 07 Design · cases de pesquisa
@@ -1294,7 +1445,7 @@ content:
         pattern:
           regex: ^[a-z0-9]+(-[a-z0-9]+)*$
           message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'A página fica em /design/<slug> e /en/design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
+        description: 'A página fica em /design/<slug>, /en/design/<slug> e /es/design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
       - name: title
         label: Título
         type: string
@@ -1310,6 +1461,9 @@ content:
           - name: en
             label: English
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: lead
         label: Lead
         type: object
@@ -1320,6 +1474,9 @@ content:
             type: text
           - name: en
             label: English
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: meta
         label: Ficha (Papel, Cliente, Via, Ano)
@@ -1336,6 +1493,9 @@ content:
               - name: en
                 label: English
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: v
             label: Texto
             type: object
@@ -1345,6 +1505,9 @@ content:
                 type: string
               - name: en
                 label: English
+                type: string
+              - name: es
+                label: Español
                 type: string
       - name: hero
         label: Imagem de abertura (sem legenda)
@@ -1360,6 +1523,9 @@ content:
           - name: en
             label: English
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: context
         label: Contexto (opcional)
         type: object
@@ -1370,6 +1536,9 @@ content:
             type: text
           - name: en
             label: English
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: problem_label
         label: Rótulo do segundo bloco (opcional)
@@ -1382,6 +1551,9 @@ content:
           - name: en
             label: English
             type: string
+          - name: es
+            label: Español
+            type: string
       - name: problem
         label: Problema (opcional)
         type: object
@@ -1392,6 +1564,9 @@ content:
             type: text
           - name: en
             label: English
+            type: text
+          - name: es
+            label: Español
             type: text
       - name: decisions
         label: O que fiz (decisões)
@@ -1408,6 +1583,9 @@ content:
               - name: en
                 label: English
                 type: string
+              - name: es
+                label: Español
+                type: string
           - name: text
             label: Texto
             type: object
@@ -1418,6 +1596,9 @@ content:
                 type: text
               - name: en
                 label: English
+                type: text
+              - name: es
+                label: Español
                 type: text
           - name: wide
             label: Imagens na largura toda
@@ -1451,6 +1632,9 @@ content:
                   - name: en
                     label: English
                     type: text
+                  - name: es
+                    label: Español
+                    type: text
               - name: plate
                 label: Sobre fundo claro, com respiro (peças impressas)
                 type: boolean
@@ -1463,6 +1647,9 @@ content:
                 type: string
               - name: en
                 label: English
+                type: string
+              - name: es
+                label: Español
                 type: string
           - name: figures
             label: Números (opcional)
@@ -1481,6 +1668,9 @@ content:
                     type: string
                   - name: en
                     label: English
+                    type: string
+                  - name: es
+                    label: Español
                     type: string
       - name: tags
         label: Habilidades (tags)
@@ -1527,6 +1717,9 @@ content:
         label: Rótulo em inglês
         type: string
         required: true
+      - name: label_es
+        label: Rótulo em espanhol
+        type: string
       - name: descricao
         label: Descrição (o que entra na tag)
         type: text
@@ -1568,7 +1761,8 @@ content:
           values:
             - pt
             - en
-        description: pt appears only on the Portuguese site, en only on the English site. For a post in both languages, create two entries with the same slug, one in each language.
+            - es
+        description: pt appears only on the Portuguese site, en only on the English site, es only on the Spanish site. For a post in several languages, create one entry per language with the same slug.
       - name: title
         label: Title
         type: string
