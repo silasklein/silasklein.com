@@ -5,6 +5,11 @@ const cases = [
   'doubleleft', 'modalimpa', 'solidum', 'natura', 'logofolio', 'standrews', 'saints', 'ice',
 ];
 
+// The first design-for-research pages (/design-for-research/<slug>) became full cases at /design/<case>.
+const designForResearch = {
+  'stamp-seals-identity': 'sssl', 'paleographic-networks': 'paleonet', 'oub-logo': 'observatorio', 'epod-identity': 'epod',
+};
+
 // Old Squarespace URLs → new addresses (GitHub Pages serves these as instant-forward pages).
 // Old Squarespace pages were in English (the -ptbr ones in Portuguese); Portuguese is now the root.
 const redirects = {
@@ -23,6 +28,10 @@ const redirects = {
   '/design': '/#design',
   '/en/design': '/en/#design',
   ...Object.fromEntries(cases.map((c) => [`/${c}`, `/en/design/${c}`])),
+  ...Object.fromEntries(Object.entries(designForResearch).flatMap(([from, to]) => [
+    [`/design-for-research/${from}`, `/design/${to}`],
+    [`/en/design-for-research/${from}`, `/en/design/${to}`],
+  ])),
 };
 
 // SITE_BASE=/silasklein.com serves the site from the GitHub preview address
