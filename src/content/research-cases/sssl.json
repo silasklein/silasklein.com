@@ -62,8 +62,8 @@
     "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the Corpus der Stempelsiegel-Amulette aus Palästina/Israel. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv."
   },
   "problem": {
-    "pt": "Três universidades, cada uma com sua marca, precisavam aparecer como um só projeto. E um corpus publicado em volumes impressos em alemão precisava existir ao mesmo tempo como base em inglês e como livro.",
-    "en": "Three universities, each with its own brand, had to appear as one project. And a corpus published in printed German volumes had to exist both as an English database and as a book."
+    "pt": "A identidade visual do projeto estava fragmentada. As três universidades envolvidas, cada uma com sua marca, precisavam aparecer como um só projeto. E o corpus, antes impresso e somente em alemão, precisava migrar conceitual, metodológica e funcionalmente para uma plataforma digital.",
+    "en": "The project’s visual identity was fragmented. The three universities involved, each with its own brand, had to appear as one project. And the corpus, previously printed and only in German, had to move conceptually, methodologically and functionally to a digital platform."
   },
   "decisions": [
     {
@@ -197,6 +197,28 @@
     },
     {
       "title": {
+        "pt": "O site do projeto",
+        "en": "The project website"
+      },
+      "text": {
+        "pt": "Fiz o site do projeto, levantineseals.org: apresentação, publicações e equipe, com o símbolo e o vermelho da identidade e acesso direto ao CSSL.",
+        "en": "I made the project website, levantineseals.org: introduction, publications and team, with the symbol and red of the identity and direct access to CSSL."
+      },
+      "wide": false,
+      "images": [
+        {
+          "src": "/img/cases/sssl/17-site.webp",
+          "span": 12,
+          "caption": {
+            "pt": "levantineseals.org. A abertura do site.",
+            "en": "levantineseals.org. The opening of the site."
+          },
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": {
         "pt": "Do fichário à tela",
         "en": "From card file to screen"
       },
@@ -225,7 +247,7 @@
           "plate": false
         },
         {
-          "src": "/img/cases/cssl/02-fichas-analogicas.webp",
+          "src": "/img/cases/cssl/03-fichas-analogicas.webp",
           "span": 12,
           "caption": {
             "pt": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",

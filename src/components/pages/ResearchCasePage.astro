@@ -21,6 +21,10 @@ for (const src of [c.hero, ...c.decisions.flatMap((d) => (d.images ?? []).map((i
   size.set(src, { width: m.width!, height: m.height! });
 }
 
+// Bare domains in a decision text (e.g. levantineseals.org) become links.
+const linked = (s: string) => s.split(/\b((?:[a-z0-9-]+\.)+(?:org|com|net|br|ch|de)(?:\/[^\s,;:)]*)?)\b/i)
+  .map((part, n) => (n % 2 ? { href: `https://${part}`, label: part } : part));
+
 // Captions: the first sentence in bold.
 const cap = (s: string) => { const m = s.match(/^(.+?[.!?])(\s|$)(.*)$/s); return m ? { b: m[1], rest: m[3] } : { b: '', rest: s }; };
 
@@ -60,7 +64,7 @@ const next = researchCases[(i + 1) % researchCases.length];
             <div class={`cs__dec${kind}`}>
               <div class="cs__dtxt">
                 <h3 class="cs__dt"><span class="bs" aria-hidden="true">\</span>{t(d.title, lang)}</h3>
-                {d.wide || !imgs.length ? null : <p>{t(d.text, lang)}</p>}
+                {d.wide || !imgs.length ? null : <p>{linked(t(d.text, lang)).map((x) => typeof x === 'string' ? x : <a href={x.href}>{x.label}</a>)}</p>}
                 {d.figures?.length ? (
                   <div class="cs__dfigs">
                     {d.figures_intro && <span>{t(d.figures_intro, lang)}</span>}
@@ -68,7 +72,7 @@ const next = researchCases[(i + 1) % researchCases.length];
                   </div>
                 ) : null}
               </div>
-              {(d.wide || !imgs.length) && <p class="cs__dbody">{t(d.text, lang)}</p>}
+              {(d.wide || !imgs.length) && <p class="cs__dbody">{linked(t(d.text, lang)).map((x) => typeof x === 'string' ? x : <a href={x.href}>{x.label}</a>)}</p>}
               {imgs.length > 0 && (
                 <div class="cs__gal">
                   {imgs.map((im) => {
