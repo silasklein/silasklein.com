@@ -3,12 +3,12 @@
   "slug": "observatorio",
   "title": "Observatório de Universos Bíblicos",
   "thesis": {
-    "pt": "Identidade e a rotina de um grupo de pesquisa",
+    "pt": "Identidade e rotina de um grupo de pesquisa",
     "en": "Identity and routine for a research group",
     "es": "La identidad y la rutina de un grupo de investigación"
   },
   "lead": {
-    "pt": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: prospecto, template de palestras, posts, o site e o material dos eventos internacionais.",
+    "pt": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: folder, template de palestras, posts, o site e o material dos eventos internacionais.",
     "en": "For the research group I lead with José Adriano Filho at Faculdade Unida de Vitória, I created the brand and the group’s materials: brochure, lecture template, posts, website and the material for its international events.",
     "es": "Para el grupo de investigación que dirijo con José Adriano Filho en la Faculdade Unida de Vitória, creé la marca y las piezas del grupo: folleto, plantilla de conferencias, piezas para redes sociales, el sitio web y el material de los eventos internacionales."
   },
@@ -68,7 +68,7 @@
     "es": "Marca del Observatório de Universos Bíblicos sobre fondo blanco: un libro abierto en naranja bajo órbitas, una estrella y dos planetas."
   },
   "context": {
-    "pt": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e sócio-epistêmicas.",
+    "pt": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e socioepistêmicas.",
     "en": "The group studies religious phenomena, practices and productions from the contexts in which biblical texts were written and received, along three lines: material and visual, social and literary, and socio-epistemic mediations.",
     "es": "El grupo estudia fenómenos, prácticas y producciones religiosas de los contextos en que los textos bíblicos fueron escritos y recibidos, en tres frentes: mediaciones materiales y visuales, sociales y literarias, y socioepistémicas."
   },
@@ -84,7 +84,7 @@
         "es": "Un libro abierto bajo las órbitas"
       },
       "text": {
-        "pt": "Adotando a premissa de ser uma plataforma de observação do contexto no qual os textos bíblicos foram produzidos, o símbolo evoca a ideia de um planetário de observação dos “universos bíblicos”. Assim, da Bíblia, órbitas se formam e astros e planetas surgem, representando visualmente o enfoque do grupo.",
+        "pt": "Como o grupo se propõe a observar o contexto no qual os textos bíblicos foram produzidos, o símbolo evoca a ideia de um planetário de observação dos “universos bíblicos”. Assim, da Bíblia, órbitas se formam e astros e planetas surgem, representando visualmente o enfoque do grupo.",
         "en": "Taking up the premise of a platform for observing the context in which the biblical texts were produced, the symbol evokes a planetarium for observing the “biblical universes”. From the Bible, orbits form and stars and planets appear, a visual image of the group’s focus.",
         "es": "Con la premisa de ser una plataforma de observación del contexto en el que se produjeron los textos bíblicos, el símbolo evoca la idea de un planetario para observar los “universos bíblicos”. Así, de la Biblia se forman órbitas y surgen astros y planetas, que representan visualmente el enfoque del grupo."
       },
@@ -104,7 +104,7 @@
           "src": "/img/cases/observatorio/02-prospecto.webp",
           "span": 12,
           "caption": {
-            "pt": "Prospecto: marca, apresentação, focos de pesquisa e contato.",
+            "pt": "Folder: marca, apresentação, focos de pesquisa e contato.",
             "en": "Brochure: brand, introduction, research foci and contact.",
             "es": "Folleto: marca, presentación, líneas de investigación y contacto."
           },

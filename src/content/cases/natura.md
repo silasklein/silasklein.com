@@ -5,7 +5,7 @@ title: "Natura"
 image: "/img/cases/natura.webp"
 role:
   en: "Senior art director for Natura"
-  pt: "Diretor de arte sênior da Natura"
+  pt: "Diretor de arte sênior para a Natura"
   es: Director de arte sénior para Natura
 commissioner: "AG2 Publicis Modem"
 year: "2011–2013"

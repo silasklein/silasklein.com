@@ -9,7 +9,7 @@ title:
   pt: "Observatório de Universos Bíblicos"
 text:
   en: "Identity and routine for FUV’s research group: brand, website, lectures, posts and events, since 2025."
-  pt: "Identidade e a rotina do grupo de pesquisa da FUV: marca, site, palestras, posts e eventos, desde 2025."
+  pt: "Identidade e rotina do grupo de pesquisa da FUV: marca, site, palestras, posts e eventos, desde 2025."
   es: "Identidad y rutina del grupo de investigación de la FUV: marca, sitio web, conferencias, publicaciones en redes y eventos, desde 2025."
 client: "Observatório de Universos Bíblicos · PPG em Ciências das Religiões, FUV"
 role:

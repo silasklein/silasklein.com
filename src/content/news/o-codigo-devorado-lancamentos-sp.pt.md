@@ -20,7 +20,7 @@ summary: "Na última semana, passei três dias em São Paulo para dois eventos d
 
 Na última semana, passei três dias em São Paulo para dois eventos de lançamento do meu livro “O código devorado: os usos da iconografia antigo-oriental na exegese bíblica” (Editora Recriar, 2025).
 
-Na quinta-feira, 28/08, proferi a palestra "Bíblia, Arqueologia e os Códigos Visuais do Antigo Oriente" e discuti algumas ideias do livro com o Dr. Edson Nunes Jr. e com o Dr. Robinson Jacintho na IBAB Educação. No sábado, 30/08, apresentei a aula pública "Como a arte antiga explica a Bíblia: uma introdução à exegese interartística", com moderação do Dr. André Anéas, na sede da Editora Recriar.
+Na quinta-feira, 28/08, proferi a palestra “Bíblia, Arqueologia e os Códigos Visuais do Antigo Oriente” e discuti algumas ideias do livro com o Dr. Edson Nunes Jr. e com o Dr. Robinson Jacintho na IBAB Educação. No sábado, 30/08, apresentei a aula pública “Como a arte antiga explica a Bíblia: uma introdução à exegese interartística”, com moderação do Dr. André Anéas, na sede da Editora Recriar.
 
 Foram dois momentos especiais, em que reencontrei pessoas queridas (algumas que só conhecia virtualmente) e conheci outras.
 

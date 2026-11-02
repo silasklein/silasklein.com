@@ -20,7 +20,7 @@ El miércoles 8 de abril presentaré la conferencia *“Simulacra and Presence: 
 
 ¡Tengo muchas ganas de encontrar a colegas y amigos en Praga! La conferencia también se transmitirá en línea (inscripciones en este [enlace](https://eu02events.zoom.us/ev/AiAaG2ZQwH1uIQrrYabtNGcvCSQ9Tf1jQ3eXmwUGbhs5eIB070yH~AvFy7cXGnUdhy8w9eJsUaULCwCJZFXZHqLUWEMf4espYHNnPNXDo9J6iIA)). Abajo, el programa.
 
-### Conference program
+## Programa
 
 **Wednesday, April 8, 2026**
 

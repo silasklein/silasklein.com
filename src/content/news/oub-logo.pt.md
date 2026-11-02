@@ -10,7 +10,7 @@ summary: "O grupo de pesquisa “Observatório de Universos Bíblicos”, sediad
 
 **Novo logo do Observatório de Universos Bíblicos**
 
-O logo explora visualmente o conceito de “universos bíblicos”, mostrando como o texto bíblico pode ser uma porta de entrada, como Othmar Keel defendia, ou como um ponto de observação a culturas antigas.
+O logo explora visualmente o conceito de “universos bíblicos”, mostrando como o texto bíblico pode ser uma porta de entrada, como Othmar Keel defendia, ou como um ponto de observação de culturas antigas.
 
 O grupo de pesquisa **Observatório de Universos Bíblicos** (OUB) teve seu início no fim de 2024. Liderado pelos Profs. Drs. Silas Klein e José Adriano Filho, ele é sediado no Programa de Pós-Graduação Profissional da Faculdade Unida de Vitória, estando ligado à linha de pesquisa/atuação “Religião: Tradições e Teologias”.
 

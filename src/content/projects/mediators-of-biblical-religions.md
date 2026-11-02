@@ -10,7 +10,7 @@ title:
   es: Mediadores de la religión bíblica
 role:
   en: "Principal investigator"
-  pt: "Investigador principal"
+  pt: "Pesquisador principal"
   es: Investigador principal
 places:
   - name:
