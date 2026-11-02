@@ -83,7 +83,7 @@ export type Case = { order?: number; slug: string; title: string; image: string;
 export const cases: Case[] = fm<Case>(import.meta.glob('../content/cases/*.md', { eager: true }))
   .sort(byOrder);
 
-export type DesignItem = { order?: number; slug: string; case?: string; icon: string; title: L; text: L; year: string; client: string; role: L; body?: L; href?: string };
+export type DesignItem = { order?: number; slug: string; case?: string; icon: string; title: L; text: L };
 export const designForResearch: DesignItem[] = fm<DesignItem>(import.meta.glob('../content/design-research/*.md', { eager: true })).sort(byOrder);
 
 

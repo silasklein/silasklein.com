@@ -89,7 +89,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: k
             label: Key
             type: object
@@ -219,7 +219,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: href
             label: Link
             type: string
@@ -273,7 +273,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: label
             label: Label
             type: object
@@ -564,7 +564,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: kicker
             label: Kicker
             type: object
@@ -682,7 +682,7 @@ content:
             - alef
             - mem
             - het
-        description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+        description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
       - name: years
         label: Years
         type: string
@@ -875,7 +875,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: title
             label: Title
             type: object
@@ -999,7 +999,7 @@ content:
                 - alef
                 - mem
                 - het
-            description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
+            description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
           - name: title
             label: Title
             type: object
@@ -1159,7 +1159,7 @@ content:
     view:
       fields:
         - slug
-        - year
+        - case
       primary: slug
       sort:
         - order
@@ -1172,17 +1172,17 @@ content:
         type: number
         description: 'Position in the list: 1 comes first.'
       - name: slug
-        label: Slug (URL)
+        label: Slug
         type: string
         required: true
         pattern:
           regex: ^[a-z0-9]+(-[a-z0-9]+)*$
           message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'Part of the page address. Do not change it after publishing: old links would break.'
+        description: 'The file name of the item. The page it opens is set in “Página de case”.'
       - name: case
         label: Página de case (opcional)
         type: string
-        description: 'Slug da página em /design/ (coleção "07 Design · cases de pesquisa"), por exemplo sssl. Em português, o item da home leva a essa página.'
+        description: 'Slug da página em /design/ (coleção "07 Design · cases de pesquisa"), por exemplo sssl. Nas duas línguas, o item da home leva a essa página.'
       - name: icon
         label: Icon
         type: select
@@ -1228,10 +1228,7 @@ content:
             - alef
             - mem
             - het
-        description: 'See every icon next to its name on the /icons page of the site (now: silasklein.github.io/silasklein.com/icons/).'
-      - name: year
-        label: Year
-        type: string
+        description: 'See every icon next to its name on the /icons page of the site (www.silasklein.com/icons/).'
       - name: title
         label: Title
         type: object
@@ -1252,32 +1249,6 @@ content:
           - name: pt
             label: Português
             type: text
-      - name: client
-        label: Client
-        type: string
-      - name: role
-        label: Role
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: string
-          - name: pt
-            label: Português
-            type: string
-      - name: body
-        label: Page text
-        type: object
-        fields:
-          - name: en
-            label: English
-            type: text
-          - name: pt
-            label: Português
-            type: text
-      - name: href
-        label: Link
-        type: string
   - name: research-cases
     label: 07 Design · cases de pesquisa
     type: collection
