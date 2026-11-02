@@ -75,7 +75,8 @@ a.act:hover, button.act:hover { color: var(--accent); }
 .topbar__nav a:hover, .topbar__contact:hover, .topbar__lang:hover, .topbar__nav a.is-active { color: var(--magenta-text); }
 .topbar__end { display: flex; align-items: center; gap: 20px; justify-self: end; }
 .topbar__contact { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
-.topbar__lang { font-weight: 600; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; list-style: none; }
+/* Tighter than Contato: the icon's A sits low-right, so the optical gap reads wider than the measured one. */
+.topbar__lang { font-weight: 600; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; list-style: none; }
 .topbar__lang::-webkit-details-marker { display: none; }
 /* Language menu: the current language marked by a magenta rule, each name in its own language, no flags. */
 .langs { position: relative; }

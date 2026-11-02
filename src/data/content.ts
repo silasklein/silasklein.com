@@ -15,7 +15,7 @@ export type L = { en: string; pt: string; es?: string };
 export const t = (l: L, lang: Lang) => (lang === 'es' ? l.es || l.en : l[lang]);
 // The languages, in menu order: code, name in its own language, short code, and the tags each one uses.
 export const langs = [
-  { code: 'pt', name: 'Português', short: 'PT', hreflang: 'pt-BR', locale: 'pt_BR', date: 'pt-BR' },
+  { code: 'pt', name: 'Português', short: 'BR', hreflang: 'pt-BR', locale: 'pt_BR', date: 'pt-BR' },
   { code: 'en', name: 'English', short: 'EN', hreflang: 'en', locale: 'en_US', date: 'en-GB' },
   { code: 'es', name: 'Español', short: 'ES', hreflang: 'es', locale: 'es_LA', date: 'es' },
 ] as const satisfies readonly { code: Lang; name: string; short: string; hreflang: string; locale: string; date: string }[];
