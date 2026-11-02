@@ -4,27 +4,32 @@
   "title": "Observatório de Universos Bíblicos",
   "thesis": {
     "pt": "Identidade e a rotina de um grupo de pesquisa",
-    "en": "Identity and the routine of a research group"
+    "en": "Identity and the routine of a research group",
+    "es": "La identidad y la rutina de un grupo de investigación"
   },
   "lead": {
     "pt": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: prospecto, template de palestras, posts, o site e o material dos eventos internacionais.",
-    "en": "For the research group I lead with José Adriano Filho at Faculdade Unida de Vitória, I created the brand and the group’s materials: brochure, lecture template, posts, website and the material for its international events."
+    "en": "For the research group I lead with José Adriano Filho at Faculdade Unida de Vitória, I created the brand and the group’s materials: brochure, lecture template, posts, website and the material for its international events.",
+    "es": "Para el grupo de investigación que dirijo con José Adriano Filho en la Faculdade Unida de Vitória, creé la marca y las piezas del grupo: folleto, plantilla de conferencias, piezas para redes sociales, el sitio web y el material de los eventos internacionales."
   },
   "meta": [
     {
       "k": {
         "pt": "Papel",
-        "en": "Role"
+        "en": "Role",
+        "es": "Función"
       },
       "v": {
         "pt": "Líder do grupo, com José Adriano Filho; identidade visual e design editorial",
-        "en": "Group leader, with José Adriano Filho; visual identity and editorial design"
+        "en": "Group leader, with José Adriano Filho; visual identity and editorial design",
+        "es": "Líder del grupo, con José Adriano Filho; identidad visual y diseño editorial"
       }
     },
     {
       "k": {
         "pt": "Cliente",
-        "en": "Client"
+        "en": "Client",
+        "es": "Cliente"
       },
       "v": {
         "pt": "Observatório de Universos Bíblicos",
@@ -34,32 +39,38 @@
     {
       "k": {
         "pt": "Via",
-        "en": "Via"
+        "en": "Via",
+        "es": "Vía"
       },
       "v": {
         "pt": "Atuação como pesquisador",
-        "en": "Work as a researcher"
+        "en": "Work as a researcher",
+        "es": "Trabajo como investigador"
       }
     },
     {
       "k": {
         "pt": "Ano",
-        "en": "Year"
+        "en": "Year",
+        "es": "Año"
       },
       "v": {
         "pt": "2025–atual",
-        "en": "2025–present"
+        "en": "2025–present",
+        "es": "2025–actualidad"
       }
     }
   ],
   "hero": "/img/cases/observatorio/00-abertura-logo.webp",
   "hero_alt": {
     "pt": "Marca do Observatório de Universos Bíblicos sobre fundo branco: um livro aberto em laranja sob órbitas, uma estrela e dois planetas.",
-    "en": "The Observatório de Universos Bíblicos brand on white: an open orange book under orbits, a star and two planets."
+    "en": "The Observatório de Universos Bíblicos brand on white: an open orange book under orbits, a star and two planets.",
+    "es": "Marca del Observatório de Universos Bíblicos sobre fondo blanco: un libro abierto en naranja bajo órbitas, una estrella y dos planetas."
   },
   "context": {
     "pt": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e sócio-epistêmicas.",
-    "en": "The group studies religious phenomena, practices and productions from the contexts in which biblical texts were written and received, along three lines: material and visual, social and literary, and socio-epistemic mediations."
+    "en": "The group studies religious phenomena, practices and productions from the contexts in which biblical texts were written and received, along three lines: material and visual, social and literary, and socio-epistemic mediations.",
+    "es": "El grupo estudia fenómenos, prácticas y producciones religiosas de los contextos en que los textos bíblicos fueron escritos y recibidos, en tres frentes: mediaciones materiales y visuales, sociales y literarias, y socioepistémicas."
   },
   "problem": {
     "pt": "",
@@ -69,11 +80,13 @@
     {
       "title": {
         "pt": "Um livro aberto sob as órbitas",
-        "en": "An open book under the orbits"
+        "en": "An open book under the orbits",
+        "es": "Un libro abierto bajo las órbitas"
       },
       "text": {
         "pt": "Adotando a premissa de ser uma plataforma de observação do contexto no qual os textos bíblicos foram produzidos, o símbolo evoca a ideia de um planetário de observação dos “universos bíblicos”. Assim, da Bíblia, órbitas se formam e astros e planetas surgem, representando visualmente o enfoque do grupo.",
-        "en": "Taking up the premise of a platform for observing the context in which the biblical texts were produced, the symbol evokes a planetarium for observing the “biblical universes”. From the Bible, orbits form and stars and planets appear, a visual image of the group’s focus."
+        "en": "Taking up the premise of a platform for observing the context in which the biblical texts were produced, the symbol evokes a planetarium for observing the “biblical universes”. From the Bible, orbits form and stars and planets appear, a visual image of the group’s focus.",
+        "es": "Con la premisa de ser una plataforma de observación del contexto en el que se produjeron los textos bíblicos, el símbolo evoca la idea de un planetario para observar los “universos bíblicos”. Así, de la Biblia se forman órbitas y surgen astros y planetas, que representan visualmente el enfoque del grupo."
       },
       "wide": false,
       "images": [
@@ -82,7 +95,8 @@
           "span": 12,
           "caption": {
             "pt": "Marca do grupo.",
-            "en": "The group’s brand."
+            "en": "The group’s brand.",
+            "es": "Marca del grupo."
           },
           "plate": false
         },
@@ -91,7 +105,8 @@
           "span": 12,
           "caption": {
             "pt": "Prospecto: marca, apresentação, focos de pesquisa e contato.",
-            "en": "Brochure: brand, introduction, research foci and contact."
+            "en": "Brochure: brand, introduction, research foci and contact.",
+            "es": "Folleto: marca, presentación, líneas de investigación y contacto."
           },
           "plate": false
         }
@@ -100,11 +115,13 @@
     {
       "title": {
         "pt": "Um template para as palestras",
-        "en": "A template for lectures"
+        "en": "A template for lectures",
+        "es": "Una plantilla para las conferencias"
       },
       "text": {
         "pt": "Capa de cor forte, divisórias numeradas por seção e páginas internas com espaço para imagens grandes e citações. Na palestra “As ferramentas e seus humanos”, sobre as iconografias da Escola de Friburgo, ele organiza 61 telas.",
-        "en": "A strongly coloured cover, numbered section dividers and inner pages with room for large images and quotations. In the lecture “As ferramentas e seus humanos”, on the iconographies of the Fribourg School, it organises 61 slides."
+        "en": "A strongly coloured cover, numbered section dividers and inner pages with room for large images and quotations. In the lecture “As ferramentas e seus humanos”, on the iconographies of the Fribourg School, it organises 61 slides.",
+        "es": "Portada de color intenso, separadores numerados por sección y páginas internas con espacio para imágenes grandes y citas. En la conferencia “As ferramentas e seus humanos”, sobre las iconografías de la Escuela de Friburgo, organiza 61 pantallas."
       },
       "wide": false,
       "images": [
@@ -113,7 +130,8 @@
           "span": 12,
           "caption": {
             "pt": "A palestra “As ferramentas e seus humanos”, 2026. A capa e telas internas.",
-            "en": "The lecture “As ferramentas e seus humanos”, 2026. The cover and inner slides."
+            "en": "The lecture “As ferramentas e seus humanos”, 2026. The cover and inner slides.",
+            "es": "La conferencia “As ferramentas e seus humanos”, 2026. La portada y pantallas internas."
           },
           "plate": false
         },
@@ -122,7 +140,8 @@
           "span": 12,
           "caption": {
             "pt": "Telas internas da palestra.",
-            "en": "Inner slides of the lecture."
+            "en": "Inner slides of the lecture.",
+            "es": "Pantallas internas de la conferencia."
           },
           "plate": false
         }
@@ -131,11 +150,13 @@
     {
       "title": {
         "pt": "O site do grupo",
-        "en": "The group’s website"
+        "en": "The group’s website",
+        "es": "El sitio web del grupo"
       },
       "text": {
         "pt": "O site universosbiblicos.org compõe a faceta institucional do grupo, reunindo sua descrição, focos de pesquisa, membros, eventos e agenda, em português e inglês.",
-        "en": "The website universosbiblicos.org is the group’s institutional face, bringing together its description, research foci, members, events and calendar, in Portuguese and English."
+        "en": "The website universosbiblicos.org is the group’s institutional face, bringing together its description, research foci, members, events and calendar, in Portuguese and English.",
+        "es": "El sitio universosbiblicos.org conforma la faceta institucional del grupo y reúne su descripción, líneas de investigación, miembros, eventos y agenda, en portugués e inglés."
       },
       "wide": true,
       "images": [
@@ -144,7 +165,8 @@
           "span": 12,
           "caption": {
             "pt": "universosbiblicos.org. A abertura do site.",
-            "en": "universosbiblicos.org. The opening of the site."
+            "en": "universosbiblicos.org. The opening of the site.",
+            "es": "universosbiblicos.org. La página de inicio del sitio."
           },
           "plate": false
         }
@@ -153,11 +175,13 @@
     {
       "title": {
         "pt": "Agenda e publicações",
-        "en": "Calendar and publications"
+        "en": "Calendar and publications",
+        "es": "Agenda y publicaciones"
       },
       "text": {
         "pt": "Posts com a mesma diagonal e as cores da marca anunciam a agenda do semestre e as novas publicações dos membros do grupo.",
-        "en": "Posts with the same diagonal and the brand colours announce the semester’s calendar and new publications by group members."
+        "en": "Posts with the same diagonal and the brand colours announce the semester’s calendar and new publications by group members.",
+        "es": "Piezas para redes sociales, con la misma diagonal y los colores de la marca, anuncian la agenda del semestre y las nuevas publicaciones de los miembros del grupo."
       },
       "wide": true,
       "images": [
@@ -166,7 +190,8 @@
           "span": 12,
           "caption": {
             "pt": "Agenda 2026/2 e três posts de nova publicação.",
-            "en": "Calendar 2026/2 and three new-publication posts."
+            "en": "Calendar 2026/2 and three new-publication posts.",
+            "es": "Agenda 2026/2 y tres piezas de nueva publicación."
           },
           "plate": false
         }
@@ -175,11 +200,13 @@
     {
       "title": {
         "pt": "Eventos internacionais",
-        "en": "International events"
+        "en": "International events",
+        "es": "Eventos internacionales"
       },
       "text": {
         "pt": "Para a III International Summer School “Iconography of the Ancient World”, em Vitória, fiz o carrossel de divulgação e o folder. Para o simpósio “The Zodiac and Religious Conceptions of Time”, o cartaz e o folder.",
-        "en": "For the III International Summer School “Iconography of the Ancient World” in Vitória, I made the promotional carousel and the folder. For the symposium “The Zodiac and Religious Conceptions of Time”, the poster and the folder."
+        "en": "For the III International Summer School “Iconography of the Ancient World” in Vitória, I made the promotional carousel and the folder. For the symposium “The Zodiac and Religious Conceptions of Time”, the poster and the folder.",
+        "es": "Para la III International Summer School “Iconography of the Ancient World”, en Vitória, hice el carrusel de difusión y el folleto. Para el simposio “The Zodiac and Religious Conceptions of Time”, el cartel y el folleto."
       },
       "wide": true,
       "images": [
@@ -188,7 +215,8 @@
           "span": 12,
           "caption": {
             "pt": "Carrossel da escola de verão: abertura, proposta, escopo, palestrantes, conselho científico e inscrições.",
-            "en": "Summer school carousel: opening, aims, scope, speakers, scientific board and registration."
+            "en": "Summer school carousel: opening, aims, scope, speakers, scientific board and registration.",
+            "es": "Carrusel de la escuela de verano: apertura, propuesta, alcance, ponentes, consejo científico e inscripciones."
           },
           "plate": false
         },
@@ -197,7 +225,8 @@
           "span": 12,
           "caption": {
             "pt": "Folder da escola de verão: capa, programa, palestrantes e parceiros.",
-            "en": "Summer school folder: cover, programme, speakers and partners."
+            "en": "Summer school folder: cover, programme, speakers and partners.",
+            "es": "Folleto de la escuela de verano: portada, programa, ponentes e instituciones asociadas."
           },
           "plate": false
         },
@@ -206,7 +235,8 @@
           "span": 12,
           "caption": {
             "pt": "Folder do simpósio sobre o zodíaco, junho de 2026: capa e programa.",
-            "en": "Folder for the zodiac symposium, June 2026: cover and programme."
+            "en": "Folder for the zodiac symposium, June 2026: cover and programme.",
+            "es": "Folleto del simposio sobre el zodíaco, junio de 2026: portada y programa."
           },
           "plate": false
         }

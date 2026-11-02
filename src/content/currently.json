@@ -3,7 +3,8 @@
     {
       "kicker": {
         "en": "Research platform · 2024–",
-        "pt": "Plataforma de pesquisa · 2024–"
+        "pt": "Plataforma de pesquisa · 2024–",
+        "es": "Plataforma de investigación · 2024–"
       },
       "title": {
         "en": "Observatório de Universos Bíblicos",
@@ -11,7 +12,8 @@
       },
       "text": {
         "en": "The group I founded and co-lead at FUV’s graduate program: it brings together research on the inscriptions, images, objects, literatures and rites of the biblical worlds.",
-        "pt": "O grupo que fundei e colidero no PPG da FUV: reúne pesquisas sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos."
+        "pt": "O grupo que fundei e colidero no PPG da FUV: reúne pesquisas sobre inscrições, imagens, objetos, literaturas e ritos dos universos bíblicos.",
+        "es": "El grupo que fundé y codirijo en el Programa de Posgrado de la FUV: reúne investigaciones sobre las inscripciones, imágenes, objetos, literaturas y ritos de los universos bíblicos."
       },
       "href": "https://universosbiblicos.org",
       "icon": "oub"
@@ -19,15 +21,18 @@
     {
       "kicker": {
         "en": "Research project · 2025–",
-        "pt": "Projeto de pesquisa · 2025–"
+        "pt": "Projeto de pesquisa · 2025–",
+        "es": "Proyecto de investigación · 2025–"
       },
       "title": {
         "en": "Borderline Divine Manifestations",
-        "pt": "Manifestações limítrofes do divino"
+        "pt": "Manifestações limítrofes do divino",
+        "es": "Manifestaciones limítrofes de lo divino"
       },
       "text": {
         "en": "Where human, animal and divine blur: hybrid beings and image-text media in the southern Levant.",
-        "pt": "Onde humano, animal e divino se confundem: seres híbridos e mídias de imagem e texto no Levante meridional."
+        "pt": "Onde humano, animal e divino se confundem: seres híbridos e mídias de imagem e texto no Levante meridional.",
+        "es": "Donde lo humano, lo animal y lo divino se confunden: seres híbridos y medios que combinan imagen y texto en el Levante meridional."
       },
       "href": "/research/borderline-divine-manifestations",
       "icon": "image"
@@ -35,7 +40,8 @@
     {
       "kicker": {
         "en": "Educational project · 2024–",
-        "pt": "Projeto educacional · 2024–"
+        "pt": "Projeto educacional · 2024–",
+        "es": "Proyecto educativo · 2024–"
       },
       "title": {
         "en": "International Summer School: Iconography of the Ancient World",
@@ -43,7 +49,8 @@
       },
       "text": {
         "en": "An itinerant school of visual methods for MA and PhD students and early-career researchers: Wuppertal, Vitória and, in 2027, Prague.",
-        "pt": "Uma escola itinerante de métodos visuais para mestrado, doutorado e início de carreira: Wuppertal, Vitória e, em 2027, Praga."
+        "pt": "Uma escola itinerante de métodos visuais para mestrado, doutorado e início de carreira: Wuppertal, Vitória e, em 2027, Praga.",
+        "es": "Una escuela itinerante de métodos visuales para maestría, doctorado y quienes inician su carrera de investigación: Wuppertal, Vitória y, en 2027, Praga."
       },
       "href": "/research/summer-school-iconography",
       "icon": "sun"

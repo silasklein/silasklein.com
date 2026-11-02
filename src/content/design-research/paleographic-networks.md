@@ -10,6 +10,7 @@ title:
 text:
   en: "Photography, scientific illustration and information design for the SNSF SPARK project (Bern), 2024."
   pt: "Fotografia, ilustração científica e design de informação para o projeto SNSF SPARK (Berna), 2024."
+  es: Fotografía, ilustración científica y diseño de información para el proyecto SNSF SPARK (Berna), 2024.
 client: "Projeto SNSF SPARK Paleographic Networks (221210)"
 role:
   en: "Illustration, photography and information design"

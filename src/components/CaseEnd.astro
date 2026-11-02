@@ -3,7 +3,7 @@
 // The three are drawn at random on each visit — from the other division first, then from the same one —
 // so the cases keep pointing across research and art direction. Without JavaScript, the first three by
 // tags in common show instead. The pager goes in the slot.
-import { cases, researchCases, tagLabel, type Lang } from '../data/content';
+import { cases, researchCases, tagLabel, t, type Lang } from '../data/content';
 import { href, asset } from '../lib/format';
 interface Props { lang: Lang; slug: string; tags: string[]; research: boolean }
 const { lang, slug, tags, research } = Astro.props;
@@ -19,10 +19,10 @@ const related = pool
   .filter((x) => x.shared > 0)
   .sort((a, b) => Number(b.other) - Number(a.other) || b.shared - a.shared || a.n - b.n);
 ---
-<section class="cs__end" aria-label={pt ? 'Habilidades e cases relacionados' : 'Skills and related cases'}>
-  {tags.length > 0 && <div class="cs__eg"><h2 class="cs__ek">{pt ? 'Habilidades' : 'Skills'}</h2><div class="cs__comp">{tags.map((s) => <span>{tagLabel(s, lang)}</span>)}</div></div>}
+<section class="cs__end" aria-label={t({ pt: 'Habilidades e cases relacionados', en: 'Skills and related cases', es: 'Habilidades y casos relacionados' }, lang)}>
+  {tags.length > 0 && <div class="cs__eg"><h2 class="cs__ek">{t({ pt: 'Habilidades', en: 'Skills', es: 'Habilidades' }, lang)}</h2><div class="cs__comp">{tags.map((s) => <span>{tagLabel(s, lang)}</span>)}</div></div>}
   {related.length > 0 && (
-    <div class="cs__eg"><h2 class="cs__ek">{pt ? 'A mesma competência em outros cases' : 'The same skills in other cases'}</h2>
+    <div class="cs__eg"><h2 class="cs__ek">{t({ pt: 'A mesma competência em outros cases', en: 'The same skills in other cases', es: 'La misma competencia en otros casos' }, lang)}</h2>
       <div class="cs__rel" data-rel>
         {related.map((r, i) => (
           <a href={href(`/design/${r.slug}`, lang)} aria-label={r.title} data-other={r.other ? '1' : '0'} hidden={i >= 3}>

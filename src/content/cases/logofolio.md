@@ -7,6 +7,7 @@ year: "2013–2020"
 text:
   en: "One of my first and most cherished design activities is designing brands. Here you see some of the results of my long term fascination with this type of work."
   pt: "Desenhar marcas é uma das minhas primeiras e mais queridas atividades de design. Aqui estão alguns resultados desse fascínio de longa data."
+  es: Crear marcas es una de mis primeras y más queridas actividades como diseñador. Aquí hay algunos resultados de esa larga fascinación.
 gallery:
   - "/img/cases/logofolio/01.webp"
   - "/img/cases/logofolio/02.webp"

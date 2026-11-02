@@ -17,7 +17,7 @@ const prev = withPages[i - 1], next = withPages[i + 1];
     <Label n={sections.research.n} text={t(sections.research.label, lang)} />
     <h1 class="h2" set:html={sig(t(p.title, lang))} />
     <dl class="meta">
-      <dt>{lang === 'pt' ? 'Período' : 'Period'}</dt><dd>{yrs(p.years, lang)}</dd>
+      <dt>{t({ pt: 'Período', en: 'Period', es: 'Período' }, lang)}</dt><dd>{yrs(p.years, lang)}</dd>
       <dt>{t(ui.role, lang)}</dt><dd><RolePlace project={p} lang={lang} /></dd>
       {p.funding && <><dt>{t(ui.funding, lang)}</dt><dd>{p.funding}</dd></>}
       {p.team && <><dt>{t(ui.team, lang)}</dt><dd>{t(p.team, lang)}</dd></>}

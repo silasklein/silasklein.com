@@ -13,7 +13,7 @@ import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: ResearchCase }
 const { lang, item: c } = Astro.props;
 const pt = lang === 'pt';
-const division = pt ? 'Design para a pesquisa' : 'Design for research';
+const division = t({ pt: 'Design para a pesquisa', en: 'Design for research', es: 'Diseño para la investigación' }, lang);
 
 // Width and height of every image, read from the file so the layout never jumps.
 const size = new Map<string, { width: number; height: number }>();
@@ -48,11 +48,11 @@ const next = researchCases[(i + 1) % researchCases.length];
       </div>
       {(context || problem) && (
         <div class:list={['cs__cp', { 'cs__cp--cols': context && !problem && context.length > 450 }]}>
-          {context && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Contexto' : 'Context'}</span><p><Rich text={context} /></p></div>}
-          {problem && <div class="cs__cpc"><span class="cs__cpk">{c.problem_label && t(c.problem_label, lang) ? t(c.problem_label, lang) : pt ? 'Problema' : 'Problem'}</span><p><Rich text={problem} /></p></div>}
+          {context && <div class="cs__cpc"><span class="cs__cpk">{t({ pt: 'Contexto', en: 'Context', es: 'Contexto' }, lang)}</span><p><Rich text={context} /></p></div>}
+          {problem && <div class="cs__cpc"><span class="cs__cpk">{c.problem_label && t(c.problem_label, lang) ? t(c.problem_label, lang) : t({ pt: 'Problema', en: 'Problem', es: 'Problema' }, lang)}</span><p><Rich text={problem} /></p></div>}
         </div>
       )}
-      <h2 class="cs__h">{pt ? 'O que fiz' : 'What I did'}</h2>
+      <h2 class="cs__h">{t({ pt: 'O que fiz', en: 'What I did', es: 'Lo que hice' }, lang)}</h2>
       <div class="cs__decs">
         {c.decisions.map((d) => {
           const imgs = d.images ?? [];
@@ -91,9 +91,9 @@ const next = researchCases[(i + 1) % researchCases.length];
       </div>
 
       <CaseEnd lang={lang} slug={c.slug} tags={c.tags} research={true}>
-        <nav class="cs__pager" aria-label={pt ? `Outros cases de ${division}` : `Other ${division} cases`}>
-          <a href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span><small>{pt ? 'Anterior' : 'Previous'}</small>{prev.title}</span></a>
-          <a href={href(`/design/${next.slug}`, lang)} class="cs__next"><span><small>{pt ? 'Próximo' : 'Next'}</small>{next.title}</span><Px name="arrowRight" /></a>
+        <nav class="cs__pager" aria-label={t({ pt: `Outros cases de ${division}`, en: `Other ${division} cases`, es: `Otros casos de ${division}` }, lang)}>
+          <a href={href(`/design/${prev.slug}`, lang)}><Px name="arrowRight" class="flip" /><span><small>{t({ pt: 'Anterior', en: 'Previous', es: 'Anterior' }, lang)}</small>{prev.title}</span></a>
+          <a href={href(`/design/${next.slug}`, lang)} class="cs__next"><span><small>{t({ pt: 'Próximo', en: 'Next', es: 'Siguiente' }, lang)}</small>{next.title}</span><Px name="arrowRight" /></a>
         </nav>
       </CaseEnd>
     </div>

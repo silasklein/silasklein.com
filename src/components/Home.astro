@@ -18,16 +18,18 @@ const current = projects.filter((p) => p.featured);
 const past = projects.filter((p) => !p.featured);
 const pt = lang === 'pt';
 const clientList = clients
-  .map((c) => ({ ...c, label: !pt && c.name_en ? c.name_en : c.name }))
+  .map((c) => ({ ...c, label: lang === 'pt' ? c.name : lang === 'es' ? c.name_es ?? c.name_en ?? c.name : c.name_en ?? c.name }))
   .sort((a, b) => a.label.localeCompare(b.label, lang));
 ---
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap">
     <p class="hero__hello" data-reveal>{t(ui.hello, lang)}</p>
-    <h1 class:list={['hero__title', { 'hero__title--pt': pt }]} data-reveal>
-      {pt
+    <h1 class:list={['hero__title', { 'hero__title--pt': lang !== 'en' }]} data-reveal>
+      {lang === 'pt'
         ? <><span class="hero__line">Religião<span class="bs">\</span>ões <span class="hero__paren">(antigas)</span>,</span> <span class="hero__line">Mídia <span class="amp">&amp;</span> Imagens</span></>
+        : lang === 'es'
+        ? <><span class="hero__line">Religión<span class="bs">\</span>es <span class="hero__paren">(antiguas)</span>,</span> <span class="hero__line">Medios <span class="amp">&amp;</span> Imágenes</span></>
         : <><span class="hero__line"><span class="hero__paren">(Ancient)</span> Religion<span class="bs">\</span>s,</span> <span class="hero__line">Media <span class="amp">&amp;</span> Images</span></>}
     </h1>
     <div class="hero__grid">
@@ -68,7 +70,7 @@ const clientList = clients
         <img src={asset('/img/portrait-scholar.webp')} alt="Silas Klein" width="600" height="600" loading="lazy" decoding="async" />
         <figcaption class="ab__caption">
           <button class="act" data-copy="#bio" data-done={t(ui.copied, lang)}><Px name="copy" /><span aria-live="polite">{t(ui.copy, lang)} bio</span></button>
-          <a class="act" href={asset('/img/portrait-scholar-full.jpg')} download="silas-klein-cardoso.jpg"><Px name="download" /><span>{pt ? 'Baixar foto' : 'Download photo'}</span></a>
+          <a class="act" href={asset('/img/portrait-scholar-full.jpg')} download="silas-klein-cardoso.jpg"><Px name="download" /><span>{t({ pt: 'Baixar foto', en: 'Download photo', es: 'Descargar foto' }, lang)}</span></a>
         </figcaption>
       </figure>
     </div>
@@ -93,7 +95,7 @@ const clientList = clients
         </li>
       ))}
     </ul>
-    <p class="more-link"><a class="act" href={href('/news', lang)}><Px name="news" /><span>{pt ? 'Ler as notícias no blog' : 'Read the news on the blog'}</span></a></p>
+    <p class="more-link"><a class="act" href={href('/news', lang)}><Px name="news" /><span>{t({ pt: 'Ler as notícias no blog', en: 'Read the news on the blog', es: 'Leer las noticias en el blog' }, lang)}</span></a></p>
   </div>
 </section>
 
@@ -116,10 +118,10 @@ const clientList = clients
         </div>
       ))}
     </div>
-    <h3 class="h3"><Px name="star" />{pt ? 'Prêmios e títulos' : 'Awards & distinctions'}</h3>
+    <h3 class="h3"><Px name="star" />{t({ pt: 'Prêmios e títulos', en: 'Awards & distinctions', es: 'Premios y títulos' }, lang)}</h3>
     <ul class="recog">{recognition.map((r) => (<li data-reveal>{t(r, lang)}</li>))}</ul>
     <details class="more">
-      <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><span>{pt ? 'Outros projetos' : 'Other projects'} ({past.length})</span></summary>
+      <summary><Px name="plus" class="more__open" /><Px name="minus" class="more__close" /><span>{t({ pt: 'Outros projetos', en: 'Other projects', es: 'Otros proyectos' }, lang)} ({past.length})</span></summary>
       <ul class="rows-k">
         {past.map((p) => (
           <li>
@@ -145,7 +147,7 @@ const clientList = clients
   <div class="wrap">
     <Label n={S.publications.n} text={t(S.publications.label, lang)} />
     <h2 class="display" data-reveal set:html={sig(t(S.publications.title, lang))} />
-    <h3 class="h3"><Px name="books" />{pt ? 'Livros' : 'Books'}</h3>
+    <h3 class="h3"><Px name="books" />{t({ pt: 'Livros', en: 'Books', es: 'Libros' }, lang)}</h3>
     <ul class="books">
       {books.map((b) => (
         <li class="book" data-reveal>
@@ -154,14 +156,14 @@ const clientList = clients
             <a class="book__t" href={b.href} target="_blank" rel="noopener">{b.title}</a>
             <span class="book__m">{t(b.meta, lang)}</span>
             <span class="book__acts">
-              <a class="act" href={b.href} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>{pt ? 'Editora' : 'Publisher'}</span></a>
+              <a class="act" href={b.href} target="_blank" rel="noopener"><Px name="arrowUpRight" /><span>{t({ pt: 'Editora', en: 'Publisher', es: 'Editorial' }, lang)}</span></a>
               {b.pdf && <a class="act" href={b.pdf} target="_blank" rel="noopener"><Px name="download" /><span>PDF</span></a>}
             </span>
           </div>
         </li>
       ))}
     </ul>
-    <h3 class="h3"><Px name="news" />{pt ? 'Artigos e capítulos selecionados' : 'Selected articles & chapters'}</h3>
+    <h3 class="h3"><Px name="news" />{t({ pt: 'Artigos e capítulos selecionados', en: 'Selected articles & chapters', es: 'Artículos y capítulos seleccionados' }, lang)}</h3>
     <ul class="pubs">
       {selected.map((p) => (
         <li data-reveal>
@@ -175,7 +177,7 @@ const clientList = clients
       ))}
     </ul>
     <p class="links links--full" data-reveal>
-      <a class="act" href={href('/publications', lang)}><Px name="arrowRight" /><span>{pt ? 'Ver a lista completa de publicações' : 'See the full list of publications'}</span></a>
+      <a class="act" href={href('/publications', lang)}><Px name="arrowRight" /><span>{t({ pt: 'Ver a lista completa de publicações', en: 'See the full list of publications', es: 'Ver la lista completa de publicaciones' }, lang)}</span></a>
     </p>
   </div>
 </section>
@@ -260,7 +262,7 @@ const clientList = clients
   <div class="dfr-band">
   <div class="wrap">
     <div class="dfr">
-      <h2 class="display display--sm" data-reveal>{pt ? 'Design para a pesquisa' : 'Design for research'}</h2>
+      <h2 class="display display--sm" data-reveal>{t({ pt: 'Design para a pesquisa', en: 'Design for research', es: 'Diseño para la investigación' }, lang)}</h2>
       <ul class="rows-k rows-k--top dfr__list">
         {/* The case pages exist in Portuguese only for now: links in PT; in EN, items without English text are left out. */}
         {designForResearch.filter((d) => t(d.text, lang)).map((d) => (<li data-reveal>{d.case

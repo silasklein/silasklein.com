@@ -4,27 +4,32 @@
   "title": "Paleographic Networks",
   "thesis": {
     "pt": "Fotografia, ilustração científica e design de informação",
-    "en": "Photography, scientific illustration and information design"
+    "en": "Photography, scientific illustration and information design",
+    "es": "Fotografía, ilustración científica y diseño de información"
   },
   "lead": {
     "pt": "Como parte de minhas atribuições no projeto, fotografei as impressões dos selos e, a partir delas, fiz ilustrações científicas das letras do hebraico antigo que servem de base a um novo método de datação paleográfica, com um sistema de fichas que descreve cada letra parte por parte.",
-    "en": "As part of my duties in the project, I photographed the seal impressions and, from them, made scientific illustrations of the ancient Hebrew letters that underpin a new method of paleographic dating, with a card system that describes each letter part by part."
+    "en": "As part of my duties in the project, I photographed the seal impressions and, from them, made scientific illustrations of the ancient Hebrew letters that underpin a new method of paleographic dating, with a card system that describes each letter part by part.",
+    "es": "Como parte de mis tareas en el proyecto, fotografié las impresiones de los sellos y, a partir de ellas, hice ilustraciones científicas de las letras del hebreo antiguo que sirven de base a un nuevo método de datación paleográfica, con un sistema de fichas que describe cada letra parte por parte."
   },
   "meta": [
     {
       "k": {
         "pt": "Papel",
-        "en": "Role"
+        "en": "Role",
+        "es": "Función"
       },
       "v": {
         "pt": "Pesquisador do projeto; fotografia, ilustração e design de informação",
-        "en": "Project researcher; photography, illustration and information design"
+        "en": "Project researcher; photography, illustration and information design",
+        "es": "Investigador del proyecto; fotografía, ilustración y diseño de información"
       }
     },
     {
       "k": {
         "pt": "Cliente",
-        "en": "Client"
+        "en": "Client",
+        "es": "Cliente"
       },
       "v": {
         "pt": "Paleographic Networks",
@@ -34,17 +39,20 @@
     {
       "k": {
         "pt": "Via",
-        "en": "Via"
+        "en": "Via",
+        "es": "Vía"
       },
       "v": {
         "pt": "Projeto da Universidade de Berna",
-        "en": "University of Bern project"
+        "en": "University of Bern project",
+        "es": "Proyecto de la Universidad de Berna"
       }
     },
     {
       "k": {
         "pt": "Ano",
-        "en": "Year"
+        "en": "Year",
+        "es": "Año"
       },
       "v": {
         "pt": "2024",
@@ -55,25 +63,30 @@
   "hero": "/img/cases/paleonet/02-alfabeto.webp",
   "hero_alt": {
     "pt": "O alfabeto do corpus. Letras desenhadas a partir das impressões dos selos, uma por letra, de alef a tav, da direita para a esquerda, como se lê o paleo-hebraico.",
-    "en": "The alphabet of the corpus. Letters drawn from the seal impressions, one per letter, from aleph to taw, right to left, as Paleo-Hebrew is read."
+    "en": "The alphabet of the corpus. Letters drawn from the seal impressions, one per letter, from aleph to taw, right to left, as Paleo-Hebrew is read.",
+    "es": "El alfabeto del corpus. Letras dibujadas a partir de las impresiones de los sellos, una por letra, de álef a tav, de derecha a izquierda, como se lee el paleohebreo."
   },
   "context": {
     "pt": "Um projeto SPARK da Swiss National Science Foundation (SNSF), idealizado e coordenado por Eythan Levy. O projeto testava uma abordagem em rede para datar automaticamente a escrita paleo-hebraica dos selos dos séculos VIII a VI a.C.",
-    "en": "A SPARK project of the Swiss National Science Foundation (SNSF), conceived and led by Eythan Levy. It tested a network approach to dating the Paleo-Hebrew script of 8th- to 6th-century BCE seals automatically."
+    "en": "A SPARK project of the Swiss National Science Foundation (SNSF), conceived and led by Eythan Levy. It tested a network approach to dating the Paleo-Hebrew script of 8th- to 6th-century BCE seals automatically.",
+    "es": "Un proyecto SPARK de la Swiss National Science Foundation (SNSF), concebido y coordinado por Eythan Levy. El proyecto ponía a prueba un enfoque de redes para datar automáticamente la escritura paleohebrea de los sellos de los siglos VIII a VI a. C."
   },
   "problem": {
     "pt": "A análise paleográfica da glíptica hebraica antiga precisava de novas fotografias e ilustrações; o método computadorizado, de um novo sistema de descrição científica.",
-    "en": "The paleographic analysis of ancient Hebrew glyptic needed new photographs and illustrations; the computational method needed a new system of scientific description."
+    "en": "The paleographic analysis of ancient Hebrew glyptic needed new photographs and illustrations; the computational method needed a new system of scientific description.",
+    "es": "El análisis paleográfico de la glíptica hebrea antigua necesitaba nuevas fotografías e ilustraciones; el método computacional, un nuevo sistema de descripción científica."
   },
   "decisions": [
     {
       "title": {
         "pt": "Fotografar o arquivo",
-        "en": "Photographing the archive"
+        "en": "Photographing the archive",
+        "es": "Fotografiar el archivo"
       },
       "text": {
         "pt": "Fotografei as impressões de selos com procedência da coleção Avigad/Sass, doada por Benjamin Sass e hoje em Berna, num set montado para isso, com luz lateral que faz o relevo das letras aparecer. As fotos entraram na base do SSSL e viraram o material do Paleographic Networks.",
-        "en": "I photographed the provenanced seal impressions of the Avigad/Sass collection, donated by Benjamin Sass and now in Bern, on a set built for the purpose, with side lighting that brings out the relief of the letters. The photos went into the SSSL database and became the material of Paleographic Networks."
+        "en": "I photographed the provenanced seal impressions of the Avigad/Sass collection, donated by Benjamin Sass and now in Bern, on a set built for the purpose, with side lighting that brings out the relief of the letters. The photos went into the SSSL database and became the material of Paleographic Networks.",
+        "es": "Fotografié las impresiones de sellos con procedencia de la colección Avigad/Sass, donada por Benjamin Sass y hoy en Berna, en un set montado para ello, con luz lateral que hace aparecer el relieve de las letras. Las fotos ingresaron a la base del SSSL y se convirtieron en el material de Paleographic Networks."
       },
       "wide": false,
       "images": [
@@ -82,7 +95,8 @@
           "span": 12,
           "caption": {
             "pt": "O arquivo. Impressões modernas da coleção Avigad/Sass, guardadas com suas fichas.",
-            "en": "The archive. Modern impressions from the Avigad/Sass collection, kept with their cards."
+            "en": "The archive. Modern impressions from the Avigad/Sass collection, kept with their cards.",
+            "es": "El archivo. Impresiones modernas de la colección Avigad/Sass, guardadas con sus fichas."
           },
           "plate": false
         },
@@ -91,7 +105,8 @@
           "span": 6,
           "caption": {
             "pt": "O set de fotografia. Câmera em coluna e duas luzes laterais.",
-            "en": "The photography set. Column-mounted camera and two side lights."
+            "en": "The photography set. Column-mounted camera and two side lights.",
+            "es": "El set de fotografía. Cámara en columna y dos luces laterales."
           },
           "plate": false
         },
@@ -100,7 +115,8 @@
           "span": 6,
           "caption": {
             "pt": "Impressões separadas para fotografar.",
-            "en": "Impressions set aside for photography."
+            "en": "Impressions set aside for photography.",
+            "es": "Impresiones separadas para fotografiar."
           },
           "plate": false
         },
@@ -109,7 +125,8 @@
           "span": 4,
           "caption": {
             "pt": "Impressão com inscrição em dois registros.",
-            "en": "Impression with a two-register inscription."
+            "en": "Impression with a two-register inscription.",
+            "es": "Impresión con inscripción en dos registros."
           },
           "plate": false
         },
@@ -118,7 +135,8 @@
           "span": 4,
           "caption": {
             "pt": "Impressão com inscrição e figura.",
-            "en": "Impression with inscription and figure."
+            "en": "Impression with inscription and figure.",
+            "es": "Impresión con inscripción y figura."
           },
           "plate": false
         },
@@ -127,7 +145,8 @@
           "span": 4,
           "caption": {
             "pt": "Impressão com inscrição e figura.",
-            "en": "Impression with inscription and figure."
+            "en": "Impression with inscription and figure.",
+            "es": "Impresión con inscripción y figura."
           },
           "plate": false
         }
@@ -136,11 +155,13 @@
     {
       "title": {
         "pt": "Desenhar para comparar",
-        "en": "Drawing to compare"
+        "en": "Drawing to compare",
+        "es": "Dibujar para comparar"
       },
       "text": {
         "pt": "Redesenhei os principais tipos de letras a partir das fotografias, com um traço único e limpo, que permitisse comparação. Sem o ruído da pedra, duas grafias da mesma letra podem ser postas lado a lado e comparadas.",
-        "en": "I redrew the main letter types from the photographs in a single, clean line that allows comparison. Without the noise of the stone, two writings of the same letter can be set side by side and compared."
+        "en": "I redrew the main letter types from the photographs in a single, clean line that allows comparison. Without the noise of the stone, two writings of the same letter can be set side by side and compared.",
+        "es": "Redibujé los principales tipos de letras a partir de las fotografías, con un trazo único y limpio que permitiera la comparación. Sin el ruido de la piedra, dos grafías de la misma letra pueden ponerse una al lado de la otra y compararse."
       },
       "wide": false,
       "images": [
@@ -149,42 +170,48 @@
           "span": 12,
           "caption": {
             "pt": "Do selo à letra. A impressão fotografada e, ao lado, letras redesenhadas para a tipologia, da direita para a esquerda.",
-            "en": "From seal to letter. The photographed impression and, beside it, letters redrawn for the typology, right to left."
+            "en": "From seal to letter. The photographed impression and, beside it, letters redrawn for the typology, right to left.",
+            "es": "Del sello a la letra. La impresión fotografiada y, al lado, letras redibujadas para la tipología, de derecha a izquierda."
           },
           "plate": false
         }
       ],
       "figures_intro": {
         "pt": "Em junho de 2024, alcançamos a seguinte marca:",
-        "en": "By June 2024, we had reached:"
+        "en": "By June 2024, we had reached:",
+        "es": "En junio de 2024 alcanzamos estas cifras:"
       },
       "figures": [
         {
           "n": "307",
           "label": {
             "pt": "traços paleográficos na tipologia",
-            "en": "paleographic features in the typology"
+            "en": "paleographic features in the typology",
+            "es": "rasgos paleográficos en la tipología"
           }
         },
         {
           "n": "319",
           "label": {
             "pt": "objetos com procedência",
-            "en": "provenanced objects"
+            "en": "provenanced objects",
+            "es": "objetos con procedencia"
           }
         },
         {
           "n": "2.184",
           "label": {
             "pt": "grafias analisadas",
-            "en": "letter forms analysed"
+            "en": "letter forms analysed",
+            "es": "grafías analizadas"
           }
         },
         {
           "n": "186",
           "label": {
             "pt": "grafias desenhadas para a tipologia",
-            "en": "letter forms drawn for the typology"
+            "en": "letter forms drawn for the typology",
+            "es": "grafías dibujadas para la tipología"
           }
         }
       ]
@@ -192,11 +219,13 @@
     {
       "title": {
         "pt": "Particionando letras antigas",
-        "en": "Partitioning ancient letters"
+        "en": "Partitioning ancient letters",
+        "es": "Particionar letras antiguas"
       },
       "text": {
         "pt": "Com Eythan Levy, criei a tipologia e o método de divisão das letras, seguindo a literatura especializada. Com um vocabulário fixo para todo o corpus, a descrição vira dado.",
-        "en": "With Eythan Levy, I created the typology and the method for dividing the letters, following the specialist literature. With a fixed vocabulary for the whole corpus, description becomes data."
+        "en": "With Eythan Levy, I created the typology and the method for dividing the letters, following the specialist literature. With a fixed vocabulary for the whole corpus, description becomes data.",
+        "es": "Con Eythan Levy, creé la tipología y el método de división de las letras, siguiendo la literatura especializada. Con un vocabulario fijo para todo el corpus, la descripción se convierte en dato."
       },
       "wide": false,
       "images": [
@@ -205,7 +234,8 @@
           "span": 12,
           "caption": {
             "pt": "Modelo da tipologia. Cada parte da letra tem variantes nomeadas, desenhadas na mesma escala.",
-            "en": "Typology model. Each part of the letter has named variants, drawn at the same scale."
+            "en": "Typology model. Each part of the letter has named variants, drawn at the same scale.",
+            "es": "Modelo de la tipología. Cada parte de la letra tiene variantes con nombre, dibujadas a la misma escala."
           },
           "plate": false
         },
@@ -214,7 +244,8 @@
           "span": 6,
           "caption": {
             "pt": "Ficha 1039 Shin-1. O desenho e, embaixo, cada parte no vocabulário da tipologia.",
-            "en": "Card 1039 Shin-1. The drawing and, below, each part in the vocabulary of the typology."
+            "en": "Card 1039 Shin-1. The drawing and, below, each part in the vocabulary of the typology.",
+            "es": "Ficha 1039 Shin-1. El dibujo y, debajo, cada parte en el vocabulario de la tipología."
           },
           "plate": false
         },
@@ -223,7 +254,8 @@
           "span": 6,
           "caption": {
             "pt": "Ficha 1009 Beth-1. A mesma estrutura para cada grafia do corpus.",
-            "en": "Card 1009 Beth-1. The same structure for every letter form in the corpus."
+            "en": "Card 1009 Beth-1. The same structure for every letter form in the corpus.",
+            "es": "Ficha 1009 Beth-1. La misma estructura para cada grafía del corpus."
           },
           "plate": false
         }
@@ -232,11 +264,13 @@
     {
       "title": {
         "pt": "Da ficha ao grafo",
-        "en": "From card to graph"
+        "en": "From card to graph",
+        "es": "De la ficha al grafo"
       },
       "text": {
         "pt": "O modelo computacional de Eythan Levy leva então a descrição ao banco de dados: os elementos viram dados e, a partir de marcadores, a cronologia pode ser propagada para a datação.",
-        "en": "Eythan Levy’s computational model then carries the description into the database: the elements become data and, starting from anchor points, the chronology can be propagated for dating."
+        "en": "Eythan Levy’s computational model then carries the description into the database: the elements become data and, starting from anchor points, the chronology can be propagated for dating.",
+        "es": "El modelo computacional de Eythan Levy lleva entonces la descripción a la base de datos: los elementos se convierten en datos y, a partir de marcadores, la cronología puede propagarse para la datación."
       },
       "wide": false,
       "images": [
@@ -245,7 +279,8 @@
           "span": 12,
           "caption": {
             "pt": "Do desenho ao dado. Inscrição, grafia, traço paleográfico, letra e parte ligados no modelo da base.",
-            "en": "From drawing to data. Inscription, letter form, paleographic feature, letter and part linked in the database model."
+            "en": "From drawing to data. Inscription, letter form, paleographic feature, letter and part linked in the database model.",
+            "es": "Del dibujo al dato. Inscripción, grafía, rasgo paleográfico, letra y parte vinculados en el modelo de la base."
           },
           "plate": false
         },
@@ -254,7 +289,8 @@
           "span": 12,
           "caption": {
             "pt": "Rede paleográfica. Traços que aparecem juntos nas grafias de uma mesma letra.",
-            "en": "Paleographic network. Features that appear together in the forms of one letter."
+            "en": "Paleographic network. Features that appear together in the forms of one letter.",
+            "es": "Red paleográfica. Rasgos que aparecen juntos en las grafías de una misma letra."
           },
           "plate": false
         }
@@ -263,11 +299,13 @@
     {
       "title": {
         "pt": "As letras viram a marca",
-        "en": "The letters become the brand"
+        "en": "The letters become the brand",
+        "es": "Las letras se vuelven marca"
       },
       "text": {
         "pt": "O logo do projeto é composto com as próprias letras da tipologia: a identidade sai do material de pesquisa.",
-        "en": "The project logo is composed from the letters of the typology itself: the identity comes out of the research material."
+        "en": "The project logo is composed from the letters of the typology itself: the identity comes out of the research material.",
+        "es": "El logo del proyecto está compuesto con las propias letras de la tipología: la identidad sale del material de investigación."
       },
       "wide": false,
       "images": [
@@ -276,7 +314,8 @@
           "span": 12,
           "caption": {
             "pt": "Logo do Paleographic Networks.",
-            "en": "Paleographic Networks logo."
+            "en": "Paleographic Networks logo.",
+            "es": "Logo de Paleographic Networks."
           },
           "plate": false
         }
@@ -285,11 +324,13 @@
     {
       "title": {
         "pt": "Apresentar o projeto",
-        "en": "Presenting the project"
+        "en": "Presenting the project",
+        "es": "Presentar el proyecto"
       },
       "text": {
         "pt": "As apresentações do projeto usam o logo, o azul e as próprias letras da tipologia, das divisórias de seção às telas de análise.",
-        "en": "The project’s presentations use the logo, the blue and the letters of the typology themselves, from section dividers to analysis slides."
+        "en": "The project’s presentations use the logo, the blue and the letters of the typology themselves, from section dividers to analysis slides.",
+        "es": "Las presentaciones del proyecto usan el logo, el azul y las propias letras de la tipología, desde los separadores de sección hasta las pantallas de análisis."
       },
       "wide": false,
       "images": [
@@ -298,7 +339,8 @@
           "span": 12,
           "caption": {
             "pt": "Telas das apresentações do projeto.",
-            "en": "Slides from the project’s presentations."
+            "en": "Slides from the project’s presentations.",
+            "es": "Pantallas de las presentaciones del proyecto."
           },
           "plate": false
         },
@@ -307,7 +349,8 @@
           "span": 12,
           "caption": {
             "pt": "Flyer do encontro de 12 de junho de 2024, ao lado de uma ficha de letra.",
-            "en": "Flyer for the meeting of 12 June 2024, beside a letter card."
+            "en": "Flyer for the meeting of 12 June 2024, beside a letter card.",
+            "es": "Volante del encuentro del 12 de junio de 2024, junto a una ficha de letra."
           },
           "plate": false
         }

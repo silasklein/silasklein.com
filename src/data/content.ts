@@ -9,43 +9,51 @@ import outreachFile from '../content/outreach.json';
 import initiativesFile from '../content/initiatives.json';
 import talksFile from '../content/talks.json';
 
-export type Lang = 'en' | 'pt';
-export type L = { en: string; pt: string };
-export const t = (l: L, lang: Lang) => l[lang];
+export type Lang = 'en' | 'pt' | 'es';
+export type L = { en: string; pt: string; es?: string };
+// Spanish is the newest language: a text without its Spanish version shows the English one.
+export const t = (l: L, lang: Lang) => (lang === 'es' ? l.es || l.en : l[lang]);
+// The languages, in menu order: code, name in its own language, short code, and the tags each one uses.
+export const langs = [
+  { code: 'pt', name: 'Português', short: 'BR', hreflang: 'pt-BR', locale: 'pt_BR', date: 'pt-BR' },
+  { code: 'en', name: 'English', short: 'EN', hreflang: 'en', locale: 'en_US', date: 'en-GB' },
+  { code: 'es', name: 'Español', short: 'ES', hreflang: 'es', locale: 'es_LA', date: 'es' },
+] as const satisfies readonly { code: Lang; name: string; short: string; hreflang: string; locale: string; date: string }[];
+export const langInfo = (lang: Lang) => langs.find((x) => x.code === lang)!;
 
 const fm = <T,>(mods: Record<string, any>): T[] => Object.values(mods).map((m) => m.frontmatter as T);
 const byOrder = <T extends { order?: number }>(a: T, b: T) => (a.order ?? 0) - (b.order ?? 0);
 
 export const ui = {
   nav: {
-    currently: { en: 'Currently', pt: 'Agora' },
-    research: { en: 'Research', pt: 'Pesquisa' },
-    publications: { en: 'Publications', pt: 'Publicações' },
-    teaching: { en: 'Teaching', pt: 'Docência' },
-    initiatives: { en: 'Initiatives', pt: 'Iniciativas' },
-    design: { en: 'Design', pt: 'Design' },
-    about: { en: 'About', pt: 'Sobre' },
-    contact: { en: 'Contact', pt: 'Contato' },
+    currently: { en: 'Currently', pt: 'Agora', es: 'Ahora' },
+    research: { en: 'Research', pt: 'Pesquisa', es: 'Investigación' },
+    publications: { en: 'Publications', pt: 'Publicações', es: 'Publicaciones' },
+    teaching: { en: 'Teaching', pt: 'Docência', es: 'Docencia' },
+    initiatives: { en: 'Initiatives', pt: 'Iniciativas', es: 'Iniciativas' },
+    design: { en: 'Design', pt: 'Design', es: 'Diseño' },
+    about: { en: 'About', pt: 'Sobre', es: 'Sobre mí' },
+    contact: { en: 'Contact', pt: 'Contato', es: 'Contacto' },
   },
   hello: site.hello as L,
   subtitle: site.subtitle as L,
-  index: { en: 'What do you want to see?', pt: 'O que você quer ver?' },
-  seeAll: { en: 'See all', pt: 'Ver tudo' },
-  readMore: { en: 'Read more', pt: 'Saiba mais' },
-  back: { en: 'Back to home', pt: 'Voltar ao início' },
-  getInTouch: { en: 'Get in touch', pt: 'Fale comigo' },
-  exploreResearch: { en: 'Explore research', pt: 'Conheça a pesquisa' },
-  fullList: { en: 'Full list of publications', pt: 'Lista completa de publicações' },
-  role: { en: 'Role', pt: 'Papel' },
-  funding: { en: 'Funding', pt: 'Financiamento' },
-  partners: { en: 'Partners', pt: 'Parceiros' },
-  team: { en: 'Team', pt: 'Equipe' },
-  commissioner: { en: 'Commissioner', pt: 'Contratante' },
-  year: { en: 'Year', pt: 'Ano' },
-  copy: { en: 'Copy', pt: 'Copiar' },
-  copied: { en: 'Copied', pt: 'Copiado' },
-  rights: { en: 'All rights reserved.', pt: 'Todos os direitos reservados.' },
-  langName: { en: 'Português', pt: 'English' },
+  index: { en: 'What do you want to see?', pt: 'O que você quer ver?', es: '¿Por dónde empezar?' },
+  seeAll: { en: 'See all', pt: 'Ver tudo', es: 'Ver todo' },
+  readMore: { en: 'Read more', pt: 'Saiba mais', es: 'Más información' },
+  back: { en: 'Back to home', pt: 'Voltar ao início', es: 'Volver al inicio' },
+  getInTouch: { en: 'Get in touch', pt: 'Fale comigo', es: 'Hablemos' },
+  exploreResearch: { en: 'Explore research', pt: 'Conheça a pesquisa', es: 'Conocer la investigación' },
+  fullList: { en: 'Full list of publications', pt: 'Lista completa de publicações', es: 'Lista completa de publicaciones' },
+  role: { en: 'Role', pt: 'Papel', es: 'Función' },
+  funding: { en: 'Funding', pt: 'Financiamento', es: 'Financiamiento' },
+  partners: { en: 'Partners', pt: 'Parceiros', es: 'Instituciones asociadas' },
+  team: { en: 'Team', pt: 'Equipe', es: 'Equipo' },
+  commissioner: { en: 'Commissioner', pt: 'Contratante', es: 'Contratante' },
+  year: { en: 'Year', pt: 'Ano', es: 'Año' },
+  copy: { en: 'Copy', pt: 'Copiar', es: 'Copiar' },
+  copied: { en: 'Copied', pt: 'Copiado', es: 'Copiado' },
+  rights: { en: 'All rights reserved.', pt: 'Todos os direitos reservados.', es: 'Todos los derechos reservados.' },
+  language: { en: 'Language', pt: 'Idioma', es: 'Idioma' },
   descriptor: site.descriptor as L,
 };
 
@@ -65,9 +73,9 @@ export const recognition = recognitionFile.items as L[];
 export const books = publicationsFile.books as { cover: string; title: string; meta: L; href: string; pdf?: string }[];
 export const selected = publicationsFile.selected.map((s: any) => ({ ...s, href: s.href || null })) as { title: string; venue: string; href: string | null; pdf?: string }[];
 // name_en only where the English name differs (e.g. Groupe SEB); the home sorts by the shown name.
-export const clients = clientsFile.items as { name: string; name_en?: string; slug?: string }[];
+export const clients = clientsFile.items as { name: string; name_en?: string; name_es?: string; slug?: string }[];
 export const outreach = outreachFile.items as { title: L; text: L; href: string; icon: string }[];
-export const talks = talksFile.items as { year: string; kind: L; title: string; channel: string; lang: Lang; href: string }[];
+export const talks = talksFile.items as { year: string; kind: L; title: string; channel: string; lang: 'pt' | 'en'; href: string }[];
 export const initiatives = initiativesFile.items as { icon: string; title: L; text: L; details?: L; more?: string; href?: string }[];
 
 export type Project = { order?: number; slug?: string; page?: boolean; featured?: boolean; icon?: string; years: string; title: L; role: L; places?: { name: L; href?: string }[]; funding?: string; partners?: string; team?: L; summary: L; outputs?: L[]; current?: boolean };
@@ -89,9 +97,9 @@ export const designForResearch: DesignItem[] = fm<DesignItem>(import.meta.glob('
 
 
 // Skill tags: one closed vocabulary shared by both design divisions. Projects refer to tags by slug only.
-export type Tag = { slug: string; label_pt: string; label_en: string; descricao: string };
+export type Tag = { slug: string; label_pt: string; label_en: string; label_es?: string; descricao: string };
 export const tags: Tag[] = Object.values(import.meta.glob('../content/tags/*.json', { eager: true, import: 'default' })) as Tag[];
-export const tagLabel = (slug: string, lang: Lang) => { const g = tags.find((x) => x.slug === slug); return g ? (lang === 'pt' ? g.label_pt : g.label_en) : slug; };
+export const tagLabel = (slug: string, lang: Lang) => { const g = tags.find((x) => x.slug === slug); return g ? (lang === 'pt' ? g.label_pt : lang === 'es' ? g.label_es || g.label_en : g.label_en) : slug; };
 
 // Design-for-research case pages (/design/<slug> and /en/design/<slug>); every text is a {pt, en} pair.
 export type CaseImage = { src: string; span?: number; caption?: L; plate?: boolean };

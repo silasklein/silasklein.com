@@ -6,11 +6,13 @@ image: "/img/cases/27million.webp"
 role:
   en: "Art direction, UI/UX & concept"
   pt: "Direção de arte, UI/UX & conceito"
+  es: Dirección de arte, UI/UX & concepto
 commissioner: "27 Million"
 year: "2014–2015"
 text:
   en: "27Million is a 501c3 American non-profit organization that supports grassroots organizations fighting human trafficking on the front lines. They believe that there is power in walking together in relationships and sharing resources so that they can collectively put an end to modern-day slavery."
   pt: "A 27 Million é uma organização sem fins lucrativos norte-americana (501c3) que apoia organizações de base no combate ao tráfico de pessoas, na linha de frente. Ela acredita no poder de caminhar junto, em relações e no compartilhamento de recursos, para acabar coletivamente com a escravidão moderna."
+  es: 27 Million es una organización estadounidense sin fines de lucro (501c3) que apoya a organizaciones de base que combaten la trata de personas en primera línea. Cree en el poder de caminar juntos, en las relaciones y en compartir recursos para acabar colectivamente con la esclavitud moderna.
 gallery:
   - "/img/cases/27million/01.webp"
   - "/img/cases/27million/02.webp"

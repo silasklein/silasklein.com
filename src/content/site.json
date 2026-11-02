@@ -1,59 +1,71 @@
 {
   "hello": {
     "en": "Hello, I am Silas Klein.",
-    "pt": "Olá, eu sou Silas Klein."
+    "pt": "Olá, eu sou Silas Klein.",
+    "es": "Hola, soy Silas Klein."
   },
   "subtitle": {
     "en": "I study how images mediate religion: from the seals of the ancient Levant to the tools we use to read them. I read images with the eye of someone who spent two decades making them.",
-    "pt": "Estudo como imagens mediam a religião: dos selos do antigo Levante às ferramentas que usamos para lê-los. Leio imagens com o olho de quem passou duas décadas criando-as."
+    "pt": "Estudo como imagens mediam a religião: dos selos do antigo Levante às ferramentas que usamos para lê-los. Leio imagens com o olho de quem passou duas décadas criando-as.",
+    "es": "Estudio cómo las imágenes median la religión: desde los sellos del antiguo Levante hasta las herramientas que usamos para leerlos. Leo imágenes con la mirada de quien pasó dos décadas creándolas."
   },
   "descriptor": {
     "en": "(Ancient) Religion\\s, Media & Images",
-    "pt": "Religião\\ões (antigas), Mídia & Imagens"
+    "pt": "Religião\\ões (antigas), Mídia & Imagens",
+    "es": "Religión\\es (antiguas), Medios & Imágenes"
   },
   "facts": [
     {
       "icon": "now",
       "k": {
         "en": "Now",
-        "pt": "Hoje"
+        "pt": "Hoje",
+        "es": "Hoy"
       },
       "v": {
         "en": "Professor & Dean, Graduate Program in Religious Studies, Faculdade Unida de Vitória · Research Associate, University of Bern",
-        "pt": "Professor e coordenador do PPG em Ciências das Religiões, Faculdade Unida de Vitória · Pesquisador associado, Universidade de Berna"
+        "pt": "Professor e coordenador do PPG em Ciências das Religiões, Faculdade Unida de Vitória · Pesquisador associado, Universidade de Berna",
+        "es": "Profesor y coordinador del Programa de Posgrado en Ciencias de las Religiones, Faculdade Unida de Vitória · Investigador asociado, Universidad de Berna"
       }
     },
     {
       "icon": "field",
       "k": {
         "en": "Field",
-        "pt": "Campo"
+        "pt": "Campo",
+        "es": "Campo"
       },
       "v": {
         "en": "Iconography, biblical studies and the history of religion in the ancient southern Levant",
-        "pt": "Iconografia, estudos bíblicos e história da religião no antigo Levante meridional"
+        "pt": "Iconografia, estudos bíblicos e história da religião no antigo Levante meridional",
+        "es": "Iconografía, estudios bíblicos e historia de la religión en el antiguo Levante meridional"
       }
     }
   ],
   "bio": {
     "en": "Silas Klein studies how images and artifacts mediated religion in the ancient southern Levant. Before academia, he spent two decades as an art director.",
-    "pt": "Silas Klein estuda como imagens e artefatos mediaram a religião no antigo Levante meridional. Antes da academia, passou duas décadas como diretor de arte."
+    "pt": "Silas Klein estuda como imagens e artefatos mediaram a religião no antigo Levante meridional. Antes da academia, passou duas décadas como diretor de arte.",
+    "es": "Silas Klein estudia cómo las imágenes y los artefactos mediaron la religión en el antiguo Levante meridional. Antes de la academia, trabajó durante dos décadas como director de arte."
   },
   "bio2": {
     "en": "He is Professor of Old Testament and Religious Studies and Dean of the Graduate Program in Religious Studies at Faculdade Unida de Vitória, Brazil, and Research Associate at the University of Bern. His doctoral dissertation received Brazil’s Grand CAPES Thesis Award Bertha Koiffmann Becker, and in 2024 he completed his habilitation at the University of Bern.",
-    "pt": "É professor de Antigo Testamento e Ciências das Religiões e coordenador do Programa de Pós-Graduação em Ciências das Religiões da Faculdade Unida de Vitória, e pesquisador associado na Universidade de Berna. Sua tese de doutorado recebeu o Grande Prêmio CAPES de Tese Bertha Koiffmann Becker, e em 2024 obteve a livre-docência (Habilitation) na Universidade de Berna."
+    "pt": "É professor de Antigo Testamento e Ciências das Religiões e coordenador do Programa de Pós-Graduação em Ciências das Religiões da Faculdade Unida de Vitória, e pesquisador associado na Universidade de Berna. Sua tese de doutorado recebeu o Grande Prêmio CAPES de Tese Bertha Koiffmann Becker, e em 2024 obteve a livre-docência (Habilitation) na Universidade de Berna.",
+    "es": "Es profesor de Antiguo Testamento y Ciencias de las Religiones y coordina el Programa de Posgrado en Ciencias de las Religiones de la Faculdade Unida de Vitória (Brasil); además, es investigador asociado en la Universidad de Berna. Su tesis doctoral recibió el Gran Premio CAPES de Tesis Bertha Koiffmann Becker y, en 2024, obtuvo la habilitación (Habilitation) en la Universidad de Berna."
   },
   "researchApproach": {
     "pt": "Minha pesquisa investiga como imagens e artefatos mediavam e materializavam a religião no antigo Levante meridional, o mundo em que os textos bíblicos foram escritos, e como as ferramentas acadêmicas influenciam o que vemos neles.",
-    "en": "My research asks how images and artifacts mediated and materialized religion in the ancient southern Levant, the world in which biblical texts were written, and how the tools of scholarship shape what we see in them."
+    "en": "My research asks how images and artifacts mediated and materialized religion in the ancient southern Levant, the world in which biblical texts were written, and how the tools of scholarship shape what we see in them.",
+    "es": "Mi investigación examina cómo las imágenes y los artefactos mediaban y materializaban la religión en el antiguo Levante meridional, el mundo en que se escribieron los textos bíblicos, y cómo las herramientas académicas influyen en lo que vemos en ellos."
   },
   "teaching": {
     "pt": "Já lecionei na graduação, no mestrado e no doutorado, no Brasil e no exterior (Suíça e Alemanha). Meus cursos tratam da exegese do Antigo Testamento, da arqueologia e da iconografia do Levante e da história das religiões. Neles, lemos textos junto com artefatos e trabalhamos com bases de dados digitais.",
-    "en": "I have taught undergraduate, master’s and doctoral students in Brazil and abroad (Switzerland and Germany). My courses cover Old Testament exegesis, the archaeology and iconography of the Levant, and the history of religions. In them, we read texts alongside artifacts and work with digital databases."
+    "en": "I have taught undergraduate, master’s and doctoral students in Brazil and abroad (Switzerland and Germany). My courses cover Old Testament exegesis, the archaeology and iconography of the Levant, and the history of religions. In them, we read texts alongside artifacts and work with digital databases.",
+    "es": "He enseñado en grado, maestría y doctorado, en Brasil y en el exterior (Suiza y Alemania). Mis cursos abordan la exégesis del Antiguo Testamento, la arqueología y la iconografía del Levante y la historia de las religiones. En ellos leemos textos junto con artefactos y trabajamos con bases de datos digitales."
   },
   "designIntro": {
     "en": "Before reading ancient images, I made new ones as an art director for agencies, studios and global brands. The same eye now works for research: identities, layouts and visual systems for scholarly projects.",
-    "pt": "Antes de ler imagens antigas, fiz imagens novas como diretor de arte para agências, estúdios e marcas globais. O mesmo olhar agora trabalha para a pesquisa: identidades, diagramação e sistemas visuais para projetos acadêmicos."
+    "pt": "Antes de ler imagens antigas, fiz imagens novas como diretor de arte para agências, estúdios e marcas globais. O mesmo olhar agora trabalha para a pesquisa: identidades, diagramação e sistemas visuais para projetos acadêmicos.",
+    "es": "Antes de leer imágenes antiguas, creé imágenes nuevas como director de arte para agencias, estudios y marcas globales. La misma mirada trabaja ahora para la investigación: identidades, diagramación y sistemas visuales para proyectos académicos."
   },
   "email": "silasklein@gmail.com",
   "location": "Vitória/ES, Brasil",
@@ -94,28 +106,32 @@
       "icon": "presentation",
       "label": {
         "en": "Lectures & invitations",
-        "pt": "Palestras & convites"
+        "pt": "Palestras & convites",
+        "es": "Conferencias & invitaciones"
       }
     },
     {
       "icon": "group",
       "label": {
         "en": "Research cooperation",
-        "pt": "Cooperação em pesquisa"
+        "pt": "Cooperação em pesquisa",
+        "es": "Cooperación en investigación"
       }
     },
     {
       "icon": "mic",
       "label": {
         "en": "Press & interviews",
-        "pt": "Imprensa & entrevistas"
+        "pt": "Imprensa & entrevistas",
+        "es": "Prensa & entrevistas"
       }
     },
     {
       "icon": "books",
       "label": {
         "en": "Master’s & PhD",
-        "pt": "Mestrado & doutorado"
+        "pt": "Mestrado & doutorado",
+        "es": "Maestría & doctorado"
       }
     }
   ],
@@ -124,88 +140,104 @@
       "n": "01",
       "label": {
         "en": "about",
-        "pt": "sobre"
+        "pt": "sobre",
+        "es": "sobre mí"
       },
       "title": {
         "en": "About",
-        "pt": "Sobre"
+        "pt": "Sobre",
+        "es": "Sobre mí"
       }
     },
     "currently": {
       "n": "02",
       "label": {
         "en": "now",
-        "pt": "hoje"
+        "pt": "hoje",
+        "es": "hoy"
       },
       "title": {
         "en": "Current projects",
-        "pt": "Projetos em andamento"
+        "pt": "Projetos em andamento",
+        "es": "Proyectos en curso"
       }
     },
     "research": {
       "n": "03",
       "label": {
         "en": "research",
-        "pt": "pesquisa"
+        "pt": "pesquisa",
+        "es": "investigación"
       },
       "title": {
         "en": "How images mediate religion\\s",
-        "pt": "Como imagens mediam religião\\ões"
+        "pt": "Como imagens mediam religião\\ões",
+        "es": "Cómo las imágenes median la religión\\es"
       }
     },
     "publications": {
       "n": "04",
       "label": {
         "en": "publications",
-        "pt": "publicações"
+        "pt": "publicações",
+        "es": "publicaciones"
       },
       "title": {
         "en": "Books & selected writing",
-        "pt": "Livros & textos selecionados"
+        "pt": "Livros & textos selecionados",
+        "es": "Libros & textos seleccionados"
       }
     },
     "teaching": {
       "n": "05",
       "label": {
         "en": "teaching",
-        "pt": "docência"
+        "pt": "docência",
+        "es": "docencia"
       },
       "title": {
         "en": "In classrooms & in public",
-        "pt": "Em sala de aula & em público"
+        "pt": "Em sala de aula & em público",
+        "es": "En el aula & en público"
       }
     },
     "initiatives": {
       "n": "06",
       "label": {
         "en": "initiatives",
-        "pt": "iniciativas"
+        "pt": "iniciativas",
+        "es": "iniciativas"
       },
       "title": {
         "en": "Spaces built with others",
-        "pt": "Espaços construídos com outras pessoas"
+        "pt": "Espaços construídos com outras pessoas",
+        "es": "Espacios construidos con otras personas"
       }
     },
     "design": {
       "n": "07",
       "label": {
         "en": "design",
-        "pt": "design"
+        "pt": "design",
+        "es": "diseño"
       },
       "title": {
         "en": "Art direction",
-        "pt": "Direção de arte"
+        "pt": "Direção de arte",
+        "es": "Dirección de arte"
       }
     },
     "contact": {
       "n": "08",
       "label": {
         "en": "contact",
-        "pt": "contato"
+        "pt": "contato",
+        "es": "contacto"
       },
       "title": {
         "en": "Let’s talk.",
-        "pt": "Vamos conversar."
+        "pt": "Vamos conversar.",
+        "es": "Conversemos."
       }
     }
   }

@@ -1,18 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
-import { ui, news, sections, type Lang, t } from '../../data/content';
+import { ui, news, sections, langInfo, type Lang, t } from '../../data/content';
 import Px from '../Pixel.astro';
 import { href } from '../../lib/format';
 interface Props { lang: Lang }
 const { lang } = Astro.props;
-const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(langInfo(lang).date, { day: 'numeric', month: 'short', year: 'numeric' });
 ---
-<Base lang={lang} title={lang === 'pt' ? 'Notícias' : 'News'} description={lang === 'pt' ? 'Notícias de Silas Klein: livros, projetos, eventos e escolas de verão sobre imagens, religião e o antigo Levante.' : 'News from Silas Klein: books, projects, events and summer schools on images, religion and the ancient Levant.'}>
+<Base lang={lang} title={t({ pt: 'Notícias', en: 'News', es: 'Noticias' }, lang)} description={t({ pt: 'Notícias de Silas Klein: livros, projetos, eventos e escolas de verão sobre imagens, religião e o antigo Levante.', en: 'News from Silas Klein: books, projects, events and summer schools on images, religion and the ancient Levant.', es: 'Noticias de Silas Klein: libros, proyectos, eventos y escuelas de verano sobre imágenes, religión y el antiguo Levante.' }, lang)}>
   <div class="page">
     <a class="page__back" href={href('#currently', lang)}>← {t(ui.back, lang)}</a>
     <Label n={sections.currently.n} text={t(sections.currently.label, lang)} />
-    <h1 class="h2">{lang === 'pt' ? 'Notícias' : 'News'}</h1>
+    <h1 class="h2">{t({ pt: 'Notícias', en: 'News', es: 'Noticias' }, lang)}</h1>
     <ul class="news-list">
       {news.filter((p) => p.lang === lang).map((p) => (
         <li>
@@ -20,7 +20,7 @@ const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang ===
           <div>
             <h2><a href={href(`/news/${p.slug}`, lang)}>{p.title}</a></h2>
             <p>{p.summary}</p>
-            <a class="act news-list__more" href={href(`/news/${p.slug}`, lang)}><Px name="arrowRight" /><span>{lang === 'pt' ? 'Ler a notícia completa' : 'Read the full story'}</span></a>
+            <a class="act news-list__more" href={href(`/news/${p.slug}`, lang)}><Px name="arrowRight" /><span>{t({ pt: 'Ler a notícia completa', en: 'Read the full story', es: 'Leer la noticia completa' }, lang)}</span></a>
           </div>
         </li>
       ))}
