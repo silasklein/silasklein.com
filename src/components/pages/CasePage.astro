@@ -10,7 +10,8 @@ const { lang, item: c } = Astro.props;
 const pt = lang === 'pt';
 const i = cases.findIndex((x) => x.slug === c.slug);
 const prev = cases[(i - 1 + cases.length) % cases.length], next = cases[(i + 1) % cases.length];
-const images = c.gallery?.length ? c.gallery : [c.image];
+// Gallery items carry an optional description (alt) from the CMS; without one, the case name and position stand in.
+const images = (c.gallery?.length ? c.gallery : [c.image]).map((g) => (typeof g === 'string' ? { src: g, alt: undefined } : g));
 ---
 <Base lang={lang} title={c.title} description={t(c.text, lang)} image={`/og/design/${c.slug}.jpg`}>
   <article class="page">
@@ -25,8 +26,8 @@ const images = c.gallery?.length ? c.gallery : [c.image];
       {c.year && <><dt>{t(ui.year, lang)}</dt><dd>{c.year}</dd></>}
     </dl>
     <div class="case-gallery">
-      {images.map((src, n) => (
-        <img src={asset(src)} alt={`${c.title} — ${n + 1}/${images.length}`} loading={n < 2 ? 'eager' : 'lazy'} decoding="async" />
+      {images.map((g, n) => (
+        <img src={asset(g.src)} alt={(g.alt && t(g.alt, lang)) || `${c.title} — ${n + 1}/${images.length}`} loading={n < 2 ? 'eager' : 'lazy'} decoding="async" />
       ))}
     </div>
     <CaseEnd lang={lang} slug={c.slug} tags={c.tags ?? []} research={false}>

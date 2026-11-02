@@ -16,4 +16,4 @@ summary: "Estou muito feliz, grato e honrado em compartilhar que concluí ontem 
 
 Estou muito feliz, grato e honrado em compartilhar que concluí ontem o meu processo de livre-docência (*Habilitation*) em Teologia Protestante (Antigo Testamento, com foco no antigo Israel e suas culturas vizinhas) na Faculdade de Teologia da Universidade de Berna (Universität Bern).
 
-Após ter minha tese de pós-doutorado (*Habilitationsschrift*), intitulada "*The Devoured Code: Southern Perspectives on Interartistic Approaches to the Bible*", aprovada em maio de 2024, apresentei minha aula pública de habilitação, "*Hermeneutics of the One: Temple/s, God/dess/es, and Religion\s in Iron Age Judah*". A apresentação foi aprovada ontem, marcando a conclusão oficial de todo o processo.
+Após ter minha tese de pós-doutorado (*Habilitationsschrift*), intitulada “*The Devoured Code: Southern Perspectives on Interartistic Approaches to the Bible*”, aprovada em maio de 2024, apresentei minha aula pública de habilitação, “*Hermeneutics of the One: Temple/s, God/dess/es, and Religion\s in Iron Age Judah*”. A apresentação foi aprovada ontem, marcando a conclusão oficial de todo o processo.

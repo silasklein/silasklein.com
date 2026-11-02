@@ -67,9 +67,9 @@
     "es": "El alfabeto del corpus. Letras dibujadas a partir de las impresiones de los sellos, una por letra, de álef a tav, de derecha a izquierda, como se lee el paleohebreo."
   },
   "context": {
-    "pt": "Um projeto SPARK da Swiss National Science Foundation (SNSF), idealizado e coordenado por Eythan Levy. O projeto testava uma abordagem em rede para datar automaticamente a escrita paleo-hebraica dos selos dos séculos VIII a VI a.C.",
+    "pt": "Um projeto SPARK da Swiss National Science Foundation (SNSF), idealizado e coordenado por Eythan Levy. O projeto testava uma abordagem em rede para datar automaticamente a escrita paleo-hebraica dos selos dos séculos VIII a VI aEC",
     "en": "A SPARK project of the Swiss National Science Foundation (SNSF), conceived and led by Eythan Levy. It tested a network approach to dating the Paleo-Hebrew script of 8th- to 6th-century BCE seals automatically.",
-    "es": "Un proyecto SPARK de la Swiss National Science Foundation (SNSF), concebido y coordinado por Eythan Levy. El proyecto ponía a prueba un enfoque de redes para datar automáticamente la escritura paleohebrea de los sellos de los siglos VIII a VI a. C."
+    "es": "Un proyecto SPARK de la Swiss National Science Foundation (SNSF), concebido y coordinado por Eythan Levy. El proyecto ponía a prueba un enfoque de redes para datar automáticamente la escritura paleohebrea de los sellos de los siglos VIII a VI a. e. c."
   },
   "problem": {
     "pt": "A análise paleográfica da glíptica hebraica antiga precisava de novas fotografias e ilustrações; o método computadorizado, de um novo sistema de descrição científica.",
@@ -177,7 +177,7 @@
         }
       ],
       "figures_intro": {
-        "pt": "Em junho de 2024, alcançamos a seguinte marca:",
+        "pt": "Em junho de 2024, chegamos a estes números:",
         "en": "By June 2024, we had reached:",
         "es": "En junio de 2024 alcanzamos estas cifras:"
       },
@@ -348,7 +348,7 @@
           "src": "/img/cases/paleonet/17-flyer.webp",
           "span": 12,
           "caption": {
-            "pt": "Flyer do encontro de 12 de junho de 2024, ao lado de uma ficha de letra.",
+            "pt": "Folder do encontro de 12 de junho de 2024, ao lado de uma ficha de letra.",
             "en": "Flyer for the meeting of 12 June 2024, beside a letter card.",
             "es": "Volante del encuentro del 12 de junio de 2024, junto a una ficha de letra."
           },

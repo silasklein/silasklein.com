@@ -3,24 +3,24 @@ slug: "xxxiii-colloquium-biblicum"
 date: "2026-03-25"
 lang: "pt"
 title: "XXXIII Colloquium Biblicum"
-summary: "Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (Charles University) e terá como tema central \"Image, Image-Making and the…"
+summary: "Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (Charles University) e terá como tema central “Image, Image-Making and the…"
 ---
 
 ![XXXIII Colloquium Biblicum](/img/news/xxxiii-colloquium-biblicum/01.webp)
 
 **XXXIII Colloquium Biblicum** 8 a 10 de abril de 2026, Faculdade de Teologia Protestante da Universidade Carolina
 
-Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (*Charles University*) e terá como tema central *"Image, Image-Making and the Creation of (Un)Likeness"* (Imagem, Produção de Imagens e a Criação da (Des)semelhança):
+Tenho a alegria de anunciar minha participação no XXXIII Colloquium Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será sediado na Faculdade de Teologia Protestante da Universidade Carolina (*Charles University*) e terá como tema central *“Image, Image-Making and the Creation of (Un)Likeness”* (Imagem, Produção de Imagens e a Criação da (Des)semelhança):
 
-O colóquio aborda conceitos de imagem e produção de imagens no mundo bíblico e sua recepção. Apesar de serem o único meio de ver o que os outros veem, como verdadeiras materializações de propriedades ontológicas particulares, as imagens são tipicamente estudadas sob esquemas generalizantes. Tais abordagens presumem não apenas que os humanos compartilham as mesmas crenças semióticas, mas também uma mesma constituição ontológica. No entanto, enquanto estudos antropológicos têm desafiado a ideia de uma ontologia compartilhada entre todos os humanos, os estudos bíblicos há muito tempo historiciza e matiza como os antigos povos levantinos entendiam seus artefatos visuais. Nesse sentido, a conferência convida pesquisadoras e pesquisadores a discutir como as antigas concepções de imagens, abordagens metodológicas e leituras hermenêuticas em diferentes contextos teológicos ajudaram a forjar a (des)semelhança.
+O colóquio aborda conceitos de imagem e produção de imagens no mundo bíblico e sua recepção. Apesar de serem o único meio de ver o que os outros veem, como verdadeiras materializações de propriedades ontológicas particulares, as imagens são tipicamente estudadas sob esquemas generalizantes. Tais abordagens presumem não apenas que os humanos compartilham as mesmas crenças semióticas, mas também uma mesma constituição ontológica. No entanto, enquanto estudos antropológicos têm desafiado a ideia de uma ontologia compartilhada entre todos os humanos, os estudos bíblicos há muito tempo historicizam e matizam como os antigos povos levantinos entendiam seus artefatos visuais. Nesse sentido, a conferência convida pesquisadoras e pesquisadores a discutir como as antigas concepções de imagens, abordagens metodológicas e leituras hermenêuticas em diferentes contextos teológicos ajudaram a forjar a (des)semelhança.
 
 É uma honra também fazer parte da organização do evento, ao lado dos meus estimados colegas Prof. Dr. Filip Čapek e PD Dr. Thomas Wagner.
 
-Na quarta-feira, 8 de abril, apresentarei a palestra *"Simulacra and Presence: Mechanisms of (Un)likeness in Ancient Levantine Visual Culture"*.
+Na quarta-feira, 8 de abril, apresentarei a palestra *“Simulacra and Presence: Mechanisms of (Un)likeness in Ancient Levantine Visual Culture”*.
 
 Estou ansioso para encontrar colegas e amigos em Praga! A conferência também será transmitida online (inscrições pelo [link](https://eu02events.zoom.us/ev/AiAaG2ZQwH1uIQrrYabtNGcvCSQ9Tf1jQ3eXmwUGbhs5eIB070yH~AvFy7cXGnUdhy8w9eJsUaULCwCJZFXZHqLUWEMf4espYHNnPNXDo9J6iIA)). Confira a programação abaixo.
 
-### Conference program
+## Programação
 
 **Wednesday, April 8, 2026**
 

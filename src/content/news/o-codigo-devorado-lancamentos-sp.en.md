@@ -3,7 +3,7 @@ slug: "o-codigo-devorado-lancamentos-sp"
 date: "2025-08-31"
 lang: "en"
 title: "Book launch"
-summary: "Last week, I spent three days in São Paulo for two launch events for my book \"O código devorado: os usos da iconografia antigo-oriental na exegese bíblica\" (The Devoured Code: The Uses of Ancient Near Eastern Iconography in Biblical Exegesis) (Editora Recriar, 2025)."
+summary: "Last week, I spent three days in São Paulo for two launch events for my book “O código devorado: os usos da iconografia antigo-oriental na exegese bíblica” (The Devoured Code: The Uses of Ancient Near Eastern Iconography in Biblical Exegesis) (Editora Recriar, 2025)."
 ---
 
 ![Book launch](/img/news/o-codigo-devorado-lancamentos-sp/01.webp)
@@ -18,9 +18,9 @@ summary: "Last week, I spent three days in São Paulo for two launch events for 
 
 ![Book launch](/img/news/o-codigo-devorado-lancamentos-sp/06.webp)
 
-Last week, I spent three days in São Paulo for two launch events for my book *"O código devorado: os usos da iconografia antigo-oriental na exegese bíblica"* (The Devoured Code: The Uses of Ancient Near Eastern Iconography in Biblical Exegesis) (Editora Recriar, 2025).
+Last week, I spent three days in São Paulo for two launch events for my book *“O código devorado: os usos da iconografia antigo-oriental na exegese bíblica”* (The Devoured Code: The Uses of Ancient Near Eastern Iconography in Biblical Exegesis) (Editora Recriar, 2025).
 
-On Thursday, August 28, I delivered the lecture *"Bible, Archaeology, and the Visual Codes of the Ancient Near East"* and discussed some of the book's ideas with Dr. Edson Nunes Jr. and Dr. Robinson Jacintho at IBAB Educação. On Saturday, August 30, I presented the public lecture *"How Ancient Art Explains the Bible: An Introduction to Interartistic Exegesis,"* moderated by Dr. André Anéas, at the Editora Recriar headquarters.
+On Thursday, August 28, I delivered the lecture *“Bible, Archaeology, and the Visual Codes of the Ancient Near East”* and discussed some of the book's ideas with Dr. Edson Nunes Jr. and Dr. Robinson Jacintho at IBAB Educação. On Saturday, August 30, I presented the public lecture *“How Ancient Art Explains the Bible: An Introduction to Interartistic Exegesis,”* moderated by Dr. André Anéas, at the Editora Recriar headquarters.
 
 These were two remarkable moments where I could reconnect with wonderful people (some of whom I only knew virtually) and meet new ones.
 

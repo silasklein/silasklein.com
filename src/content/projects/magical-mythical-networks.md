@@ -5,7 +5,7 @@ page: true
 current: false
 years: "2015–2019"
 title:
-  en: "Magical-Mythical Networks in the Dawn of Israel"
+  en: "Magical-Mythical Networks at the Dawn of Israel"
   pt: "Redes mágico-míticas no alvorecer de Israel"
   es: Redes mágico-míticas en los albores de Israel
 role:
@@ -23,7 +23,7 @@ places:
       es: UZH (Suiza)
 funding: "CAPES"
 summary:
-  en: "A micro-religious history of the Benjamin plateau in the Iron Age I–IIA (c. 1125–875 BCE), the probable place of origin of “ancient Israel”, drawing on material, visual and textual evidence."
+  en: "A religious micro-history of the Benjamin plateau in Iron Age I–IIA (c. 1125–875 BCE), the probable place of origin of “ancient Israel”, drawing on material, visual and textual evidence."
   pt: "Uma micro-história religiosa do platô de Benjamim no Ferro I–IIA (c. 1125–875 aEC), provável lugar de origem do “antigo Israel”, a partir de evidências materiais, visuais e textuais."
   es: Una microhistoria religiosa de la meseta de Benjamín en el Hierro I–IIA (c. 1125–875 a. e. c.), probable lugar de origen del “antiguo Israel”, a partir de evidencias materiales, visuales y textuales.
 outputs:
