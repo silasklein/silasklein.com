@@ -21,7 +21,7 @@ const groups = [
 ].map((g) => ({ ...g, items: list.filter((p) => g.types.includes(p.type)) })).filter((g) => g.items.length);
 const other = profiles.filter((p) => ['ORCID', 'Lattes', 'Zotero'].includes(p.name));
 ---
-<Base lang={lang} title={t(ui.fullList, lang)} description={pt ? `Lista completa de publicações de Silas Klein Cardoso (${list.length} itens): livros, artigos e capítulos sobre iconografia, selos e história da religião no antigo Levante.` : `Full list of publications by Silas Klein Cardoso (${list.length} items): books, articles and chapters on iconography, stamp seals and the history of religion in the ancient Levant.`}>
+<Base lang={lang} title={t(ui.fullList, lang)} description={pt ? `Lista completa de publicações de Silas Klein (${list.length} itens): livros, artigos e capítulos sobre iconografia, selos e história da religião no antigo Levante.` : `Full list of publications by Silas Klein (${list.length} items): books, articles and chapters on iconography, stamp seals and the history of religion in the ancient Levant.`}>
   <div class="page">
     <a class="page__back" href={href('#publications', lang)}>← {t(ui.nav.publications, lang)}</a>
     <Label n={sections.publications.n} text={t(sections.publications.label, lang)} />

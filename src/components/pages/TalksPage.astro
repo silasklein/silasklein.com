@@ -9,7 +9,7 @@ const { lang } = Astro.props;
 const pt = lang === 'pt';
 const title = pt ? 'Entrevistas & palestras' : 'Interviews & talks';
 ---
-<Base lang={lang} title={title} description={pt ? 'Entrevistas, mesas-redondas e palestras online de Silas Klein Cardoso sobre imagens no antigo Israel, arqueologia e Bíblia.' : 'Online interviews, round tables and talks by Silas Klein Cardoso on images in ancient Israel, archaeology and the Bible.'}>
+<Base lang={lang} title={title} description={pt ? 'Entrevistas, mesas-redondas e palestras online de Silas Klein sobre imagens no antigo Israel, arqueologia e Bíblia.' : 'Online interviews, round tables and talks by Silas Klein on images in ancient Israel, archaeology and the Bible.'}>
   <div class="page">
     <a class="page__back" href={href('#teaching', lang)}>← {t(sections.teaching.label, lang).replace(/^./, (c) => c.toUpperCase())}</a>
     <Label n={sections.teaching.n} text={t(sections.teaching.label, lang)} />

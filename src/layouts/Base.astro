@@ -12,7 +12,7 @@ import { href, switchPath, sig, asset, sitePath, BASE } from '../lib/format';
 
 interface Props { lang: Lang; title?: string; description?: string; home?: boolean; noindex?: boolean; other?: string; translated?: boolean }
 const { lang, title, description, home = false, noindex = false } = Astro.props;
-const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein Cardoso · ${t(ui.descriptor, lang)}`;
+const pageTitle = title ? `${title} · Silas Klein` : `Silas Klein · ${t(ui.descriptor, lang)}`;
 const desc = description ?? t(ui.subtitle, lang);
 // The language switch: same page in the other language, unless the page names another target (e.g. a post without translation).
 const other = Astro.props.other ?? switchPath(Astro.url.pathname, lang);
@@ -25,7 +25,7 @@ const enPath = lang === 'en' ? sitePath(Astro.url.pathname) : sitePath(other);
 const ogImage = new URL('/img/og-portrait.jpg', Astro.site);
 const person = {
   '@context': 'https://schema.org', '@type': 'Person', '@id': 'https://www.silasklein.com/#person',
-  name: 'Silas Klein Cardoso', alternateName: 'Silas Klein', url: 'https://www.silasklein.com/', image: ogImage.href,
+  name: 'Silas Klein', alternateName: 'Silas Klein Cardoso', url: 'https://www.silasklein.com/', image: ogImage.href,
   jobTitle: lang === 'pt' ? 'Professor de Antigo Testamento e Ciências das Religiões' : 'Professor of Old Testament and Religious Studies',
   description: t(ui.subtitle, lang),
   worksFor: { '@type': 'CollegeOrUniversity', name: 'Faculdade Unida de Vitória', url: 'https://fuv.edu.br/' },
@@ -58,7 +58,7 @@ const person = {
   <link rel="icon" type="image/png" sizes="76x76" href={asset('/favicon-76.png')} />
   <link rel="apple-touch-icon" sizes="190x190" href={asset('/favicon-190.png')} />
   <meta property="og:type" content={home ? 'profile' : 'article'} />
-  <meta property="og:site_name" content="Silas Klein Cardoso" />
+  <meta property="og:site_name" content="Silas Klein" />
   <meta property="og:url" content={canonical} />
   <meta property="og:locale" content={lang === 'pt' ? 'pt_BR' : 'en_US'} />
   <meta property="og:locale:alternate" content={lang === 'pt' ? 'en_US' : 'pt_BR'} />
@@ -67,9 +67,9 @@ const person = {
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="1200" />
-  <meta property="og:image:alt" content="Silas Klein Cardoso" />
+  <meta property="og:image:alt" content="Silas Klein" />
   <meta name="twitter:card" content="summary" />
-  <meta name="author" content="Silas Klein Cardoso" />
+  <meta name="author" content="Silas Klein" />
   <meta name="theme-color" content="#F5F6F4" />
   {home && <script type="application/ld+json" set:html={JSON.stringify(person)} />}
   <slot name="head" />
@@ -121,7 +121,7 @@ const person = {
         {profiles.map((p) => (<li><a class="fl" href={p.href} rel="me noopener" target="_blank"><Px name={p.icon} /><span class="fl__t">{p.name}</span></a></li>))}
         <li><a class="fl" href="https://universosbiblicos.org" rel="noopener" target="_blank"><Px name="oub" /><span class="fl__t">Observatório</span></a></li>
       </ul>
-      <p class="footer__legal">© {new Date().getFullYear()} Silas Klein Cardoso. {t(ui.rights, lang)}</p>
+      <p class="footer__legal">© {new Date().getFullYear()} Silas Klein. {t(ui.rights, lang)}</p>
     </div>
   </footer>
 

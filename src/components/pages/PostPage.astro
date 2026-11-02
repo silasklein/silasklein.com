@@ -25,7 +25,7 @@ const fmt = new Date(p.date + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'p
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.title, description: p.summary,
     datePublished: p.date, inLanguage: p.lang === 'pt' ? 'pt-BR' : 'en',
-    author: { '@id': 'https://www.silasklein.com/#person', '@type': 'Person', name: 'Silas Klein Cardoso' },
+    author: { '@id': 'https://www.silasklein.com/#person', '@type': 'Person', name: 'Silas Klein' },
   })} />
   <article class="page" lang={p.lang === 'pt' ? 'pt-BR' : 'en'}>
     <a class="page__back" href={href('/news', lang)}>← {lang === 'pt' ? 'Notícias' : 'News'}</a>
