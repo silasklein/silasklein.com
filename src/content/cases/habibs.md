@@ -19,4 +19,8 @@ gallery:
   - "/img/cases/habibs/02.webp"
   - "/img/cases/habibs/03.webp"
   - "/img/cases/habibs/04.webp"
+tags:
+  - "web-design"
+  - "design-de-interface"
+  - "design-de-informacao"
 ---

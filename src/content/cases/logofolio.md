@@ -30,4 +30,6 @@ gallery:
   - "/img/cases/logofolio/20.webp"
   - "/img/cases/logofolio/21.webp"
   - "/img/cases/logofolio/22.webp"
+tags:
+  - "identidade-visual"
 ---

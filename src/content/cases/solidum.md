@@ -14,4 +14,7 @@ gallery:
   - "/img/cases/solidum/01.webp"
   - "/img/cases/solidum/02.webp"
   - "/img/cases/solidum/03.webp"
+tags:
+  - "identidade-visual"
+  - "web-design"
 ---

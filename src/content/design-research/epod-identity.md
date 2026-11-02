@@ -1,6 +1,7 @@
 ---
-order: 3
+order: 4
 slug: "epod-identity"
+case: "epod"
 icon: "epod"
 year: "2026"
 title:

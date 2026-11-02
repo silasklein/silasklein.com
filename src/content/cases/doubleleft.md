@@ -15,4 +15,7 @@ gallery:
   - "/img/cases/doubleleft/01.webp"
   - "/img/cases/doubleleft/02.webp"
   - "/img/cases/doubleleft/03.webp"
+tags:
+  - "web-design"
+  - "redes-sociais"
 ---

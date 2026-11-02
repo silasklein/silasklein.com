@@ -7,9 +7,11 @@ import { href } from '../../lib/format';
 interface Props { lang: Lang; item: DesignItem }
 const { lang, item: d } = Astro.props;
 const pt = lang === 'pt';
-const i = designForResearch.findIndex((x) => x.slug === d.slug);
-const prev = designForResearch[(i - 1 + designForResearch.length) % designForResearch.length];
-const next = designForResearch[(i + 1) % designForResearch.length];
+// Only items with page text have a page here (Paleographic Networks lives at /design/paleonet only).
+const pages = designForResearch.filter((x) => x.body);
+const i = pages.findIndex((x) => x.slug === d.slug);
+const prev = pages[(i - 1 + pages.length) % pages.length];
+const next = pages[(i + 1) % pages.length];
 ---
 <Base lang={lang} title={t(d.title, lang)} description={t(d.text, lang)}>
   <article class="page">

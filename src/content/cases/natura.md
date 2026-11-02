@@ -18,4 +18,8 @@ gallery:
   - "/img/cases/natura/04.webp"
   - "/img/cases/natura/05.webp"
   - "/img/cases/natura/06.webp"
+tags:
+  - "web-design"
+  - "campanhas"
+  - "redes-sociais"
 ---

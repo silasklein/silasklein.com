@@ -23,4 +23,6 @@ gallery:
   - "/img/cases/standrews/06.webp"
   - "/img/cases/standrews/07.webp"
   - "/img/cases/standrews/08.webp"
+tags:
+  - "web-design"
 ---

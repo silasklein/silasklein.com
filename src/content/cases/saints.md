@@ -16,4 +16,7 @@ text:
   pt: "A banda Saints precisava de um novo site para o lançamento do álbum. Com Kaio Freitas, criei um novo conceito para reunir as informações da banda e conectá-las às redes sociais."
 gallery:
   - "/img/cases/saints/01.webp"
+tags:
+  - "web-design"
+  - "redes-sociais"
 ---

@@ -1,6 +1,14 @@
 ---
 import CasePage from '../../components/pages/CasePage.astro';
-import { cases } from '../../data/content';
-export function getStaticPaths() { return cases.map((c) => ({ params: { slug: c.slug }, props: { item: c } })); }
+import ResearchCasePage from '../../components/pages/ResearchCasePage.astro';
+import { cases, researchCases } from '../../data/content';
+// Art-direction cases and design-for-research cases share /design/<slug>.
+export function getStaticPaths() {
+  return [
+    ...cases.map((c) => ({ params: { slug: c.slug }, props: { item: c, research: false } })),
+    ...researchCases.map((r) => ({ params: { slug: r.slug }, props: { item: r, research: true } })),
+  ];
+}
+const { item, research } = Astro.props as any;
 ---
-<CasePage lang="pt" item={Astro.props.item} />
+{research ? <ResearchCasePage lang="pt" item={item} /> : <CasePage lang="pt" item={item} />}

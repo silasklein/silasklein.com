@@ -16,4 +16,8 @@ gallery:
   - "/img/cases/2fit/02.webp"
   - "/img/cases/2fit/03.webp"
   - "/img/cases/2fit/04.webp"
+tags:
+  - "design-de-interface"
+  - "identidade-visual"
+  - "design-de-informacao"
 ---
