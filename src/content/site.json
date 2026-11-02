@@ -68,7 +68,7 @@
     "es": "Antes de leer imágenes antiguas, creé imágenes nuevas como director de arte para agencias, estudios y marcas globales. La misma mirada trabaja ahora para la investigación: identidades, diagramación y sistemas visuales para proyectos académicos."
   },
   "email": "silasklein@gmail.com",
-  "location": "Vitória/ES, Brasil",
+  "location": "Vitória/ES – Brasil",
   "profiles": [
     {
       "name": "ORCID",
@@ -103,36 +103,36 @@
   ],
   "contactTopics": [
     {
-      "icon": "presentation",
       "label": {
-        "en": "Lectures & invitations",
         "pt": "Palestras & convites",
+        "en": "Lectures & invitations",
         "es": "Conferencias & invitaciones"
-      }
+      },
+      "icon": "presentation"
     },
     {
-      "icon": "group",
       "label": {
-        "en": "Research cooperation",
         "pt": "Cooperação em pesquisa",
+        "en": "Research cooperation",
         "es": "Cooperación en investigación"
-      }
+      },
+      "icon": "group"
     },
     {
-      "icon": "mic",
       "label": {
-        "en": "Press & interviews",
         "pt": "Imprensa & entrevistas",
+        "en": "Press & interviews",
         "es": "Prensa & entrevistas"
-      }
+      },
+      "icon": "mic"
     },
     {
-      "icon": "books",
       "label": {
-        "en": "Master’s & PhD",
         "pt": "Mestrado & doutorado",
+        "en": "Master’s & PhD",
         "es": "Maestría & doctorado"
-      }
+      },
+      "icon": "books"
     }
   ],
   "sections": {
