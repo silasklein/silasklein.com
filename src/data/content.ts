@@ -92,8 +92,8 @@ export type Tag = { slug: string; label_pt: string; label_en: string; descricao:
 export const tags: Tag[] = Object.values(import.meta.glob('../content/tags/*.json', { eager: true, import: 'default' })) as Tag[];
 export const tagLabel = (slug: string, lang: Lang) => { const g = tags.find((x) => x.slug === slug); return g ? (lang === 'pt' ? g.label_pt : g.label_en) : slug; };
 
-// Design-for-research case pages (/design/<slug>, Portuguese only for now).
-export type CaseImage = { src: string; span?: number; caption?: string; plate?: boolean };
-export type Decision = { title: string; text: string; wide?: boolean; images?: CaseImage[]; figures_intro?: string; figures?: { n: string; label: string }[] };
-export type ResearchCase = { order?: number; slug: string; title: string; thesis: string; lead: string; meta: { k: string; v: string }[]; hero: string; hero_alt?: string; context?: string; problem?: string; decisions: Decision[]; tags: string[] };
+// Design-for-research case pages (/design/<slug> and /en/design/<slug>); every text is a {pt, en} pair.
+export type CaseImage = { src: string; span?: number; caption?: L; plate?: boolean };
+export type Decision = { title: L; text: L; wide?: boolean; images?: CaseImage[]; figures_intro?: L; figures?: { n: string; label: L }[] };
+export type ResearchCase = { order?: number; slug: string; title: string; thesis: L; lead: L; meta: { k: L; v: L }[]; hero: string; hero_alt?: L; context?: L; problem?: L; decisions: Decision[]; tags: string[] };
 export const researchCases: ResearchCase[] = (Object.values(import.meta.glob('../content/research-cases/*.json', { eager: true, import: 'default' })) as ResearchCase[]).sort(byOrder);

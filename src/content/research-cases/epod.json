@@ -2,96 +2,177 @@
   "order": 4,
   "slug": "epod",
   "title": "Epistemology of the Divine",
-  "thesis": "Identidade de um grupo de pesquisa da DFG",
-  "lead": "Sou pesquisador associado do EPOD, grupo de pesquisa da DFG com sedes em Bonn, Leipzig, Wuppertal e Viena, e criei como freelancer a identidade visual do grupo: marca, versões de cor, padronagem e template de apresentação.",
+  "thesis": {
+    "pt": "Identidade de um grupo de pesquisa da DFG",
+    "en": "Identity for a DFG research group"
+  },
+  "lead": {
+    "pt": "Como pesquisador associado do EpOD, grupo de pesquisa da Deutsche Forschungsgemeinschaft (DFG), Alemanha, e do FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Áustria, com sedes em Bonn, Leipzig, Wuppertal e Viena, fui convidado a criar a identidade visual do grupo.",
+    "en": "As an associate researcher of EpOD, a research group of the Deutsche Forschungsgemeinschaft (DFG), Germany, and the FWF (Fonds zur Förderung der wissenschaftlichen Forschung), Austria, based in Bonn, Leipzig, Wuppertal and Vienna, I was invited to create the group’s visual identity."
+  },
   "meta": [
     {
-      "k": "Papel",
-      "v": "Pesquisador associado; identidade visual"
+      "k": {
+        "pt": "Papel",
+        "en": "Role"
+      },
+      "v": {
+        "pt": "Pesquisador associado; identidade visual",
+        "en": "Associate researcher; visual identity"
+      }
     },
     {
-      "k": "Cliente",
-      "v": "Forschungsgruppe 5494 “Epistemology of the Divine” (DFG e FWF)"
+      "k": {
+        "pt": "Cliente",
+        "en": "Client"
+      },
+      "v": {
+        "pt": "Epistemology of the Divine (DFG; FWF)",
+        "en": "Epistemology of the Divine (DFG; FWF)"
+      }
     },
     {
-      "k": "Via",
-      "v": "Freelance"
+      "k": {
+        "pt": "Via",
+        "en": "Via"
+      },
+      "v": {
+        "pt": "Pesquisador associado",
+        "en": "Associate researcher"
+      }
     },
     {
-      "k": "Ano",
-      "v": "2026"
+      "k": {
+        "pt": "Ano",
+        "en": "Year"
+      },
+      "v": {
+        "pt": "2026–atual",
+        "en": "2026–present"
+      }
     }
   ],
   "hero": "/img/cases/epod/00-abertura-logo.webp",
-  "hero_alt": "",
-  "context": "Financiado pela DFG, em cooperação com o FWF austríaco, o grupo começou em julho de 2026, sob a coordenação de Jan Dietrich (Bonn), com subprojetos em Leipzig, Wuppertal e Viena. Estuda as estruturas de pensamento por trás das imagens do divino no Levante meridional do primeiro milênio a.C., a partir de textos, selos e templos.",
-  "problem": "",
+  "hero_alt": {
+    "pt": "",
+    "en": ""
+  },
+  "context": {
+    "pt": "Coordenado por Jan Dietrich, em Bonn, o grupo investiga a história das ideias no antigo Israel: como o divino foi concebido, lembrado, documentado e difundido. Textos bíblicos e extrabíblicos e a cultura material do Levante meridional no primeiro milênio a.C. são lidos à procura das estruturas de pensamento (Denkstrukturen) por trás do conhecimento sobre o divino. São quatro subprojetos, reunidos numa plataforma digital comum: o monoteísmo emergente (Jan Dietrich, Bonn), a cognoscibilidade de Deus (Annette Schellenberg-Lagler, Viena), os selos como primeira mídia de massa (Thomas Wagner, Wuppertal) e os santuários e suas redes (Angelika Berlejung, Leipzig).",
+    "en": "Led by Jan Dietrich in Bonn, the group studies the history of ideas in ancient Israel: how the divine was conceived, remembered, documented and disseminated. Biblical and extra-biblical texts and the material culture of the southern Levant in the first millennium BCE are read for the thought structures (Denkstrukturen) behind knowledge of the divine. Four subprojects share a common digital platform: emerging monotheism (Jan Dietrich, Bonn), God’s knowability (Annette Schellenberg-Lagler, Vienna), seals as the first mass media (Thomas Wagner, Wuppertal), and sanctuaries and their networks (Angelika Berlejung, Leipzig)."
+  },
+  "problem": {
+    "pt": "",
+    "en": ""
+  },
   "decisions": [
     {
-      "title": "Uma sigla num traço",
-      "text": "Na sigla, o “o” e o “d” se ligam num laço contínuo, e a assinatura “Epistemology of the Divine” corre por baixo. A marca tem versão com os logos das instituições, uma monocromática e uma negativa.",
+      "title": {
+        "pt": "Uma sigla num traço",
+        "en": "An acronym in one line"
+      },
+      "text": {
+        "pt": "A marca foi feita só com o desenho das letras (lettering). O “o” e o “d” se fundem num laço quase infinito, que lembra o grafismo da pintura e aponta, no conceito, para a longa duração esperada das concepções do divino. Cor e aplicação acompanham a pintura. O quase infinito vira um elemento gráfico para outros contextos, como o template.",
+        "en": "The logo was crafted from the shape of the letters alone (lettering). The “o” and the “d” merge in a quasi-infinite loop, which echoes the graphism of the painting and points, conceptually, to the long duration expected of concepts of the divine. Colour and application follow the painting. The quasi-infinite becomes a graphic element for other contexts, such as the template."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/epod/01-marca.webp",
           "span": 12,
-          "caption": "Marca.",
+          "caption": {
+            "pt": "Marca.",
+            "en": "Logo."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/epod/04-instituicoes.webp",
           "span": 4,
-          "caption": "Com as instituições.",
+          "caption": {
+            "pt": "Com as instituições.",
+            "en": "With the institutions."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/epod/05-monocromatica.webp",
           "span": 4,
-          "caption": "Monocromática.",
+          "caption": {
+            "pt": "Monocromática.",
+            "en": "Monochrome."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/epod/08-negativa.webp",
           "span": 4,
-          "caption": "Negativa.",
+          "caption": {
+            "pt": "Negativa.",
+            "en": "Negative."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Duas cores e uma padronagem",
-      "text": "Amarelo e marrom, e uma padronagem pontilhada que serve de fundo para a marca, as capas e as divisórias.",
+      "title": {
+        "pt": "Duas cores e uma padronagem",
+        "en": "Two colours and a pattern"
+      },
+      "text": {
+        "pt": "Amarelo e marrom, e uma padronagem pontilhada que serve de fundo para a marca, as capas e as divisórias.",
+        "en": "Yellow and brown, and a dotted pattern that serves as a background for the logo, covers and dividers."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/epod/02-sobre-amarelo.webp",
           "span": 6,
-          "caption": "Sobre amarelo.",
+          "caption": {
+            "pt": "Sobre amarelo.",
+            "en": "On yellow."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/epod/03-sobre-marrom.webp",
           "span": 6,
-          "caption": "Sobre marrom.",
+          "caption": {
+            "pt": "Sobre marrom.",
+            "en": "On brown."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Um template para quatro sedes",
-      "text": "Capa, divisória de capítulo, página de texto, citação e página de imagens, com os logos das quatro instituições no topo e o nome de quem apresenta no rodapé.",
+      "title": {
+        "pt": "Um template para quatro sedes",
+        "en": "One template for four sites"
+      },
+      "text": {
+        "pt": "Capa, divisória de capítulo, página de texto, citação e página de imagens, com os logos das quatro instituições no topo e o nome de quem apresenta no rodapé.",
+        "en": "Cover, chapter divider, text page, quotation and image page, with the logos of the four institutions at the top and the presenter’s name in the footer."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/epod/07-template-capa.webp",
           "span": 12,
-          "caption": "Capa do template.",
+          "caption": {
+            "pt": "Capa do template.",
+            "en": "Template cover."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/epod/06-mockup-template.webp",
           "span": 12,
-          "caption": "As cinco páginas-modelo do template.",
+          "caption": {
+            "pt": "As cinco páginas-modelo do template.",
+            "en": "The template’s five model pages."
+          },
           "plate": false
         }
       ]

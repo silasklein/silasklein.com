@@ -9,10 +9,9 @@ interface Props { lang: Lang; slug: string; tags: string[]; research: boolean }
 const { lang, slug, tags, research } = Astro.props;
 const pt = lang === 'pt';
 
-// Research case pages exist in Portuguese only for now, so the English pages link to art direction only.
 const pool = [
   ...cases.map((a, n) => ({ research: false, n, slug: a.slug, tags: a.tags ?? [], img: a.image, title: a.title })),
-  ...(pt ? researchCases.map((r, n) => ({ research: true, n, slug: r.slug, tags: r.tags, img: `/img/cases/_mosaic/${r.slug}.webp`, title: r.title })) : []),
+  ...researchCases.map((r, n) => ({ research: true, n, slug: r.slug, tags: r.tags, img: `/img/cases/_mosaic/${r.slug}.webp`, title: r.title })),
 ];
 const related = pool
   .filter((x) => x.slug !== slug)

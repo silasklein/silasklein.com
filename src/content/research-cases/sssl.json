@@ -2,127 +2,235 @@
   "order": 1,
   "slug": "sssl",
   "title": "Stamp Seals from the Southern Levant",
-  "thesis": "Identidade de um projeto e o visual do seu corpus",
-  "lead": "Para o consórcio SSSL, de três universidades, criei a identidade visual do projeto e fiz a consultoria visual da base online, o Corpus of Stamp Seals from the Southern Levant.",
+  "thesis": {
+    "pt": "Identidade visual e consultoria no corpus digital",
+    "en": "Visual identity and consulting for a digital corpus"
+  },
+  "lead": {
+    "pt": "Para o consórcio SSSL, de três universidades, criei a identidade visual do projeto e fiz a consultoria visual da base online, o Corpus of Stamp Seals from the Southern Levant.",
+    "en": "For the SSSL consortium of three universities, I created the project’s visual identity and was the visual consultant for its online database, the Corpus of Stamp Seals from the Southern Levant."
+  },
   "meta": [
     {
-      "k": "Papel",
-      "v": "Pesquisador de pós-doutorado; identidade visual e consultoria visual da base online"
+      "k": {
+        "pt": "Papel",
+        "en": "Role"
+      },
+      "v": {
+        "pt": "Pesquisador de pós-doutorado; identidade visual e consultoria visual da base online",
+        "en": "Postdoctoral researcher; visual identity and visual consulting for the online database"
+      }
     },
     {
-      "k": "Cliente",
-      "v": "SSSL, consórcio SNSF Sinergia (Universidades de Zurique, Berna e Tel Aviv)"
+      "k": {
+        "pt": "Cliente",
+        "en": "Client"
+      },
+      "v": {
+        "pt": "Stamp Seals from the Southern Levant (Universidades de Zurique, Berna e Tel Aviv)",
+        "en": "Stamp Seals from the Southern Levant (Universities of Zurich, Bern and Tel Aviv)"
+      }
     },
     {
-      "k": "Via",
-      "v": "Pesquisa"
+      "k": {
+        "pt": "Via",
+        "en": "Via"
+      },
+      "v": {
+        "pt": "Contrato de pesquisador",
+        "en": "Researcher contract"
+      }
     },
     {
-      "k": "Ano",
-      "v": "2020–2024"
+      "k": {
+        "pt": "Ano",
+        "en": "Year"
+      },
+      "v": {
+        "pt": "2020–2024",
+        "en": "2020–2024"
+      }
     }
   ],
   "hero": "/img/cases/sssl/01-marca.webp",
-  "hero_alt": "",
-  "context": "Entre 1981 e 2013, os projetos de Othmar Keel em Friburgo catalogaram os selos do Levante meridional em mais de 12 mil fichas de papel. Desde 2020, o SSSL, dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, com equipes em Zurique, Berna e Tel Aviv, leva esse corpus à fase digital.",
-  "problem": "Três universidades, cada uma com sua marca, precisavam aparecer como um só projeto. E um corpus publicado em volumes impressos em alemão precisava existir ao mesmo tempo como base em inglês e como livro.",
+  "hero_alt": {
+    "pt": "",
+    "en": ""
+  },
+  "context": {
+    "pt": "O SSSL foi a continuação do famoso projeto de selos de Othmar Keel (1981–2013), que visava construir o Corpus der Stempelsiegel-Amulette aus Palästina/Israel. Dirigido por Christoph Uehlinger, Silvia Schroer, Stefan Münger e Ido Koch, o projeto tinha equipes em Zurique, Berna e Tel Aviv.",
+    "en": "SSSL continued Othmar Keel’s renowned seals project (1981–2013), which set out to build the Corpus der Stempelsiegel-Amulette aus Palästina/Israel. Directed by Christoph Uehlinger, Silvia Schroer, Stefan Münger and Ido Koch, the project had teams in Zurich, Bern and Tel Aviv."
+  },
+  "problem": {
+    "pt": "Três universidades, cada uma com sua marca, precisavam aparecer como um só projeto. E um corpus publicado em volumes impressos em alemão precisava existir ao mesmo tempo como base em inglês e como livro.",
+    "en": "Three universities, each with its own brand, had to appear as one project. And a corpus published in printed German volumes had to exist both as an English database and as a book."
+  },
   "decisions": [
     {
-      "title": "Um símbolo que convive",
-      "text": "Um símbolo próprio, em vermelho, que se sustenta sozinho e divide a mesma faixa com as marcas das três universidades e do SNSF.",
+      "title": {
+        "pt": "Um símbolo que convive",
+        "en": "A symbol that coexists"
+      },
+      "text": {
+        "pt": "O símbolo parte da impressão de um selo de Tel el-Fārʿa South (CSSL n. 53): lembra a letra “S” e a serpente egípcia, e seu contorno retoma a forma oval dos selos de estampar. Com ele, as três universidades passaram a conviver sob um mesmo símbolo.",
+        "en": "The symbol starts from the impression of a seal from Tel el-Fārʿa South (CSSL no. 53): it recalls the letter “S” and the Egyptian serpent, and its outline takes up the oval shape of stamp seals. With it, the three universities could share one symbol."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/10-versao-1.webp",
           "span": 6,
-          "caption": "Horizontal, sobre vermelho.",
+          "caption": {
+            "pt": "Horizontal, sobre vermelho.",
+            "en": "Horizontal, on red."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-2.webp",
           "span": 6,
-          "caption": "Vertical, sobre branco.",
+          "caption": {
+            "pt": "Vertical, sobre branco.",
+            "en": "Vertical, on white."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-3.webp",
           "span": 6,
-          "caption": "Símbolo em corte, sobre preto.",
+          "caption": {
+            "pt": "Símbolo em corte, sobre preto.",
+            "en": "Cropped symbol, on black."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-4.webp",
           "span": 6,
-          "caption": "Símbolo em corte, com as instituições.",
+          "caption": {
+            "pt": "Símbolo em corte, com as instituições.",
+            "en": "Cropped symbol, with the institutions."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Papelaria e template",
-      "text": "Papel timbrado, cartões e modelos de carta e relatório para as três sedes, e um template de apresentação para todos os membros do projeto, usado em palestras, cursos e conferências.",
+      "title": {
+        "pt": "Papelaria e template",
+        "en": "Stationery and template"
+      },
+      "text": {
+        "pt": "Papel timbrado, cartões e modelos de carta e relatório para as três sedes, e um template de apresentação para todos os membros do projeto, usado em palestras, cursos e conferências.",
+        "en": "Letterhead, business cards and letter and report templates for the three sites, and a presentation template for every project member, used in lectures, courses and conferences."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/03-papelaria.webp",
           "span": 12,
-          "caption": "Papelaria aplicada.",
+          "caption": {
+            "pt": "Papelaria aplicada.",
+            "en": "Stationery in use."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/14-mockup-papelaria.webp",
           "span": 12,
-          "caption": "Carta, documento longo e cartões de visita, frente e verso.",
+          "caption": {
+            "pt": "Carta, documento longo e cartões de visita, frente e verso.",
+            "en": "Letter, long document and business cards, front and back."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/13-template-apresentacao.webp",
           "span": 12,
-          "caption": "Template de apresentação em uso.",
+          "caption": {
+            "pt": "Template de apresentação em uso.",
+            "en": "Presentation template in use."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/sssl/04-template.webp",
           "span": 12,
-          "caption": "Telas internas do template de apresentação.",
+          "caption": {
+            "pt": "Telas internas do template de apresentação.",
+            "en": "Inner slides of the presentation template."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Cartazes e posts com a mesma grade",
-      "text": "Fotografia dos selos e uma grade tipográfica comum, do workshop no IOSOT 2022 à conferência final de 2024.",
+      "title": {
+        "pt": "Cartazes e posts com a mesma grade",
+        "en": "Posters and posts on one grid"
+      },
+      "text": {
+        "pt": "Fotografia dos selos e uma grade tipográfica comum, do workshop no IOSOT 2022 à conferência final de 2024.",
+        "en": "Seal photography and a shared typographic grid, from the IOSOT 2022 workshop to the 2024 final conference."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/05-cartaz-final-conference.webp",
           "span": 6,
-          "caption": "Cartaz A3 da conferência final. Zurique, 2024.",
+          "caption": {
+            "pt": "Cartaz A3 da conferência final. Zurique, 2024.",
+            "en": "A3 poster for the final conference. Zurich, 2024."
+          },
           "plate": true
         },
         {
           "src": "/img/cases/sssl/06-story-iosot-2022.webp",
           "span": 6,
-          "caption": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
+          "caption": {
+            "pt": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
+            "en": "Story for the workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022."
+          },
           "plate": true
         }
       ]
     },
     {
-      "title": "Do fichário à tela",
-      "text": "Todo o sistema da base online foi construído pelo Prof. Dr. Stefan Münger. Minha consultoria foi no aprimoramento visual da plataforma e em trazer para a tela o layout dos livros tradicionais do corpus: texto em blocos e imagem ao lado, como nas fichas e nos volumes impressos.",
+      "title": {
+        "pt": "Do fichário à tela",
+        "en": "From card file to screen"
+      },
+      "text": {
+        "pt": "O sistema da base de dados foi construído pelo Prof. Dr. Stefan Münger, que me pediu que trabalhasse no aprimoramento visual da plataforma. A partir do estudo das fichas de catalogação do projeto anterior, e remetendo ao layout da obra impressa, fiz uma nova tela que fizesse os dois mundos convergirem.",
+        "en": "The database system was built by Prof. Dr. Stefan Münger, who asked me to work on the visual refinement of the platform. Starting from the catalogue cards of the earlier project, and echoing the layout of the printed volumes, I designed a new screen that brings the two worlds together."
+      },
       "wide": false,
       "images": [
         {
+          "src": "/img/cases/sssl/16-corpus-online.webp",
+          "span": 12,
+          "caption": {
+            "pt": "A ficha online. Lachish 1 no CSSL: texto em blocos à esquerda, fotografias e desenhos à direita, como nas fichas e nos volumes impressos.",
+            "en": "The online record. Lachish 1 in CSSL: text in blocks on the left, photographs and drawings on the right, as on the cards and in the printed volumes."
+          },
+          "plate": false
+        },
+        {
           "src": "/img/cases/sssl/15-mockup-corpus.webp",
           "span": 12,
-          "caption": "A busca avançada no notebook e a ficha publicada no navegador.",
+          "caption": {
+            "pt": "A busca avançada no notebook e a ficha publicada no navegador.",
+            "en": "Advanced search on a laptop and the published record in the browser."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/cssl/02-fichas-analogicas.webp",
           "span": 12,
-          "caption": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
+          "caption": {
+            "pt": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
+            "en": "Cards from the Fribourg archive. Sheets of 14 × 21 cm: on the older models the photo went on the back; on the newer ones, beside the text, the layout the digital record inherited. Figure from Klein Cardoso, 2023."
+          },
           "plate": false
         }
       ]

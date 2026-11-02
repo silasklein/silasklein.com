@@ -1306,18 +1306,32 @@ content:
         pattern:
           regex: ^[a-z0-9]+(-[a-z0-9]+)*$
           message: Only lowercase letters, numbers and hyphens (e.g. my-new-project).
-        description: 'A página fica em /design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
+        description: 'A página fica em /design/<slug> e /en/design/<slug>. Não mude depois de publicar: os links antigos quebrariam.'
       - name: title
         label: Título
         type: string
         required: true
       - name: thesis
         label: Tese (linha magenta abaixo do título)
-        type: string
+        type: object
         description: Um sintagma nominal curto, sem verbo.
+        fields:
+          - name: pt
+            label: Português
+            type: string
+          - name: en
+            label: English
+            type: string
       - name: lead
         label: Lead
-        type: text
+        type: object
+        fields:
+          - name: pt
+            label: Português
+            type: text
+          - name: en
+            label: English
+            type: text
       - name: meta
         label: Ficha (Papel, Cliente, Via, Ano)
         type: object
@@ -1325,23 +1339,58 @@ content:
         fields:
           - name: k
             label: Rótulo
-            type: string
+            type: object
+            fields:
+              - name: pt
+                label: Português
+                type: string
+              - name: en
+                label: English
+                type: string
           - name: v
             label: Texto
-            type: string
+            type: object
+            fields:
+              - name: pt
+                label: Português
+                type: string
+              - name: en
+                label: English
+                type: string
       - name: hero
         label: Imagem de abertura (sem legenda)
         type: image
         required: true
       - name: hero_alt
         label: Texto alternativo da abertura (opcional)
-        type: string
+        type: object
+        fields:
+          - name: pt
+            label: Português
+            type: string
+          - name: en
+            label: English
+            type: string
       - name: context
         label: Contexto (opcional)
-        type: text
+        type: object
+        fields:
+          - name: pt
+            label: Português
+            type: text
+          - name: en
+            label: English
+            type: text
       - name: problem
         label: Problema (opcional)
-        type: text
+        type: object
+        fields:
+          - name: pt
+            label: Português
+            type: text
+          - name: en
+            label: English
+            type: text
       - name: decisions
         label: O que fiz (decisões)
         type: object
@@ -1349,10 +1398,24 @@ content:
         fields:
           - name: title
             label: Título
-            type: string
+            type: object
+            fields:
+              - name: pt
+                label: Português
+                type: string
+              - name: en
+                label: English
+                type: string
           - name: text
             label: Texto
-            type: text
+            type: object
+            fields:
+              - name: pt
+                label: Português
+                type: text
+              - name: en
+                label: English
+                type: text
           - name: wide
             label: Imagens na largura toda
             type: boolean
@@ -1377,13 +1440,27 @@ content:
                     - 3
               - name: caption
                 label: Legenda (a primeira frase sai em negrito)
-                type: text
+                type: object
+                fields:
+                  - name: pt
+                    label: Português
+                    type: text
+                  - name: en
+                    label: English
+                    type: text
               - name: plate
                 label: Sobre fundo claro, com respiro (peças impressas)
                 type: boolean
           - name: figures_intro
             label: Frase antes dos números (opcional)
-            type: string
+            type: object
+            fields:
+              - name: pt
+                label: Português
+                type: string
+              - name: en
+                label: English
+                type: string
           - name: figures
             label: Números (opcional)
             type: object
@@ -1394,7 +1471,14 @@ content:
                 type: string
               - name: label
                 label: Descrição
-                type: string
+                type: object
+                fields:
+                  - name: pt
+                    label: Português
+                    type: string
+                  - name: en
+                    label: English
+                    type: string
       - name: tags
         label: Habilidades (tags)
         type: reference

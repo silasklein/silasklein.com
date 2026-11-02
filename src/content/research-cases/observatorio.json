@@ -2,103 +2,212 @@
   "order": 3,
   "slug": "observatorio",
   "title": "Observatório de Universos Bíblicos",
-  "thesis": "Identidade e peças de um grupo de pesquisa",
-  "lead": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: prospecto, template de palestras, posts e o material dos eventos internacionais.",
+  "thesis": {
+    "pt": "Identidade e a rotina de um grupo de pesquisa",
+    "en": "Identity and the routine of a research group"
+  },
+  "lead": {
+    "pt": "Para o grupo de pesquisa que lidero com José Adriano Filho na Faculdade Unida de Vitória, criei a marca e as peças do grupo: prospecto, template de palestras, posts, o site e o material dos eventos internacionais.",
+    "en": "For the research group I lead with José Adriano Filho at Faculdade Unida de Vitória, I created the brand and the group’s materials: brochure, lecture template, posts, website and the material for its international events."
+  },
   "meta": [
     {
-      "k": "Papel",
-      "v": "Líder do grupo, com José Adriano Filho; identidade visual e design editorial"
+      "k": {
+        "pt": "Papel",
+        "en": "Role"
+      },
+      "v": {
+        "pt": "Líder do grupo, com José Adriano Filho; identidade visual e design editorial",
+        "en": "Group leader, with José Adriano Filho; visual identity and editorial design"
+      }
     },
     {
-      "k": "Cliente",
-      "v": "Observatório de Universos Bíblicos, grupo de pesquisa da FUV"
+      "k": {
+        "pt": "Cliente",
+        "en": "Client"
+      },
+      "v": {
+        "pt": "Observatório de Universos Bíblicos",
+        "en": "Observatório de Universos Bíblicos"
+      }
     },
     {
-      "k": "Via",
-      "v": "Pesquisa, Faculdade Unida de Vitória"
+      "k": {
+        "pt": "Via",
+        "en": "Via"
+      },
+      "v": {
+        "pt": "Atuação como pesquisador",
+        "en": "Work as a researcher"
+      }
     },
     {
-      "k": "Ano",
-      "v": "2025–2026"
+      "k": {
+        "pt": "Ano",
+        "en": "Year"
+      },
+      "v": {
+        "pt": "2025–atual",
+        "en": "2025–present"
+      }
     }
   ],
   "hero": "/img/cases/observatorio/00-abertura-logo.webp",
-  "hero_alt": "",
-  "context": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e sócio-epistêmicas.",
-  "problem": "",
+  "hero_alt": {
+    "pt": "",
+    "en": ""
+  },
+  "context": {
+    "pt": "O grupo estuda fenômenos, práticas e produções religiosas dos contextos em que os textos bíblicos foram escritos e recebidos, em três frentes: mediações materiais e visuais, sociais e literárias, e sócio-epistêmicas.",
+    "en": "The group studies religious phenomena, practices and productions from the contexts in which biblical texts were written and received, along three lines: material and visual, social and literary, and socio-epistemic mediations."
+  },
+  "problem": {
+    "pt": "",
+    "en": ""
+  },
   "decisions": [
     {
-      "title": "Um livro aberto sob as órbitas",
-      "text": "O símbolo junta um livro aberto, uma estrela e órbitas: o nome do grupo em imagem. Laranja e preto, com a assinatura “Grupo de pesquisa • FUV”, e um prospecto quadrado com apresentação, focos de pesquisa e contato.",
+      "title": {
+        "pt": "Um livro aberto sob as órbitas",
+        "en": "An open book under the orbits"
+      },
+      "text": {
+        "pt": "O símbolo junta um livro aberto, uma estrela e órbitas: o nome do grupo em imagem. Laranja e preto, com a assinatura “Grupo de pesquisa • FUV”, e um prospecto quadrado com apresentação, focos de pesquisa e contato.",
+        "en": "The symbol brings together an open book, a star and orbits: the group’s name as an image. Orange and black, with the tagline “Grupo de pesquisa • FUV”, and a square brochure with introduction, research foci and contact."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/observatorio/01-marca.webp",
           "span": 12,
-          "caption": "Marca do grupo.",
+          "caption": {
+            "pt": "Marca do grupo.",
+            "en": "The group’s brand."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/observatorio/02-prospecto.webp",
           "span": 12,
-          "caption": "Prospecto: marca, apresentação, focos de pesquisa e contato.",
+          "caption": {
+            "pt": "Prospecto: marca, apresentação, focos de pesquisa e contato.",
+            "en": "Brochure: brand, introduction, research foci and contact."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Um template para as palestras",
-      "text": "Capa de cor forte, divisórias numeradas por seção e páginas internas com espaço para imagens grandes e citações. Na palestra “As ferramentas e seus humanos”, sobre as iconografias da Escola de Friburgo, ele organiza 61 telas.",
+      "title": {
+        "pt": "Um template para as palestras",
+        "en": "A template for lectures"
+      },
+      "text": {
+        "pt": "Capa de cor forte, divisórias numeradas por seção e páginas internas com espaço para imagens grandes e citações. Na palestra “As ferramentas e seus humanos”, sobre as iconografias da Escola de Friburgo, ele organiza 61 telas.",
+        "en": "A strongly coloured cover, numbered section dividers and inner pages with room for large images and quotations. In the lecture “As ferramentas e seus humanos”, on the iconographies of the Fribourg School, it organises 61 slides."
+      },
       "wide": false,
       "images": [
         {
           "src": "/img/cases/observatorio/04-apresentacao-capa.webp",
           "span": 12,
-          "caption": "Capa da palestra “As ferramentas e seus humanos”, 2026.",
+          "caption": {
+            "pt": "Capa da palestra “As ferramentas e seus humanos”, 2026.",
+            "en": "Cover of the lecture “As ferramentas e seus humanos”, 2026."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/observatorio/03-mockup-apresentacao.webp",
           "span": 12,
-          "caption": "Telas internas da palestra.",
+          "caption": {
+            "pt": "Telas internas da palestra.",
+            "en": "Inner slides of the lecture."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Agenda e publicações",
-      "text": "Posts com a mesma diagonal e as cores da marca anunciam a agenda do semestre e as novas publicações dos membros do grupo.",
+      "title": {
+        "pt": "O site do grupo",
+        "en": "The group’s website"
+      },
+      "text": {
+        "pt": "Em universosbiblicos.org, a marca abre a página e o laranja marca os focos de pesquisa. O site reúne apresentação, pesquisa, membros, eventos e agenda, em português e inglês.",
+        "en": "At universosbiblicos.org, the brand opens the page and orange marks the research foci. The site brings together introduction, research, members, events and calendar, in Portuguese and English."
+      },
+      "wide": true,
+      "images": [
+        {
+          "src": "/img/cases/observatorio/09-site.webp",
+          "span": 12,
+          "caption": {
+            "pt": "universosbiblicos.org. A abertura do site.",
+            "en": "universosbiblicos.org. The opening of the site."
+          },
+          "plate": false
+        }
+      ]
+    },
+    {
+      "title": {
+        "pt": "Agenda e publicações",
+        "en": "Calendar and publications"
+      },
+      "text": {
+        "pt": "Posts com a mesma diagonal e as cores da marca anunciam a agenda do semestre e as novas publicações dos membros do grupo.",
+        "en": "Posts with the same diagonal and the brand colours announce the semester’s calendar and new publications by group members."
+      },
       "wide": true,
       "images": [
         {
           "src": "/img/cases/observatorio/05-posts.webp",
           "span": 12,
-          "caption": "Agenda 2026/2 e três posts de nova publicação.",
+          "caption": {
+            "pt": "Agenda 2026/2 e três posts de nova publicação.",
+            "en": "Calendar 2026/2 and three new-publication posts."
+          },
           "plate": false
         }
       ]
     },
     {
-      "title": "Eventos internacionais",
-      "text": "Para a III International Summer School “Iconography of the Ancient World”, em Vitória, fiz o carrossel de divulgação e o folder. Para o simpósio “The Zodiac and Religious Conceptions of Time”, o cartaz e o folder.",
+      "title": {
+        "pt": "Eventos internacionais",
+        "en": "International events"
+      },
+      "text": {
+        "pt": "Para a III International Summer School “Iconography of the Ancient World”, em Vitória, fiz o carrossel de divulgação e o folder. Para o simpósio “The Zodiac and Religious Conceptions of Time”, o cartaz e o folder.",
+        "en": "For the III International Summer School “Iconography of the Ancient World” in Vitória, I made the promotional carousel and the folder. For the symposium “The Zodiac and Religious Conceptions of Time”, the poster and the folder."
+      },
       "wide": true,
       "images": [
         {
           "src": "/img/cases/observatorio/06-summer-school-carrossel.webp",
           "span": 12,
-          "caption": "Carrossel da escola de verão: abertura, proposta, escopo, palestrantes, conselho científico e inscrições.",
+          "caption": {
+            "pt": "Carrossel da escola de verão: abertura, proposta, escopo, palestrantes, conselho científico e inscrições.",
+            "en": "Summer school carousel: opening, aims, scope, speakers, scientific board and registration."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/observatorio/07-summer-school-folder.webp",
           "span": 12,
-          "caption": "Folder da escola de verão: capa, programa, palestrantes e parceiros.",
+          "caption": {
+            "pt": "Folder da escola de verão: capa, programa, palestrantes e parceiros.",
+            "en": "Summer school folder: cover, programme, speakers and partners."
+          },
           "plate": false
         },
         {
           "src": "/img/cases/observatorio/08-simposio-folder.webp",
           "span": 12,
-          "caption": "Folder do simpósio sobre o zodíaco, junho de 2026: capa e programa.",
+          "caption": {
+            "pt": "Folder do simpósio sobre o zodíaco, junho de 2026: capa e programa.",
+            "en": "Folder for the zodiac symposium, June 2026: cover and programme."
+          },
           "plate": false
         }
       ]

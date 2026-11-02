@@ -7,7 +7,7 @@ import Base from '../../layouts/Base.astro';
 import Label from '../Label.astro';
 import Px from '../Pixel.astro';
 import CaseEnd from '../CaseEnd.astro';
-import { researchCases, sections, type Lang, type ResearchCase } from '../../data/content';
+import { researchCases, sections, t, type Lang, type ResearchCase } from '../../data/content';
 import { href, asset } from '../../lib/format';
 interface Props { lang: Lang; item: ResearchCase }
 const { lang, item: c } = Astro.props;
@@ -24,28 +24,31 @@ for (const src of [c.hero, ...c.decisions.flatMap((d) => (d.images ?? []).map((i
 // Captions: the first sentence in bold.
 const cap = (s: string) => { const m = s.match(/^(.+?[.!?])(\s|$)(.*)$/s); return m ? { b: m[1], rest: m[3] } : { b: '', rest: s }; };
 
+const context = c.context ? t(c.context, lang) : '';
+const problem = c.problem ? t(c.problem, lang) : '';
+
 const i = researchCases.findIndex((x) => x.slug === c.slug);
 const prev = researchCases[(i - 1 + researchCases.length) % researchCases.length];
 const next = researchCases[(i + 1) % researchCases.length];
 ---
-<Base lang={lang} title={c.title} description={c.lead} other={href('#design', pt ? 'en' : 'pt')} translated={false}>
+<Base lang={lang} title={c.title} description={t(c.lead, lang)}>
   <article class="cs">
     <div class="wrap cs__top">
       <a class="act cs__back" href={href('#design', lang)}><Px name="arrowRight" class="flip" /><span>Design</span></a>
       <Label n={sections.design.n} text={division} />
       <h1>{c.title}</h1>
-      <p class="cs__thesis"><span class="bs" aria-hidden="true">\</span>{c.thesis}</p>
+      <p class="cs__thesis"><span class="bs" aria-hidden="true">\</span>{t(c.thesis, lang)}</p>
       <div class="cs__head">
-        <p class="cs__lead">{c.lead}</p>
-        <dl class="cs__meta">{c.meta.map((m) => (<><dt>{m.k}</dt><dd>{m.v}</dd></>))}</dl>
+        <p class="cs__lead">{t(c.lead, lang)}</p>
+        <dl class="cs__meta">{c.meta.map((m) => (<><dt>{t(m.k, lang)}</dt><dd>{t(m.v, lang)}</dd></>))}</dl>
       </div>
       <div class="cs__gal cs__hero">
-        <figure style="--span:12"><img src={asset(c.hero)} alt={c.hero_alt ?? ''} {...size.get(c.hero)} loading="eager" decoding="async" /></figure>
+        <figure style="--span:12"><img src={asset(c.hero)} alt={c.hero_alt ? t(c.hero_alt, lang) : ''} {...size.get(c.hero)} loading="eager" decoding="async" /></figure>
       </div>
-      {(c.context || c.problem) && (
+      {(context || problem) && (
         <div class="cs__cp">
-          {c.context && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Contexto' : 'Context'}</span><p>{c.context}</p></div>}
-          {c.problem && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Problema' : 'Problem'}</span><p>{c.problem}</p></div>}
+          {context && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Contexto' : 'Context'}</span><p>{context}</p></div>}
+          {problem && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Problema' : 'Problem'}</span><p>{problem}</p></div>}
         </div>
       )}
       <h2 class="cs__h">{pt ? 'O que fiz' : 'What I did'}</h2>
@@ -56,25 +59,26 @@ const next = researchCases[(i + 1) % researchCases.length];
           return (
             <div class={`cs__dec${kind}`}>
               <div class="cs__dtxt">
-                <h3 class="cs__dt"><span class="bs" aria-hidden="true">\</span>{d.title}</h3>
-                {d.wide || !imgs.length ? null : <p>{d.text}</p>}
+                <h3 class="cs__dt"><span class="bs" aria-hidden="true">\</span>{t(d.title, lang)}</h3>
+                {d.wide || !imgs.length ? null : <p>{t(d.text, lang)}</p>}
                 {d.figures?.length ? (
                   <div class="cs__dfigs">
-                    {d.figures_intro && <span>{d.figures_intro}</span>}
-                    <div class="cs__figs">{d.figures.map((f) => (<div><b>{f.n}</b><span>{f.label}</span></div>))}</div>
+                    {d.figures_intro && <span>{t(d.figures_intro, lang)}</span>}
+                    <div class="cs__figs">{d.figures.map((f) => (<div><b>{f.n}</b><span>{t(f.label, lang)}</span></div>))}</div>
                   </div>
                 ) : null}
               </div>
-              {(d.wide || !imgs.length) && <p class="cs__dbody">{d.text}</p>}
+              {(d.wide || !imgs.length) && <p class="cs__dbody">{t(d.text, lang)}</p>}
               {imgs.length > 0 && (
                 <div class="cs__gal">
                   {imgs.map((im) => {
-                    const k = cap(im.caption ?? '');
-                    const img = <img src={asset(im.src)} alt={im.caption ?? ''} {...size.get(im.src)} loading="lazy" decoding="async" />;
+                    const caption = im.caption ? t(im.caption, lang) : '';
+                    const k = cap(caption);
+                    const img = <img src={asset(im.src)} alt={caption} {...size.get(im.src)} loading="lazy" decoding="async" />;
                     return (
                       <figure style={`--span:${im.span ?? 12}`}>
                         {im.plate ? <div class="cs__plate">{img}</div> : img}
-                        {im.caption && <figcaption>{k.b && <b>{k.b}</b>}{k.b && k.rest ? ' ' : ''}{k.rest}</figcaption>}
+                        {caption && <figcaption>{k.b && <b>{k.b}</b>}{k.b && k.rest ? ' ' : ''}{k.rest}</figcaption>}
                       </figure>
                     );
                   })}
