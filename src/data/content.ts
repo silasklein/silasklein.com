@@ -65,6 +65,7 @@ export const researchApproach = site.researchApproach as L;
 export const teaching = site.teaching as L;
 export const designIntro = site.designIntro as L;
 export const email = site.email as string;
+export const location = site.location as string;
 export const profiles = site.profiles as { name: string; icon: string; href: string }[];
 export const contactTopics = site.contactTopics as { icon: string; label: L; email?: string }[];
 

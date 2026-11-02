@@ -922,8 +922,9 @@ content:
             label: Rótulo em espanhol
             type: string
           - name: descricao
-            label: Descrição (o que entra na tag)
+            label: Nota interna (o que entra na tag)
             type: text
+            description: Não aparece no site; serve para escolher a tag certa.
           - name: slug
             component: slug
             description: 'Os projetos guardam a tag por este endereço. Não mude depois de publicar. Tag nova só com a aprovação de Silas.'
