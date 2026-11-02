@@ -708,9 +708,20 @@ content:
             description: Pelo menos 1200 × 1200 px. É a miniatura do mosaico da home.
           - name: gallery
             label: Imagens do projeto (em ordem)
-            type: image
-            list: true
+            type: object
             description: Aparecem uma abaixo da outra na página do case.
+            list:
+              collapsible:
+                collapsed: true
+                summary: '{index}. {alt.pt}'
+            fields:
+              - name: src
+                label: Imagem
+                type: image
+              - name: alt
+                label: Descrição da imagem, para leitores de tela e para o Google (opcional)
+                component: linha
+                description: 'O que se vê, numa frase. Em branco, o site usa o nome do case e o número da imagem.'
           - name: tags
             component: tags
           - name: mosaic
