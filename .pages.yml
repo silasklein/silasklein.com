@@ -1383,6 +1383,17 @@ content:
           - name: en
             label: English
             type: text
+      - name: problem_label
+        label: Rótulo do segundo bloco (opcional)
+        type: object
+        description: 'Em branco, o bloco se chama Problema. Ex.: Subprojetos.'
+        fields:
+          - name: pt
+            label: Português
+            type: string
+          - name: en
+            label: English
+            type: string
       - name: problem
         label: Problema (opcional)
         type: object

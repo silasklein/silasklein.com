@@ -49,7 +49,7 @@ const next = researchCases[(i + 1) % researchCases.length];
       {(context || problem) && (
         <div class:list={['cs__cp', { 'cs__cp--cols': context && !problem && context.length > 450 }]}>
           {context && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Contexto' : 'Context'}</span><p><Rich text={context} /></p></div>}
-          {problem && <div class="cs__cpc"><span class="cs__cpk">{pt ? 'Problema' : 'Problem'}</span><p><Rich text={problem} /></p></div>}
+          {problem && <div class="cs__cpc"><span class="cs__cpk">{c.problem_label && t(c.problem_label, lang) ? t(c.problem_label, lang) : pt ? 'Problema' : 'Problem'}</span><p><Rich text={problem} /></p></div>}
         </div>
       )}
       <h2 class="cs__h">{pt ? 'O que fiz' : 'What I did'}</h2>

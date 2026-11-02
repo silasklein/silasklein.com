@@ -58,12 +58,16 @@
     "en": ""
   },
   "context": {
-    "pt": "Coordenado por Jan Dietrich, em Bonn, o grupo investiga a história das ideias no antigo Israel: como o divino foi concebido, lembrado, documentado e difundido. Textos bíblicos e extrabíblicos e a cultura material do Levante meridional no primeiro milênio a.C. são lidos à procura das estruturas de pensamento (*Denkstrukturen*) por trás do conhecimento sobre o divino. São quatro subprojetos, reunidos numa plataforma digital comum: o monoteísmo emergente (Jan Dietrich, Bonn), a cognoscibilidade de Deus (Annette Schellenberg-Lagler, Viena), os selos como primeira mídia de massa (Thomas Wagner, Wuppertal) e os santuários e suas redes (Angelika Berlejung, Leipzig).",
-    "en": "Led by Jan Dietrich in Bonn, the group studies the history of ideas in ancient Israel: how the divine was conceived, remembered, documented and disseminated. Biblical and extra-biblical texts and the material culture of the southern Levant in the first millennium BCE are read for the thought structures (*Denkstrukturen*) behind knowledge of the divine. Four subprojects share a common digital platform: emerging monotheism (Jan Dietrich, Bonn), God’s knowability (Annette Schellenberg-Lagler, Vienna), seals as the first mass media (Thomas Wagner, Wuppertal), and sanctuaries and their networks (Angelika Berlejung, Leipzig)."
+    "pt": "O grupo investiga a história das ideias no antigo Israel: como o divino foi concebido, lembrado, documentado e difundido. Textos bíblicos e extrabíblicos e a cultura material do Levante meridional no primeiro milênio a.C. são lidos à procura das estruturas de pensamento (*Denkstrukturen*) por trás do conhecimento sobre o divino.",
+    "en": "The group studies the history of ideas in ancient Israel: how the divine was conceived, remembered, documented and disseminated. Biblical and extra-biblical texts and the material culture of the southern Levant in the first millennium BCE are read for the thought structures (*Denkstrukturen*) behind knowledge of the divine."
+  },
+  "problem_label": {
+    "pt": "Subprojetos",
+    "en": "Subprojects"
   },
   "problem": {
-    "pt": "",
-    "en": ""
+    "pt": "O projeto conta com quatro subprojetos, que versam sobre o monoteísmo emergente (Jan Dietrich, Bonn), a cognoscibilidade de Deus (Annette Schellenberg-Lagler, Viena), os selos como mídia de massa (Thomas Wagner, Wuppertal) e os santuários e suas redes (Angelika Berlejung, Leipzig).",
+    "en": "The project has four subprojects, on emerging monotheism (Jan Dietrich, Bonn), God’s knowability (Annette Schellenberg-Lagler, Vienna), seals as mass media (Thomas Wagner, Wuppertal), and sanctuaries and their networks (Angelika Berlejung, Leipzig)."
   },
   "decisions": [
     {
