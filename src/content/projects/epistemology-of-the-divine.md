@@ -10,8 +10,8 @@ title:
   en: "EPOD: Epistemology of the Divine"
   pt: "EPOD: Epistemology of the Divine"
 role:
-  en: "Associate researcher, sub-project 3 “Visible Daily” (lead: PD Dr Thomas Wagner)"
-  pt: "Pesquisador associado, subprojeto 3 “Visible Daily” (coord.: PD Dr. Thomas Wagner)"
+  en: "Associate researcher, sub-project 3 “Daily Visible: Towards an Epistemology of the Divine Mediated through (the) Images” (lead: PD Dr Thomas Wagner)"
+  pt: "Pesquisador associado, subprojeto 3 “Daily Visible: Towards an Epistemology of the Divine Mediated through (the) Images” (coord.: PD Dr. Thomas Wagner)"
 places:
   - name:
       en: "BUW (Germany)"

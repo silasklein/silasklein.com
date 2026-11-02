@@ -8,7 +8,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const fmt = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString(lang === 'pt' ? 'pt-BR' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
-<Base lang={lang} title={lang === 'pt' ? 'Notícias' : 'News'} description={lang === 'pt' ? 'Notícias de Silas Klein Cardoso: livros, projetos, eventos e escolas de verão sobre imagens, religião e o antigo Levante.' : 'News from Silas Klein Cardoso: books, projects, events and summer schools on images, religion and the ancient Levant.'}>
+<Base lang={lang} title={lang === 'pt' ? 'Notícias' : 'News'} description={lang === 'pt' ? 'Notícias de Silas Klein: livros, projetos, eventos e escolas de verão sobre imagens, religião e o antigo Levante.' : 'News from Silas Klein: books, projects, events and summer schools on images, religion and the ancient Levant.'}>
   <div class="page">
     <a class="page__back" href={href('#currently', lang)}>← {t(ui.back, lang)}</a>
     <Label n={sections.currently.n} text={t(sections.currently.label, lang)} />
