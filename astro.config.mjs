@@ -48,4 +48,7 @@ export default defineConfig({
     routing: { prefixDefaultLocale: false },
   },
   redirects: Object.fromEntries(Object.entries(redirects).map(([from, to]) => [from, base.replace(/\/$/, '') + to])),
+  // The security policy (src/layouts/Base.astro) only accepts fonts served by the site itself,
+  // so even the smallest font subsets ship as files instead of being inlined as data.
+  vite: { build: { assetsInlineLimit: (file) => (/\.woff2?$/.test(file) ? false : undefined) } },
 });
