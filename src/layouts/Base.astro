@@ -32,6 +32,8 @@ const translated = Astro.props.translated ?? true;
 const paths = Object.fromEntries(langs.map((l) => [l.code, Astro.props.alternates?.[l.code] ?? (translated ? langPath(Astro.url.pathname, l.code) : href('/', l.code))])) as Record<Lang, string>;
 paths[lang] = BASE + sitePath(Astro.url.pathname);
 const here = langInfo(lang);
+// Visit counter (GoatCounter, no cookies), only in the published build: pages viewed in the local preview are not counted.
+const COUNT = import.meta.env.PROD && !BASE ? 'https://silasklein.goatcounter.com/count' : '';
 const navKeys = ['about', 'research', 'publications', 'teaching', 'initiatives', 'design'] as const;
 const canonical = new URL(sitePath(Astro.url.pathname), Astro.site);
 const portrait = new URL('/img/og-portrait.jpg', Astro.site);
@@ -55,7 +57,7 @@ const person = {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Security-Policy" content={`default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'${import.meta.env.DEV ? ' ws:' : ''}; object-src 'none'; base-uri 'self'; form-action 'none'`} />
+  <meta http-equiv="Content-Security-Policy" content={`default-src 'self'; script-src 'self' 'unsafe-inline'${COUNT ? ' https://gc.zgo.at' : ''}; style-src 'self' 'unsafe-inline'; img-src 'self' data:${COUNT ? ` ${COUNT}` : ''}; font-src 'self'; connect-src 'self'${import.meta.env.DEV ? ' ws:' : ''}${COUNT ? ` ${COUNT}` : ''}; object-src 'none'; base-uri 'self'; form-action 'none'`} />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>{pageTitle}</title>
   <meta name="description" content={desc} />
@@ -86,6 +88,7 @@ const person = {
   {home && <script type="application/ld+json" set:html={JSON.stringify(person)} />}
   <slot name="head" />
   <script is:inline>document.documentElement.classList.add('js');</script>
+  {COUNT && <script is:inline data-goatcounter={COUNT} async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>}
 </head>
 <body>
   <a class="skip" href="#main">{t({ pt: 'Pular para o conteúdo', en: 'Skip to content', es: 'Saltar al contenido' }, lang)}</a>
