@@ -44,9 +44,9 @@
         "es": "Vía"
       },
       "v": {
-        "pt": "Contrato de pesquisador",
-        "en": "Researcher contract",
-        "es": "Contrato de investigador"
+        "pt": "Vínculo como pesquisador do projeto",
+        "en": "Affiliation as a project researcher",
+        "es": "Vinculación como investigador del proyecto"
       }
     },
     {
@@ -89,49 +89,49 @@
         "en": "The symbol starts from the impression of a seal from Tel el-Fārʿa South (CSSL no. 53): it recalls the letter “S” and the Egyptian serpent, and its outline takes up the oval shape of stamp seals. With it, the three universities could share one symbol.",
         "es": "El símbolo parte de la impresión de un sello de Tel el-Fārʿa South (CSSL n.º 53): recuerda la letra “S” y la serpiente egipcia, y su contorno retoma la forma ovalada de los sellos de estampa. Con él, las tres universidades pasaron a convivir bajo un mismo símbolo."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/10-versao-1.webp",
-          "span": "6",
           "caption": {
             "pt": "Horizontal, sobre vermelho.",
             "en": "Horizontal, on red.",
             "es": "Horizontal, sobre rojo."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-2.webp",
-          "span": "6",
           "caption": {
             "pt": "Vertical, sobre branco.",
             "en": "Vertical, on white.",
             "es": "Vertical, sobre blanco."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-3.webp",
-          "span": "6",
           "caption": {
             "pt": "Símbolo em corte, sobre preto.",
             "en": "Cropped symbol, on black.",
             "es": "Símbolo recortado, sobre negro."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/10-versao-4.webp",
-          "span": "6",
           "caption": {
             "pt": "Símbolo em corte, com as instituições.",
             "en": "Cropped symbol, with the institutions.",
             "es": "Símbolo recortado, con las instituciones."
           },
+          "span": "6",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -144,49 +144,49 @@
         "en": "Letterhead, business cards and letter and report templates for the three sites, and a presentation template for every project member, used in lectures, courses and conferences.",
         "es": "Papel membretado, tarjetas y modelos de carta e informe para las tres sedes, y una plantilla de presentación para todos los miembros del proyecto, usada en conferencias, cursos y congresos."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/03-papelaria.webp",
-          "span": "12",
           "caption": {
             "pt": "Papelaria aplicada.",
             "en": "Stationery in use.",
             "es": "Papelería aplicada."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/14-mockup-papelaria.webp",
-          "span": "12",
           "caption": {
             "pt": "Carta, documento longo e cartões de visita, frente e verso.",
             "en": "Letter, long document and business cards, front and back.",
             "es": "Carta, documento extenso y tarjetas de presentación, anverso y reverso."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/13-template-apresentacao.webp",
-          "span": "12",
           "caption": {
             "pt": "Template de apresentação em uso.",
             "en": "Presentation template in use.",
             "es": "Plantilla de presentación en uso."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/04-template.webp",
-          "span": "12",
           "caption": {
             "pt": "Telas internas do template de apresentação.",
             "en": "Inner slides of the presentation template.",
             "es": "Pantallas internas de la plantilla de presentación."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -194,33 +194,29 @@
         "en": "Posters and posts",
         "es": "Carteles y publicaciones en redes"
       },
-      "text": {
-        "pt": "",
-        "en": ""
-      },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/05-cartaz-final-conference.webp",
-          "span": "6",
           "caption": {
             "pt": "Cartaz A3 da conferência final. Zurique, 2024.",
             "en": "A3 poster for the final conference. Zurich, 2024.",
             "es": "Cartel A3 de la conferencia final. Zúrich, 2024."
           },
+          "span": "6",
           "plate": true
         },
         {
           "src": "/img/cases/sssl/06-story-iosot-2022.webp",
-          "span": "6",
           "caption": {
             "pt": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
             "en": "Story for the workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
             "es": "Historia de Instagram del taller “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022."
           },
+          "span": "6",
           "plate": true
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -233,19 +229,19 @@
         "en": "I made the project’s institutional website, levantineseals.org. Built on WordPress, it presents the project, its publications and its team. On the home page, the links to each section are illustrations I made from icons to tell the story of the project, drawing on my research.",
         "es": "Hice el sitio web institucional del proyecto, levantineseals.org. Construido sobre WordPress, presenta el proyecto, las publicaciones y el equipo. En la página de inicio, los enlaces a las secciones son ilustraciones que hice con íconos para contar la historia del proyecto, a partir de mi investigación."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/17-site.webp",
-          "span": "12",
           "caption": {
             "pt": "levantineseals.org. A página inicial inteira.",
             "en": "levantineseals.org. The full home page.",
             "es": "levantineseals.org. La página de inicio completa."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -258,39 +254,39 @@
         "en": "The database system was built by Prof. Dr. Stefan Münger, who asked me to work on the visual refinement of the platform. Starting from the catalogue cards of the earlier project, and echoing the layout of the printed volumes, I designed a new screen that brings the two worlds together.",
         "es": "El sistema de la base de datos fue construido por el Prof. Dr. Stefan Münger, quien me pidió trabajar en la mejora visual de la plataforma. A partir del estudio de las fichas de catalogación del proyecto anterior, y remitiendo al diseño de la obra impresa, diseñé una nueva pantalla en la que ambos mundos convergen."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/sssl/16-corpus-online.webp",
-          "span": "12",
           "caption": {
             "pt": "A ficha online. Lachish 1 no CSSL: texto em blocos à esquerda, fotografias e desenhos à direita, como nas fichas e nos volumes impressos.",
             "en": "The online record. Lachish 1 in CSSL: text in blocks on the left, photographs and drawings on the right, as on the cards and in the printed volumes.",
             "es": "La ficha en línea. Lachish 1 en el CSSL: texto en bloques a la izquierda, fotografías y dibujos a la derecha, como en las fichas y en los volúmenes impresos."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/sssl/15-mockup-corpus.webp",
-          "span": "12",
           "caption": {
             "pt": "A busca avançada no notebook e a ficha publicada no navegador.",
             "en": "Advanced search on a laptop and the published record in the browser.",
             "es": "La búsqueda avanzada en la computadora portátil y la ficha publicada en el navegador."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/cssl/03-fichas-analogicas.webp",
-          "span": "12",
           "caption": {
             "pt": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
             "en": "Cards from the Fribourg archive. Sheets of 14 × 21 cm: on the older models the photo went on the back; on the newer ones, beside the text, the layout the digital record inherited. Figure from Klein Cardoso, 2023.",
             "es": "Fichas del archivo de Friburgo. Hojas de 14 × 21 cm: en los modelos antiguos la foto iba en el reverso; en los más recientes, junto al texto, la disposición que heredó la ficha digital. Figura de Klein Cardoso, 2023."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     }
   ],
   "tags": [
