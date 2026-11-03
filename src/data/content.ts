@@ -12,7 +12,8 @@ import talksFile from '../content/talks.json';
 export type Lang = 'en' | 'pt' | 'es';
 export type L = { en: string; pt: string; es?: string };
 // Spanish is the newest language: a text without its Spanish version shows the English one.
-export const t = (l: L, lang: Lang) => (lang === 'es' ? l.es || l.en : l[lang]);
+// The CMS drops optional texts left empty, so a missing one reads as ''.
+export const t = (l: L | undefined, lang: Lang) => (!l ? '' : lang === 'es' ? l.es || l.en : l[lang]) ?? '';
 // The languages, in menu order: code, name in its own language, short code, and the tags each one uses.
 export const langs = [
   { code: 'pt', name: 'Português', short: 'BR', hreflang: 'pt-BR', locale: 'pt_BR', date: 'pt-BR' },
