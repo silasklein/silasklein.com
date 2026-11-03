@@ -43,9 +43,9 @@
         "es": "Vía"
       },
       "v": {
-        "pt": "Projeto da Universidade de Berna",
-        "en": "University of Bern project",
-        "es": "Proyecto de la Universidad de Berna"
+        "pt": "Vínculo como pesquisador do projeto",
+        "en": "Affiliation as a project researcher",
+        "es": "Vinculación como investigador del proyecto"
       }
     },
     {
@@ -88,69 +88,69 @@
         "en": "I photographed the provenanced seal impressions of the Avigad/Sass collection, donated by Benjamin Sass and now in Bern, on a set built for the purpose, with side lighting that brings out the relief of the letters. The photos went into the SSSL database and became the material of Paleographic Networks.",
         "es": "Fotografié las impresiones de sellos con procedencia de la colección Avigad/Sass, donada por Benjamin Sass y hoy en Berna, en un set montado para ello, con luz lateral que hace aparecer el relieve de las letras. Las fotos ingresaron a la base del SSSL y se convirtieron en el material de Paleographic Networks."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/10-arquivo-de-impressoes.webp",
-          "span": "12",
           "caption": {
             "pt": "O arquivo. Impressões modernas da coleção Avigad/Sass, guardadas com suas fichas.",
             "en": "The archive. Modern impressions from the Avigad/Sass collection, kept with their cards.",
             "es": "El archivo. Impresiones modernas de la colección Avigad/Sass, guardadas con sus fichas."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/11-set-de-fotografia.webp",
-          "span": "6",
           "caption": {
             "pt": "O set de fotografia. Câmera em coluna e duas luzes laterais.",
             "en": "The photography set. Column-mounted camera and two side lights.",
             "es": "El set de fotografía. Cámara en columna y dos luces laterales."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/12-impressoes.webp",
-          "span": "6",
           "caption": {
             "pt": "Impressões separadas para fotografar.",
             "en": "Impressions set aside for photography.",
             "es": "Impresiones separadas para fotografiar."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/15-selo-inscricao-c.webp",
-          "span": "4",
           "caption": {
             "pt": "Impressão com inscrição em dois registros.",
             "en": "Impression with a two-register inscription.",
             "es": "Impresión con inscripción en dos registros."
           },
+          "span": "4",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/13-selo-inscricao-a.webp",
-          "span": "4",
           "caption": {
             "pt": "Impressão com inscrição e figura.",
             "en": "Impression with inscription and figure.",
             "es": "Impresión con inscripción y figura."
           },
+          "span": "4",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/14-selo-inscricao-b.webp",
-          "span": "4",
           "caption": {
             "pt": "Impressão com inscrição e figura.",
             "en": "Impression with inscription and figure.",
             "es": "Impresión con inscripción y figura."
           },
+          "span": "4",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -163,19 +163,19 @@
         "en": "I redrew the main letter types from the photographs in a single, clean line that allows comparison. Without the noise of the stone, two writings of the same letter can be set side by side and compared.",
         "es": "Redibujé los principales tipos de letras a partir de las fotografías, con un trazo único y limpio que permitiera la comparación. Sin el ruido de la piedra, dos grafías de la misma letra pueden ponerse una al lado de la otra y compararse."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/01-do-selo-a-letra.webp",
-          "span": "12",
           "caption": {
             "pt": "Do selo à letra. A impressão fotografada e, ao lado, letras redesenhadas para a tipologia, da direita para a esquerda.",
             "en": "From seal to letter. The photographed impression and, beside it, letters redrawn for the typology, right to left.",
             "es": "Del sello a la letra. La impresión fotografiada y, al lado, letras redibujadas para la tipología, de derecha a izquierda."
           },
+          "span": "12",
           "plate": false
         }
       ],
+      "wide": false,
       "figures_intro": {
         "pt": "Em junho de 2024, chegamos a estes números:",
         "en": "By June 2024, we had reached:",
@@ -227,39 +227,39 @@
         "en": "With Eythan Levy, I created the typology and the method for dividing the letters, following the specialist literature. With a fixed vocabulary for the whole corpus, description becomes data.",
         "es": "Con Eythan Levy, creé la tipología y el método de división de las letras, siguiendo la literatura especializada. Con un vocabulario fijo para todo el corpus, la descripción se convierte en dato."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/04-tipologia.webp",
-          "span": "12",
           "caption": {
             "pt": "Modelo da tipologia. Cada parte da letra tem variantes nomeadas, desenhadas na mesma escala.",
             "en": "Typology model. Each part of the letter has named variants, drawn at the same scale.",
             "es": "Modelo de la tipología. Cada parte de la letra tiene variantes con nombre, dibujadas a la misma escala."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/03-ficha-shin.webp",
-          "span": "6",
           "caption": {
             "pt": "Ficha 1039 Shin-1. O desenho e, embaixo, cada parte no vocabulário da tipologia.",
             "en": "Card 1039 Shin-1. The drawing and, below, each part in the vocabulary of the typology.",
             "es": "Ficha 1039 Shin-1. El dibujo y, debajo, cada parte en el vocabulario de la tipología."
           },
+          "span": "6",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/08-ficha-beth.webp",
-          "span": "6",
           "caption": {
             "pt": "Ficha 1009 Beth-1. A mesma estrutura para cada grafia do corpus.",
             "en": "Card 1009 Beth-1. The same structure for every letter form in the corpus.",
             "es": "Ficha 1009 Beth-1. La misma estructura para cada grafía del corpus."
           },
+          "span": "6",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -272,29 +272,29 @@
         "en": "Eythan Levy’s computational model then carries the description into the database: the elements become data and, starting from anchor points, the chronology can be propagated for dating.",
         "es": "El modelo computacional de Eythan Levy lleva entonces la descripción a la base de datos: los elementos se convierten en datos y, a partir de marcadores, la cronología puede propagarse para la datación."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/05-modelo-de-dados.webp",
-          "span": "12",
           "caption": {
             "pt": "Do desenho ao dado. Inscrição, grafia, traço paleográfico, letra e parte ligados no modelo da base.",
             "en": "From drawing to data. Inscription, letter form, paleographic feature, letter and part linked in the database model.",
             "es": "Del dibujo al dato. Inscripción, grafía, rasgo paleográfico, letra y parte vinculados en el modelo de la base."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/07-rede.webp",
-          "span": "12",
           "caption": {
             "pt": "Rede paleográfica. Traços que aparecem juntos nas grafias de uma mesma letra.",
             "en": "Paleographic network. Features that appear together in the forms of one letter.",
             "es": "Red paleográfica. Rasgos que aparecen juntos en las grafías de una misma letra."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -307,19 +307,19 @@
         "en": "The project logo is composed from the letters of the typology itself: the identity comes out of the research material.",
         "es": "El logo del proyecto está compuesto con las propias letras de la tipología: la identidad sale del material de investigación."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/01-logo.webp",
-          "span": "12",
           "caption": {
             "pt": "Logo do Paleographic Networks.",
             "en": "Paleographic Networks logo.",
             "es": "Logo de Paleographic Networks."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     },
     {
       "title": {
@@ -332,29 +332,29 @@
         "en": "The project’s presentations use the logo, the blue and the letters of the typology themselves, from section dividers to analysis slides.",
         "es": "Las presentaciones del proyecto usan el logo, el azul y las propias letras de la tipología, desde los separadores de sección hasta las pantallas de análisis."
       },
-      "wide": false,
       "images": [
         {
           "src": "/img/cases/paleonet/16-mockup-apresentacoes.webp",
-          "span": "12",
           "caption": {
             "pt": "Telas das apresentações do projeto.",
             "en": "Slides from the project’s presentations.",
             "es": "Pantallas de las presentaciones del proyecto."
           },
+          "span": "12",
           "plate": false
         },
         {
           "src": "/img/cases/paleonet/17-flyer.webp",
-          "span": "12",
           "caption": {
             "pt": "Folder do encontro de 12 de junho de 2024, ao lado de uma ficha de letra.",
             "en": "Flyer for the meeting of 12 June 2024, beside a letter card.",
             "es": "Volante del encuentro del 12 de junio de 2024, junto a una ficha de letra."
           },
+          "span": "12",
           "plate": false
         }
-      ]
+      ],
+      "wide": false
     }
   ],
   "tags": [
