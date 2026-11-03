@@ -92,7 +92,7 @@
       "images": [
         {
           "src": "/img/cases/observatorio/01-marca.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Marca do grupo.",
             "en": "The group’s brand.",
@@ -102,7 +102,7 @@
         },
         {
           "src": "/img/cases/observatorio/02-prospecto.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Folder: marca, apresentação, focos de pesquisa e contato.",
             "en": "Brochure: brand, introduction, research foci and contact.",
@@ -127,7 +127,7 @@
       "images": [
         {
           "src": "/img/cases/observatorio/04-apresentacao-capa.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "A palestra “As ferramentas e seus humanos”, 2026. A capa e telas internas.",
             "en": "The lecture “As ferramentas e seus humanos”, 2026. The cover and inner slides.",
@@ -137,7 +137,7 @@
         },
         {
           "src": "/img/cases/observatorio/03-mockup-apresentacao.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Telas internas da palestra.",
             "en": "Inner slides of the lecture.",
@@ -162,7 +162,7 @@
       "images": [
         {
           "src": "/img/cases/observatorio/09-site.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "universosbiblicos.org. A abertura do site.",
             "en": "universosbiblicos.org. The opening of the site.",
@@ -187,7 +187,7 @@
       "images": [
         {
           "src": "/img/cases/observatorio/05-posts.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Agenda 2026/2 e três posts de nova publicação.",
             "en": "Calendar 2026/2 and three new-publication posts.",
@@ -212,7 +212,7 @@
       "images": [
         {
           "src": "/img/cases/observatorio/06-summer-school-carrossel.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Carrossel da escola de verão: abertura, proposta, escopo, palestrantes, conselho científico e inscrições.",
             "en": "Summer school carousel: opening, aims, scope, speakers, scientific board and registration.",
@@ -222,7 +222,7 @@
         },
         {
           "src": "/img/cases/observatorio/07-summer-school-folder.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Folder da escola de verão: capa, programa, palestrantes e parceiros.",
             "en": "Summer school folder: cover, programme, speakers and partners.",
@@ -232,7 +232,7 @@
         },
         {
           "src": "/img/cases/observatorio/08-simposio-folder.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Folder do simpósio sobre o zodíaco, junho de 2026: capa e programa.",
             "en": "Folder for the zodiac symposium, June 2026: cover and programme.",

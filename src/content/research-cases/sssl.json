@@ -93,7 +93,7 @@
       "images": [
         {
           "src": "/img/cases/sssl/10-versao-1.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Horizontal, sobre vermelho.",
             "en": "Horizontal, on red.",
@@ -103,7 +103,7 @@
         },
         {
           "src": "/img/cases/sssl/10-versao-2.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Vertical, sobre branco.",
             "en": "Vertical, on white.",
@@ -113,7 +113,7 @@
         },
         {
           "src": "/img/cases/sssl/10-versao-3.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Símbolo em corte, sobre preto.",
             "en": "Cropped symbol, on black.",
@@ -123,7 +123,7 @@
         },
         {
           "src": "/img/cases/sssl/10-versao-4.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Símbolo em corte, com as instituições.",
             "en": "Cropped symbol, with the institutions.",
@@ -148,7 +148,7 @@
       "images": [
         {
           "src": "/img/cases/sssl/03-papelaria.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Papelaria aplicada.",
             "en": "Stationery in use.",
@@ -158,7 +158,7 @@
         },
         {
           "src": "/img/cases/sssl/14-mockup-papelaria.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Carta, documento longo e cartões de visita, frente e verso.",
             "en": "Letter, long document and business cards, front and back.",
@@ -168,7 +168,7 @@
         },
         {
           "src": "/img/cases/sssl/13-template-apresentacao.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Template de apresentação em uso.",
             "en": "Presentation template in use.",
@@ -178,7 +178,7 @@
         },
         {
           "src": "/img/cases/sssl/04-template.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Telas internas do template de apresentação.",
             "en": "Inner slides of the presentation template.",
@@ -202,7 +202,7 @@
       "images": [
         {
           "src": "/img/cases/sssl/05-cartaz-final-conference.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Cartaz A3 da conferência final. Zurique, 2024.",
             "en": "A3 poster for the final conference. Zurich, 2024.",
@@ -212,7 +212,7 @@
         },
         {
           "src": "/img/cases/sssl/06-story-iosot-2022.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Story do workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
             "en": "Story for the workshop “Beyond the ‘Biblical World’ Paradigm”. IOSOT, 2022.",
@@ -237,7 +237,7 @@
       "images": [
         {
           "src": "/img/cases/sssl/17-site.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "levantineseals.org. A página inicial inteira.",
             "en": "levantineseals.org. The full home page.",
@@ -262,7 +262,7 @@
       "images": [
         {
           "src": "/img/cases/sssl/16-corpus-online.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "A ficha online. Lachish 1 no CSSL: texto em blocos à esquerda, fotografias e desenhos à direita, como nas fichas e nos volumes impressos.",
             "en": "The online record. Lachish 1 in CSSL: text in blocks on the left, photographs and drawings on the right, as on the cards and in the printed volumes.",
@@ -272,7 +272,7 @@
         },
         {
           "src": "/img/cases/sssl/15-mockup-corpus.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "A busca avançada no notebook e a ficha publicada no navegador.",
             "en": "Advanced search on a laptop and the published record in the browser.",
@@ -282,7 +282,7 @@
         },
         {
           "src": "/img/cases/cssl/03-fichas-analogicas.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Fichas do arquivo de Friburgo. Folhas de 14 × 21 cm: nos modelos antigos a foto ia no verso; nos mais recentes, ao lado do texto, a disposição que a ficha digital herdou. Figura de Klein Cardoso, 2023.",
             "en": "Cards from the Fribourg archive. Sheets of 14 × 21 cm: on the older models the photo went on the back; on the newer ones, beside the text, the layout the digital record inherited. Figure from Klein Cardoso, 2023.",

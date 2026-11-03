@@ -103,7 +103,7 @@ export const tags: Tag[] = Object.values(import.meta.glob('../content/tags/*.jso
 export const tagLabel = (slug: string, lang: Lang) => { const g = tags.find((x) => x.slug === slug); return g ? (lang === 'pt' ? g.label_pt : lang === 'es' ? g.label_es || g.label_en : g.label_en) : slug; };
 
 // Design-for-research case pages (/design/<slug> and /en/design/<slug>); every text is a {pt, en} pair.
-export type CaseImage = { src: string; span?: number; caption?: L; plate?: boolean };
+export type CaseImage = { src: string; span?: number | string; caption?: L; plate?: boolean };
 export type Decision = { title: L; text: L; wide?: boolean; images?: CaseImage[]; figures_intro?: L; figures?: { n: string; label: L }[] };
 export type ResearchCase = { order?: number; slug: string; title: string; thesis: L; lead: L; meta: { k: L; v: L }[]; hero: string; hero_alt?: L; context?: L; problem?: L; problem_label?: L; decisions: Decision[]; tags: string[] };
 export const researchCases: ResearchCase[] = (Object.values(import.meta.glob('../content/research-cases/*.json', { eager: true, import: 'default' })) as ResearchCase[]).sort(byOrder);

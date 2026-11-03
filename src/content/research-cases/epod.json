@@ -98,7 +98,7 @@
       "images": [
         {
           "src": "/img/cases/epod/01-marca.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Marca.",
             "en": "Logo.",
@@ -108,7 +108,7 @@
         },
         {
           "src": "/img/cases/epod/04-instituicoes.webp",
-          "span": 4,
+          "span": "4",
           "caption": {
             "pt": "Com as instituições.",
             "en": "With the institutions.",
@@ -118,7 +118,7 @@
         },
         {
           "src": "/img/cases/epod/05-monocromatica.webp",
-          "span": 4,
+          "span": "4",
           "caption": {
             "pt": "Monocromática.",
             "en": "Monochrome.",
@@ -128,7 +128,7 @@
         },
         {
           "src": "/img/cases/epod/08-negativa.webp",
-          "span": 4,
+          "span": "4",
           "caption": {
             "pt": "Negativa.",
             "en": "Negative.",
@@ -153,7 +153,7 @@
       "images": [
         {
           "src": "/img/cases/epod/02-sobre-amarelo.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Sobre amarelo.",
             "en": "On yellow.",
@@ -163,7 +163,7 @@
         },
         {
           "src": "/img/cases/epod/03-sobre-marrom.webp",
-          "span": 6,
+          "span": "6",
           "caption": {
             "pt": "Sobre marrom.",
             "en": "On brown.",
@@ -188,7 +188,7 @@
       "images": [
         {
           "src": "/img/cases/epod/07-template-capa.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "Capa do template.",
             "en": "Template cover.",
@@ -198,7 +198,7 @@
         },
         {
           "src": "/img/cases/epod/06-mockup-template.webp",
-          "span": 12,
+          "span": "12",
           "caption": {
             "pt": "As cinco páginas-modelo do template.",
             "en": "The template’s five model pages.",

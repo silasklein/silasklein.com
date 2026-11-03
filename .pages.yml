@@ -629,12 +629,12 @@ content:
                     type: select
                     options:
                       values:
-                        - 12
-                        - 7
-                        - 6
-                        - 5
-                        - 4
-                        - 3
+                        - '12'
+                        - '7'
+                        - '6'
+                        - '5'
+                        - '4'
+                        - '3'
                   - name: plate
                     label: Sobre fundo claro, com respiro (peças impressas)
                     type: boolean
