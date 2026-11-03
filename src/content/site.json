@@ -44,7 +44,7 @@
   ],
   "bio": {
     "en": "Silas Klein studies how images and artifacts mediated religion in the ancient southern Levant. Before academia, he spent two decades as an art director.",
-    "pt": "Silas Klein estuda como imagens e artefatos mediaram a religião no antigo Levante meridional. Antes da academia, passou duas décadas como diretor de arte.",
+    "pt": "Silas Klein estuda como imagens e artefatos mediaram a religião no antigo Levante meridional. Antes da academia, passou duas décadas como diretor de arte. ",
     "es": "Silas Klein estudia cómo las imágenes y los artefactos mediaron la religión en el antiguo Levante meridional. Antes de la academia, trabajó durante dos décadas como director de arte."
   },
   "bio2": {
@@ -72,33 +72,33 @@
   "profiles": [
     {
       "name": "ORCID",
-      "icon": "orcid",
-      "href": "https://orcid.org/0000-0001-8266-8693"
+      "href": "https://orcid.org/0000-0001-8266-8693",
+      "icon": "orcid"
     },
     {
       "name": "Lattes",
-      "icon": "lattes",
-      "href": "https://lattes.cnpq.br/8778794532712424"
+      "href": "https://lattes.cnpq.br/8778794532712424",
+      "icon": "lattes"
     },
     {
       "name": "Zotero",
-      "icon": "zotero",
-      "href": "https://bibbase.org/zotero-mypublications/silasklein"
+      "href": "https://bibbase.org/zotero-mypublications/silasklein",
+      "icon": "zotero"
     },
     {
       "name": "ResearchGate",
-      "icon": "researchgate",
-      "href": "https://www.researchgate.net/profile/Silas-Klein-Cardoso"
+      "href": "https://www.researchgate.net/profile/Silas-Klein-Cardoso",
+      "icon": "researchgate"
     },
     {
       "name": "LinkedIn",
-      "icon": "linkedin",
-      "href": "https://www.linkedin.com/in/silasklein/"
+      "href": "https://www.linkedin.com/in/silasklein/",
+      "icon": "linkedin"
     },
     {
       "name": "Instagram",
-      "icon": "instagram",
-      "href": "https://instagram.com/silasklein"
+      "href": "https://instagram.com/silasklein",
+      "icon": "instagram"
     }
   ],
   "contactTopics": [
