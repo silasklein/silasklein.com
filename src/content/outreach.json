@@ -1,10 +1,9 @@
 {
   "items": [
     {
-      "icon": "mic",
       "title": {
-        "en": "Interviews & talks",
         "pt": "Entrevistas & palestras",
+        "en": "Interviews & talks",
         "es": "Entrevistas & conferencias"
       },
       "text": {
@@ -12,33 +11,35 @@
         "en": "Interviews, round tables and talks online on images in ancient Israel, archaeology and the Bible, and the history of monotheism.",
         "es": "Entrevistas, mesas redondas y conferencias en línea sobre imágenes en el antiguo Israel, arqueología y Biblia, y la historia del monoteísmo."
       },
-      "href": "/talks"
+      "href": "/talks",
+      "icon": "mic"
     },
     {
-      "icon": "instagram",
       "title": {
-        "en": "universos.biblicos",
-        "pt": "universos.biblicos"
+        "pt": "universos.biblicos",
+        "en": "universos.biblicos"
       },
       "text": {
         "pt": "Verbetes teológicos e notas de pesquisa do Observatório de Universos Bíblicos no Instagram.",
         "en": "Theological entries and research notes from the Observatório de Universos Bíblicos on Instagram.",
         "es": "Entradas teológicas y notas de investigación del Observatório de Universos Bíblicos en Instagram."
       },
-      "href": "https://instagram.com/universos.biblicos"
+      "href": "https://instagram.com/universos.biblicos",
+      "icon": "instagram"
     },
     {
-      "icon": "seals",
       "title": {
+        "pt": "Levantine Seals",
         "en": "Levantine Seals",
-        "pt": "Levantine Seals"
+        "es": "Levantine Seals"
       },
       "text": {
-        "en": "Website and social media channels that bring the study of stamp seals to a wider audience.",
         "pt": "Site e redes sociais que levam o estudo dos selos de estampar antigos a um público mais amplo.",
+        "en": "Website and social media channels that bring the study of stamp seals to a wider audience.",
         "es": "Sitio web y redes sociales que acercan el estudio de los sellos de estampa antiguos a un público más amplio."
       },
-      "href": "https://levantineseals.org/"
+      "href": "https://levantineseals.org/",
+      "icon": "seals"
     }
   ]
 }
