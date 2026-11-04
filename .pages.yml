@@ -96,6 +96,9 @@ components:
         - mem
         - het
         - scarab
+        - griffin
+        - sphinx
+        - mermaid
   tags:
     label: Habilidades (tags)
     type: reference
