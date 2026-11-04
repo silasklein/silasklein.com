@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-<!-- Recorded from the argument (../02-argumento.md) and architecture (../03-arquitetura.md) the owner approved on 2026-10-31. -->
+<!-- Recorded from the argument (../planejamento-site/02-argumento.md) and architecture (../planejamento-site/03-arquitetura.md) the owner approved on 2026-10-31. -->
 
 ## Platform
 
@@ -53,7 +53,7 @@ Thesis: images mediate religion. He studies how seals, amulets and iconography o
 - 15 art-direction case thumbnails: public/img/cases/
 - Facts: Lattes CV, LinkedIn PDF, old site. No testimonials; do not invent any.
 - Design-for-research: four bilingual case pages with the owner’s images, skill tags and related cases.
-- Site audit of 2026-11-02 and its decisions: ../05-auditoria-site.md.
+- Site audit of 2026-11-02 and its decisions: ../planejamento-site/05-auditoria-site.md.
 
 ## Product Principles
 
