@@ -71,6 +71,7 @@ components:
         - field
         - group
         - image
+        - university
         - sun
         - eye
         - building
@@ -94,6 +95,7 @@ components:
         - alef
         - mem
         - het
+        - scarab
   tags:
     label: Habilidades (tags)
     type: reference
