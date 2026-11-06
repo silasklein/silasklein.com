@@ -1,12 +1,16 @@
 ---
-slug: "xxxiii-colloquium-biblicum"
-date: "2026-03-25"
-lang: "en"
-title: "XXXIII Colloquium Biblicum"
-summary: "I am excited to announce my participation in the XXXIII Colloquium Biblicum, which will take place from April 8–10, 2026, in Prague. The event will be hosted at the Faculty of Protestant Theology of Charles University and will focus on the theme “Image, Image-Making and the Creation of…"
+slug: xxxiii-colloquium-biblicum
+date: 2026-03-25
+lang: en
+title: XXXIII Colloquium Biblicum
+summary: I am excited to announce my participation in the XXXIII Colloquium
+  Biblicum, which will take place from April 8–10, 2026, in Prague. The event
+  will be hosted at the Faculty of Protestant Theology of Charles University and
+  will focus on the theme “Image, Image-Making and the Creation of…
 ---
-
 ![XXXIII Colloquium Biblicum](/img/news/xxxiii-colloquium-biblicum/01.webp)
+
+*Update: the colloquium took place on 8–10 April 2026. I gave the opening lecture and was part of the preparatory team, with Filip Čapek and Thomas Wagner. The programme below is the preliminary one, published before the event.*
 
 **XXXIII Colloquium Biblicum** April 8–10, 2026, Faculty of Protestant Theology of Charles University
 
@@ -18,7 +22,7 @@ It is also an honor to be part of the preparatory team for this conference, alon
 
 On Wednesday, April 8, I will be presenting the lecture *“Simulacra and Presence: Mechanisms of (Un)likeness in Ancient Levantine Visual Culture”*.
 
-I look forward to meeting colleagues and friends in Prague! The conference will also be transmitted online ([register here](https://eu02events.zoom.us/ev/AiAaG2ZQwH1uIQrrYabtNGcvCSQ9Tf1jQ3eXmwUGbhs5eIB070yH~AvFy7cXGnUdhy8w9eJsUaULCwCJZFXZHqLUWEMf4espYHNnPNXDo9J6iIA)). For the program, see below.
+For the preliminary programme, see below.
 
 ## Program
 
@@ -53,3 +57,4 @@ I look forward to meeting colleagues and friends in Prague! The conference will 
 - 11:30–12:00 · Čapek, Filip (Prague/CZ): *Imagine All the Temples: Case Study Lachish in Iron Age II*
 - 13:30–15:00 · Guided tour of the Jewish Museum in Prague (by Jan Šteffl)
 - 16:00–17:30 · Final discussion, evaluation, plans
+
