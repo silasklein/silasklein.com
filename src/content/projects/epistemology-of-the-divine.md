@@ -29,16 +29,22 @@ summary:
     remembered and communicated in ancient Israel/Palestine as monotheism took
     shape. Sub-project 3 studies stamp and cylinder seals as the first mass
     media: external manifestations of religious thought whose circulation
-    created spheres of influence and knowledge."
+    created spheres of influence and knowledge. From December 2026 to February
+    2027, I am a DFG-funded research fellow at the Bergische Universität
+    Wuppertal."
   pt: "O grupo de pesquisa investiga como o conhecimento do divino foi construído,
     lembrado e comunicado no antigo Israel/Palestina, enquanto o monoteísmo se
     formava. O subprojeto 3 estuda selos de estampar e cilíndricos como as
     primeiras mídias de massa: manifestações externas do pensamento religioso
-    cuja circulação criou esferas de influência e de conhecimento."
+    cuja circulação criou esferas de influência e de conhecimento. De dezembro
+    de 2026 a fevereiro de 2027, sou pesquisador visitante na Bergische
+    Universität Wuppertal, com financiamento da DFG."
   es: "El grupo de investigación estudia cómo se construyó, se recordó y se
     comunicó el conocimiento de lo divino en el antiguo Israel/Palestina
     mientras se formaba el monoteísmo. El subproyecto 3 estudia los sellos de
     estampa y los sellos cilíndricos como los primeros medios de comunicación de
     masas: manifestaciones externas del pensamiento religioso cuya circulación
-    creó esferas de influencia y de conocimiento."
+    creó esferas de influencia y de conocimiento.  De diciembre de 2026 a
+    febrero de 2027, soy investigador visitante en la Bergische Universität
+    Wuppertal, con financiamiento de la DFG."
 ---
