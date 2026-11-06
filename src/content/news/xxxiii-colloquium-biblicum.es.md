@@ -1,12 +1,16 @@
 ---
-slug: "xxxiii-colloquium-biblicum"
-date: "2026-03-25"
-lang: "es"
-title: "XXXIII Colloquium Biblicum"
-summary: "Tengo la alegría de anunciar mi participación en el XXXIII Colloquium Biblicum, que se realizará del 8 al 10 de abril de 2026 en Praga, en la Facultad de Teología Protestante de la Universidad Carolina, con el tema “Image, Image-Making and the Creation of (Un)Likeness”."
+slug: xxxiii-colloquium-biblicum
+date: 2026-03-25
+lang: es
+title: XXXIII Colloquium Biblicum
+summary: Tengo la alegría de anunciar mi participación en el XXXIII Colloquium
+  Biblicum, que se realizará del 8 al 10 de abril de 2026 en Praga, en la
+  Facultad de Teología Protestante de la Universidad Carolina, con el tema
+  “Image, Image-Making and the Creation of (Un)Likeness”.
 ---
-
 ![XXXIII Colloquium Biblicum](/img/news/xxxiii-colloquium-biblicum/01.webp)
+
+*Actualización: el coloquio se realizó del 8 al 10 de abril de 2026. Abrí el evento con la conferencia inaugural e integré el equipo preparatorio, con Filip Čapek y Thomas Wagner. El programa que sigue es el preliminar, publicado antes del evento.*
 
 **XXXIII Colloquium Biblicum** Del 8 al 10 de abril de 2026, Facultad de Teología Protestante de la Universidad Carolina
 
@@ -14,11 +18,11 @@ Tengo la alegría de anunciar mi participación en el XXXIII Colloquium Biblicum
 
 El coloquio aborda conceptos de imagen y de producción de imágenes en el mundo bíblico y en su recepción. Aunque son el único medio para ver lo que otros ven, como verdaderas materializaciones de propiedades ontológicas particulares, las imágenes suelen estudiarse con esquemas generalizadores. Tales enfoques presuponen no solo que los seres humanos comparten las mismas creencias semióticas, sino también una misma constitución ontológica. Sin embargo, mientras los estudios antropológicos han cuestionado la idea de una ontología compartida por todos los seres humanos, los estudios bíblicos llevan mucho tiempo historizando y matizando cómo los antiguos pueblos levantinos entendían sus artefactos visuales. En este sentido, la conferencia invita a investigadoras e investigadores a discutir cómo las antiguas concepciones de las imágenes, los enfoques metodológicos y las lecturas hermenéuticas en distintos contextos teológicos ayudaron a forjar la (des)semejanza.
 
-Es también un honor formar parte de la organización del evento, junto a mis estimados colegas, el Prof. Dr. Filip Čapek y el PD Dr. Thomas Wagner.
+Es también un honor formar parte del equipo preparatorio del evento, junto a mis estimados colegas, el Prof. Dr. Filip Čapek y el PD Dr. Thomas Wagner.
 
 El miércoles 8 de abril presentaré la conferencia *“Simulacra and Presence: Mechanisms of (Un)likeness in Ancient Levantine Visual Culture”*.
 
-¡Tengo muchas ganas de encontrar a colegas y amigos en Praga! La conferencia también se transmitirá en línea (inscripciones en este [enlace](https://eu02events.zoom.us/ev/AiAaG2ZQwH1uIQrrYabtNGcvCSQ9Tf1jQ3eXmwUGbhs5eIB070yH~AvFy7cXGnUdhy8w9eJsUaULCwCJZFXZHqLUWEMf4espYHNnPNXDo9J6iIA)). Abajo, el programa.
+Abajo, el programa preliminar.
 
 ## Programa
 
@@ -53,3 +57,4 @@ El miércoles 8 de abril presentaré la conferencia *“Simulacra and Presence: 
 - 11:30–12:00 · Čapek, Filip (Prague/CZ): *Imagine All the Temples: Case Study Lachish in Iron Age II*
 - 13:30–15:00 · Guided tour of the Jewish Museum in Prague (by Jan Šteffl)
 - 16:00–17:30 · Final discussion, evaluation, plans
+
