@@ -24,7 +24,7 @@ Na quarta-feira, 8 de abril, apresentarei a palestra *“Simulacra and Presence:
 
 Confira a programação preliminar abaixo.
 
-## Programação
+## Programação preliminar
 
 **Wednesday, April 8, 2026**
 
