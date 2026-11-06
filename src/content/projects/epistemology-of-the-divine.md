@@ -22,7 +22,7 @@ places:
       pt: BUW (Alemanha)
       en: BUW (Germany)
       es: BUW (Alemania)
-funding: Deutsche Forschungsgemeinschaft (DFG), FOR 5949
+funding: Deutsche Forschungsgemeinschaft (DFG) · FWF
 partners: Bergische Universität Wuppertal
 summary:
   en: "The Research Unit explores how knowledge of the divine was constructed,
