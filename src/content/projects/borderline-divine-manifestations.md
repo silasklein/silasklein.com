@@ -18,7 +18,7 @@ places:
       pt: FUV (Brasil)
       en: FUV (Brazil)
       es: FUV (Brasil)
-funding: Faculdade Unida de Vitória
+funding: Faculdade Unida de Vitória · FAPES
 partners: Bergische Universität Wuppertal (BUW)
 team:
   en: Prof. Dr. Silas Klein Cardoso (coordinator) · Prof. Dr. José Adriano Filho ·
