@@ -24,7 +24,7 @@ On Wednesday, April 8, I will be presenting the lecture *“Simulacra and Presen
 
 For the preliminary programme, see below.
 
-## Program
+## Preliminary programme
 
 **Wednesday, April 8, 2026**
 
