@@ -45,7 +45,7 @@ summary:
     mientras se formaba el monoteísmo. El subproyecto 3 estudia los sellos de
     estampa y los sellos cilíndricos como los primeros medios de comunicación de
     masas: manifestaciones externas del pensamiento religioso cuya circulación
-    creó esferas de influencia y de conocimiento.  De diciembre de 2026 a
-    febrero de 2027, soy investigador visitante en la Bergische Universität
-    Wuppertal, con financiamiento de la DFG."
+    creó esferas de influencia y de conocimiento. De diciembre de 2026 a febrero
+    de 2027, soy investigador visitante en la Bergische Universität Wuppertal,
+    con financiamiento de la DFG."
 ---
