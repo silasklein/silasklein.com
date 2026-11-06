@@ -3,10 +3,10 @@ slug: xxxiii-colloquium-biblicum
 date: 2026-03-25
 lang: pt
 title: XXXIII Colloquium Biblicum
-summary: Tenho a alegria de anunciar minha participação no XXXIII Colloquium
-  Biblicum, que acontecerá de 8 a 10 de abril de 2026, em Praga. O evento será
-  sediado na Faculdade de Teologia Protestante da Universidade Carolina (Charles
-  University) e terá como tema central “Image, Image-Making and the…
+summary: De 8 a 10 de abril de 2026, fiz a conferência de abertura do XXXIII
+  Colloquium Biblicum, na Faculdade de Teologia Protestante da Universidade
+  Carolina, em Praga, sobre o tema “Image, Image-Making and the Creation of
+  (Un)Likeness”.
 ---
 ![XXXIII Colloquium Biblicum](/img/news/xxxiii-colloquium-biblicum/01.webp)
 
