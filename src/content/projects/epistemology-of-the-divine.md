@@ -11,11 +11,12 @@ title:
   pt: "EpOD: Epistemology of the Divine"
 role:
   en: "Associate researcher, sub-project 3 “Daily Visible: Towards an Epistemology
-    of the Divine Mediated through (the) Images” (lead: PD Dr. Thomas Wagner)"
+    of the Divine Mediated through (the) Pictures” (lead: PD Dr. Thomas Wagner)"
   pt: "Pesquisador associado, subprojeto 3 “Daily Visible: Towards an Epistemology
-    of the Divine Mediated through (the) Images” (coord.: PD Dr. Thomas Wagner)"
+    of the Divine Mediated through (the) Pictures” (coord.: PD Dr. Thomas
+    Wagner)"
   es: "Investigador asociado, subproyecto 3 “Daily Visible: Towards an
-    Epistemology of the Divine Mediated through (the) Images” (coord.: PD Dr.
+    Epistemology of the Divine Mediated through (the) Pictures” (coord.: PD Dr.
     Thomas Wagner)"
 places:
   - name:
