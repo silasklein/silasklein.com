@@ -16,30 +16,30 @@
   },
   "facts": [
     {
-      "icon": "now",
       "k": {
-        "en": "Now",
         "pt": "Hoje",
+        "en": "Now",
         "es": "Hoy"
       },
       "v": {
-        "en": "Professor & Dean, Graduate Program in Religious Studies, Faculdade Unida de Vitória · Research Associate, University of Bern",
-        "pt": "Professor e coordenador do PPG em Ciências das Religiões, Faculdade Unida de Vitória · Pesquisador associado, Universidade de Berna",
-        "es": "Profesor y coordinador del Programa de Posgrado en Ciencias de las Religiones, Faculdade Unida de Vitória · Investigador asociado, Universidad de Berna"
-      }
+        "pt": "Professor de Antigo Testamento e Ciências das Religiões · Coordenador do PPG em Ciências das Religiões, Faculdade Unida de Vitória · Pesquisador associado, Universidade de Berna",
+        "en": "Professor of Old Testament and Religious Studies · Dean of the Graduate Program in Religious Studies, Faculdade Unida de Vitória · Research Associate, University of Bern",
+        "es": "Profesor de Antiguo Testamento y Ciencias de las Religiones · Coordinador del Programa de Posgrado en Ciencias de las Religiones, Faculdade Unida de Vitória · Investigador asociado, Universidad de Berna"
+      },
+      "icon": "now"
     },
     {
-      "icon": "field",
       "k": {
-        "en": "Field",
         "pt": "Campo",
+        "en": "Field",
         "es": "Campo"
       },
       "v": {
-        "en": "Iconography, biblical studies and the history of religion in the ancient southern Levant",
         "pt": "Iconografia, estudos bíblicos e história da religião no antigo Levante meridional",
+        "en": "Iconography, biblical studies and the history of religion in the ancient southern Levant",
         "es": "Iconografía, estudios bíblicos e historia de la religión en el antiguo Levante meridional"
-      }
+      },
+      "icon": "field"
     }
   ],
   "bio": {
