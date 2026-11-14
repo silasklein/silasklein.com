@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.3.0",
-    "astro": "^7.4.4",
+    "astro": "^7.4.7",
     "pixelarticons": "^2.4.2"
   }
 }
