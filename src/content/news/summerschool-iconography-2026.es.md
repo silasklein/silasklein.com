@@ -12,13 +12,13 @@ summary: La semana pasada, del 14 al 18 de septiembre, la Faculdade Unida de
 
 ![Sesión de la Summer School en un aula, con una presentación en pantalla](/img/news/summerschool-iconography-2026/02.webp)
 
-![Debate durante una sesión de la Summer School](/img/news/summerschool-iconography-2026/03.webp)
+![Thomas Wagner durante una sesión de la Summer School](/img/news/summerschool-iconography-2026/03.webp)
 
 ![Rueda de conversación durante la visita a una comunidad indígena](/img/news/summerschool-iconography-2026/04.webp)
 
-![Retrato en la Summer School, con un panel de Vitória al fondo](/img/news/summerschool-iconography-2026/05.webp)
+![Thaís Rocha da Silva (UFMG) en la Summer School, con un panel de Vitória al fondo](/img/news/summerschool-iconography-2026/05.webp)
 
-![Demostración con un sello cilíndrico durante un taller](/img/news/summerschool-iconography-2026/06.webp)
+![Katia Pozzer (UFRGS) con un sello cilíndrico durante su taller](/img/news/summerschool-iconography-2026/06.webp)
 
 ![III International Summer School: Iconography of the Ancient World, Vitória, 2026](/img/news/summerschool-iconography-2026/07.webp)
 
