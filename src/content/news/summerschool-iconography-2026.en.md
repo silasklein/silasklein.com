@@ -7,9 +7,21 @@ summary: Last week, from September 14–18, Faculdade Unida de Vitória hosted t
   III International Summer School “Iconography of the Ancient World”, the school’s
   first edition in Latin America, on the theme “Ancestral Visual Epistemologies”.
 ---
-![III International Summer School: Iconography of the Ancient World, Vitória, 2026](/img/news/summerschool-iconography-2026/01.webp)
+![Group photo of the III Summer School at Faculdade Unida de Vitória](/img/news/summerschool-iconography-2026/01.webp)
 
-![Poster of the III International Summer School: Iconography of the Ancient World](/img/news/summerschool-iconography-2026/02.webp)
+![Summer School session in a classroom, with a presentation on screen](/img/news/summerschool-iconography-2026/02.webp)
+
+![Discussion during a Summer School session](/img/news/summerschool-iconography-2026/03.webp)
+
+![Conversation circle during the visit to an Indigenous community](/img/news/summerschool-iconography-2026/04.webp)
+
+![Portrait at the Summer School, with a panel of Vitória in the background](/img/news/summerschool-iconography-2026/05.webp)
+
+![Demonstration with a cylinder seal during a workshop](/img/news/summerschool-iconography-2026/06.webp)
+
+![III International Summer School: Iconography of the Ancient World, Vitória, 2026](/img/news/summerschool-iconography-2026/07.webp)
+
+![Poster of the III International Summer School: Iconography of the Ancient World](/img/news/summerschool-iconography-2026/08.webp)
 
 Last week, from September 14–18, the III *International Summer School: Iconography of the Ancient World* took place at Faculdade Unida de Vitória, the school’s first edition in Latin America. The course is the result of a partnership between Faculdade Unida de Vitória and Bergische Universität Wuppertal, was organized by PD Dr Thomas Wagner and me, and is endorsed by ABIB and EABS.
 
