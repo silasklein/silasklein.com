@@ -59,7 +59,7 @@ button { font: inherit; color: inherit; }
 .flip { transform: scaleX(-1); }
 a:hover .px, a:focus-visible .px, summary:hover .px, button.act:hover .px, button.act:focus-visible .px,
 .topics a:hover .topics__go { transform: translateX(1.5px); }
-a.act:hover .flip { transform: scaleX(-1) translateX(1.5px); }
+a.act:hover .flip, button.act:hover .flip, button.act:focus-visible .flip { transform: scaleX(-1) translateX(1.5px); }
 
 /* The one link style: text colour + magenta icon */
 .act { display: inline-flex; align-items: center; gap: 8px; padding: 4px 0; background: none; border: 0; font: 600 14px/1 var(--font); color: var(--fg); cursor: pointer; }
@@ -441,6 +441,7 @@ a.rk:hover .rk__t, a.rk__t:hover { color: var(--accent); }
 .gallery__nav { display: flex; align-items: center; gap: 16px; margin-top: 10px; font: 600 14px/1 var(--font); color: var(--fg-2); }
 .gallery__nav .act:disabled { opacity: .3; cursor: default; }
 .gallery__nav .act:disabled:hover .px { transform: none; }
+.gallery__nav .act:disabled:hover .flip { transform: scaleX(-1); }
 .gallery__count { font-variant-numeric: tabular-nums; min-width: 4em; text-align: center; }
 /* About actions: copy bio and download photo on one line under the portrait */
 .ab__caption { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-top: 8px; }
